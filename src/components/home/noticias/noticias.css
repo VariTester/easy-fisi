@@ -1,0 +1,12 @@
+.noticias {
+    margin: 30px 0;
+}
+
+.noticias a{
+    color: #fff;
+}
+
+.noticias .box{
+    position: relative;
+    padding: 30px;
+}
