@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './header.css'
 
 const Head = () => {
   return (
@@ -7,11 +7,12 @@ const Head = () => {
         <section className='head'>
             <div className='container flexSB paddingTB'>
                 <div className='logo'>
-                    <img src='\assets\images\logooficial.png' alt='' />
+                    {/* <img src='\assets\images\logooficial.png' alt='' /> */}
+                    <img src="\images\logos\logooficial.png" alt="" />
                 </div>
 
                 <div className='ad'>
-                    <img src='\assets\images\logocatblack.png' alt='' />
+                    <img src='\images\logos\logocatblack.png' alt='' />
                 </div>
             </div>
         </section>

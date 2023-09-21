@@ -1,0 +1,80 @@
+
+/* .head .container{
+    height: 12vh;
+    /* background-color: black; 
+} */
+
+.head .logo img{
+    width: 450px;
+}
+
+.head .ad img{
+    width: 350px;
+    
+}
+
+header{
+    background-color: #000000;
+    color: aliceblue;
+}
+
+header li{
+    margin-right: 30px;
+    transition: 0.5s;
+}
+header li a{
+    color: #fff;
+    transition: 0.5s;
+}
+
+header li a:hover{
+    color: #08d523;
+    cursor: pointer;
+}
+
+/* con display none evitamos que aparezca el menu */
+.barIco{
+    font-size: 25px;
+    background: none;
+    color: #fff;
+    display: none;
+    border: none;
+}
+
+@media screen and (max-width:768px){
+    .head .logo img{
+        width: 250px;
+    }
+    
+    .head .ad img{
+        width: 220px;
+    }
+    /* .head .ad{
+        display: none;
+    } */
+    header .icon{
+        display: none;
+    }
+    header .flex{
+        display: none;
+    }
+    .barIco {
+        display: block;
+    }
+    header .navbar {
+        position: absolute;
+        display: block;
+        background-color:  #078375;
+        left: 0;
+        top: 232px !important;
+        width: 100%;
+        height: 60vh;
+        z-index: 5;
+        padding: 50px;
+        
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+
+}

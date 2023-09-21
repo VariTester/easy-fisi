@@ -4,7 +4,7 @@ import Card from './Card';
 import './noticias.css'
 
 const Noticias = () => {
-    const [items, setitems] = useState(info);
+    const [items] = useState(info);
     console.log(items)
   return (
     <>
