@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
-import {info}  from '../../../data'
+import React, {useState} from 'react'
+import {info} from '../../../data'
 import Card from './Card';
-import './noticias.css'
+import  './noticias.css';
 
 const Noticias = () => {
-    const [items] = useState(info);
-    console.log(items)
+    const [items, setitems] = useState(info);
   return (
     <>
-        <section className='noticias'>
+        <section  className='noticias'>
             <div className='container'>
                 {items.map((item)=>{
                     return <Card key={item.id} item={item}/>
@@ -20,3 +19,4 @@ const Noticias = () => {
 }
 
 export default Noticias
+

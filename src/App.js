@@ -15,7 +15,7 @@ const App = () =>{
       <Router>
       <Header/>
         <Route>
-          <Route  path='/' element={<Homepages/>}></Route>
+          <Route path='/' component={Homepages}/>
           {/* <Route path='/singlepage/:id' element={<Singlepages/>}></Route>
           <Route  path='/noticias' element={<Noticias/>}></Route> */}
           {/* <Route path='/singlepage/:id' element={<SinglePage/>} /> */}
