@@ -1,5 +1,6 @@
 import React from 'react'
 import Noticias from './noticias/Noticias'
+import Home from './mainContent/homes/Home'
 // import Noticias from './noticias/Noticias'
 
 
@@ -7,6 +8,7 @@ import Noticias from './noticias/Noticias'
   return (
     <>
       <Noticias/>
+      <Home/>
     </>
   )
 }

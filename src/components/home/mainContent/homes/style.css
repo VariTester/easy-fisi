@@ -1,3 +1,32 @@
-main .container{
+main .container {
     display: flex;
+    justify-content: space-between;
+    height: 100vh;
 }
+
+.mainContent{
+    width: 75%;
+    /* background-color: aqua; */
+}
+
+.sideContent{
+    width: 23%;
+    /* background: rebeccapurple; */
+}
+
+
+@media screen and (max-width: 768px) {
+
+    main .container {
+        flex-direction: column;
+    }
+    .mainContent{
+        width: 100%;
+        background-color: aqua;
+    }
+    
+    .sideContent{
+        width: 25%;
+        background: rebeccapurple;
+    }
+  }
