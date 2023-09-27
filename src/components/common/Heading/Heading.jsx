@@ -4,9 +4,9 @@ import './heading.css'
 const Heading = ({title}) => {
   return (
     <>
-    <div className='heading'>
-    <h6>{title}</h6>
-    </div>
+        <div className='heading'>
+            <h6>{title}</h6>
+        </div>
     </>
   )
 }

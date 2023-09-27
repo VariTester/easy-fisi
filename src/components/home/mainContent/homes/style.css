@@ -6,7 +6,7 @@ main .container {
 
 .mainContent{
     width: 75%;
-    /* background-color: aqua; */
+    /* background-color: cadetblue; */
 }
 
 .sideContent{
@@ -20,13 +20,13 @@ main .container {
     main .container {
         flex-direction: column;
     }
-    .mainContent{
+    .mainContent {
         width: 100%;
-        background-color: aqua;
+        
     }
     
-    .sideContent{
-        width: 25%;
-        background: rebeccapurple;
+    .sideContent {
+        width: 100%;
+        
     }
   }

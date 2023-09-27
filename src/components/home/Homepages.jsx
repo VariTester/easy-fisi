@@ -7,8 +7,8 @@ import Home from './mainContent/homes/Home'
  const Homepages = () => {
   return (
     <>
-      <Noticias/>
-      <Home/>
+      <Noticias />
+      <Home />
     </>
   )
 }
