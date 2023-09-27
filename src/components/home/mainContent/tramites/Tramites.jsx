@@ -1,12 +1,38 @@
 import React from 'react'
 import Heading from '../../../common/Heading/Heading'
 import { tramites } from '../../../../data'
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import "./tramites.css"
 const Tramites = () => {
+  const settings = {
+    className: "center",
+    centerMode: false,
+    infinite: true,
+    centerPadding: "0",
+    slidesToShow: 2,
+    speed: 500,
+    rows: 4,
+    slidesPerRow: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows:4,
+          // infinite: true,
+          
+        }
+      },
+    ]
+  };
   return (
     <>
     <section className='tramites'>
         <Heading title="Trámites"/>
+        <Slider {...settings}>
         {tramites.map((val)=>{
           return (
             <div className='items'>
@@ -34,6 +60,7 @@ const Tramites = () => {
             </div>
           )
         })}
+        </Slider>
     </section>
     </>
   )
