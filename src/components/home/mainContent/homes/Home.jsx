@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.css"
 import Tramites from '../tramites/Tramites'
 import Mvistos from '../masvistos/Mvistos'
+import Cursos from '../cursos/Cursos'
 const Home = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const Home = () => {
             <section className='mainContent'>
                 <Mvistos/>
                 <Tramites/>
+                <Cursos/>
  
             </section>
 

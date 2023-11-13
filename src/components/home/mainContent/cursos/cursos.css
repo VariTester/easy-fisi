@@ -1,0 +1,58 @@
+.cursos .box {
+    background-color: #fff;
+    display: flex;
+    /* #18  copy*/
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+    position: relative;
+    margin: 15px 15px 15px 0;
+    /*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
+  }
+  /* .popular .{
+    margin-left: 50px;
+  } */
+
+  .cursos .images{
+    position: relative;
+    height: 200px;
+    
+  }
+  .cursos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .cursos .text h1 {
+    padding: 10px 0 0 20px;
+    margin: 0;
+  }
+  .cursos .date {
+    margin-top: 15px;
+    padding: 0 0 0 20px;
+  }
+
+  .cursos label{
+    font-size: 12px;
+  }
+  
+  .cursos .comment {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0 0 20px;
+    margin-top: 5px;
+  }
+
+
+/* .cursos .box:nth-child(1) .category{
+    background-color: crimson;
+}
+
+.noticias .box:nth-child(2) .category{
+    background-color: rgb(30, 220, 20);
+}
+
+.noticias .box:nth-child(3) .category{
+    background-color: rgb(152, 7, 181);
+}
+
+.noticias .box:nth-child(4) .category{
+    background-color: rgb(6, 172, 255);
+} */

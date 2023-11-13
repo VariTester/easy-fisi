@@ -7,27 +7,35 @@ import "slick-carousel/slick/slick-theme.css";
 import "./tramites.css"
 const Tramites = () => {
   const settings = {
-    className: "center",
-    // centerMode: true,
-    centerMode: false,
-    infinite: true,
-    centerPadding: "20px",
-    slidesToShow: 2,
-    speed: 500,
-    rows: 4,
-    slidesPerRow: 1,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          rows:4,
-          // infinite: true,
+    // className: "center",
+    // // centerMode: true,
+    // centerMode: false,
+    // infinite: true,
+    // centerPadding: "20px",
+    // slidesToShow: 2,
+    // speed: 500,
+    // rows: 4,
+    // slidesPerRow: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 800,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       rows:4,
+    //       // infinite: true,
           
-        }
-      },
-    ]
+    //     }
+    //   },
+    // ]
+    //esto es para pooner en vertical
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    
   };
   return (
     <>
@@ -42,9 +50,9 @@ const Tramites = () => {
                   <div className='img'>
                     <img src={val.cover} alt="" />
                   </div>
-                  <div className="category category1">
+                  {/* <div className="category category1">
                     <span>{val.catgeory}</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="text row">
                   <h1 className='title'>{val.title.slice(0, 40)}...</h1>
