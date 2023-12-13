@@ -1,6 +1,6 @@
 import React from 'react'
 import Heading from '../../../common/Heading/Heading'
-import { ppost} from '../../../../data'
+import { ppost, tramites} from '../../../../data'
 import Slider from 'react-slick';
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
@@ -35,7 +35,10 @@ const Mvistos = () => {
         <Heading title="Más Vistos"/>
         <div className='content'>
         <Slider {...settings}>
-        {ppost.map((val)=>{
+        {tramites
+        //aca es para poner los mas vistos
+        .filter((val)=> val.masVisto === "1")
+        .map((val)=>{
           return (
             <div className='items'>
               <div className='box shadow'>

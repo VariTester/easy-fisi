@@ -3,6 +3,8 @@ import "./style.css"
 import Tramites from '../tramites/Tramites'
 import Mvistos from '../masvistos/Mvistos'
 import Cursos from '../cursos/Cursos'
+import Foro from '../foro/Foro'
+import Side from '../../sideContent/side/Side'
 const Home = () => {
   return (
     <>
@@ -12,10 +14,13 @@ const Home = () => {
                 <Mvistos/>
                 <Tramites/>
                 <Cursos/>
+                <Foro/>
  
             </section>
 
-            <section className='sideContent'></section>
+            <section className='sideContent'>
+              <Side/>
+            </section>
         </div>
       </main>
     </>

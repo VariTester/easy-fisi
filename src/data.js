@@ -235,6 +235,7 @@ export const info = [
   export const tramites = [
     {
       id: 1,
+      masVisto: "1",
       catgeory: "world",
       title: "Cómo postular a la FISI?",
       date: "Disponibilidad: Ene 22 - Ene 30",
@@ -245,6 +246,7 @@ export const info = [
     },
     {
       id: 2,
+      masVisto: "1",
       catgeory: "travel",
       title: "Qué hacer si ya ingresaste?",
       date: "19. February 2022",
@@ -255,6 +257,7 @@ export const info = [
     },
     {
       id: 3,
+      masVisto: "1",
       catgeory: "sport",
       title: "Pago de matrícula",
       date: "19. February 2022",
@@ -265,6 +268,7 @@ export const info = [
     },
     {
       id: 4,
+      masVisto: "0",
       catgeory: "sport",
       title: "Cómo solicitar exceso de crédito?",
       date: "19. February 2022",
@@ -275,6 +279,7 @@ export const info = [
     },
     {
       id: 5,
+      masVisto: "1",
       catgeory: "fun",
       title: "Retiro de curso",
       date: "19. February 2022",
@@ -285,6 +290,7 @@ export const info = [
     },
     {
       id: 6,
+      masVisto: "0",
       catgeory: "health",
       title: "Retiro del semestre",
       date: "19. February 2022",
@@ -295,6 +301,7 @@ export const info = [
     },
     {
       id: 7,
+      masVisto: "0",
       catgeory: "fashion",
       title: "Constancia de Tercio Superior",
       date: "19. February 2022",
@@ -304,6 +311,7 @@ export const info = [
     },
     {
       id: 8,
+      masVisto: "0",
       catgeory: "fun",
       title: "Constancia de estudios",
       date: "19. February 2022",
@@ -313,6 +321,7 @@ export const info = [
     },
     {
       id: 9,
+      masVisto: "1",
       catgeory: "fun",
       title: "Acceso al seguro Universitario",
       date: "19. February 2022",
@@ -322,6 +331,7 @@ export const info = [
     },
     {
       id: 10,
+      masVisto: "1",
       catgeory: "fun",
       title: "Comedor Universitario",
       date: "19. February 2022",
@@ -331,6 +341,7 @@ export const info = [
     },
     {
       id: 11,
+      masVisto: "1",
       catgeory: "business",
       title: "Nivelación de cursos",
       date: "19. February 2022",
@@ -340,6 +351,7 @@ export const info = [
     },
     {
       id: 12,
+      masVisto: "0",
       catgeory: "technology",
       title: "Retiro de la Universidad",
       date: "19. February 2022",
@@ -349,6 +361,7 @@ export const info = [
     },
     {
       id: 13,
+      masVisto: "0",
       catgeory: "fun",
       title: "Reingreso",
       date: "19. February 2022",
@@ -358,6 +371,7 @@ export const info = [
     },
     {
       id: 14,
+      masVisto: "0",
       catgeory: "fun",
       title: "Cambio de carrera y convalidaciones",
       date: "19. February 2022",
@@ -367,6 +381,7 @@ export const info = [
     },
     {
       id: 15,
+      masVisto: "0",
       catgeory: "technology",
       title: "Penalidades",
       date: "19. February 2022",
@@ -376,6 +391,7 @@ export const info = [
     },
     {
       id: 16,
+      masVisto: "0",
       catgeory: "technology",
       title: "Justificación por inasistencia",
       date: "19. February 2022",
@@ -385,6 +401,7 @@ export const info = [
     },
     {
       id: 17,
+      masVisto: "0",
       catgeory: "technology",
       title: "Solicitud de permiso por faltas",
       date: "19. February 2022",
@@ -394,6 +411,7 @@ export const info = [
     },
     {
       id: 18,
+      masVisto: "0",
       catgeory: "technology",
       title: "Presentación de Tesis",
       date: "19. February 2022",
@@ -403,6 +421,7 @@ export const info = [
     },
     {
       id: 19,
+      masVisto: "0",
       catgeory: "technology",
       title: "Obtención de título",
       date: "19. February 2022",
@@ -412,6 +431,7 @@ export const info = [
     },
     {
       id: 20,
+      masVisto: "1",
       catgeory: "technology",
       title: "Curso paralelo",
       date: "19. February 2022",
@@ -450,6 +470,152 @@ export const info = [
       date: "19. February 2022",
       cover: g1Image,
     },
+  ]
+  export const foro =[
+    {
+      id: 1,
+      catgeory: "world",
+      title: "Our Favorite Photos From All Around",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 2,
+      catgeory: "travel",
+      title: "Places To Visit For A Peaceful Holiday",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 3,
+      catgeory: "sport",
+      title: "Is This The New Boxing Champion?",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 4,
+      catgeory: "sport",
+      title: "A Detailed Retelling Of Our Trek Through The Dangerous Alps",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 5,
+      catgeory: "fun",
+      title: "Natural Sunlight Boosts Your Immunity",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 6,
+      catgeory: "health",
+      title: "Health Benefits From Asparagus",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    // {
+    //   id: 7,
+    //   catgeory: "fashion",
+    //   title: "The Valid Fashion Style For This Fall",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: g1Image,
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 8,
+    //   catgeory: "fun",
+    //   title: "Vote For The Top Tracks Of The Month",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: g1Image,
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 9,
+    //   catgeory: "fun",
+    //   title: "Unplugged Gigs To Remember",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: g1Image,
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 10,
+    //   catgeory: "fun",
+    //   title: "Picks For This Month’s Best Instagram Shots",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: g1Image,
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 11,
+    //   catgeory: "business",
+    //   title: "Why Rich People Don’t Invest Much",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: "../images/popular/pop11.jpg",
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 12,
+    //   catgeory: "technology",
+    //   title: "Welcoming The Digital Generation",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: "../images/popular/pop12.jpg",
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 13,
+    //   catgeory: "fun",
+    //   title: "These Teens Are Absolutely Crazy For Beach Soccer",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: "../images/popular/pop13.jpg",
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 14,
+    //   catgeory: "fun",
+    //   title: "How To Organize The Best Bridal Party Ever",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: "../images/popular/pop14.jpg",
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 15,
+    //   catgeory: "technology",
+    //   title: "Social Networks And Social Life",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: "../images/popular/pop15.jpg",
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // },
+    // {
+    //   id: 16,
+    //   catgeory: "technology",
+    //   title: "Gaming Brings Couples Closer Together?",
+    //   date: "19. February 2022",
+    //   comments: 0,
+    //   cover: "../images/popular/pop1.jpg",
+    //   desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    // }, 
   ]
   export const lifestyle = [
     {
