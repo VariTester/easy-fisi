@@ -25,6 +25,20 @@ header li{
 header li a{
     color: #fff;
     transition: 0.5s;
+    
+}
+
+header li.iniciosesion a{
+    color: #ffffff;
+    border: 2px solid #bf1414; /* Borde del cuadrado */
+    border-radius: 12px; /* Bordes curvos del cuadrado */
+    padding: 10px 20px; /* Espaciado interno para el cuadrado */
+    transition: 0.5s;
+}
+
+header li.iniciosesion {
+    margin-left: auto;
+    transition: 0.5s;
 }
 
 header li a:hover{
@@ -65,16 +79,35 @@ header li a:hover{
         position: absolute;
         display: block;
         background-color:  #078375;
-        left: 0;
+        left: auto;
         top: 232px !important;
-        width: 100%;
-        height: 55vh;
+        width: 90%;
+        height: auto;
         z-index: 5;
         padding: 35px;
+        border-bottom-left-radius: 12px; /* Borde curvo en la esquina inferior izquierda */
+        border-bottom-right-radius: 12px; /* Borde curvo en la esquina inferior derecha */
         
     }
     header ul li{
         margin-bottom: 30px;
     }
 
+    header li.iniciosesion {
+        margin-left: auto;
+    }
+    header li.iniciosesion a{
+        color: #ffffff;
+        border: none;
+        /* border: 2px solid #bf1414; Borde del cuadrado */
+        /* border-radius: 12px; Bordes curvos del cuadrado */
+        background-color: black;
+        /* padding: 3px 5px; Espaciado interno para el cuadrado */
+        transition: 0.5s;
+    }
+
+    .head .ad img{
+        display: none;
+
+    }
 }

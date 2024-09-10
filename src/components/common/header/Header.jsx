@@ -26,6 +26,7 @@ const [navbar, setnavbar] = useState(false);
                 <li><Link to='/foro'>Foro</Link></li>
                 <li><Link to='/infoDocente'>Info Docente</Link></li>
                 <li><Link to='/administrativos'>Administrativos</Link></li>
+                <li className='iniciosesion'><Link to='/iniciarSesion'>Iniciar Sesión</Link></li>
             </ul>
             <button className='barIco' onClick={()=> setnavbar(!navbar)}>
             {navbar ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
