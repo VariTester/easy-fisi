@@ -20,6 +20,7 @@
   @media screen and (max-width: 768px) {
     .foro img,
     .foro .images {
+      display: none;
       height: 350px;
     }
   }
