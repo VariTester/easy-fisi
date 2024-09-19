@@ -1,29 +1,20 @@
 import React from "react";
-import Header from "./components/common/header/Header"
-import "./App.css"
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/common/header/Header";
+import "./App.css";
 
 import Homepages from "./components/home/Homepages";
+import Tramitesroute from "./routes/Tramites";
 
-const App = () =>{
-  return(
-    <>
-      <Router>
-      <Header/>
-        <Route>
-          <Route path='/' component={Homepages}/>
-          {/* <Route path='/singlepage/:id' element={<Singlepages/>}></Route>
-          <Route  path='/noticias' element={<Noticias/>}></Route> */}
-          {/* <Route path='/singlepage/:id' element={<SinglePage/>} /> */}
-        </Route>
-        {/* <Footer/> */}
-      </Router>
-    </>
-  )
+export default function App() {
+  return (
+    <Router>
+      <Header /> {/* Coloca el componente Header aquí si es parte de la navegación */}
+      <Routes>
+        <Route path="/" element={<Homepages />} />
+        <Route path="/tramites" element={<Tramitesroute />} />
+        {/* Puedes agregar otras rutas aquí */}
+      </Routes>
+    </Router>
+  );
 }
-
-export default App

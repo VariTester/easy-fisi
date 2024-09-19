@@ -1,6 +1,7 @@
 import React from 'react'
 import Noticias from './noticias/Noticias'
 import Home from './mainContent/homes/Home'
+import Footer from './footer/Footer'
 // import Noticias from './noticias/Noticias'
 
 
@@ -9,7 +10,9 @@ import Home from './mainContent/homes/Home'
     <>
       <Noticias />
       <Home />
+      
     </>
+    
   )
 }
 

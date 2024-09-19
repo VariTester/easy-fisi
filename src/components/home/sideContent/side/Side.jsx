@@ -15,6 +15,14 @@ const Side = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+
+    // fade: true,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    // waitForAnimate: false
+
   }
 
   const catgeory = ["world", "travel", "sport", "fun", "health", "fashion", "business", "technology"]

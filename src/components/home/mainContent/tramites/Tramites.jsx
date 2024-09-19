@@ -7,34 +7,36 @@ import "slick-carousel/slick/slick-theme.css";
 import "./tramites.css"
 const Tramites = () => {
   const settings = {
-    // className: "center",
-    // // centerMode: true,
-    // centerMode: false,
-    // infinite: true,
-    // centerPadding: "20px",
-    // slidesToShow: 2,
-    // speed: 500,
-    // rows: 4,
-    // slidesPerRow: 1,
-    // responsive: [
-    //   {
-    //     breakpoint: 800,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       rows:4,
-    //       // infinite: true,
-          
-    //     }
-    //   },
-    // ]
-    //esto es para pooner en vertical
     dots: false,
+    className: "center",
+    // centerMode: true,
+    centerMode: false,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
+    centerPadding: "20px",
+    slidesToShow: 1,
+    speed: 500,
+    rows: 4,
+    slidesPerRow: 1,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows:3,
+          // infinite: true,
+          
+        }
+      },
+    ]
+    //esto es para pooner en vertical
+    
+    // dots: false,
+    // infinite: true,
+    // slidesToShow: 5,
+    // slidesToScroll: 3,
+    // vertical: true,
+    // verticalSwiping: true,
     
   };
   return (
