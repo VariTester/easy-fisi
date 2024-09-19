@@ -21,7 +21,7 @@ label {
 }
 a{
   text-decoration: none;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
 }
 /*-----------global-----------*/
 .container{

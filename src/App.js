@@ -6,6 +6,9 @@ import "./App.css";
 import Homepages from "./components/home/Homepages";
 import Tramitesroute from "./routes/Tramites";
 
+import Singlepages from "./components/SinglePages/Singlepages.jsx";
+import Tramites from "./components/home/mainContent/tramites/Tramites.jsx";
+
 export default function App() {
   return (
     <Router>
@@ -13,7 +16,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Homepages />} />
         <Route path="/tramites" element={<Tramitesroute />} />
-        {/* Puedes agregar otras rutas aquí */}
+        {/* Ruta dinámica para cada trámite */}
+        <Route path="/tramite/:id" element={<Singlepages />} />
       </Routes>
     </Router>
   );

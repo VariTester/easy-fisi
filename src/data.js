@@ -236,24 +236,79 @@ export const info = [
     {
       id: 1,
       masVisto: "1",
-      catgeory: "world",
+      category: "world",
       title: "Cómo postular a la FISI?",
       date: "Disponibilidad: Ene 22 - Ene 30",
       comments: "Duración: 2 días",
       costo: "Costo: 76 soles",
       cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      // url1: "Como pustasasdassd",
+      desc: [
+        {
+          para1: "Un grupo de empresarios dedicados a la piscicultura en la ciudad de Iquitos, sostuvieron una reunión con funcionarios de la Dirección Regional de la Producción de Loreto (DIREPRO Loreto), para tratar temas relacionados a la formación, competitividad y ordenamiento de las empresas dedicadas a la venta de peces en la Amazonía.",
+        },
+        {
+          para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+        },
+        {
+          para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+        },
+      ],
+      details: [
+        {
+          title: '"El cliente debe recibir peces de buena calidad"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
     },
     {
       id: 2,
       masVisto: "1",
-      catgeory: "travel",
+      category: "travel",
       title: "Qué hacer si ya ingresaste?",
       date: "19. February 2022",
       comments: "Duración: 2 días",
       costo: "Costo: 76 soles",
       cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      desc: [
+        {
+          para1: "Un grupo de empresarios dedicados a la piscicultura en la ciudad de Iquitos, sostuvieron una reunión con funcionarios de la Dirección Regional de la Producción de Loreto (DIREPRO Loreto), para tratar temas relacionados a la formación, competitividad y ordenamiento de las empresas dedicadas a la venta de peces en la Amazonía.",
+        },
+        {
+          para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+        },
+        {
+          para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+        },
+      ],
+      details: [
+        {
+          title: '"El cliente debe recibir peces de buena calidad"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
     },
     {
       id: 3,

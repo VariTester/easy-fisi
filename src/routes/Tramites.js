@@ -5,7 +5,7 @@
 // import AyahuascaImage from "../assets/images/selva2.jpg"
 // import AboutUsData from "../components/AboutUsData";
 
-import Footer from '../components/home/footer/Footer';
+// import Footer from '../components/home/footer/Footer';
 import Tramites from '../components/home/mainContent/tramites/Tramites'
 import Side from '../components/home/sideContent/side/Side';
 function Tramitesroute (){
