@@ -236,7 +236,7 @@ export const info = [
     {
       id: 1,
       masVisto: "1",
-      category: "world",
+      catgeory: "world",
       title: "Cómo postular a la FISI?",
       date: "Disponibilidad: Ene 22 - Ene 30",
       comments: "Duración: 2 días",
@@ -275,7 +275,7 @@ export const info = [
     {
       id: 2,
       masVisto: "1",
-      category: "travel",
+      catgeory: "travel",
       title: "Qué hacer si ya ingresaste?",
       date: "19. February 2022",
       comments: "Duración: 2 días",

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Card = ({item:{id,cover,catgeory,title,authorName,authorImage,time}}) => {
+const Card = ({item:{id,cover,catgeory,title,authorName,authorImage,time,masVisto}}) => {
   return (
     <>
         <div className='box'>
@@ -19,6 +19,7 @@ const Card = ({item:{id,cover,catgeory,title,authorName,authorImage,time}}) => {
         </div>
     </>
   )
+
 }
 
 export default Card

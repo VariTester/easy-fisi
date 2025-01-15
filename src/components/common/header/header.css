@@ -84,7 +84,7 @@ header li a:hover{
         width: 90%;
         height: auto;
         z-index: 5;
-        padding: 35px;
+        padding: 20px;
         border-bottom-left-radius: 12px; /* Borde curvo en la esquina inferior izquierda */
         border-bottom-right-radius: 12px; /* Borde curvo en la esquina inferior derecha */
         
