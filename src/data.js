@@ -313,13 +313,51 @@ export const info = [
     {
       id: 3,
       masVisto: "1",
-      catgeory: "sport",
-      title: "Pago de matrícula",
+      catgeory: "Cachimbos",
+      title: "Cómo Matricularse?",
       date: "19. February 2022",
-      comments: "Duración: 2 días",
-      costo: "Costo: 76 soles",
+      comments: "Duración: 5 días",
+      costo: "Costo: 80 soles",
       cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      desc: [
+        {
+          para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+        },
+        {
+          para5: "-Solicitud de constancia de matrícula y revisión curricular",
+        },
+
+        {
+          para6: "(Nota del editor: ver si piden dni y su copia)",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para matricularse en este semestre"',
+        },
+        {
+          para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+        },
+        {
+          para2: "-Imprime la constancia y rellénala con tus datos",
+        },
+        {
+          quote: "Nota del editor: ver si piden dni y su copia)",
+        },
+        {
+          para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+        },
+      ],
     },
     {
       id: 4,
@@ -397,12 +435,51 @@ export const info = [
     {
       id: 11,
       masVisto: "1",
-      catgeory: "business",
-      title: "Nivelación de cursos",
+      catgeory: "Cachimbos",
+      title: "Nivelación de Curso",
       date: "19. February 2022",
-      comments: 0,
+      comments: "Duración: 20 días",
+      costo: "Costo: 18 soles (Aprox)",
       cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      desc: [
+        {
+          para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Nivelación de curso",
+        },
+        {
+          para5: "-Recibo de pagos por: Nivelación de curso",
+        },
+
+        {
+          para6: "(Nota del editor: ver si piden dni y su copia)",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"El cliente debe recibir peces de buena calidad"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
     },
     {
       id: 12,

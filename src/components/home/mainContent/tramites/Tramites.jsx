@@ -94,14 +94,17 @@ const Tramites = () => {
                   </div>
                   <div className="text row">
                     <h1 className='title'>{val.title.slice(0, 40)}...</h1>
+
                     <div className="date">
                       <i className='fas fa-calendar-days'></i>
                       <label>{val.date}</label>
                     </div>
+
                     <div className="comment">
                       <i className='fas fa-clock'></i>
                       <label>{val.comments}</label>
                     </div>
+                    
                     <div className="comment">
                       <i className='fas fa-dollar'></i>
                       <label>{val.costo}</label>

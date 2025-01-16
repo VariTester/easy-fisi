@@ -28,12 +28,22 @@ const Singlepages = () =>  {
             <section className='mainContent details'>
               <h1 className='title'>{item.title}</h1>
 
-              {/* <div className='author'>
-                <span>by</span>
-                <img src={item.authorImg} alt='' />
-                <p> {item.authorName} on</p>
-                <label>{item.time}</label>
-              </div> */}
+              <div className="info">
+                <div className="date">
+                        <i className='fas fa-calendar-days'></i>
+                        <label>{item.date}</label>
+                </div>
+
+                <div className="comment">
+                        <i className='fas fa-clock'></i>
+                        <label>{item.comments}</label>
+                </div>
+
+                <div className="comment">
+                        <i className='fas fa-dollar'></i>
+                        <label>{item.costo}</label>
+                </div>
+              </div>
 
               {/* <div className='social'>
                 <div className='socBox'>
@@ -51,17 +61,22 @@ const Singlepages = () =>  {
                   <i className='fa fa-envelope'></i>
                 </div>
               </div> */}
-
+              
               <div className='desctop'>
-                {item.desc.map((val) => {
-                  return (
-                    <>
-                      <p>{val.para1}</p>
-                      <p>{val.para2}</p>
-                    </>
-                  )
-                })}
+                {item.desc.map((val, index) => (
+                  <div key={index} className='text-container'>
+                    {val.para1 && <p className='para1'>{val.para1}</p>} 
+                    {val.para2 && <p className='para2'>{val.para2}</p>} 
+                    {val.para3 && <p className='para3'>{val.para3}</p>} 
+                    {val.para4 && <p className='para4'>{val.para4}</p>} 
+                    {val.para5 && <p className='para5'>{val.para5}</p>} 
+                    {val.para6 && <p className='para6'>{val.para6}</p>} 
+                    {val.para7 && <p className='para7'>{val.para7}</p>} 
+                  </div>
+                ))}
               </div>
+
+
               <img src={item.cover} alt='' />
               {item.desc.map((val) => (
                 <p>{val.para3}</p>
@@ -78,13 +93,6 @@ const Singlepages = () =>  {
                 })}
               </div>
 
-              <div className='quote'>
-                <i className='fa fa-quote-left'></i>
-                {item.details.map((data) => (
-                  <p>{data.quote}</p>
-                ))}
-              </div>
-
               <div className='desctop'>
                 {item.details.map((data) => {
                   return (
@@ -95,6 +103,14 @@ const Singlepages = () =>  {
                   )
                 })}
               </div>
+
+              <div className='quote'>
+                <i className='fa fa-quote-left'></i>
+                {item.details.map((data) => (
+                  <p>{data.quote}</p>
+                ))}
+              </div>
+              
             </section>
             <section className='sideContent'>
               <Side/>

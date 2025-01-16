@@ -45,9 +45,7 @@ a{
 ul{
   list-style-type: none;
 }
-a{
-  text-decoration: none;
-}
+
 .category{
   font-size: 12px;
   font-weight: 500;
@@ -67,10 +65,10 @@ a{
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 5px solid #43b96d;
+  border-left: 5px solid #ced801;
   width: auto;
   display: block;
-  background: linear-gradient(to right, #43b96d 50%, #c7cbcf 50%);
+  background: linear-gradient(to right, #ced801 50%, #c7cfc7 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -85,7 +83,7 @@ a{
   background-position: left bottom;
 }
 .category1 span:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .title {

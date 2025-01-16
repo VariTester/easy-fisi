@@ -8,6 +8,7 @@ main {
     font-size: 40px;
     line-height: 60px;
     font-weight: 700;
+    margin-top: -30px;
   }
   .details .author {
     display: flex;
@@ -61,13 +62,36 @@ main {
     border-left: 5px solid red;
   }
   .quote i {
-    font-size: 50px;
+    font-size: 40px;
     color: red;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .quote p {
-    font-size: 18px;
+    font-size: 20px;
   }
+
+  .info {
+    display: flex; /* Activa el diseño en línea */
+    gap: 30px; /* Espacio entre los divs (puedes ajustarlo) */
+    justify-content: start; /* Alinea los elementos al inicio (puedes usar center o space-between si lo prefieres) */
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+
+/*acortar los saltos de línea*/
+  .text-container p {
+    margin: 4px 0; /* Reduce el espacio vertical entre los párrafos */
+    line-height: 1.4; /* Ajusta la altura de línea para mayor compacidad */
+  }
+  
+  .text-container {
+    margin-bottom: 15px; /* Espacio entre los bloques de texto */
+  }
+
+  .para2{
+    font-weight: 600;
+  }
+/*acortar los saltos de línea*/
+
   @media screen and (max-width: 815px) {
     .details {
       padding-right: 0;
@@ -75,5 +99,9 @@ main {
     .details img {
       height: auto;
       width: 100%;
+    }
+
+    .info {
+      display: block; /* Activa el diseño en línea */
     }
   }

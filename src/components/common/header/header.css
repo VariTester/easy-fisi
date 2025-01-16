@@ -42,7 +42,7 @@ header li.iniciosesion {
 }
 
 header li a:hover{
-    color: #08d523;
+    color: #f2ff00;
     cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ header li a:hover{
     header .navbar {
         position: absolute;
         display: block;
-        background-color:  #078375;
+        background-color:  #f2ff00;
         left: auto;
         top: 232px !important;
         width: 90%;
@@ -109,5 +109,12 @@ header li a:hover{
     .head .ad img{
         display: none;
 
+    }
+
+    header li a{
+        color: #000000;
+        font-weight: 600;
+        transition: 0.5s;
+        
     }
 }
