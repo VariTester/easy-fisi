@@ -31,14 +31,21 @@ const Side = () => {
       <Heading title='Stay Connected' />
       <SocialMedia />
 
-      <Heading title='Subscribe' />
+      <Heading title='Whatsapp' />
 
       <section className='subscribe'>
-        <h1 className='title'>Subscribe to our New Stories</h1>
         <form action=''>
-          <input type='email' placeholder='Email Address...' />
+        <a
+      href="https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="animated-link"
+    >
+      Únete al grupo de WhatsApp
+    </a>
+          <input type='email' placeholder='O deja tu número para agregarte' />
           <button>
-            <i className='fa fa-paper-plane'></i> SUBMIT
+            <i className='fab fa-whatsapp'></i> Enviar
           </button>
         </form>
       </section>

@@ -33,10 +33,13 @@
   .subscribe h1 {
     text-align: left;
     font-size: 20px;
+    margin-bottom: -5px;
   }
+
   .subscribe input {
     width: 100%;
     padding: 10px;
+    margin-top: 15px;
   }
   .subscribe button {
     width: 100%;
@@ -47,9 +50,47 @@
     font-weight: 600;
     border: none;
   }
+  .animated-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #25d366; /* WhatsApp green */
+    padding: 10px 20px;
+    border: 2px solid #25d366;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: colorChange 2s infinite;
+  }
+  
+  /* Animación para cambiar de color */
+  @keyframes colorChange {
+    0% {
+      background-color: #25d366;
+      color: #ffffff;
+    }
+    50% {
+      background-color: #ffffff;
+      color: #25d366;
+    }
+    100% {
+      background-color: #25d366;
+      color: #ffffff;
+    }
+  }
+  
+  /* Efecto hover */
+  .animated-link:hover {
+    background-color: #128c7e; /* Más oscuro en hover */
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+  
   /*------subscribe--------*/
   .banner {
-    margin: 40px 0;
+    margin: 1px 0;
   }
   .catgorys .category1 {
     position: relative;
@@ -66,6 +107,7 @@
     height: 200px;
     object-fit: cover;
   }
+
   /*----------gallery----------*/
   @media screen and (max-width: 768px) {
     .gallery img,
