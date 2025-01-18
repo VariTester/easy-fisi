@@ -43,7 +43,8 @@ const Side = () => {
     >
       Únete al grupo de WhatsApp
     </a>
-          <input type='email' placeholder='O deja tu número para agregarte' />
+          <input type='tel' placeholder='O deja tu número para agregarte'pattern="[0-9]{9}" title='"Por favor, ingresa un número de 9 dígitos' required 
+ />
           <button>
             <i className='fab fa-whatsapp'></i> Enviar
           </button>
