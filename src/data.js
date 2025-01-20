@@ -443,7 +443,7 @@ export const info = [
       cover: g1Image,
       desc: [
         {
-          para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+          para1: "La nivelación de curso es un trámite académico que permite regularizar asignaturas o contenidos pendientes para cumplir con los requisitos curriculares establecidos."
         },
         {
           para2: "Documentos necesarios:",
@@ -457,15 +457,11 @@ export const info = [
         {
           para5: "-Recibo de pagos por: Nivelación de curso",
         },
-
-        {
-          para6: "(Nota del editor: ver si piden dni y su copia)",
-        },
      
       ],
       details: [
         {
-          title: '"El cliente debe recibir peces de buena calidad"',
+          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
         },
         {
           para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",

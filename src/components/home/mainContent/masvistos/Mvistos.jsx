@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
 import './mvistos.css'
+import { Link } from 'react-router-dom';
 // import "./tramites.css"
 const Mvistos = () => {
     const settings = {
@@ -40,7 +41,9 @@ const Mvistos = () => {
         .filter((val)=> val.masVisto === "1")
         .map((val)=>{
           return (
-            <div className='items'>
+            <div className='items' key={val.id}>
+              {/* Enlace a la página individual de los mas vistos*/}
+              <Link to={`/tramite/${val.id}`}>
               <div className='box shadow'>
                 <div className='images'>
                   <div className='img'>
@@ -66,6 +69,7 @@ const Mvistos = () => {
                   </div> */}
                 </div>
               </div>
+              </Link>
             </div>
           )
         })}
