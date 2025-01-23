@@ -17,7 +17,7 @@ const Cursos = () => {
         centerPadding: "20px",
         slidesToShow: 2,
         speed: 500,
-        rows: 4,
+        rows: 3,
         slidesPerRow: 1,
         responsive: [
           {
