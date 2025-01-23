@@ -5,42 +5,53 @@ export const noticiasdata = [
   {
     id: 1,
     masVisto: "1",
-    category: "world",
-    title: "Revisa el calendario académico 2025",
-    date: "09 de Enero 2025",
-    comments: "22:43",
-    costo: "Costo: 76 soles",
-    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/472991102_655963396951267_1113569913358849587_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u1K19ZhCIwYQ7kNvgHVgYNk&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AXgoraeCDCbONrBssCgA1qZ&oh=00_AYCGLAElM8X5RDTxJxlVHTu82P1uIFdUsNF5hKaIu2mBiQ&oe=67985255",
-    // url1: "Como pustasasdassd",
+    category: "Cachimbos",
+    title: "Feria de Proyectos de Innovación Tecnológica en IA y Arquitectura de Computadoras",
+    date: "19. February 2022",
+    comments: "Duración: 5 días",
+    costo: "Costo: 80 soles",
+    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/470201958_513569741840446_3931316844901481434_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=l0Sx2-m5ThsQ7kNvgFOszTE&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AC_bVt09XAFfRoHf4xFkK2p&oh=00_AYBMzlzz5rKiO5oYnHhmQVXrT8BhXrpaRUF0nAqaczV2-Q&oe=6798A89F",
     desc: [
       {
-        para1: "Ya se encuentra disponible el nuevo calenndario académico para este año 2025",
+        para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
       },
       {
-        para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+        para2: "Documentos necesarios:",
       },
       {
-        para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+        para3: "Nota: Tener una copia adicional para el cargo",
       },
+      {
+        para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+      },
+      {
+        para5: "-Solicitud de constancia de matrícula y revisión curricular",
+      },
+
+      {
+        para6: "(Nota del editor: ver si piden dni y su copia)",
+      },
+   
     ],
     details: [
       {
-        title: '"El cliente debe recibir peces de buena calidad"',
+        title: '"Pasos a seguir para matricularse en este semestre"',
       },
       {
-        para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
       },
       {
-        quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        para2: "-Imprime la constancia y rellénala con tus datos",
       },
       {
-        para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        quote: "Nota del editor: ver si piden dni y su copia)",
       },
       {
-        para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
       },
     ],
   },
+
   {
     id: 2,
     masVisto: "1",
@@ -89,6 +100,45 @@ export const noticiasdata = [
   },
   {
     id: 3,
+    masVisto: "1",
+    category: "world",
+    title: "Revisa el calendario académico 2025",
+    date: "09 de Enero 2025",
+    comments: "22:43",
+    costo: "Costo: 76 soles",
+    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/472991102_655963396951267_1113569913358849587_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u1K19ZhCIwYQ7kNvgHVgYNk&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AXgoraeCDCbONrBssCgA1qZ&oh=00_AYCGLAElM8X5RDTxJxlVHTu82P1uIFdUsNF5hKaIu2mBiQ&oe=67985255",
+    // url1: "Como pustasasdassd",
+    desc: [
+      {
+        para1: "Ya se encuentra disponible el nuevo calenndario académico para este año 2025",
+      },
+      {
+        para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+      },
+      {
+        para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+      },
+    ],
+    details: [
+      {
+        title: '"El cliente debe recibir peces de buena calidad"',
+      },
+      {
+        para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+      },
+      {
+        quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+      },
+      {
+        para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+      },
+      {
+        para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+      },
+    ],
+  },
+  {
+    id: 4,
     masVisto: "1",
     category: "Cachimbos",
     title: "Promoviendo la Innovación Tecnológica desde nuestras aulas",
@@ -139,55 +189,8 @@ export const noticiasdata = [
       },
     ],
   },
-  {
-    id: 4,
-    masVisto: "1",
-    category: "Cachimbos",
-    title: "Feria de Proyectos de Innovación Tecnológica en IA y Arquitectura de Computadoras",
-    date: "19. February 2022",
-    comments: "Duración: 5 días",
-    costo: "Costo: 80 soles",
-    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/470201958_513569741840446_3931316844901481434_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=l0Sx2-m5ThsQ7kNvgFOszTE&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AC_bVt09XAFfRoHf4xFkK2p&oh=00_AYBMzlzz5rKiO5oYnHhmQVXrT8BhXrpaRUF0nAqaczV2-Q&oe=6798A89F",
-    desc: [
-      {
-        para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
-      },
-      {
-        para2: "Documentos necesarios:",
-      },
-      {
-        para3: "Nota: Tener una copia adicional para el cargo",
-      },
-      {
-        para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
-      },
-      {
-        para5: "-Solicitud de constancia de matrícula y revisión curricular",
-      },
 
-      {
-        para6: "(Nota del editor: ver si piden dni y su copia)",
-      },
-   
-    ],
-    details: [
-      {
-        title: '"Pasos a seguir para matricularse en este semestre"',
-      },
-      {
-        para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
-      },
-      {
-        para2: "-Imprime la constancia y rellénala con tus datos",
-      },
-      {
-        quote: "Nota del editor: ver si piden dni y su copia)",
-      },
-      {
-        para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
-      },
-    ],
-  },
+  
 
 ];
 

@@ -69,11 +69,11 @@
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 9;
 }
 
 .noticias .box:nth-child(4) {
-    grid-column-start: 5;
+    grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 9
@@ -131,6 +131,11 @@ text-decoration: none; /* Elimina el subrayado */
 @media screen and (max-width: 768px) {
 
     /* Texto */
+
+    .noticias .box:nth-child(1) h1{
+        font-size: 15px;
+    }
+
     .noticias .text h1{
         font-weight: 500;
         margin: 1px 0;
