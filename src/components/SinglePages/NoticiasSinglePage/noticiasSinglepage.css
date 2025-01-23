@@ -1,0 +1,114 @@
+main {
+    margin-top: 50px;
+    text-align: justify;
+  }
+  .details {
+    padding-right: 50px;
+  }
+  .details .title {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-top: -30px;
+  }
+  .details .author {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  .details .author p {
+    text-transform: capitalize;
+    margin-right: 10px;
+  }
+  .details .author img {
+    
+    width: 70px;
+    height: 70px;
+    object-fit:contain;
+    border-radius: 50%;
+    border:  1px solid rgb(156, 153, 153);
+
+    margin: 0 10px;
+  }
+  .details .author label {
+    color: grey;
+  }
+  .details .social {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .details .social .socBox {
+    margin-right: 20px;
+  }
+  .details img{
+    /* position: relative; */
+    display: flex;
+    margin: 30px 0;
+    height: auto;
+    width: 470px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
+}
+  .desctop p {
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  .descbot h1 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .quote {
+    padding-left: 50px;
+    border-left: 5px solid red;
+    margin-bottom: 10px;
+  }
+  .quote i {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 5px;
+  }
+  .quote p {
+    font-size: 20px;
+  }
+
+  .info {
+    display: flex; /* Activa el diseño en línea */
+    gap: 30px; /* Espacio entre los divs (puedes ajustarlo) */
+    justify-content: start; /* Alinea los elementos al inicio (puedes usar center o space-between si lo prefieres) */
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+  .desctop img {
+    width: 470px; /* Ajusta la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px; /* Sombra para destacarla */
+  }
+
+/*acortar los saltos de línea*/
+  .text-container p {
+    margin: 4px 0; /* Reduce el espacio vertical entre los párrafos */
+    line-height: 1.4; /* Ajusta la altura de línea para mayor compacidad */
+  }
+  
+  .text-container {
+    margin-bottom: 15px; /* Espacio entre los bloques de texto */
+  }
+
+  .para2{
+    font-weight: 600;
+  }
+/*acortar los saltos de línea*/
+
+  @media screen and (max-width: 815px) {
+    .details {
+      padding-right: 0;
+    }
+    .details img {
+      height: auto;
+      width: 100%;
+    }
+
+    .info {
+      display: block; /* Activa el diseño en línea */
+    }
+  }

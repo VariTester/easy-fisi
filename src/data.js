@@ -1,152 +1,196 @@
 import g1Image from './assets/images/g1.jpg';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
 
-export const info = [
-    {
-      id: 1,
-      // cover: "./assets/images/hero/direpro3.jpg",
-      // cover: ".assets/images/g1.jpg",
-      // cover: g1Image,
-      cover: g1Image,
-      catgeory: "featured",
-      title: "Google To Boost Android Security In Few Days",
-      authorName: "Salman",
-      // authorImg: "../images/author.jpg",
-      authorImg: "./public/images/logocatblack.png",
-      time: "5 Jun - 2022",
-      desc: [
-        {
-          para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",
-        },
-        {
-          para2: "We work with clients big and small across a range of sectors and we utilize all forms of media to get your name out there in a way that’s right for you. We believe that analysis of your company and your customers is key in responding effectively to your promotional needs and we will work with you.",
-        },
-        {
-          para3: "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry.",
-        },
-      ],
-      details: [
-        {
-          title: "Starting a new company is easy",
-        },
-        { para1: "Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago." },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-    {
-      id: 2,
-      cover: g1Image,
-      catgeory: "sport",
-      title: "More than billion football fans attend Brazil world cup",
-      authorName: "alex",
-      authorImg: "../images/author.jpg",
-      time: "12 Aug - 2022",
-      desc: [
-        {
-          para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",
-        },
-        {
-          para2: "We work with clients big and small across a range of sectors and we utilize all forms of media to get your name out there in a way that’s right for you. We believe that analysis of your company and your customers is key in responding effectively to your promotional needs and we will work with you.",
-        },
-        {
-          para3: "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry.",
-        },
-      ],
-      details: [
-        {
-          title: "Starting a new company is easy",
-        },
-        { para1: "Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago." },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-    {
-      id: 3,
-      cover: g1Image,
-      catgeory: "fashion",
-      title: "No escaping new high tech speed cameras",
-      authorName: "rina",
-      authorImg: "../images/author.jpg",
-      time: "22 Mar - 2022",
-      desc: [
-        {
-          para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",
-        },
-        {
-          para2: "We work with clients big and small across a range of sectors and we utilize all forms of media to get your name out there in a way that’s right for you. We believe that analysis of your company and your customers is key in responding effectively to your promotional needs and we will work with you.",
-        },
-        {
-          para3: "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry.",
-        },
-      ],
-      details: [
-        {
-          title: "Starting a new company is easy",
-        },
-        { para1: "Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago." },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-    {
-      id: 4,
-      cover: g1Image,
-      catgeory: "technology",
-      title: "Emma Watson stands up for Turkish women",
-      authorName: "sunil",
-      authorImg: "../images/author.jpg",
-      time: "08 Dec - 2022",
-      desc: [
-        {
-          para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",
-        },
-        {
-          para2: "We work with clients big and small across a range of sectors and we utilize all forms of media to get your name out there in a way that’s right for you. We believe that analysis of your company and your customers is key in responding effectively to your promotional needs and we will work with you.",
-        },
-        {
-          para3: "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry.",
-        },
-      ],
-      details: [
-        {
-          title: "Starting a new company is easy",
-        },
-        { para1: "Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago." },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-  ]
+export const noticiasdata = [
+  {
+    id: 1,
+    masVisto: "1",
+    category: "world",
+    title: "Revisa el calendario académico 2025",
+    date: "09 de Enero 2025",
+    comments: "22:43",
+    costo: "Costo: 76 soles",
+    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/472991102_655963396951267_1113569913358849587_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u1K19ZhCIwYQ7kNvgHVgYNk&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AXgoraeCDCbONrBssCgA1qZ&oh=00_AYCGLAElM8X5RDTxJxlVHTu82P1uIFdUsNF5hKaIu2mBiQ&oe=67985255",
+    // url1: "Como pustasasdassd",
+    desc: [
+      {
+        para1: "Ya se encuentra disponible el nuevo calenndario académico para este año 2025",
+      },
+      {
+        para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+      },
+      {
+        para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+      },
+    ],
+    details: [
+      {
+        title: '"El cliente debe recibir peces de buena calidad"',
+      },
+      {
+        para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+      },
+      {
+        quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+      },
+      {
+        para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+      },
+      {
+        para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    masVisto: "1",
+    category: "travel",
+    title: "Entrega de diplomas de grados y títulos 2025",
+    date: "19. February 2022",
+    comments: "Duración: 2 días",
+    costo: "Costo: 76 soles",
+    cover: "https://diariolaregion.com/wp-content/uploads/2018/04/RECTORADO-UNAP.jpg",
+    cover2: "https://diariolaregion.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-20-at-7.08.02-PM3.jpeg",
+    desc: [
+      {
+        para1: "La Universidad Nacional de la Amazonía Peruana (UNAP) informa a la comunidad universitaria y al público en general sobre el proceso de entrega de diplomas de:",
+      },
+      {
+        para2: "-Grado académico de bachiller.",
+      },
+      {
+        para2: "-Grado académico de maestro(a).",
+      },
+      {
+        para2: "-Grado académico de doctor(a).",
+      },
+      {
+        para2: "-Título profesional.",
+      },
+      {
+        para2: "-Título de segunda especialidad profesional.",
+      },
+    ],
+    details: [
+      {
+        title: 'Horario y lugar de entrega',
+      },
+      {
+        para1:"Días: De lunes a viernes.",
+      },
+      {
+        quote: "Horario: De 7:00 a.m. a 2:00 p.m.",
+      },
+      {
+        para2: "Lugar: Facultad de Odontología, puerta principal (Calle San Marcos Nº 185, distrito de San Juan Bautista.).",
+      },
+
+    ],
+  },
+  {
+    id: 3,
+    masVisto: "1",
+    category: "Cachimbos",
+    title: "Promoviendo la Innovación Tecnológica desde nuestras aulas",
+    date: "20. Diciembre 2024",
+    comments: "17:25",
+    costo: "Costo: 80 soles",
+    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/471253080_514443141753106_9091723226567965557_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HSwcZIarRG0Q7kNvgHekG86&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AbThdCvT_-ed_f4brb5f-by&oh=00_AYCCu3TaoeFWgK6k_bdXB-eSeyTlmwWY3Jic6JfQhXMAaQ&oe=67988BFC",
+    desc: [
+      {
+        para1: "Hoy hemos sido testigos de un momento lleno de creatividad e innovación en la Facultad de Ingeniería de Sistemas e Informática. Nuestros talentosos estudiantes del curso de Interacción Hombre-Máquina (IHM) han presentado sus proyectos grupales, ¡y los resultados no podrían ser más impresionantes!"
+      },
+      {
+        para1: "Bajo la guía de sus docentes, los alumnos han desarrollado aplicaciones móviles utilitarias, aplicando las más recientes tecnologías y metodologías de diseño centrado en el usuario. Cada proyecto refleja su dedicación por mejorar la experiencia de interacción y accesibilidad, cumpliendo con los más altos estándares establecidos en el curso.",
+      },
+      {
+        para2: "Algunos puntos destacados de las exposiciones:",
+      },
+      {
+        para3: "-Diseños intuitivos y funcionales, pensados para las necesidades reales de los usuarios.",
+      },
+      {
+        para4: "-Innovación tecnológica con el uso de herramientas modernas como prototipos interactivos y tecnologías móviles avanzadas.",
+      },
+      {
+        para5: "-Compromiso social y educativo, al abordar problemáticas del entorno con soluciones prácticas.",
+      },
+
+      {
+        para6: "Expresó con orgullo la coordinación del curso.",
+      },
+   
+    ],
+    details: [
+      {
+        title: '"Pasos a seguir para matricularse en este semestre"',
+      },
+      {
+        para1:"En la Facultad de Ingeniería de Sistemas e Informática, reafirmamos nuestro compromiso de fomentar el desarrollo académico y profesional de nuestros estudiantes, ofreciéndoles las herramientas para ser líderes en el ámbito tecnológico.",
+      },
+      {
+        para2: "¡Felicitaciones a todos los estudiantes y docentes involucrados! Gracias por demostrar que con esfuerzo y creatividad, podemos alcanzar grandes logros.",
+      },
+      {
+        quote: "Estos proyectos son un claro ejemplo del potencial de nuestra comunidad universitaria para transformar ideas en soluciones reales que beneficien a la sociedad",
+      },
+      {
+        para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    masVisto: "1",
+    category: "Cachimbos",
+    title: "Feria de Proyectos de Innovación Tecnológica en IA y Arquitectura de Computadoras",
+    date: "19. February 2022",
+    comments: "Duración: 5 días",
+    costo: "Costo: 80 soles",
+    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/470201958_513569741840446_3931316844901481434_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=l0Sx2-m5ThsQ7kNvgFOszTE&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AC_bVt09XAFfRoHf4xFkK2p&oh=00_AYBMzlzz5rKiO5oYnHhmQVXrT8BhXrpaRUF0nAqaczV2-Q&oe=6798A89F",
+    desc: [
+      {
+        para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+      },
+      {
+        para2: "Documentos necesarios:",
+      },
+      {
+        para3: "Nota: Tener una copia adicional para el cargo",
+      },
+      {
+        para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+      },
+      {
+        para5: "-Solicitud de constancia de matrícula y revisión curricular",
+      },
+
+      {
+        para6: "(Nota del editor: ver si piden dni y su copia)",
+      },
+   
+    ],
+    details: [
+      {
+        title: '"Pasos a seguir para matricularse en este semestre"',
+      },
+      {
+        para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+      },
+      {
+        para2: "-Imprime la constancia y rellénala con tus datos",
+      },
+      {
+        quote: "Nota del editor: ver si piden dni y su copia)",
+      },
+      {
+        para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+      },
+    ],
+  },
+
+];
+
   export const cursos = [
     {
       id: 1,

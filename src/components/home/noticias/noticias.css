@@ -7,8 +7,14 @@
 } */
 
 .noticias a {
-    color:#fff;
-    
+    color:#ffffff;
+    text-shadow: 
+        1px 2px 0 #000,
+        -1px 1px 0 #838282b0,
+        1px -1px 0 #000,
+        -2px -1px 0 #000; /* Borde negro */
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .noticias .container {
@@ -83,6 +89,13 @@
 .noticias .author span {
     font-size: 14px;
     margin-right: 20px;
+    text-shadow: 
+    1px 1px 0 #000,  /* Sombras simulando el borde */
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+font-weight: bold;  /* Resalta el texto para que sea más visible */
+text-decoration: none; /* Elimina el subrayado */
 }
 
 .noticias .text {
@@ -94,7 +107,7 @@
 /* gaaaaaa */
 
 .noticias .box:nth-child(1) h1{
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .noticias .box:nth-child(1) .category{

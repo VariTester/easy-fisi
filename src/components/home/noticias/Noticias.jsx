@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
-import {info} from '../../../data'
+import {noticiasdata} from '../../../data'
 import Card from './Card';
 import  './noticias.css';
 
 const Noticias = () => {
-    const [items, setitems] = useState(info);
+    const [items, setItem] = useState(noticiasdata);
   return (
     <>
         <section  className='noticias'>
