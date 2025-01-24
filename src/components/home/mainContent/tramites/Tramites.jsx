@@ -60,13 +60,13 @@ const Tramites = () => {
     centerPadding: "20px",
     slidesToShow: 1,
     speed: 500,
-    rows: 4,
+    rows: 3,
     slidesPerRow: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

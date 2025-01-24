@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 
 import Heading from '../../../common/Heading/Heading'
 import { cursos, tramites } from '../../../../data'
@@ -21,11 +21,11 @@ const Cursos = () => {
         slidesPerRow: 1,
         responsive: [
           {
-            breakpoint: 800,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              rows:4,
+              rows:3,
               // infinite: true,
               
             }
@@ -67,9 +67,11 @@ const Cursos = () => {
                         <i className='fas fa-users'></i>
                         <label htmlFor=''> {val.grupo}</label>
                       </div>
-                      <div className="comment">
-                        <i className='fab fa-whatsapp'></i>
-                        <label htmlFor=''> {val.link}</label>
+                      <div className="comment" key={val.id}>
+                        <a href={val.link} target='_blank' rel='noopener noreferrer'>
+                          <i className='fab fa-whatsapp'></i>
+                          <label htmlFor=''>Link del grupo</label>
+                        </a>
                       </div>
                     </div>
                   </div>
