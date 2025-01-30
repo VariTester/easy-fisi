@@ -19,7 +19,7 @@ const [navbar, setnavbar] = useState(false);
         <nav>
             <ul className={navbar ? 'navbar':'flex'} onClick={()=>setnavbar(false)}>
                 <li><Link to='/'>Inicio</Link></li>
-                <li><Link to='/noticias'>Noticias</Link></li>
+                {/* <li><Link to='/noticias'>Noticias</Link></li> */}
                 {/* <li><Link to='/publicaciones'>Publicacionens</Link></li> */}
                 <li><Link to='/tramites'>Trámites</Link></li>
                 <li><Link to='/formatos'>Formatos</Link></li>

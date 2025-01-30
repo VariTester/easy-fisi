@@ -28,8 +28,8 @@ const Side = () => {
   const catgeory = ["world", "travel", "sport", "fun", "health", "fashion", "business", "technology"]
   return (
     <>
-      <Heading title='Stay Connected' />
-      <SocialMedia />
+      {/* <Heading title='Stay Connected' />
+      <SocialMedia /> */}
 
       <Heading title='Whatsapp' />
 

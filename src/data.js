@@ -1,5 +1,8 @@
 import g1Image from './assets/images/g1.jpg';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
+import formato11_1 from './Downloads/NivelacionDeCurso/3.1. Aumentativo e Diminutivo - I1.pdf'
+import formato11_2 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 10 (NH) Cadena de Valor Minería.pdf'
+import formato11_3 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 11 (MM) Cadena de Valor Minería.pdf'
 
 export const noticiasdata = [
   {
@@ -481,12 +484,64 @@ export const noticiasdata = [
     {
       id: 10,
       masVisto: "1",
-      catgeory: "fun",
-      title: "Comedor Universitario",
+      catgeory: "Cachimbos",
+      title: "Solicitar Comedor Universitario",
       date: "19. February 2022",
-      comments: 0,
-      cover: g2Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      comments: "Duración: 20 días",
+      costo: "Costo: 18 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso",
+          formato11_1:formato11_1,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2",
+          formato11_2:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "El comedor universitario de la Universidad Nacional de la Amazonía Peruana (UNAP) ubicado en la Calle Nanay N° 363 de la ciudad de Iquitos es un servicio de alimentación que se ofrece a los estudiantes de la institución.El comedor universitario de la UNAP está administrado por la Dirección de Bienestar Universitario (DBU) de la universidad. La DBU es la encargada de planificar, organizar y gestionar las acciones de bienestar de la universidad. El comedor universitario de la UNAP prioriza a los estudiantes de bajo nivel socioeconómico y de buen rendimiento académico. "
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Nivelación de curso",
+        },
+        {
+          para5: "-Recibo de pagos por: Nivelación de curso",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
     },
     {
       id: 11,
@@ -497,6 +552,21 @@ export const noticiasdata = [
       comments: "Duración: 20 días",
       costo: "Costo: 18 soles (Aprox)",
       cover: g1Image,
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso",
+          formato11_1:formato11_1,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2",
+          formato11_2:formato11_2,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso3",
+          formato11_3:formato11_3,
+        }
+
+      ],
       desc: [
         {
           para1: "La nivelación de curso es un trámite académico que permite regularizar asignaturas o contenidos pendientes para cumplir con los requisitos curriculares establecidos."

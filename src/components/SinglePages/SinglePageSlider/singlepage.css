@@ -78,6 +78,50 @@ main {
     align-items: center; /* Alinea los elementos verticalmente */
   }
 
+  /* LINK */
+  .formats {
+    background-color: #f4f4f4;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tittleFormatos {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text-containerLinks {
+    background: white;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .text-containerLinks:hover {
+    transform: scale(1.05);
+  }
+  
+  .formato-link {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .formato-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* LINK */
+
 /*acortar los saltos de línea*/
   .text-container p {
     margin: 4px 0; /* Reduce el espacio vertical entre los párrafos */
