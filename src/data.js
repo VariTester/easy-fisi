@@ -530,7 +530,7 @@ export const noticiasdata = [
           title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
         },
         {
-          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+          para1:"1. Acercarse a la Facultad de Ingeniería de Sistemas e informática con el formato descargado impreso y llenado con tus nombres",
         },
         {
           quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",

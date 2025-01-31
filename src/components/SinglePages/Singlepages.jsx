@@ -27,9 +27,10 @@ const Singlepages = () =>  {
             <div className='container'>
             <section className='mainContent details'>
 
-              <h1 className='title'>{item.title}</h1>
+{/* titulo*/} <h1 className='title'>{item.title}</h1> 
+
               <div className="info">
-                <div className="date">
+{/*fecha*/}   <div className="date">
                         <i className='fas fa-calendar-days'></i>
                         <label>{item.date}</label>
                 </div>
@@ -45,7 +46,7 @@ const Singlepages = () =>  {
                 </div>
               </div>
 
-              <div className='formats'>
+{/* Formatos*/} <div className='formats'>
                 <h1 className="tittleFormatos">Formatos</h1>
                 {item.formatos && item.formatos.length > 0 ? (
                   item.formatos.map((val, index) => {
@@ -69,50 +70,12 @@ const Singlepages = () =>  {
                 )}
               </div>
 
-              {/* <div className='formats'>
-                <h1>Formatos</h1>
-                {item.formatos && item.formatos.length > 0 ? (
-                  item.formatos.map((val, index) => (
-                    <div key={index} className='text-container'>
-                      {val.formato11_1 ? (
-                        <a href={val.formato11_1} download className='formato11_1'>
-                          {val.nombre}
-                        </a>
-                      ) : (
-                        <p>No hay formato disponible</p>
-                      )}
-                    </div>
-                  ))
-                ) : (
-                  <p>No hay formatos disponibles</p>
-                )}
-              </div> */}
-
-
-
-              {/* <div className='social'>
-                <div className='socBox'>
-                  <i className='fab fa-facebook-f'></i>
-                  <span>SHARE</span>
-                </div>
-                <div className='socBox'>
-                  <i className='fab fa-twitter'></i>
-                  <span>TWITTER</span>
-                </div>
-                <div className='socBox'>
-                  <i className='fab fa-pinterest'></i>
-                </div>
-                <div className='socBox'>
-                  <i className='fa fa-envelope'></i>
-                </div>
-              </div> */}
-
               <div className='desctop'>
                 {item.desc.map((val, index) => (
                   <div key={index} className='text-container'>
-                    {val.para1 && <p className='para1'>{val.para1}</p>} 
+{/*Introducción*/}{val.para1 && <p className='para1'>{val.para1}</p>} 
 
-                    {/* Imagen debajo de para1 */}
+{/*FotoRef*/}       {/* Imagen debajo de para1 */}
                     {index === 0 && item.imagenes?.[0]?.img1 && (
                       <img 
                         src={item.imagenes[0].img1} 
@@ -121,26 +84,14 @@ const Singlepages = () =>  {
                       />
                     )}
 
-                    {val.para2 && <p className='para2'>{val.para2}</p>} 
-                    {val.para3 && <p className='para3'>{val.para3}</p>}
-                    
-                    {/* Imagen debajo de para2 */}
-                    {index === 1 && item.imagenes?.[0]?.img2 && (
-                      <img 
-                        src={item.imagenes[0].img2} 
-                        alt="Otra imagen relacionada" 
-                        className="imagen-estilo"
-                      />
-                    )}
+{/*DocuNece*/}      {val.para2 && <p className='para2'>{val.para2}</p>} 
+                    {val.para3 && <p className='para3'>{val.para3}</p>}                
                     {val.para4 && <p className='para4'>{val.para4}</p>} 
                     {val.para5 && <p className='para5'>{val.para5}</p>} 
                   </div>
                 ))}
               </div>
-
-
-
-              <img src={item.cover} alt='' />
+              
               {item.desc.map((val) => (
                 <p>{val.para3}</p>
               ))}
@@ -149,17 +100,8 @@ const Singlepages = () =>  {
                 {item.details.map((data) => {
                   return (
                     <>
-                      <h1>{data.title}</h1>
+{/*Pasos*/}           <h1>{data.title}</h1>
                       <p>{data.para1}</p>
-                    </>
-                  )
-                })}
-              </div>
-
-              <div className='desctop'>
-                {item.details.map((data) => {
-                  return (
-                    <>
                       <p>{data.para2}</p>
                       <p>{data.para3}</p>
                     </>
