@@ -10,6 +10,7 @@ import Singlepages from "./components/SinglePages/Singlepages.jsx";
 import Tramites from "./components/home/mainContent/tramites/Tramites.jsx";
 
 import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/NoticiasSinglePage.jsx";
+import Formatosroute from "./routes/Formatos.js";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Homepages />} />
         <Route path="/tramites" element={<Tramitesroute />} />
+        <Route path="/formatos" element={<Formatosroute />} />
         {/* Ruta dinámica para cada trámite */}
         <Route path="/tramite/:id" element={<Singlepages />} />
         <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
