@@ -25,11 +25,11 @@ const Singlepages = () =>  {
         <main>
             {/* <SinglePageSlider/> */}
             <div className='container'>
-            <section className='mainContent details'>
+            <section className='mainContent detailsSP'>
 
-{/* titulo*/} <h1 className='title'>{item.title}</h1> 
+{/* titulo*/} <h1 className='titleSP'>{item.title}</h1> 
 
-              <div className="info">
+              <div className="infoSP">
 {/*fecha*/}   <div className="date">
                         <i className='fas fa-calendar-days'></i>
                         <label>{item.date}</label>
@@ -46,17 +46,17 @@ const Singlepages = () =>  {
                 </div>
               </div>
 
-{/* Formatos*/} <div className='formats'>
-                <h1 className="tittleFormatos">Formatos</h1>
+{/* Formatos*/} <div className='formatsSP'>
+                <h1 className="tittleFormatosSP">Formatos</h1>
                 {item.formatos && item.formatos.length > 0 ? (
                   item.formatos.map((val, index) => {
                     // Extraer la clave del formato (formato11_1, formato11_2, etc.)
                     const formatoKey = Object.keys(val).find(key => key.startsWith("formato"));
                     
                     return (
-                      <div key={index} className='text-containerLinks'>
+                      <div key={index} className='text-containerLinksSP'>
                         {formatoKey && val[formatoKey] ? (
-                          <a href={val[formatoKey]} download className='formato-link'>
+                          <a href={val[formatoKey]} download className='formato-linkSP'>
                             {val.nombre}
                           </a>
                         ) : (
@@ -70,10 +70,10 @@ const Singlepages = () =>  {
                 )}
               </div>
 
-              <div className='desctop'>
+              <div className='desctopSP'>
                 {item.desc.map((val, index) => (
-                  <div key={index} className='text-container'>
-{/*Introducción*/}{val.para1 && <p className='para1'>{val.para1}</p>} 
+                  <div key={index} className='text-containerSP'>
+{/*Introducción*/}{val.para1 && <p className='para1SP'>{val.para1}</p>} 
 
 {/*FotoRef*/}       {/* Imagen debajo de para1 */}
                     {index === 0 && item.imagenes?.[0]?.img1 && (
@@ -84,10 +84,10 @@ const Singlepages = () =>  {
                       />
                     )}
 
-{/*DocuNece*/}      {val.para2 && <p className='para2'>{val.para2}</p>} 
-                    {val.para3 && <p className='para3'>{val.para3}</p>}                
-                    {val.para4 && <p className='para4'>{val.para4}</p>} 
-                    {val.para5 && <p className='para5'>{val.para5}</p>} 
+{/*DocuNece*/}      {val.para2 && <p className='para2SP'>{val.para2}</p>} 
+                    {val.para3 && <p className='para3SP'>{val.para3}</p>}                
+                    {val.para4 && <p className='para4SP'>{val.para4}</p>} 
+                    {val.para5 && <p className='para5SP'>{val.para5}</p>} 
                   </div>
                 ))}
               </div>
@@ -96,20 +96,20 @@ const Singlepages = () =>  {
                 <p>{val.para3}</p>
               ))}
 
-              <div className='descbot'>
+              <div className='descbotSP'>
                 {item.details.map((data) => {
                   return (
                     <>
 {/*Pasos*/}           <h1>{data.title}</h1>
                       <p>{data.para1}</p>
                       <p>{data.para2}</p>
-                      <p>{data.para3}</p>
+                      <p className='para3SP'>{data.para3}</p>
                     </>
                   )
                 })}
               </div>
 
-              <div className='quote'>
+              <div className='quoteSP'>
                 <i className='fa fa-quote-left'></i>
                 {item.details.map((data) => (
                   <p>{data.quote}</p>

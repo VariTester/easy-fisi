@@ -1,7 +1,4 @@
-main {
-    margin-top: 50px;
-    text-align: justify;
-  }
+
   .details {
     padding-right: 50px;
   }
@@ -9,7 +6,13 @@ main {
     font-size: 40px;
     line-height: 60px;
     font-weight: 700;
-    margin-top: -30px;
+    margin-top: 0;  /* Eliminamos el margin-top negativo */
+    margin-bottom: 10px; /* Espacio debajo del título para evitar que se sobreponga */
+    padding: 10px 0; /* Asegura que haya suficiente espacio alrededor del título */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+    position: relative; /* Para el manejo del z-index si es necesario */
+    z-index: 1; /* Coloca el título en una capa superior si es necesario */
+    text-align: start;
   }
   .details .author {
     display: flex;
@@ -110,5 +113,18 @@ main {
 
     .info {
       display: block; /* Activa el diseño en línea */
+    }
+
+    .details .title {
+      font-size:25px;
+      line-height: 30px;
+      font-weight: 700;
+      margin-top: 0;  /* Eliminamos el margin-top negativo */
+      margin-bottom: 10px; /* Espacio debajo del título para evitar que se sobreponga */
+      padding: 10px 0; /* Asegura que haya suficiente espacio alrededor del título */
+      box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+      position: relative; /* Para el manejo del z-index si es necesario */
+      z-index: 1; /* Coloca el título en una capa superior si es necesario */
+      text-align: center;
     }
   }

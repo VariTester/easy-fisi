@@ -498,11 +498,19 @@ export const noticiasdata = [
       ],
       formatos: [
         {
-          nombre:"Solicitud de Constancia de Nivelación de curso",
+          nombre:"Solicitud de Constancia de Nivelación de cursoN",
           formato11_1:formato11_1,
         },
         {
-          nombre:"Solicitud de Constancia de Nivelación de curso2",
+          nombre:"Solicitud de Constancia de Nivelación de curso2N",
+          formato11_2:formato11_2,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2N",
+          formato11_2:formato11_2,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2N",
           formato11_2:formato11_2,
         },
 

@@ -1,0 +1,189 @@
+/* Ajustes generales */
+main {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Detalles */
+.detailsfp {
+    padding-right: 50px;
+    display: block;
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    margin-right: 0;  /* Elimina márgenes extra que puedan estar interfiriendo */
+    max-height: none;  /* Elimina la limitación de altura máxima */
+    box-sizing: border-box; /* Asegura que el padding no sume al tamaño total */
+    margin-bottom: 20px; /* Un poco de espacio en la parte inferior */
+}
+
+/* Título de los detalles
+.detailsfp .title {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-top: -30px;
+} */
+
+/* Enlaces de formato */
+.text-containerLinksfp {
+    background: white;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
+    margin-bottom: 10px;  /* Ajustamos el margen inferior para evitar espacios extra */
+}
+
+.text-containerLinksfp:hover {
+    transform: scale(1.05);
+}
+
+/* Enlace de formato */
+.formato-linkfp {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.formato-linkfp:hover {
+    color: #0056b3;
+}
+
+/* Párrafos dentro del contenedor de texto */
+/* .text-container p {
+    margin: 4px 0;
+    line-height: 1.4;
+} */
+
+/* .text-container {
+    margin-bottom: 15px;
+} */
+
+/* Barra de búsqueda */
+.search-containerfp {
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;  /* Ajustamos para que no quede tan arriba */
+    width: 100%;  /* Aseguramos que la barra ocupe todo el ancho disponible */
+}
+
+/* Input estilizado */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al enfocar el input */
+.search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Placeholder con color suave */
+.search-bar::placeholder {
+    color: #888;
+}
+
+/* Formatos */
+.formatsfp {
+    background-color: #f4f4f4;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
+    margin-bottom: 20px;  /* Espacio después de los formatos */
+    display: flex;
+    flex-direction: column;
+}
+
+/* .tittleFormatos {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+} */
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .pagination button:disabled {
+    background-color: #d6d6d6;
+    border: 1px solid #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination .page-number {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .pagination .page-number:hover {
+    color: #007bff;
+  }
+  
+  .pagination .active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .pagination .page-number:focus {
+    outline: none;
+  }
+  
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 815px) {
+    .detailsfp {
+        padding-right: 0;
+    }
+
+    .formatsfp {
+        width: 100%;
+        padding: 15px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+
+    .search-container {
+        margin-top: 20px;  /* Asegura que la barra de búsqueda tenga espacio */
+    }
+} 

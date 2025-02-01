@@ -1,152 +1,187 @@
-main {
-    margin-top: 50px;
-    text-align: justify;
-  }
-  .details {
-    padding-right: 50px;
-  }
-  .details .title {
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
-    margin-top: -30px;
-  }
-  .details .author {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    margin: 20px 0;
-  }
-  .details .author p {
-    text-transform: capitalize;
-    margin-right: 10px;
-  }
-  .details .author img {
-    
-    width: 70px;
-    height: 70px;
-    object-fit:contain;
-    border-radius: 50%;
-    border:  1px solid rgb(156, 153, 153);
-
-    margin: 0 10px;
-  }
-  .details .author label {
-    color: grey;
-  }
-  .details .social {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  .details .social .socBox {
-    margin-right: 20px;
-  }
-  .details img{
-    /* position: relative; */
-    display: flex;
-    margin: 30px 0;
-    height: 500px;
-    width: 570px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
+/* Ajuste de .details .title */
+.detailsSP .titleSP {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-top: 0;  /* Eliminamos el margin-top negativo */
+  margin-bottom: 10px; /* Espacio debajo del título para evitar que se sobreponga */
+  padding: 10px 0; /* Asegura que haya suficiente espacio alrededor del título */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+  position: relative; /* Para el manejo del z-index si es necesario */
+  z-index: 1; /* Coloca el título en una capa superior si es necesario */
 }
-  .desctop p {
-    margin: 20px 0;
-    line-height: 30px;
-  }
-  .descbot h1 {
-    font-weight: 600;
-    font-size: 30px;
-    margin-top: 30px;
-  }
-  .quote {
-    padding-left: 50px;
-    border-left: 5px solid red;
-  }
-  .quote i {
-    font-size: 40px;
-    color: red;
-    margin-bottom: 5px;
-  }
-  .quote p {
-    font-size: 20px;
-  }
 
-  .info {
-    display: flex; /* Activa el diseño en línea */
-    gap: 30px; /* Espacio entre los divs (puedes ajustarlo) */
-    justify-content: start; /* Alinea los elementos al inicio (puedes usar center o space-between si lo prefieres) */
-    align-items: center; /* Alinea los elementos verticalmente */
-  }
+.detailsSP .authorSP {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.detailsSP .authorSP p {
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.detailsSP .authorSP img {
+  width: 70px;
+  height: 70px;
+  object-fit:contain;
+  border-radius: 50%;
+  border:  1px solid rgb(156, 153, 153);
+  margin: 0 10px;
+}
+.detailsSP .authorSP label {
+  color: grey;
+}
+.detailsSP .socialSP {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detailsSP .socialSP .socBox {
+  margin-right: 20px;
+}
+.detailsSP img{
+  display: flex;
+  margin: 30px 0;
+  height: 300px;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
+}
+.desctopSP p {
+  padding-top: 0px;
+  line-height: 30px;
+ 
+  
+}
+.descbotSP h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.quoteSP {
+  padding-left: 50px;
+  border-left: 5px solid red;
+  padding-top: 10px;
+}
+.quoteSP i {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 5px;
+  
+}
+.quoteSP p {
+  font-size: 20px;
 
-  /* LINK */
-  .formats {
-    background-color: #f4f4f4;
-    padding: 18px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+}
+
+.infoSP {
+  display: flex; /* Activa el diseño en línea */
+  gap: 30px; /* Espacio entre los divs (puedes ajustarlo) */
+  justify-content: start; /* Alinea los elementos al inicio (puedes usar center o space-between si lo prefieres) */
+  align-items: center; /* Alinea los elementos verticalmente */
+  padding-bottom: 20px;
+}
+
+/* LINK */
+.formatsSP {
+  background-color: #f4f4f4;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
   
-  .tittleFormatos {
-    font-size: 22px;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+}
+
+.tittleFormatosSP {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-containerLinksSP {
+  background: white;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
   
-  .text-containerLinks {
-    background: white;
-    margin: 10px auto;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .text-containerLinks:hover {
-    transform: scale(1.05);
-  }
-  
-  .formato-link {
-    display: block;
-    text-decoration: none;
-    color: #007bff;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .formato-link:hover {
-    text-decoration: underline;
-    color: #0056b3;
-  }
-  
-  /* LINK */
+}
+
+.text-containerLinksSP:hover {
+  transform: scale(1.05);
+}
+
+.formato-linkSP {
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.formato-linkSP:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* LINK */
 
 /*acortar los saltos de línea*/
-  .text-container p {
-    margin: 4px 0; /* Reduce el espacio vertical entre los párrafos */
-    line-height: 1.4; /* Ajusta la altura de línea para mayor compacidad */
-  }
-  
-  .text-container {
-    margin-bottom: 15px; /* Espacio entre los bloques de texto */
-  }
+.text-containerSP p {
+  margin: 4px 0; /* Reduce el espacio vertical entre los párrafos */
+  line-height: 1.4; /* Ajusta la altura de línea para mayor compacidad */
 
-  .para2{
-    font-weight: 600;
-  }
+}
+
+.text-containerSP {
+  margin-bottom: 5px; /* Espacio entre los bloques de texto */
+}
+
+.para2SP{
+  font-weight: 600;
+
+}
+
+.para1SP{
+  position: relative;
+  top: 20px; /* Ajusta el valor según lo que necesites */
+}
+
+.descbotSP {
+  /* background-color: #007bff; */
+  position: relative;
+  bottom: 20px; /* Ajusta el valor según lo que necesites */
+}
+
+
+
 /*acortar los saltos de línea*/
 
-  @media screen and (max-width: 815px) {
-    .details {
-      padding-right: 0;
-    }
-    .details img {
-      height: auto;
-      width: 100%;
-    }
-
-    .info {
-      display: block; /* Activa el diseño en línea */
-    }
+@media screen and (max-width: 815px) {
+  .detailsSP {
+    padding-right: 0;
   }
+  .detailsSP img {
+    height: auto;
+    width: 100%;
+  }
+
+  .infoSP {
+    display: block; /* Activa el diseño en línea */
+  }
+
+  /* Ajuste de .details .title */
+.detailsSP .titleSP {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 0;  /* Eliminamos el margin-top negativo */
+  margin-bottom: 10px; /* Espacio debajo del título para evitar que se sobreponga */
+  padding: 10px 0; /* Asegura que haya suficiente espacio alrededor del título */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+  position: relative; /* Para el manejo del z-index si es necesario */
+  z-index: 1; /* Coloca el título en una capa superior si es necesario */
+  text-align: center;
+}
+}
