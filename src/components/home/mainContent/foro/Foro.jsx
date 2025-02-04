@@ -20,6 +20,9 @@ const Foro = () => {
     <section className='foro'>
     <Heading title="Foro para charlar"/> 
     <div className='content'>
+    <div>
+      Start a New Topic
+    </div>
     <Slider {...settings}>
     {foro
     // .filter((val)=> val.catgeory === "fun")

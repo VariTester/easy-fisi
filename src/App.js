@@ -11,6 +11,7 @@ import Tramites from "./components/home/mainContent/tramites/Tramites.jsx";
 
 import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/NoticiasSinglePage.jsx";
 import Formatosroute from "./routes/Formatos.js";
+import Fororoute from "./routes/Foro.js";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         {/* Ruta dinámica para cada trámite */}
         <Route path="/tramite/:id" element={<Singlepages />} />
         <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
+        <Route path="/foro" element={<Fororoute />} />
       </Routes>
     </Router>
   );
