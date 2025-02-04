@@ -17,6 +17,51 @@
   .foro h1 {
     font-size: 22px;
   }
+
+  .inputForo {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .inputForo:focus {
+    border-color: #007bff;
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+  }
+
+  .btnSendForo {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btnSendForo:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 12px rgba(0, 91, 179, 0.3);
+  }
+  
+  .btnSendForo:active {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 6px rgba(0, 91, 179, 0.2);
+  }
+  
+  
+  
   @media screen and (max-width: 768px) {
     .foro img,
     .foro .images {
