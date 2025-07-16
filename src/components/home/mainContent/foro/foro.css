@@ -1,91 +1,86 @@
+/* Contenedor del foro responsivo */
 .foro .box {
-    margin-bottom: 30px;
-    margin-left: 2px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.foro .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.comment-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* Estilo para mensaje de login como input */
+.foro-login-msg {
+  background-color: #f5f5f5;
+  color: #777;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-style: italic;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.foro-login-msg i {
+  color: #999;
+  font-size: 16px;
+}
+
+/* Estilo para comentarios */
+.comentarios-lista {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.comentario-item {
+  background: #f0f0f0;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .foro .box {
+    flex-direction: column;
+    padding: 15px;
   }
-  .foro .text {
-    padding: 0 30px;
-  }
-  .foro .images {
-    width: 320px;
-    height: 220px;
-  }
-  .foro img {
-    width: 320px;
-    height: 220px;
-    object-fit: cover;
-  }
-  .foro h1 {
-    font-size: 22px;
+
+  .comment-section {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .inputForo {
     width: 100%;
-    max-width: 400px;
-    padding: 8px 15px;
-    font-size: 16px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    
-  }
-  
-  .inputForo:focus {
-    border-color: #007bff;
-    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+    max-width: 100%;
   }
 
   .btnSendForo {
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 10px;
+    width: 100%;
   }
-  
-  .btnSendForo:hover {
-    background-color: #0056b3;
-    box-shadow: 0px 6px 12px rgba(0, 91, 179, 0.3);
-  }
-  
-  .btnSendForo:active {
-    transform: scale(0.95);
-    box-shadow: 0px 3px 6px rgba(0, 91, 179, 0.2);
-  }
-  
-  .comment{
-    margin-bottom: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .foro img,
-    .foro .images {
-      display: none;
-      height: 350px;
-    }
 
-    .inputForo {
-      width: 100%;
-      max-width: 210px;
-      padding: 8px 15px;
-      font-size: 16px;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      outline: none;
-      transition: all 0.3s ease-in-out;
-      background-color: #fff;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 10px;
-      
-    }
-
+  .foro-login-msg {
+    font-size: 13px;
+    padding: 8px 12px;
   }
+}

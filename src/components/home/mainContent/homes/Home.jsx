@@ -5,6 +5,9 @@ import Mvistos from '../masvistos/Mvistos'
 import Cursos from '../cursos/Cursos'
 import Foro from '../foro/Foro'
 import Side from '../../sideContent/side/Side'
+
+import Login from "../../../Login";
+
 const Home = () => {
   return (
     <>

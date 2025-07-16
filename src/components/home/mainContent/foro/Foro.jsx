@@ -1,86 +1,183 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./foro.css";
-import { foro } from "../../../../data";
 import Heading from "../../../common/Heading/Heading";
 import Slider from "react-slick";
+import { db } from "../../../../firebase/firebaseConfig";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  serverTimestamp,
+  query,
+  orderBy,
+} from "firebase/firestore";
 
-const Foro = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "0",
-    slidesToShow: 1,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
+const Foro = ({ usuario }) => {
+  const [temas, setTemas] = useState([]);
+  const [nuevoComentario, setNuevoComentario] = useState({});
+  const [comentarios, setComentarios] = useState({});
+
+  const obtenerTemas = async () => {
+    const querySnapshot = await getDocs(collection(db, "temas"));
+    const temasFirebase = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setTemas(temasFirebase);
+
+    // Obtener comentarios de cada tema
+    for (const tema of temasFirebase) {
+      const comentariosSnapshot = await getDocs(
+        query(collection(db, `temas/${tema.id}/comentarios`), orderBy("fecha", "desc"))
+      );
+      const comentariosData = comentariosSnapshot.docs.map((doc) => doc.data());
+      setComentarios((prev) => ({ ...prev, [tema.id]: comentariosData }));
+    }
   };
 
+  const enviarComentario = async (temaId, texto) => {
+    if (!usuario) return alert("Debes iniciar sesión para comentar");
+    if (!texto || texto.trim() === "") return alert("Comentario vacío");
+
+    await addDoc(collection(db, `temas/${temaId}/comentarios`), {
+      texto,
+      autor: usuario.email,
+      fecha: serverTimestamp(),
+    });
+
+    alert("Comentario enviado!");
+    setNuevoComentario({ ...nuevoComentario, [temaId]: "" });
+    obtenerTemas(); // Recargar para mostrar nuevo comentario
+  };
+
+  useEffect(() => {
+    obtenerTemas();
+  }, []);
+
+  // const settings = {
+  //   className: "center",
+  //   centerMode: true,
+  //   infinite: true,
+  //   centerPadding: "0",
+  //   slidesToShow: 1,
+  //   speed: 500,
+  //   rows: 2,
+  //   slidesPerRow: 1,
+  // };
+
+  const settings = {
+  className: "center",
+  centerMode: true,
+  infinite: true,
+  centerPadding: "0",
+  slidesToShow: 1,
+  speed: 500,
+  rows: 2,
+  slidesPerRow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        rows: 1,
+        slidesPerRow: 1,
+        centerMode: false,
+      },
+    },
+  ],
+};
+
   return (
-    <>
-      <section className="foro">
-        <Heading title="Foro para charlar" />
-        <div className="content">
-          <div className="new-topic">
-            <h2>Start a New Topic</h2>
-          </div>
-          <Slider {...settings}>
-            {foro.map((val) => {
-              return (
-                <div key={val.id} className="items">
-                  <div className="box shadow flexSB">
-                    {/* Imagen y Categoría */}
-                    <div className="images">
-                      <div className="img">
-                        <img src={val.cover} alt={val.title} />
-                      </div>
-                      <div className="category category1">
-                        <span>{val.catgeory}</span>
-                      </div>
-                    </div>
-
-                    {/* Contenido del Foro */}
-                    <div className="text">
-                      <h1 className="title">{val.title.slice(0, 40)}...</h1>
-
-                      {/* Fecha */}
-                      <div className="date">
-                        {/* <img className="imgAvatar" src={val.cover} alt={val.title}/> */}
-                        <i className="fas fa-calendar-days"></i>
-                        <label>{val.date}</label>
-                      </div>
-
-                      {/* Descripción */}
-                      <p className="desc">{val.desc.slice(0, 250)}...</p>
-
-                      {/* Likes y Comentarios */}
-                      <div className="comment">
-                        <i className="fas fa-thumbs-up"></i>
-                        <label>Likes / </label>
-                        <i className="fas fa-comment"></i>
-                        <label>{val.comments}</label>
-                      </div>
-
-                      {/* Input para comentar */}
-                      <div className="comment-section">
-                        <input
-                          className="inputForo"
-                          type="text"
-                          placeholder="Escribe un comentario..."
-                        />
-                        <button className="btnSendForo" onClick={() => alert("Comentario enviado!")}>
-                          Send
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </Slider>
+    <section className="foro">
+      <Heading title="Foro para charlar" />
+      <div className="content">
+        <div className="new-topic">
+          <h2>Start a New Topic</h2>
         </div>
-      </section>
-    </>
+
+        {temas.length === 0 && (
+          <p style={{ textAlign: "center", color: "gray" }}>
+            Aún no hay temas en el foro. ¡Sé el primero en crear uno!
+          </p>
+        )}
+
+        <Slider {...settings}>
+          {temas.map((val) => (
+            <div key={val.id} className="items">
+              <div className="box shadow flexSB">
+                <div className="text">
+                  <h1 className="title">
+                    {val.title?.slice(0, 40) || "Sin título"}...
+                  </h1>
+
+                  <div className="date">
+                    <i className="fas fa-calendar-days"></i>
+                    <label>
+                      {val.fecha
+                        ? val.fecha.toDate().toLocaleDateString()
+                        : "Sin fecha"}
+                    </label>
+                  </div>
+
+                  <p className="desc">
+                    {val.desc?.slice(0, 100) || "Sin descripción"}...
+                  </p>
+
+                  <div className="comment">
+                    <i className="fas fa-thumbs-up"></i>
+                    <label>{val.likes || 0} Likes / </label>
+                    <i className="fas fa-comment"></i>
+                    <label>{comentarios[val.id]?.length || 0} Comentarios</label>
+                  </div>
+
+                  {comentarios[val.id] && comentarios[val.id].length > 0 && (
+                    <div className="comentarios-lista">
+                      {comentarios[val.id].map((comentario, idx) => (
+                        <div key={idx} className="comentario-item">
+                          <strong>{comentario.autor}</strong>: {comentario.texto}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {usuario && (
+                    <div className="comment-section">
+                      <input
+                        className="inputForo"
+                        type="text"
+                        placeholder="Escribe un comentario..."
+                        value={nuevoComentario[val.id] || ""}
+                        onChange={(e) =>
+                          setNuevoComentario({
+                            ...nuevoComentario,
+                            [val.id]: e.target.value,
+                          })
+                        }
+                      />
+                      <button
+                        className="btnSendForo"
+                        onClick={() =>
+                          enviarComentario(val.id, nuevoComentario[val.id])
+                        }
+                      >
+                        Send
+                      </button>
+                    </div>
+                  )}
+
+{!usuario && (
+  <div className="foro-login-msg">
+    <i className="fas fa-lock"></i>
+    Inicia sesión para comentar.
+  </div>
+)}
+
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 };
 
