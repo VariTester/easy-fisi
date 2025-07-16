@@ -43,7 +43,8 @@ const Mvistos = () => {
           return (
             <div className='items' key={val.id}>
               {/* Enlace a la página individual de los mas vistos*/}
-              <Link to={`/tramite/${val.id}`}>
+              {/* <Link to={`/tramite/${val.id}`}> */}
+              <Link to={`/tramite/${val.id}`} style={{ all: "unset" }}>
               <div className='box shadow'>
                 <div className='images'>
                   <div className='img'>

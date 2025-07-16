@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import "./foro.css";
 import Heading from "../../../common/Heading/Heading";
 import Slider from "react-slick";
@@ -113,6 +114,7 @@ const crearNuevoTema = async () => {
   return (
     <section className="foro">
       <Heading title="Foro para charlar" />
+      <Link to={`/foro/`} style={{ all: "unset" }}>
       <div className="content">
         {/* <div className="new-topic">
           <h2>Start a New Topic</h2>
@@ -232,6 +234,7 @@ const crearNuevoTema = async () => {
           ))}
         </Slider>
       </div>
+      </Link>
     </section>
   );
 };
