@@ -10,6 +10,7 @@
   border-radius: 8px;
   background: #fff;
   display: flex;
+  position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
@@ -140,7 +141,7 @@
 .comentarios-lista {
   margin-top: 10px;
   padding-left: 10px;
-    max-height: 120px; /* Limita altura máxima visible */
+    max-height: 160px; /* Limita altura máxima visible */
   overflow-y: auto; /* Scroll si se excede */
   scrollbar-width: thin; /* Firefox */
 }
@@ -209,15 +210,24 @@
 ============================= */
 
 @media screen and (max-width: 768px) {
-  .foro .box {
-    flex-direction: column;
-    padding: 15px;
-  }
 
   .comment-section {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .desc {
+  text-align: start;
+}
+
+.comentarios-lista {
+  max-height: 200px; /* Limita altura máxima visible */
+
+}
+
+.comentario-item {
+  text-align: start;
+}
 
   .inputForo {
     width: 100%;

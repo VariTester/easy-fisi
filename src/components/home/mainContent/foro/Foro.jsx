@@ -74,7 +74,7 @@ const Foro = ({ usuario }) => {
   centerPadding: "0",
   slidesToShow: 1,
   speed: 500,
-  rows: 3,
+  rows: 2,
   slidesPerRow: 1,
   responsive: [
     {
