@@ -46,6 +46,23 @@ header li a:hover{
     cursor: pointer;
 }
 
+/* Botón de cerrar sesión (modo escritorio) */
+.cerrarSesionBtn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #bf1414;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.cerrarSesionBtn:hover {
+  background-color: #bf1414;
+  color: #fff;
+}
+
 /* con display none evitamos que aparezca el menu */
 .barIco{
     font-size: 25px;
@@ -54,6 +71,14 @@ header li a:hover{
     display: none;
     border: none;
 }
+
+.userCorreo {
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 10px;
+  text-transform: none;
+}
+
 
 @media screen and (max-width:968px){
     .head .logo img{
@@ -117,4 +142,19 @@ header li a:hover{
         transition: 0.5s;
         
     }
+
+      .cerrarSesionBtn {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .userCorreo {
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+  }
 }

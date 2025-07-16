@@ -13,6 +13,8 @@ import {
 } from "firebase/firestore";
 
 const Foro = ({ usuario }) => {
+  
+
   const [temas, setTemas] = useState([]);
   const [nuevoComentario, setNuevoComentario] = useState({});
   const [comentarios, setComentarios] = useState({});
@@ -72,7 +74,7 @@ const Foro = ({ usuario }) => {
   centerPadding: "0",
   slidesToShow: 1,
   speed: 500,
-  rows: 2,
+  rows: 3,
   slidesPerRow: 1,
   responsive: [
     {
@@ -86,13 +88,66 @@ const Foro = ({ usuario }) => {
   ],
 };
 
+const [nuevoTema, setNuevoTema] = useState({ title: "", desc: "" });
+
+const crearNuevoTema = async () => {
+  console.log("Usuario en Foro.jsx:", usuario);
+
+  if (!usuario) return alert("Debes iniciar sesión para publicar un tema");
+  if (!nuevoTema.title.trim() || !nuevoTema.desc.trim())
+    return alert("Completa todos los campos");
+
+  await addDoc(collection(db, "temas"), {
+    title: nuevoTema.title,
+    desc: nuevoTema.desc,
+    fecha: serverTimestamp(),
+    likes: 0,
+  });
+
+  alert("Tema creado correctamente");
+  setNuevoTema({ title: "", desc: "" });
+  obtenerTemas(); // recarga los temas
+};
+
+
   return (
     <section className="foro">
       <Heading title="Foro para charlar" />
       <div className="content">
-        <div className="new-topic">
+        {/* <div className="new-topic">
           <h2>Start a New Topic</h2>
-        </div>
+        </div> */}
+
+          <div className="new-topic">
+  <h2>Start a New Topic</h2>
+  {usuario ? (
+    <>
+      <input
+        className="inputForo"
+        type="text"
+        placeholder="Título del tema"
+        value={nuevoTema.title}
+        onChange={(e) => setNuevoTema({ ...nuevoTema, title: e.target.value })}
+      />
+      <textarea
+        className="inputForo"
+        placeholder="Descripción del tema"
+        value={nuevoTema.desc}
+        rows={4}
+        onChange={(e) => setNuevoTema({ ...nuevoTema, desc: e.target.value })}
+        style={{ resize: "none" }}
+      />
+      <button className="btnSendForo" onClick={crearNuevoTema}>
+        Publicar Tema
+      </button>
+    </>
+  ) : (
+    <div className="foro-login-msg">
+      <i className="fas fa-lock"></i>
+      Inicia sesión para crear un nuevo tema.
+    </div>
+  )}
+</div>
 
         {temas.length === 0 && (
           <p style={{ textAlign: "center", color: "gray" }}>

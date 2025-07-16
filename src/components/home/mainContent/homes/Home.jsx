@@ -6,7 +6,7 @@ import Cursos from '../cursos/Cursos'
 import Foro from '../foro/Foro'
 import Side from '../../sideContent/side/Side'
 
-import Login from "../../../Login";
+import Login from "../../../login/Login";
 
 const Home = () => {
   return (

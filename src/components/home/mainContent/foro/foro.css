@@ -1,5 +1,10 @@
-/* Contenedor del foro responsivo */
+/* =============================
+   FORO GENERAL
+============================= */
+
+/* Contenedor principal del foro */
 .foro .box {
+  min-height: 280px; /* Ajustá según diseño */
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 8px;
@@ -8,6 +13,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
 }
 
 .foro .text {
@@ -15,6 +21,148 @@
   min-width: 280px;
 }
 
+/* =============================
+   FORMULARIOS E INPUTS
+============================= */
+
+/* Inputs comunes del foro */
+.inputForo {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.inputForo:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Inputs para crear nuevo tema */
+.new-topic .inputForo {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  margin-bottom: 15px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.new-topic .inputForo:focus {
+  border-color: #fb4c35;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 98, 0, 0.3);
+}
+
+/* Textarea específico para nuevo tema */
+.new-topic textarea.inputForo {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* =============================
+   BOTONES
+============================= */
+
+/* Botón para crear nuevo tema */
+.new-topic .btnSendForo {
+  background-color: #fb4c35;
+  color: white;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.new-topic .btnSendForo:hover {
+  background-color: #d63e28;
+  transform: translateY(-2px);
+}
+
+/* Botón para enviar comentario */
+.btnSendForo {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnSendForo:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+/* =============================
+   NUEVO TEMA
+============================= */
+
+.new-topic {
+  margin-bottom: 30px;
+}
+
+.new-topic h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* =============================
+   COMENTARIOS
+============================= */
+
+/* Lista de comentarios */
+.comentarios-lista {
+  margin-top: 10px;
+  padding-left: 10px;
+    max-height: 120px; /* Limita altura máxima visible */
+  overflow-y: auto; /* Scroll si se excede */
+  scrollbar-width: thin; /* Firefox */
+}
+
+.comentarios-lista::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.comentarios-lista::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.comentario-item {
+  background: #f0f0f0;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Contenedor de comentar */
 .comment-section {
   display: flex;
   align-items: center;
@@ -22,7 +170,10 @@
   gap: 10px;
 }
 
-/* Estilo para mensaje de login como input */
+/* =============================
+   MENSAJE SI NO INICIÓ SESIÓN
+============================= */
+
 .foro-login-msg {
   background-color: #f5f5f5;
   color: #777;
@@ -44,21 +195,19 @@
   font-size: 16px;
 }
 
-/* Estilo para comentarios */
-.comentarios-lista {
-  margin-top: 10px;
-  padding-left: 10px;
+/* =============================
+   TEXTO DESCRIPCIÓN DEL FORO
+============================= */
+
+.desc {
+  font-size: 15px;
+  margin: 10px 0;
 }
 
-.comentario-item {
-  background: #f0f0f0;
-  padding: 6px 10px;
-  margin-bottom: 5px;
-  border-radius: 6px;
-  font-size: 14px;
-}
+/* =============================
+   RESPONSIVE
+============================= */
 
-/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .foro .box {
     flex-direction: column;
@@ -82,5 +231,9 @@
   .foro-login-msg {
     font-size: 13px;
     padding: 8px 12px;
+  }
+
+  .new-topic textarea.inputForo {
+    max-width: 100%;
   }
 }

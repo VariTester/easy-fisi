@@ -1,30 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth"; // 👈 Importar listener
+import { auth } from "./firebase/firebaseConfig"; // 👈 Asegurate que la ruta sea correcta
+
 import Header from "./components/common/header/Header";
 import "./App.css";
 
 import Homepages from "./components/home/Homepages";
 import Tramitesroute from "./routes/Tramites";
+import Formatosroute from "./routes/Formatos";
+import Fororoute from "./routes/Foro";
 
-import Singlepages from "./components/SinglePages/Singlepages.jsx";
-import Tramites from "./components/home/mainContent/tramites/Tramites.jsx";
+import Singlepages from "./components/SinglePages/Singlepages";
+import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/NoticiasSinglePage";
 
-import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/NoticiasSinglePage.jsx";
-import Formatosroute from "./routes/Formatos.js";
-import Fororoute from "./routes/Foro.js";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 
 export default function App() {
+  const [usuario, setUsuario] = useState(null);
+
+  // ✅ Mantener usuario logueado al refrescar
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUsuario(user);
+    });
+    return () => unsubscribe(); // Limpieza
+  }, []);
+
   return (
     <Router>
-      <Header /> {/* Coloca el componente Header aquí si es parte de la navegación */}
+      <Header usuario={usuario} setUsuario={setUsuario} />
       <Routes>
         <Route path="/" element={<Homepages />} />
         <Route path="/tramites" element={<Tramitesroute />} />
         <Route path="/formatos" element={<Formatosroute />} />
-        {/* Ruta dinámica para cada trámite */}
         <Route path="/tramite/:id" element={<Singlepages />} />
         <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
-        <Route path="/foro" element={<Fororoute />} />
+        <Route path="/foro" element={<Fororoute usuario={usuario} />} />
+        <Route path="/iniciarSesion" element={<Login onLogin={setUsuario} />} />
+        <Route path="/registro" element={<Register />} />
       </Routes>
     </Router>
   );
