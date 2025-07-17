@@ -5,15 +5,26 @@ import Footer from './footer/Footer'
 // import Noticias from './noticias/Noticias'
 
 
- const Homepages = () => {
-  return (
+//  const Homepages = () => {
+//   return (
+//     <>
+//       <Noticias />
+//       <Home />
+      
+//     </>
+    
+//   )
+// }
+const Homepages = ({ usuario }) => {
+
+    return (
     <>
       <Noticias />
-      <Home />
-      
+      <Home usuario={usuario} />
     </>
     
   )
-}
+};
+
 
 export default Homepages

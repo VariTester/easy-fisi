@@ -8,26 +8,23 @@ import Side from '../../sideContent/side/Side'
 
 import Login from "../../../login/Login";
 
-const Home = () => {
+
+const Home = ({ usuario }) => {
   return (
     <>
       <main>
         <div className='container'>
-            <section className='mainContent'>
-                <Mvistos/>
-                {/* <Tramites/> */}
-                <Cursos/>
-                <Foro/>
- 
-            </section>
-
-            <section className='sideContent'>
-              <Side/>
-            </section>
+          <section className='mainContent'>
+            <Mvistos />
+            <Cursos />
+            <Foro preview usuario={usuario} />
+          </section>
+          <section className='sideContent'>
+            <Side />
+          </section>
         </div>
       </main>
     </>
-  )
-}
-
-export default Home
+  );
+};
+export default Home;

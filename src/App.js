@@ -32,7 +32,7 @@ export default function App() {
     <Router>
       <Header usuario={usuario} setUsuario={setUsuario} />
       <Routes>
-        <Route path="/" element={<Homepages />} />
+        <Route path="/" element={<Homepages usuario={usuario} />} />
         <Route path="/tramites" element={<Tramitesroute />} />
         <Route path="/formatos" element={<Formatosroute />} />
         <Route path="/tramite/:id" element={<Singlepages />} />
