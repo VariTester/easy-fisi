@@ -4,6 +4,9 @@ import "./foro.css";
 import Heading from "../../../common/Heading/Heading";
 import Slider from "react-slick";
 import { db } from "../../../../firebase/firebaseConfig";
+
+import { doc, updateDoc, increment, setDoc, getDoc } from "firebase/firestore";
+
 import {
   collection,
   getDocs,
@@ -19,24 +22,73 @@ const Foro = ({ usuario }) => {
   const [temas, setTemas] = useState([]);
   const [nuevoComentario, setNuevoComentario] = useState({});
   const [comentarios, setComentarios] = useState({});
+  const [mostrarComentarios, setMostrarComentarios] = useState({});
 
-  const obtenerTemas = async () => {
-    const querySnapshot = await getDocs(collection(db, "temas"));
-    const temasFirebase = querySnapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-    setTemas(temasFirebase);
+  const [likesUsuario, setLikesUsuario] = useState({});
 
-    // Obtener comentarios de cada tema
+const toggleComentarios = (temaId) => {
+  setMostrarComentarios((prev) => ({
+    ...prev,
+    [temaId]: !prev[temaId],
+  }));
+};
+
+
+const darLike = async (temaId) => {
+  if (!usuario) return alert("Debes iniciar sesión para dar like");
+
+  const likeDocRef = doc(db, `temas/${temaId}/likes/${usuario.email}`);
+  const docSnap = await getDoc(likeDocRef);
+
+  if (docSnap.exists()) {
+    alert("Ya diste like a este tema 😉");
+    return;
+  }
+
+  const temaRef = doc(db, "temas", temaId);
+  await updateDoc(temaRef, {
+    likes: increment(1),
+  });
+
+  await setDoc(likeDocRef, {
+    fecha: serverTimestamp(),
+  });
+
+  obtenerTemas();
+};
+
+
+const obtenerTemas = async () => {
+  const querySnapshot = await getDocs(collection(db, "temas"));
+  const temasFirebase = querySnapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+  setTemas(temasFirebase);
+
+  // Obtener comentarios
+  for (const tema of temasFirebase) {
+    const comentariosSnapshot = await getDocs(
+      query(collection(db, `temas/${tema.id}/comentarios`), orderBy("fecha", "desc"))
+    );
+    const comentariosData = comentariosSnapshot.docs.map((doc) => doc.data());
+    setComentarios((prev) => ({ ...prev, [tema.id]: comentariosData }));
+  }
+
+  // Verificar si el usuario ya dio like a cada tema
+  if (usuario) {
+    const nuevosLikes = {};
     for (const tema of temasFirebase) {
-      const comentariosSnapshot = await getDocs(
-        query(collection(db, `temas/${tema.id}/comentarios`), orderBy("fecha", "desc"))
-      );
-      const comentariosData = comentariosSnapshot.docs.map((doc) => doc.data());
-      setComentarios((prev) => ({ ...prev, [tema.id]: comentariosData }));
+      const likeDocRef = doc(db, `temas/${tema.id}/likes/${usuario.email}`);
+      const likeSnap = await getDoc(likeDocRef);
+      nuevosLikes[tema.id] = likeSnap.exists();
     }
-  };
+    setLikesUsuario(nuevosLikes);
+  } else {
+    setLikesUsuario({});
+  }
+};
+
 
   const enviarComentario = async (temaId, texto) => {
     if (!usuario) return alert("Debes iniciar sesión para comentar");
@@ -176,25 +228,46 @@ const crearNuevoTema = async () => {
                   </div>
 
                   <p className="desc">
-                    {val.desc?.slice(0, 100) || "Sin descripción"}...
+                    {val.desc?.slice(0, 200) || "Sin descripción"}...
                   </p>
 
                   <div className="comment">
-                    <i className="fas fa-thumbs-up"></i>
+                  <i
+                    className="fas fa-thumbs-up"
+                    style={{
+                      cursor: usuario ? "pointer" : "default",
+                      color: likesUsuario[val.id] ? "green" : "gray",
+                    }}
+                    onClick={() => {
+                      if (!likesUsuario[val.id]) darLike(val.id);
+                    }}
+                  ></i>
+
                     <label>{val.likes || 0} Likes / </label>
-                    <i className="fas fa-comment"></i>
-                    <label>{comentarios[val.id]?.length || 0} Comentarios</label>
+                    <i
+                      className="fas fa-comment"
+                      style={{ cursor: "pointer", color: mostrarComentarios[val.id] ? "blue" : "gray" }}
+                      onClick={() => toggleComentarios(val.id)}
+                    ></i>
+                    <label onClick={() => toggleComentarios(val.id)} style={{ cursor: "pointer" }}>
+                      {comentarios[val.id]?.length || 0} Comentarios
+                    </label>
+
                   </div>
 
-                  {comentarios[val.id] && comentarios[val.id].length > 0 && (
-                    <div className="comentarios-lista">
-                      {comentarios[val.id].map((comentario, idx) => (
-                        <div key={idx} className="comentario-item">
-                          <strong>{comentario.autor}</strong>: {comentario.texto}
+
+                    {mostrarComentarios[val.id] &&
+                      comentarios[val.id] &&
+                      comentarios[val.id].length > 0 && (
+                        <div className="comentarios-lista">
+                          {comentarios[val.id].map((comentario, idx) => (
+                            <div key={idx} className="comentario-item">
+                              <strong>{comentario.autor}</strong>: {comentario.texto}
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  )}
+                    )}
+
 
                   {usuario && (
                     <div className="comment-section">
