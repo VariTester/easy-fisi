@@ -1,29 +1,46 @@
-.social .socBox {
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  .social .socBox i {
-    margin-right: 20px;
-  }
-  .social .socBox span {
-    font-weight: 500;
-  }
-  .social .socBox:nth-child(1) {
-    background-color: #3b5998;
-  }
-  .social .socBox:nth-child(2) {
-    background-color: #bd081c;
-  }
-  .social .socBox:nth-child(3) {
-    background-color: #1da1f2;
-  }
-  .social .socBox:nth-child(4) {
-    background-color: #c32aa3;
-  }
-  .social .socBox:nth-child(5) {
-    background-color: #ff0000;
-  }
+/* Redes Sociales Horizontales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons .facebook {
+  background-color: #3b5998;
+}
+.social-icons .pinterest {
+  background-color: #bd081c;
+}
+.social-icons .twitter {
+  background-color: #1da1f2;
+}
+.social-icons .instagram {
+  background-color: #c32aa3;
+}
+.social-icons .youtube {
+  background-color: #ff0000;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
   /*------subscribe--------*/
   .subscribe {
     border: 1px solid black;

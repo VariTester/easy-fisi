@@ -1,32 +1,29 @@
-import React from "react"
+import React from "react";
 
 const SocialMedia = () => {
   return (
-    <>
-      <section className='social'>
-        <div className='socBox'>
-          <i className='fab fa-facebook-f'></i>
-          <span>12,740 Likes</span>
-        </div>
-        <div className='socBox'>
-          <i className='fab fa-pinterest'></i>
-          <span>5,600 Fans</span>
-        </div>
-        <div className='socBox'>
-          <i className='fab fa-twitter'></i>
-          <span>8,700 Followers</span>
-        </div>
-        <div className='socBox'>
-          <i className='fab fa-instagram'></i>
-          <span>22,700 Followers</span>
-        </div>
-        <div className='socBox'>
-          <i className='fab fa-youtube'></i>
-          <span>2,700 Subscriber</span>
-        </div>
-      </section>
-    </>
-  )
-}
+    <div className="social-icons">
+      <a href="https://facebook.com/oficial.unap" target="_blank" rel="noopener noreferrer" className="icon facebook">
+        <i className="fab fa-facebook-f"></i>
+      </a>
 
-export default SocialMedia
+      <a href="https://twitter.com/unapiquitos" target="_blank" rel="noopener noreferrer" className="icon twitter">
+        <i className="fab fa-twitter"></i>
+      </a>
+
+      <a href="https://youtube.com/user/unapiquitos" target="_blank" rel="noopener noreferrer" className="icon youtube">
+        <i className="fab fa-youtube"></i>
+      </a>
+
+      {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon instagram">
+        <i className="fab fa-instagram"></i>
+      </a> */}
+
+      {/* <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="icon pinterest">
+        <i className="fab fa-pinterest-p"></i>
+      </a> */}
+    </div>
+  );
+};
+
+export default SocialMedia;

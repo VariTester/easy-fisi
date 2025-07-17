@@ -30,30 +30,56 @@ const Side = () => {
     <>
       {/* <Heading title='Stay Connected' />
       <SocialMedia /> */}
-
-      <Heading title='Whatsapp' />
-
-      <section className='subscribe'>
-        <form action=''>
-        <a
-      href="https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="animated-link"
-    >
-      Únete al grupo de WhatsApp
-    </a>
-          <input type='tel' placeholder='O deja tu número para agregarte'pattern="[0-9]{9}" title='"Por favor, ingresa un número de 9 dígitos' required 
- />
-          <button>
-            <i className='fab fa-whatsapp'></i> Enviar
-          </button>
-        </form>
+      
+      <Heading title='Redes Sociales UNAP'/>
+        <section className='SocialMedia'>
+        <SocialMedia />
       </section>
 
+<Heading title='Whatsapp FISI' />
+
+<section className='subscribe'>
+  <a
+    href="https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="animated-link"
+  >
+    Únete al grupo de WhatsApp
+  </a>
+
+  <form
+    onSubmit={(e) => {
+      e.preventDefault();
+      const numeroIngresado = e.target.numero.value.trim();
+      if (/^\d{9}$/.test(numeroIngresado)) {
+        const mensaje = `Hola, este es mi número para que me agregues al grupo: ${numeroIngresado}`;
+        const url = `https://wa.me/51992329593?text=${encodeURIComponent(mensaje)}`;
+        window.open(url, '_blank');
+        e.target.reset();
+      } else {
+        alert("Por favor, ingresa un número válido de 9 dígitos");
+      }
+    }}
+  >
+    <input
+      type="tel"
+      name="numero"
+      placeholder="O deja tu número para agregarte"
+      pattern="[0-9]{9}"
+      title="Por favor, ingresa un número de 9 dígitos"
+      required
+    />
+    <button type="submit">
+      <i className="fab fa-whatsapp"></i> Enviar
+    </button>
+  </form>
+</section>
+
+{/* 
       <section className='banner'>
         <img src='./images/sidebar-banner-new.jpg' alt='' />
-      </section>
+      </section> */}
 
       <Tpost />
 
