@@ -1,4 +1,5 @@
-// backend-scraper/index.js
+require("dotenv").config(); // ✔️ Debe ir arriba de todo
+
 const express = require("express");
 const axios = require("axios");
 const cheerio = require("cheerio");
@@ -6,12 +7,17 @@ const cors = require("cors");
 const cron = require("node-cron");
 
 const admin = require("firebase-admin");
-const serviceAccount = require("./firebaseAdminKey.json");
+
+const serviceAccount = JSON.parse(
+  Buffer.from(process.env.FIREBASE_KEY_BASE64, "base64").toString("utf8")
+);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
+
 const db = admin.firestore();
+
 
 const app = express();
 const PORT = 4000;
@@ -86,4 +92,3 @@ app.listen(PORT, () => {
   console.log(`✅ Scraper corriendo en http://localhost:${PORT}/api/trabajos`);
   actualizarTrabajos(); // Ejecutar al iniciar
 });
-// holaaaa

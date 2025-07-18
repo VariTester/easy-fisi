@@ -24,3 +24,4 @@ yarn-error.log*
 firebaseAdminKey.json
 # En tu archivo .gitignore
 backend/backend-scraper/firebaseAdminKey.json
+.env
