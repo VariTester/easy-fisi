@@ -53,7 +53,7 @@ const Side = () => {
       e.preventDefault();
       const numeroIngresado = e.target.numero.value.trim();
       if (/^\d{9}$/.test(numeroIngresado)) {
-        const mensaje = `Hola, este es mi número para que me agregues al grupo: ${numeroIngresado}`;
+        const mensaje = `Hola, este es mi número para que me agregues al grupo de la FISI: ${numeroIngresado}`;
         const url = `https://wa.me/51992329593?text=${encodeURIComponent(mensaje)}`;
         window.open(url, '_blank');
         e.target.reset();

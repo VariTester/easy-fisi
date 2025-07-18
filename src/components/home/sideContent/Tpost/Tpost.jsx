@@ -1,29 +1,51 @@
-import React from "react"
-import { tpost } from '../../../../data'
-import Heading from "../../../common/Heading/Heading"
-import "./tpost.css"
+import React, { useEffect, useState } from "react";
+import Heading from "../../../common/Heading/Heading";
+import "./tpost.css";
 
 const Tpost = () => {
-  return (
-    <>
-      <section className='tpost'>
-        <Heading title='Tiktok post' />
-        {tpost.map((val) => {
-          return (
-            <div className='box flexSB'>
-              <div className='img'>
-                <img src={val.cover} alt='' />
-              </div>
-              <div className='text'>
-                <h1 className='title'>{val.title.slice(0, 35)}...</h1>
-                <span>a year ago</span>
-              </div>
-            </div>
-          )
-        })}
-      </section>
-    </>
-  )
-}
+  const [trabajos, setTrabajos] = useState([]);
 
-export default Tpost
+  useEffect(() => {
+    const fetchTrabajos = async () => {
+      try {
+        const response = await fetch("http://localhost:4000/api/trabajos");
+        const data = await response.json();
+        setTrabajos(data);
+      } catch (error) {
+        console.error("Error al cargar trabajos:", error);
+      }
+    };
+
+    fetchTrabajos();
+  }, []);
+
+  return (
+    <section className="tpost">
+      <Heading title="Oportunidad Laboral" />
+      {trabajos.length === 0 && <p>Cargando trabajos...</p>}
+      {trabajos.map((trabajo, index) => (
+        <a
+          href={trabajo.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          key={index}
+          className="box flexSB"
+        >
+          <div className="img">
+            {trabajo.imagen ? (
+              <img src={trabajo.imagen} alt={trabajo.titulo} />
+            ) : (
+              <div className="placeholder-img">Sin imagen</div>
+            )}
+          </div>
+          <div className="text">
+            <h1 className="title">{trabajo.titulo.slice(0, 40)}...</h1>
+            <span>PortalTrabajos.pe</span>
+          </div>
+        </a>
+      ))}
+    </section>
+  );
+};
+
+export default Tpost;
