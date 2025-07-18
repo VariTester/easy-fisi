@@ -86,3 +86,4 @@ app.listen(PORT, () => {
   console.log(`✅ Scraper corriendo en http://localhost:${PORT}/api/trabajos`);
   actualizarTrabajos(); // Ejecutar al iniciar
 });
+// holaaaa
