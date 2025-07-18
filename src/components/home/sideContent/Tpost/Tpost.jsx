@@ -2,22 +2,27 @@ import React, { useEffect, useState } from "react";
 import Heading from "../../../common/Heading/Heading";
 import "./tpost.css";
 
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../../../firebase/firebaseConfig"; // ajusta el path según tu proyecto
+
 const Tpost = () => {
   const [trabajos, setTrabajos] = useState([]);
 
-  useEffect(() => {
-    const fetchTrabajos = async () => {
-      try {
-        const response = await fetch("http://localhost:4000/api/trabajos");
-        const data = await response.json();
-        setTrabajos(data);
-      } catch (error) {
-        console.error("Error al cargar trabajos:", error);
-      }
-    };
+useEffect(() => {
+  const fetchTrabajos = async () => {
+    try {
+      const trabajosRef = collection(db, "trabajos");
+      const snapshot = await getDocs(trabajosRef);
+      const data = snapshot.docs.map((doc) => doc.data());
+      setTrabajos(data);
+    } catch (error) {
+      console.error("Error al cargar trabajos desde Firebase:", error);
+    }
+  };
 
-    fetchTrabajos();
-  }, []);
+  fetchTrabajos();
+}, []);
+
 
   return (
     <section className="tpost">
