@@ -17,6 +17,7 @@ import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/Noti
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 
+
 export default function App() {
   const [usuario, setUsuario] = useState(null);
 
@@ -29,18 +30,23 @@ export default function App() {
   }, []);
 
   return (
-    <Router>
-      <Header usuario={usuario} setUsuario={setUsuario} />
-      <Routes>
-        <Route path="/" element={<Homepages usuario={usuario} />} />
-        <Route path="/tramites" element={<Tramitesroute />} />
-        <Route path="/formatos" element={<Formatosroute />} />
-        <Route path="/tramite/:id" element={<Singlepages />} />
-        <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
-        <Route path="/foro" element={<Fororoute usuario={usuario} />} />
-        <Route path="/iniciarSesion" element={<Login onLogin={setUsuario} />} />
-        <Route path="/registro" element={<Register />} />
-      </Routes>
+    <>
+        <Router>
+        <Header usuario={usuario} setUsuario={setUsuario} />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Homepages usuario={usuario} />} />
+            <Route path="/tramites" element={<Tramitesroute />} />
+            <Route path="/formatos" element={<Formatosroute />} />
+            <Route path="/tramite/:id" element={<Singlepages />} />
+            <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
+            <Route path="/foro" element={<Fororoute usuario={usuario} />} />
+            <Route path="/iniciarSesion" element={<Login onLogin={setUsuario} />} />
+            <Route path="/registro" element={<Register />} />
+          </Routes>
+        </div>
     </Router>
+    </>
+
   );
 }

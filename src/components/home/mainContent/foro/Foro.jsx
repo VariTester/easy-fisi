@@ -173,7 +173,7 @@ const crearNuevoTema = async () => {
         </div> */}
 
           <div className="new-topic">
-  <h2>Start a New Topic</h2>
+  <h2>Empezar una nueva discusión</h2>
   {usuario ? (
     <>
       <input

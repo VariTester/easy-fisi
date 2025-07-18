@@ -7,6 +7,7 @@ import Foro from '../foro/Foro'
 import Side from '../../sideContent/side/Side'
 
 import Login from "../../../login/Login";
+// import Footer from '../../footer/Footer'
 
 
 const Home = ({ usuario }) => {
@@ -24,6 +25,7 @@ const Home = ({ usuario }) => {
           </section>
         </div>
       </main>
+
     </>
   );
 };
