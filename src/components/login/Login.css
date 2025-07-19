@@ -34,10 +34,10 @@
 }
 
 .login-container button {
-  padding: 12px;
+  padding: 8px;
   background-color: #007bff;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -68,6 +68,23 @@
 .login-container a:hover {
   text-decoration: underline;
 }
+/* Login.css */
+.link-button {
+  background: none;
+  border: none;
+  color: #0077cc;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.reenviar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 
 @media screen and (max-width: 500px) {
   .login-container {
