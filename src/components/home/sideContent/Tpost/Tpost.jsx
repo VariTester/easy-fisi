@@ -34,7 +34,7 @@ useEffect(() => {
           target="_blank"
           rel="noopener noreferrer"
           key={index}
-          className="box flexSB"
+          className="box flexSB no-link-style"
         >
           <div className="img">
             {trabajo.imagen ? (

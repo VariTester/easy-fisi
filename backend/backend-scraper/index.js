@@ -1,4 +1,4 @@
-require("dotenv").config(); // ✔️ Debe ir arriba de todo
+require("dotenv").config();
 
 const express = require("express");
 const axios = require("axios");
@@ -17,10 +17,9 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
-
-
 const app = express();
 const PORT = 4000;
+
 app.use(cors());
 
 async function actualizarTrabajos() {
@@ -38,28 +37,29 @@ async function actualizarTrabajos() {
     const $ = cheerio.load(data);
     const trabajos = [];
 
-    $('div.blog-posts article').slice(0, 3).each((i, el) => {
-      const titulo = $(el).find('h2.post-title a').text().trim();
-      const link = $(el).find('h2.post-title a').attr('href');
-
-      // 💡 El img está fuera del h2, y puede estar directamente dentro del <article>
+    $("div.blog-posts article").each((i, el) => {
+      const titulo = $(el).find("h2.post-title a").text().trim();
+      const link = $(el).find("h2.post-title a").attr("href");
       const imagen =
-        $(el).find('img').attr('data-src') || $(el).find('img').attr('src');
+        $(el).find("img").attr("data-src") || $(el).find("img").attr("src");
 
       if (titulo && link) {
         trabajos.push({ titulo, link, imagen: imagen || null });
       }
     });
 
-    // 🔄 Borra trabajos anteriores
+    // 👉 Solo los 3 primeros
+    const trabajosFinales = trabajos.slice(0, 3);
+
+    // 🔄 Elimina trabajos anteriores
     const trabajosRef = db.collection("trabajos");
     const snapshot = await trabajosRef.get();
     const batch = db.batch();
     snapshot.forEach((doc) => batch.delete(doc.ref));
     await batch.commit();
 
-    // 🔁 Subir nuevos trabajos
-    for (const trabajo of trabajos) {
+    // 🔁 Sube solo los 3 nuevos
+    for (const trabajo of trabajosFinales) {
       await trabajosRef.add(trabajo);
     }
 
@@ -69,13 +69,13 @@ async function actualizarTrabajos() {
   }
 }
 
-// 🕒 Ejecuta cada día a las 7:00 am
-cron.schedule("0 7 * * *", () => {
-  console.log("📅 Ejecutando scraping programado...");
-  actualizarTrabajos();
-});
+// 🕒 Programa automático diario a las 7:00 AM (descomenta si lo necesitas)
+// cron.schedule("0 7 * * *", () => {
+//   console.log("📅 Ejecutando scraping programado...");
+//   actualizarTrabajos();
+// });
 
-// 🚀 Endpoint de consulta manual
+// 🔁 Consulta manual (GET)
 app.get("/api/trabajos", async (req, res) => {
   try {
     const trabajosRef = db.collection("trabajos");
@@ -90,5 +90,5 @@ app.get("/api/trabajos", async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`✅ Scraper corriendo en http://localhost:${PORT}/api/trabajos`);
-  actualizarTrabajos(); // Ejecutar al iniciar
+  actualizarTrabajos(); // Ejecutar una vez al iniciar
 });
