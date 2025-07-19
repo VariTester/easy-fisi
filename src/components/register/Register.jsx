@@ -1,7 +1,11 @@
 // src/components/Register.jsx
 import React, { useState } from 'react';
 import { auth } from '../../firebase/firebaseConfig';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+  signInWithEmailAndPassword,
+} from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import './Register.css';
 
@@ -10,6 +14,9 @@ function Register() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const [mostrarReenviar, setMostrarReenviar] = useState(false);
+  const [usuarioPendiente, setUsuarioPendiente] = useState(null);
 
   const navigate = useNavigate();
 
@@ -35,17 +42,48 @@ function Register() {
   const registrarUsuario = async (e) => {
     e.preventDefault();
     setError('');
+    setMostrarReenviar(false);
+    setUsuarioPendiente(null);
 
     if (!validarCampos()) return;
 
     setLoading(true);
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      navigate('/'); // Redirige al inicio o login
+      const cred = await createUserWithEmailAndPassword(auth, email, password);
+      await sendEmailVerification(cred.user);
+
+      alert('✅ Cuenta creada. Revisa tu correo institucional y verifica tu cuenta antes de iniciar sesión.');
+      navigate('/iniciarSesion');
     } catch (err) {
-      setError('Error al registrar: ' + err.message);
+      if (err.code === 'auth/email-already-in-use') {
+        try {
+          const credExistente = await signInWithEmailAndPassword(auth, email, password);
+          if (!credExistente.user.emailVerified) {
+            setError('Este correo ya fue registrado pero aún no está verificado.');
+            setMostrarReenviar(true);
+            setUsuarioPendiente(credExistente.user);
+          } else {
+            setError('Este correo ya está registrado. Inicia sesión.');
+          }
+        } catch (loginErr) {
+          setError('Este correo ya está registrado. Si olvidaste la contraseña, intenta recuperarla.');
+        }
+      } else {
+        setError('Error al registrar: ' + err.message);
+      }
     } finally {
       setLoading(false);
+    }
+  };
+
+  const reenviarVerificacion = async () => {
+    if (usuarioPendiente) {
+      try {
+        await sendEmailVerification(usuarioPendiente);
+        alert('📩 Correo de verificación reenviado. Revisa tu bandeja de entrada.');
+      } catch (e) {
+        setError('No se pudo reenviar el correo de verificación. Intenta más tarde.');
+      }
     }
   };
 
@@ -75,6 +113,12 @@ function Register() {
       </form>
 
       {error && <p className="error">{error}</p>}
+
+      {mostrarReenviar && (
+        <button onClick={reenviarVerificacion} className="reenviar-btn">
+          Reenviar correo de verificación
+        </button>
+      )}
 
       <p>
         ¿Ya tienes cuenta? <Link to="/iniciarSesion">Inicia sesión aquí</Link>

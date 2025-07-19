@@ -1,26 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Head from './Head';
 import './header.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import { auth } from '../../../firebase/firebaseConfig';
 
-const Header = () => {
+// ⬇️ usuario y setUsuario vienen desde App.jsx
+const Header = ({ usuario, setUsuario }) => {
   const [navbar, setNavbar] = useState(false);
-  const [usuario, setUsuario] = useState(null);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUsuario(user);
-    });
-    return () => unsubscribe();
-  }, []);
 
   const handleCerrarSesion = async () => {
     await signOut(auth);
+    setUsuario(null); // Limpia el estado global
     navigate('/');
   };
+
+  const correoVerificado = usuario?.emailVerified;
 
   return (
     <>
@@ -36,7 +32,7 @@ const Header = () => {
               <li><Link to='/infoDocente'>Info Docente</Link></li>
               <li><Link to='/administrativos'>Administrativos</Link></li>
 
-              {usuario ? (
+              {correoVerificado ? (
                 <>
                   <li className='userCorreo'>
                     <span>{usuario.email}</span>

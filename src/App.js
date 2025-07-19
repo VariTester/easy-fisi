@@ -21,13 +21,14 @@ import Register from "./components/register/Register";
 export default function App() {
   const [usuario, setUsuario] = useState(null);
 
-  // ✅ Mantener usuario logueado al refrescar
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUsuario(user);
-    });
-    return () => unsubscribe(); // Limpieza
-  }, []);
+// App.js
+useEffect(() => {
+  const unsubscribe = onAuthStateChanged(auth, (user) => {
+    setUsuario(user); // <-- Acepta usuarios verificados o no
+  });
+  return () => unsubscribe();
+}, []);
+
 
   return (
     <>
