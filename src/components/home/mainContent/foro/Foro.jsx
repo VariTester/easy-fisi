@@ -180,8 +180,10 @@ const darLike = async (temaId) => {
     return Swal.fire({
       icon: 'warning',
       title: 'Inicia sesión',
+      timer: 2000,
       text: 'Debes iniciar sesión para dar like',
     });
+    
   }
 
   if (!usuario.emailVerified) {
