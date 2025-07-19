@@ -85,7 +85,7 @@ const Tramites = () => {
           return (
             <div className='items' key={val.id}>
               {/* Enlace a la página individual del trámite */}
-              <Link to={`/tramite/${val.id}`}>
+              <Link to={`/tramite/${val.id}`}style={{ all: "unset" }}>
                 <div className='box shadow'>
                   <div className='images row'>
                     <div className='img'>
