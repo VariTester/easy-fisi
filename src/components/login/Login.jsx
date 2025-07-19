@@ -4,10 +4,10 @@ import { auth } from '../../firebase/firebaseConfig';
 import {
   signInWithEmailAndPassword,
   sendEmailVerification,
+  sendPasswordResetEmail,
   signOut,
 } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
-
 import './Login.css';
 
 function Login({ onLogin }) {
@@ -15,6 +15,7 @@ function Login({ onLogin }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [mostrarReenviar, setMostrarReenviar] = useState(false);
+  const [recuperandoClave, setRecuperandoClave] = useState(false);
 
   const navigate = useNavigate();
 
@@ -24,7 +25,6 @@ function Login({ onLogin }) {
     setMostrarReenviar(false);
 
     try {
-      // ❌ Si no es correo institucional, no permite login
       if (!email.endsWith('@unapiquitos.edu.pe')) {
         setError('Solo se permiten correos institucionales @unapiquitos.edu.pe');
         return;
@@ -37,17 +37,30 @@ function Login({ onLogin }) {
           'Primero debes verificar tu correo institucional. Revisa tu bandeja de entrada o carpeta de Spam.'
         );
         setMostrarReenviar(true);
-
-        // ❗ Importante: cerrar sesión si no está verificado
-        await signOut(auth);
+        await signOut(auth); // Seguridad: cerrar sesión si no está verificado
         return;
       }
 
       if (onLogin) onLogin(cred.user);
       navigate('/');
-    } catch (err) {
-      setError('Error al iniciar sesión: ' + err.message);
-    }
+} catch (err) {
+  console.error("🔥 Código de error:", err.code); // Para depuración
+
+  if (err.code === 'auth/user-not-found') {
+    setError('No existe una cuenta con este correo.');
+  } else if (err.code === 'auth/wrong-password') {
+    setError('Contraseña incorrecta.');
+  } else if (err.code === 'auth/invalid-credential') {
+    // ⚠️ Este es el nuevo código cuando pones mal el password en Firebase 10+
+    setError('Correo o contraseña incorrectos.');
+  } else if (err.code === 'auth/too-many-requests') {
+    setError('Demasiados intentos. Intenta de nuevo más tarde.');
+  } else {
+    setError('Error al iniciar sesión: ' + err.message);
+  }
+}
+
+
   };
 
   const reenviarVerificacion = async () => {
@@ -62,6 +75,30 @@ function Login({ onLogin }) {
     } catch (e) {
       console.error(e);
       setError('No se pudo reenviar el correo. Intenta de nuevo más tarde.');
+    }
+  };
+
+  const recuperarContraseña = async () => {
+    if (!email) {
+      setError('Ingresa tu correo institucional para recuperar la contraseña.');
+      return;
+    }
+
+    if (!email.endsWith('@unapiquitos.edu.pe')) {
+      setError('Solo se permiten correos institucionales @unapiquitos.edu.pe');
+      return;
+    }
+
+    setError('');
+    setRecuperandoClave(true);
+
+    try {
+      await sendPasswordResetEmail(auth, email);
+      alert('📩 Se ha enviado un correo para restablecer tu contraseña.');
+    } catch (error) {
+      setError('Error al enviar el correo de recuperación: ' + error.message);
+    } finally {
+      setRecuperandoClave(false);
     }
   };
 
@@ -91,13 +128,28 @@ function Login({ onLogin }) {
       {error && <p className="error">{error}</p>}
 
       {mostrarReenviar && (
-        <button onClick={reenviarVerificacion} className="reenviar-btn">
-          Reenviar verificación
-        </button>
+        <div className="reenviar-wrapper">
+          <button onClick={reenviarVerificacion} className="reenviar-btn">
+            Reenviar verificación
+          </button>
+        </div>
       )}
+
+
 
       <p>
         ¿No tienes cuenta? <Link to="/registro">Regístrate aquí</Link>
+      </p>
+
+      <p style={{ marginTop: '10px' }}>
+        ¿Olvidaste tu contraseña?{' '}
+        <button
+          onClick={recuperarContraseña}
+          disabled={recuperandoClave}
+          className="link-button"
+        >
+          {recuperandoClave ? 'Enviando...' : 'Recuperarla'}
+        </button>
       </p>
     </div>
   );
