@@ -29,7 +29,7 @@ const Header = ({ usuario, setUsuario }) => {
               <li><Link to='/tramites'>Trámites</Link></li>
               <li><Link to='/formatos'>Formatos</Link></li>
               <li><Link to='/foro'>Foro</Link></li>
-              <li><Link to='/infoDocente'>Info Docente</Link></li>
+              <li><Link to='/docentes'>Docentes</Link></li>
               <li><Link to='/administrativos'>Administrativos</Link></li>
 
               {correoVerificado ? (
