@@ -702,6 +702,417 @@ export const noticiasdata = [
       desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
     },
   ]
+  export const docentesData = [
+    {
+      id: 1,
+      masVisto: "1",
+      catgeory: "world",
+      title: "Cómo postular a la FISI?",
+      date: "Disponibilidad: Ene 22 - Ene 30",
+      comments: "Duración: 2 días",
+      costo: "Costo: 76 soles",
+      cover: g1Image,
+      // url1: "Como pustasasdassd",
+      desc: [
+        {
+          para1: "Un grupo de empresarios dedicados a la piscicultura en la ciudad de Iquitos, sostuvieron una reunión con funcionarios de la Dirección Regional de la Producción de Loreto (DIREPRO Loreto), para tratar temas relacionados a la formación, competitividad y ordenamiento de las empresas dedicadas a la venta de peces en la Amazonía.",
+        },
+        {
+          para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+        },
+        {
+          para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+        },
+      ],
+      details: [
+        {
+          title: '"El cliente debe recibir peces de buena calidad"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
+    },
+    {
+      id: 2,
+      masVisto: "1",
+      catgeory: "travel",
+      title: "Qué hacer si ya ingresaste?",
+      date: "19. February 2022",
+      comments: "Duración: 2 días",
+      costo: "Costo: 76 soles",
+      cover: g1Image,
+      desc: [
+        {
+          para1: "Un grupo de empresarios dedicados a la piscicultura en la ciudad de Iquitos, sostuvieron una reunión con funcionarios de la Dirección Regional de la Producción de Loreto (DIREPRO Loreto), para tratar temas relacionados a la formación, competitividad y ordenamiento de las empresas dedicadas a la venta de peces en la Amazonía.",
+        },
+        {
+          para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
+        },
+        {
+          para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
+        },
+      ],
+      details: [
+        {
+          title: '"El cliente debe recibir peces de buena calidad"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
+    },
+    {
+      id: 3,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Cómo Matricularse?",
+      date: "19. February 2022",
+      comments: "Duración: 5 días",
+      costo: "Costo: 80 soles",
+      cover: g1Image,
+      desc: [
+        {
+          para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+        },
+        {
+          para5: "-Solicitud de constancia de matrícula y revisión curricular",
+        },
+
+        {
+          para6: "(Nota del editor: ver si piden dni y su copia)",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para matricularse en este semestre"',
+        },
+        {
+          para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+        },
+        {
+          para2: "-Imprime la constancia y rellénala con tus datos",
+        },
+        {
+          quote: "Nota del editor: ver si piden dni y su copia)",
+        },
+        {
+          para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+        },
+      ],
+    },
+    {
+      id: 4,
+      masVisto: "0",
+      catgeory: "sport",
+      title: "Cómo solicitar exceso de crédito?",
+      date: "19. February 2022",
+      costo: "Costo: 76 soles",
+      comments: "Duración: 2 días",
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 5,
+      masVisto: "1",
+      catgeory: "fun",
+      title: "Retiro de curso",
+      date: "19. February 2022",
+      costo: "Costo: 76 soles",
+      comments: "Duración: 2 días",
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 6,
+      masVisto: "0",
+      catgeory: "health",
+      title: "Retiro del semestre",
+      date: "19. February 2022",
+      comments: 0,
+      costo: "Costo: 76 soles",
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 7,
+      masVisto: "0",
+      catgeory: "fashion",
+      title: "Constancia de Tercio Superior",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 8,
+      masVisto: "0",
+      catgeory: "fun",
+      title: "Constancia de estudios",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 9,
+      masVisto: "1",
+      catgeory: "fun",
+      title: "Acceso al seguro Universitario",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 10,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Solicitar Comedor Universitario",
+      date: "19. February 2022",
+      comments: "Duración: 20 días",
+      costo: "Costo: 18 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Nivelación de cursoN",
+          formato11_1:formato11_1,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2N",
+          formato11_2:formato11_2,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2N",
+          formato11_2:formato11_2,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2N",
+          formato11_2:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "El comedor universitario de la Universidad Nacional de la Amazonía Peruana (UNAP) ubicado en la Calle Nanay N° 363 de la ciudad de Iquitos es un servicio de alimentación que se ofrece a los estudiantes de la institución.El comedor universitario de la UNAP está administrado por la Dirección de Bienestar Universitario (DBU) de la universidad. La DBU es la encargada de planificar, organizar y gestionar las acciones de bienestar de la universidad. El comedor universitario de la UNAP prioriza a los estudiantes de bajo nivel socioeconómico y de buen rendimiento académico. "
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Nivelación de curso",
+        },
+        {
+          para5: "-Recibo de pagos por: Nivelación de curso",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
+        },
+        {
+          para1:"1. Acercarse a la Facultad de Ingeniería de Sistemas e informática con el formato descargado impreso y llenado con tus nombres",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
+    },
+    {
+      id: 11,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Nivelación de Curso",
+      date: "19. February 2022",
+      comments: "Duración: 20 días",
+      costo: "Costo: 18 soles (Aprox)",
+      cover: g1Image,
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso",
+          formato11_1:formato11_1,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso2",
+          formato11_2:formato11_2,
+        },
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso3",
+          formato11_3:formato11_3,
+        }
+
+      ],
+      desc: [
+        {
+          para1: "La nivelación de curso es un trámite académico que permite regularizar asignaturas o contenidos pendientes para cumplir con los requisitos curriculares establecidos."
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Nivelación de curso",
+        },
+        {
+          para5: "-Recibo de pagos por: Nivelación de curso",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
+        },
+        {
+          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+        },
+        {
+          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+        },
+        {
+          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        },
+        {
+          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        },
+      ],
+    },
+    {
+      id: 12,
+      masVisto: "0",
+      catgeory: "technology",
+      title: "Retiro de la Universidad",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 13,
+      masVisto: "0",
+      catgeory: "fun",
+      title: "Reingreso",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 14,
+      masVisto: "0",
+      catgeory: "fun",
+      title: "Cambio de carrera y convalidaciones",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 15,
+      masVisto: "0",
+      catgeory: "technology",
+      title: "Penalidades",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 16,
+      masVisto: "0",
+      catgeory: "technology",
+      title: "Justificación por inasistencia",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 17,
+      masVisto: "0",
+      catgeory: "technology",
+      title: "Solicitud de permiso por faltas",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 18,
+      masVisto: "0",
+      catgeory: "technology",
+      title: "Presentación de Tesis",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 19,
+      masVisto: "0",
+      catgeory: "technology",
+      title: "Obtención de título",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+    {
+      id: 20,
+      masVisto: "1",
+      catgeory: "technology",
+      title: "Curso paralelo",
+      date: "19. February 2022",
+      comments: 0,
+      cover: g1Image,
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+    },
+  ]
   
   export const ppost = [
     {

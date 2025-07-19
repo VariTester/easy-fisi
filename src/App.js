@@ -10,6 +10,7 @@ import Homepages from "./components/home/Homepages";
 import Tramitesroute from "./routes/Tramites";
 import Formatosroute from "./routes/Formatos";
 import Fororoute from "./routes/Foro";
+import Docentesroute from "./routes/DocentesRoutes";
 
 import Singlepages from "./components/SinglePages/Singlepages";
 import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/NoticiasSinglePage";
@@ -38,6 +39,7 @@ useEffect(() => {
           <Routes>
             <Route path="/" element={<Homepages usuario={usuario} />} />
             <Route path="/tramites" element={<Tramitesroute />} />
+            <Route path="/docentes" element={<Docentesroute />} />
             <Route path="/formatos" element={<Formatosroute />} />
             <Route path="/tramite/:id" element={<Singlepages />} />
             <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
