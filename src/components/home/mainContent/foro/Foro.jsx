@@ -4,7 +4,7 @@ import "./foro.css";
 import Heading from "../../../common/Heading/Heading";
 import Slider from "react-slick";
 import { db } from "../../../../firebase/firebaseConfig";
-
+import Swal from 'sweetalert2';
 import {
   collection,
   getDocs,
@@ -73,12 +73,32 @@ const Foro = ({ usuario }) => {
     }
   };
 
-  const crearNuevoTema = async () => {
-    if (!usuario) return alert("Debes iniciar sesión para publicar un tema");
-    if (!usuario.emailVerified) return alert("Debes verificar tu correo para realizar esta acción.");
-    if (!nuevoTema.title.trim() || !nuevoTema.desc.trim())
-      return alert("Completa todos los campos");
+const crearNuevoTema = async () => {
+  if (!usuario) {
+    return Swal.fire({
+      icon: 'warning',
+      title: 'Inicia sesión',
+      text: 'Debes iniciar sesión para publicar un tema.',
+    });
+  }
 
+  if (!usuario.emailVerified) {
+    return Swal.fire({
+      icon: 'warning',
+      title: 'Correo no verificado',
+      text: 'Verifica tu correo institucional antes de publicar.',
+    });
+  }
+
+  if (!nuevoTema.title.trim() || !nuevoTema.desc.trim()) {
+    return Swal.fire({
+      icon: 'info',
+      title: 'Campos incompletos',
+      text: 'Por favor, completa todos los campos para publicar un tema.',
+    });
+  }
+
+  try {
     await addDoc(collection(db, "temas"), {
       title: nuevoTema.title,
       desc: nuevoTema.desc,
@@ -86,49 +106,125 @@ const Foro = ({ usuario }) => {
       likes: 0,
     });
 
-    alert("Tema creado correctamente");
+    Swal.fire({
+      icon: 'success',
+      title: '¡Tema publicado!',
+      text: 'Gracias por iniciar una nueva discusión.',
+      timer: 2000,
+      showConfirmButton: false,
+      timerProgressBar: true,
+    });
+
     setNuevoTema({ title: "", desc: "" });
     obtenerTemas();
-  };
-
-  const enviarComentario = async (temaId, texto) => {
-    if (!usuario) return alert("Debes iniciar sesión para comentar");
-    if (!usuario.emailVerified) return alert("Debes verificar tu correo para realizar esta acción.");
-    if (!texto || texto.trim() === "") return alert("Comentario vacío");
-
-    await addDoc(collection(db, `temas/${temaId}/comentarios`), {
-      texto,
-      autor: usuario.email,
-      fecha: serverTimestamp(),
+  } catch (error) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error al publicar',
+      text: 'Hubo un problema al crear el tema. Inténtalo de nuevo.',
     });
+  }
+};
 
-    alert("Comentario enviado!");
-    setNuevoComentario({ ...nuevoComentario, [temaId]: "" });
-    obtenerTemas();
-  };
-
-  const darLike = async (temaId) => {
-    if (!usuario) return alert("Debes iniciar sesión para dar like");
-    if (!usuario.emailVerified) return alert("Debes verificar tu correo para realizar esta acción.");
-
-    const likeDocRef = doc(db, `temas/${temaId}/likes/${usuario.email}`);
-    const docSnap = await getDoc(likeDocRef);
-
-    if (docSnap.exists()) {
-      alert("Ya diste like a este tema 😉");
-      return;
-    }
-
-    await updateDoc(doc(db, "temas", temaId), {
-      likes: increment(1),
+const enviarComentario = async (temaId, texto) => {
+  if (!usuario) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Inicia sesión',
+      text: 'Debes iniciar sesión para comentar',
     });
+    return;
+  }
 
-    await setDoc(likeDocRef, {
-      fecha: serverTimestamp(),
+  if (!usuario.emailVerified) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Correo no verificado',
+      text: 'Debes verificar tu correo institucional para realizar esta acción.',
     });
+    return;
+  }
 
-    obtenerTemas();
-  };
+  if (!texto || texto.trim() === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Comentario vacío',
+      text: 'Por favor escribe algo antes de comentar.',
+    });
+    return;
+  }
+
+  await addDoc(collection(db, `temas/${temaId}/comentarios`), {
+    texto,
+    autor: usuario.email,
+    fecha: serverTimestamp(),
+  });
+
+  // ✅ Alerta automática y sin botón
+  Swal.fire({
+    icon: 'success',
+    title: '¡Comentario enviado!',
+    text: 'Tu mensaje ha sido publicado.',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
+
+  setNuevoComentario({ ...nuevoComentario, [temaId]: '' });
+  obtenerTemas();
+};
+
+
+const darLike = async (temaId) => {
+  if (!usuario) {
+    return Swal.fire({
+      icon: 'warning',
+      title: 'Inicia sesión',
+      text: 'Debes iniciar sesión para dar like',
+    });
+  }
+
+  if (!usuario.emailVerified) {
+    return Swal.fire({
+      icon: 'warning',
+      title: 'Correo no verificado',
+      text: 'Verifica tu correo institucional para dar like',
+    });
+  }
+
+  const likeDocRef = doc(db, `temas/${temaId}/likes/${usuario.email}`);
+  const docSnap = await getDoc(likeDocRef);
+
+  if (docSnap.exists()) {
+    return Swal.fire({
+      icon: 'info',
+      title: 'Ya diste like 😉',
+      text: 'Solo puedes dar like una vez por tema.',
+      timer: 2000,
+      showConfirmButton: false,
+      timerProgressBar: true,
+    });
+  }
+
+  await updateDoc(doc(db, "temas", temaId), {
+    likes: increment(1),
+  });
+
+  await setDoc(likeDocRef, {
+    fecha: serverTimestamp(),
+  });
+
+  Swal.fire({
+    icon: 'success',
+    title: '¡Gracias por tu like!',
+    text: 'Tu apoyo ayuda a mantener activo el foro.',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
+
+  obtenerTemas();
+};
 
   useEffect(() => {
     obtenerTemas();
