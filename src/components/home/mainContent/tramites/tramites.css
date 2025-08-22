@@ -1,41 +1,48 @@
 .tramites .box {
-    background-color: #fff;
-    display: flex;
-    /* #18  copy*/
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
-    position: relative;
-    margin: 15px 15px 15px 0;
-    /*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
-  }
-  /* .popular .{
-    margin-left: 50px;
-  } */
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  background: #1d1c1c;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
 
-  .tramites .images{
-    position: relative;
-    height: 200px;
-    
-  }
-  .tramites img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  .tramites .text h1 {
-    padding: 10px 0 0 20px;
-    margin: 0;
-  }
-  .tramites .date {
-    margin-top: 15px;
-    padding: 0 0 0 20px;
-  }
+.tramites .box:hover {
+  transform: translateY(-3px);
+}
 
-  .tramites label{
-    font-size: 12px;
-  }
-  
-  .tramites .comment {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0 0 0 20px;
-    margin-top: 5px;
-  }
+.tramites .icono {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+.tramites .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.tramites .info {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.tramites .box {
+  min-height: 160px; /* ajusta según tu contenido */
+}
+
+.tramites .text.row {
+  display: block;  /* cambia de flex a bloque */
+  width: 100%;
+}
+
+

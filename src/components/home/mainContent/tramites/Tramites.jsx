@@ -5,116 +5,67 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./tramites.css";
-import { Link } from 'react-router-dom'; // Importamos Link
-
+import { Link } from 'react-router-dom'; 
+import { FaUserGraduate, FaFileAlt, FaMedal, FaBookOpen, FaClock, FaDollarSign } from "react-icons/fa";
 
 const Tramites = () => {
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{  ...style,
-          display: "block",
-          background: "black", // Elimina el fondo del cuadrado
-          borderRadius: "50%", // Hace que el cuadrado sea un círculo
-          // width: "30px", // Ajusta el tamaño del círculo
-          // height: "30px", // Ajusta el tamaño del círculo
-          // border: "2px solid gray", // Opcional: Agrega un borde gris al círculo
-          lineHeight: "20px", // Centra el icono verticalmente
-          textAlign: "center", // Centra el icono horizontalmente
-          color: "white", // Color del icono
-          fontSize: "13px", // Tamaño del icono
-          cursor: "pointer",}} // Cambia el cursor cuando se pasa sobre el icono}}
-        onClick={onClick}
-      />
-    );
-  }
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{  ...style,
-          display: "block",
-          background: "black", // Elimina el fondo del cuadrado
-          borderRadius: "50%", // Hace que el cuadrado sea un círculo
-          // width: "30px", // Ajusta el tamaño del círculo
-          // height: "30px", // Ajusta el tamaño del círculo
-          // border: "2px solid gray", // Opcional: Agrega un borde gris al círculo
-          lineHeight: "20px", // Centra el icono verticalmente
-          textAlign: "center", // Centra el icono horizontalmente
-          color: "white", // Color del icono
-          fontSize: "13px", // Tamaño del icono
-          cursor: "pointer",}} // Cambia el cursor cuando se pasa sobre el icono}}
-        onClick={onClick}
-      />
-    );
-  }
-
   const settings = {
     dots: false,
-    className: "center",
-    centerMode: false,
     infinite: true,
-    centerPadding: "20px",
-    slidesToShow: 1,
     speed: 500,
-    rows: 3,
-    slidesPerRow: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    rows: 6,
+    slidesPerRow: 2,
+    nextArrow: <div className="arrow next">›</div>,
+    prevArrow: <div className="arrow prev">‹</div>,
     responsive: [
       {
         breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          rows: 3,
-
-        },
+        settings: { rows: 3,
+          slidesPerRow: 1,
+         },
       },
     ],
   };
 
+  // 🔹 Diccionario de íconos según título
+  const iconMap = {
+    matricula: <FaUserGraduate />,
+    bachiller: <FaMedal />,
+    diploma: <FaFileAlt />,
+    nivelacion: <FaBookOpen />,
+  };
+
+  const getIcon = (title) => {
+    const key = title.toLowerCase();
+    return Object.keys(iconMap).find(k => key.includes(k)) ? iconMap[Object.keys(iconMap).find(k => key.includes(k))] : <FaFileAlt />;
+  };
+
   return (
     <section className='tramites'>
-      <Heading title="Trámites" />
+      <Heading title="Trámites Universitarios" />
       <Slider {...settings}>
-        {tramites.map((val) => {
-          return (
-            <div className='items' key={val.id}>
-              {/* Enlace a la página individual del trámite */}
-              <Link to={`/tramite/${val.id}`}style={{ all: "unset" }}>
-                <div className='box shadow'>
-                  <div className='images row'>
-                    <div className='img'>
-                      <img src={val.cover} alt={val.title} />
-                    </div>
+        {tramites.map((val) => (
+          <div className='items' key={val.id}>
+            <Link to={`/tramite/${val.id}`} style={{ all: "unset" }}>
+              <div className='box shadow'>
+                <div className="icono">
+                  {getIcon(val.title)}
+                </div>
+                <div className="text row">
+                  <h1 className='title'>{val.title}</h1>
+
+                  <div className="info">
+                    <FaClock /> <span>{val.comments} días aprox.</span>
                   </div>
-                  <div className="text row">
-                    <h1 className='title'>{val.title.slice(0, 40)}...</h1>
 
-                    <div className="date">
-                      <i className='fas fa-calendar-days'></i>
-                      <label>{val.date}</label>
-                    </div>
-
-                    <div className="comment">
-                      <i className='fas fa-clock'></i>
-                      <label>{val.comments}</label>
-                    </div>
-                    
-                    <div className="comment">
-                      <i className='fas fa-dollar'></i>
-                      <label>{val.costo}</label>
-                    </div>
+                  <div className="info">
+                    <FaDollarSign /> <span>{val.costo}</span>
                   </div>
                 </div>
-              </Link>
-            </div>
-          );
-        })}
+              </div>
+            </Link>
+          </div>
+        ))}
       </Slider>
     </section>
   );
