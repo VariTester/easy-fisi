@@ -1,5 +1,6 @@
 import g1Image from './assets/images/g1.jpg';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
+import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
 import formato11_1 from './Downloads/NivelacionDeCurso/3.1. Aumentativo e Diminutivo - I1.pdf'
 import formato11_2 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 10 (NH) Cadena de Valor Minería.pdf'
 import formato11_3 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 11 (MM) Cadena de Valor Minería.pdf'
@@ -295,92 +296,28 @@ export const noticiasdata = [
     {
       id: 1,
       masVisto: "1",
-      catgeory: "world",
-      title: "Cómo postular a la FISI?",
-      date: "Disponibilidad: Ene 22 - Ene 30",
-      comments: "Duración: 2 días",
-      costo: "Costo: 76 soles",
-      cover: g1Image,
-      // url1: "Como pustasasdassd",
-      desc: [
-        {
-          para1: "Un grupo de empresarios dedicados a la piscicultura en la ciudad de Iquitos, sostuvieron una reunión con funcionarios de la Dirección Regional de la Producción de Loreto (DIREPRO Loreto), para tratar temas relacionados a la formación, competitividad y ordenamiento de las empresas dedicadas a la venta de peces en la Amazonía.",
-        },
-        {
-          para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
-        },
-        {
-          para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
-        },
-      ],
-      details: [
-        {
-          title: '"El cliente debe recibir peces de buena calidad"',
-        },
-        {
-          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
-        },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-    {
-      id: 2,
-      masVisto: "1",
-      catgeory: "travel",
-      title: "Qué hacer si ya ingresaste?",
-      date: "19. February 2022",
-      comments: "Duración: 2 días",
-      costo: "Costo: 76 soles",
-      cover: g1Image,
-      desc: [
-        {
-          para1: "Un grupo de empresarios dedicados a la piscicultura en la ciudad de Iquitos, sostuvieron una reunión con funcionarios de la Dirección Regional de la Producción de Loreto (DIREPRO Loreto), para tratar temas relacionados a la formación, competitividad y ordenamiento de las empresas dedicadas a la venta de peces en la Amazonía.",
-        },
-        {
-          para2: "La reunión se realizó en el auditorio de la DIREPRO Loreto, ubicado en la calle Ramírez Hurtado en el distrito de Iquitos. Los empresarios, dieron a conocer sus puntos de vista a los funcionarios, que estuvo presidido por Alex Steve del Águila Cardozo, director ejecutivo de pesquería de la DIREPRO.",
-        },
-        {
-          para3: "Según la empresaria Ferreyra, las normas vigentes se encuentran desactualizadas de las tendencias y tecnologías que existen ahora, por lo que recientemente concedieron permisos para el funcionamiento de nuevos acuarios, que no cumplen con las necesidades y garantías actuales.",
-        },
-      ],
-      details: [
-        {
-          title: '"El cliente debe recibir peces de buena calidad"',
-        },
-        {
-          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
-        },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-    {
-      id: 3,
-      masVisto: "1",
       catgeory: "Cachimbos",
-      title: "Cómo Matricularse?",
+      title: "¿Cómo matricularse?",
       date: "19. February 2022",
-      comments: "Duración: 5 días",
-      costo: "Costo: 80 soles",
+      comments: "Duración: 05 días",
+      costo: "Costo: 80 soles (Aprox)",
       cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de matrícula y revisión curricular",
+          formato11_1:formato11_1,
+        },
+
+      ],
       desc: [
         {
-          para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+          para1: "La matrícula muchas veces puede ser un proceso engorroso cuando somos cachimbos, para eso se elaboró esta guía para que puedas hacerlo de manera correcta y sin perderte de ningún detalle."
         },
         {
           para2: "Documentos necesarios:",
@@ -392,187 +329,53 @@ export const noticiasdata = [
           para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
         },
         {
-          para5: "-Solicitud de constancia de matrícula y revisión curricular",
-        },
-
-        {
-          para6: "(Nota del editor: ver si piden dni y su copia)",
+          para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
         },
      
       ],
       details: [
         {
-          title: '"Pasos a seguir para matricularse en este semestre"',
+          title: '"Pasos a seguir para matricularse correctamente"',
         },
         {
-          para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Matrícula y revisión curricular. Si perteneces al tercio superior la matrícula costará menos.",
+          para2:"2. Imprime la Solicitud de Revisión curricular y llénala con tus datos. Tiempo de respuesta estimada: 1 día hábil.",
+          para3:"3. Espera al menos 24h después del pago de matrícula para que se valide y se habilite el sistema de Automatrícula.",
+          para4:"4. Sigue los pasos de la automatrícula e imprime tu constancia de matrícula.",
+          para5:"5. Recoge tu revisión curricular.",
+          para6:"6. Adjunta tu constancia de matrícula, tu recibo de pago, revisión curricular. Recuerda tener una copia adicional para el cargo.",
         },
         {
-          para2: "-Imprime la constancia y rellénala con tus datos",
+          quote: "(Nota del editor: ver si piden dni y su copia)",
         },
-        {
-          quote: "Nota del editor: ver si piden dni y su copia)",
-        },
-        {
-          para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
-        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
       ],
     },
     {
-      id: 4,
-      masVisto: "0",
-      catgeory: "sport",
-      title: "Cómo solicitar exceso de crédito?",
-      date: "19. February 2022",
-      costo: "Costo: 76 soles",
-      comments: "Duración: 2 días",
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 5,
-      masVisto: "1",
-      catgeory: "fun",
-      title: "Retiro de curso",
-      date: "19. February 2022",
-      costo: "Costo: 76 soles",
-      comments: "Duración: 2 días",
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 6,
-      masVisto: "0",
-      catgeory: "health",
-      title: "Retiro del semestre",
-      date: "19. February 2022",
-      comments: 0,
-      costo: "Costo: 76 soles",
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 7,
-      masVisto: "0",
-      catgeory: "fashion",
-      title: "Constancia de Tercio Superior",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 8,
-      masVisto: "0",
-      catgeory: "fun",
-      title: "Constancia de estudios",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 9,
-      masVisto: "1",
-      catgeory: "fun",
-      title: "Acceso al seguro Universitario",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 10,
+      id: 2,
       masVisto: "1",
       catgeory: "Cachimbos",
-      title: "Solicitar Comedor Universitario",
+      title: "Nivelación de Curso",
       date: "19. February 2022",
-      comments: "Duración: 20 días",
+      comments: "Duración: 10 días (Aprox)",
       costo: "Costo: 18 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
           img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img2:g1Image,
+          
         }
       ],
-      formatos: [
-        {
-          nombre:"Solicitud de Constancia de Nivelación de cursoN",
-          formato11_1:formato11_1,
-        },
-        {
-          nombre:"Solicitud de Constancia de Nivelación de curso2N",
-          formato11_2:formato11_2,
-        },
-        {
-          nombre:"Solicitud de Constancia de Nivelación de curso2N",
-          formato11_2:formato11_2,
-        },
-        {
-          nombre:"Solicitud de Constancia de Nivelación de curso2N",
-          formato11_2:formato11_2,
-        },
-
-      ],
-      desc: [
-        {
-          para1: "El comedor universitario de la Universidad Nacional de la Amazonía Peruana (UNAP) ubicado en la Calle Nanay N° 363 de la ciudad de Iquitos es un servicio de alimentación que se ofrece a los estudiantes de la institución.El comedor universitario de la UNAP está administrado por la Dirección de Bienestar Universitario (DBU) de la universidad. La DBU es la encargada de planificar, organizar y gestionar las acciones de bienestar de la universidad. El comedor universitario de la UNAP prioriza a los estudiantes de bajo nivel socioeconómico y de buen rendimiento académico. "
-        },
-        {
-          para2: "Documentos necesarios:",
-        },
-        {
-          para3: "Nota: Tener una copia adicional para el cargo",
-        },
-        {
-          para4: "-Solicitud de Constancia de Nivelación de curso",
-        },
-        {
-          para5: "-Recibo de pagos por: Nivelación de curso",
-        },
-     
-      ],
-      details: [
-        {
-          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
-        },
-        {
-          para1:"1. Acercarse a la Facultad de Ingeniería de Sistemas e informática con el formato descargado impreso y llenado con tus nombres",
-        },
-        {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
-        },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
-      ],
-    },
-    {
-      id: 11,
-      masVisto: "1",
-      catgeory: "Cachimbos",
-      title: "Nivelación de Curso",
-      date: "19. February 2022",
-      comments: "Duración: 20 días",
-      costo: "Costo: 18 soles (Aprox)",
-      cover: g1Image,
       formatos: [
         {
           nombre:"Solicitud de Constancia de Nivelación de curso",
-          formato11_1:formato11_1,
+          formato11_1:formato11_2,
         },
-        {
-          nombre:"Solicitud de Constancia de Nivelación de curso2",
-          formato11_2:formato11_2,
-        },
-        {
-          nombre:"Solicitud de Constancia de Nivelación de curso3",
-          formato11_3:formato11_3,
-        }
 
       ],
       desc: [
@@ -598,122 +401,643 @@ export const noticiasdata = [
           title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
         },
         {
-          para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+          para2:"2. Imprime la constancia y rellénala con tus datos",
+          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
         },
         {
-          quote: "Scarfs, still not this no with explains it me and option on the any options roasted when I and state can that an don't subjective of has his take on and in from royal everything took raising our have behind success you the mechanic.",
+          quote: "Nota del editor: ver si piden dni y su copia",
         },
-        {
-          para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        },
-        {
-          para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
       ],
     },
     {
-      id: 12,
-      masVisto: "0",
-      catgeory: "technology",
-      title: "Retiro de la Universidad",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 13,
-      masVisto: "0",
-      catgeory: "fun",
-      title: "Reingreso",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 14,
-      masVisto: "0",
-      catgeory: "fun",
-      title: "Cambio de carrera y convalidaciones",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 15,
-      masVisto: "0",
-      catgeory: "technology",
-      title: "Penalidades",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 16,
-      masVisto: "0",
-      catgeory: "technology",
-      title: "Justificación por inasistencia",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 17,
-      masVisto: "0",
-      catgeory: "technology",
-      title: "Solicitud de permiso por faltas",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 18,
-      masVisto: "0",
-      catgeory: "technology",
-      title: "Presentación de Tesis",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 19,
-      masVisto: "0",
-      catgeory: "technology",
-      title: "Obtención de título",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 20,
+      id: 3,
       masVisto: "1",
-      catgeory: "technology",
-      title: "Curso paralelo",
+      catgeory: "Cachimbos",
+      title: "Tercio Superior",
       date: "19. February 2022",
-      comments: 0,
+      comments: "Duración: 10 días (Aprox)",
+      costo: "Costo: 80 soles (Aprox)",
       cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Tercio Superior",
+          formato11_1:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "Solicitar la constancia de Tercio Superior es muy importante cuando somos alumnos, ya que nos trae muchos beneficios y uno de ellos es poder postular a la beca permanencia añorado por muchos!"
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Tercio Superior",
+        },
+        {
+          para5: "-Recibo de pagos por: Constancia administrativa",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar Tercio Superior"',
+        },
+        {
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Constancia administrativa.",
+          para2:"2. Imprime la constancia y rellénala con tus datos.",
+          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de DIRGRAA. Tiempo estimado de 3 a 10 días hábiles.",
+          para4:"4. Acércate con tu cargo para recoger tu constancia.",
+        },
+        {
+          quote: "(Nota del editor: ver si piden dni y su copia)",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
     },
+    {
+      id: 4,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Grado de bachiller",
+      date: "19. February 2022",
+      comments: "Duración: 03 meses (Aprox)",
+      costo: "Costo: 270 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Grado académico dirigido al Decano",
+          formato11_1:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "Solicitar el grado de Bachiiller es uno de los procedimientos administrativos más complicados de realizar y de los que toma mucho tiempo, por eso es necesario realizarlo de manera correcta para evitar demoras y gastoso innecesarios."
+        },
+        {
+          para2: "Documentos necesarios (En el siguiente orden):",
+        },
+        {
+          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+        },
+        {
+          para4: "-Solicitud de Grado académico dirigido al Decano.",
+        },
+        {
+          para5: "-Constancia de Egresado, expedida por la DIGRAA.",
+        },
+                {
+          para5: "-Constancia de Matrícula, expedida por la DIGRAA.",
+        },
+                {
+          para6: "-Constancia de no adeudo de la biblioteca especializada.",
+        },
+                {
+          para7: "-Constancia de no adeudo de implementación de biblioteca (Asuntos económicos FISI).",
+        },
+                {
+          para8: "-Constancia administrativa de no tener deuda pendiente con la institucion.",
+        },
+                {
+          para9: "-Copia de recibo por pago de implementación de Biblioteca especialidad.",
+        },
+                {
+          para10: "-Recibos de pagos por: Constancia administrativa, Diploma de Grado académico,Certificado de estudios, Trámite administrativo, Constancia de matrícula, Constancia de egresado.",
+        },
+                {
+          para11: "-Certificado de estudios (original).",
+        },
+                {
+          para12: "-Coarnet universitario o constancia de no haber recibido, expedido por la FISI (S/.18.00), En caso de pérdida, presentar denuncia.",
+        },
+                {
+          para13: "-Tres (03) fotografías actuales a color en papel alisado, tamaño carnet (Estilo sastre).",
+        },
+                {
+          para14: "-Cinco (05) fotografías actuales a color en papel alisado, tamaño pasaporte (Estilo sastre).",
+        },
+                {
+          para15: "-Copia de DNI legalizado por el notario.",
+        },
+                {
+          para16: "-Revisión curricular con copia de pago adjunto.",
+        },
+                {
+          para17: "-Partida de nacimiento.",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar el Grado de Bachiller"',
+        },
+        {
+          para1:"1. Consultar si tienes deudas universitarias: Ir al DIGRAA y consultar si tienes deudas universitarias. En caso lo tengas. deberás acudir al Banco de la nación y realizar el pago.",
+          para2:"2. Pagos (Ir al Banco de la nación y pagar por los siguientes conceptos): ",
+          para3:"-Revisión curricular 		S/. 11.00",
+          para4:"-Certificado de estudios 	S/. 90.00",
+          para5:"-Constancia administrativa 	S/. 56.50",
+          para6:"-Diploma de Grado académico S/. 56.00",
+          para7:"-Trámite administrativo 	S/. 15.00",
+          para8:"-Constancia de matrícula 	S/. 17.00",
+          para9:"-Constancia de egresado	S/. 17.00",
+          para10:"-Pago de Deuda Universitaria (del paso 1)",
+          para11:"3.  En caso de tener deuda pendiente (Paso 1), diríjase a la Facultad de Odontología y muestre el voucher de deuda cancelada. Ahí mismo le anularán la deuda. En caso de no tener deuda pendiente pase al paso 4",
+          para12:"4.  Fotografías: Tómese Tres (04) fotografías tamaño carnet y Cinco (05) fotografías tamaño pasaporte. La foto tiene que ser actual, a color, en papel alisado y estilo sastre",
+          para13:"5.  Partida de nacimiento: Acerca a la Reniec o Municipalidad donde se haya registrado tu nacimiento y solicita un partida de nacimiento.Tiempo estimado 2 días hábiles. Costo S/20)",
+          para14:"6.  Legalización de DNI: Saca copia de tu DNI y acércate a una notaría. Para la legalización necesitarás entregar el dni físico y la copia. Tiempo estimado 15 min. Costo S/.5.00",
+          para15:"7.  Solicitud de constancias: Descargue el Archivo de “Constancia varias”. Rellénela y saque 1 copia adicional (cargo). Adjunta también el original de todos los recibos (Revisión curricular, Certificado de estudio, Diploma de Grado académico, Trámite administrativo, Constancia de matrícula, Constancia de egresado) y una copia de todos los recibos, puedes acomodarlos todos en una sola hoja. Entregue en la oficina de DIGRAA: La solicitud, los recibos y una foto tamaño carnet. Sacar una copia adicional que será tu cargo, para que puedas ir a recoger sus constancias después. Nota: Este paso tarda aproximadamente 6 días hábiles. El horario de atención del DIGRAA es de 8am a 2pm. ",
+          para16:"8.  Solicitud de constancia de no adeudo a Biblioteca: Enviar un correo a la dirección biblioteca@unapiquitos.edu.pe con los siguientes datos: nombre completo, dni, facultad y foto del voucher de Constancia administrativa (S/. 56.50). En aproximadamente 3 días te llegará la constancia en PDF",
+          para17:"9.  Recojo de constancias: Acércate a DIGRAA después de los 6 días hábiles luego de haber entregado tu solicitud. Dirígete a las oficinas administrativas de la FISI y deja tu certificado de estudios para que sea firmado por el decano de la facultad. Tiempo estimado (2 días hábiles)",
+          para18:"10. Entrega de documentos: Recoge tu certificado de estudios firmado por el decano y junta todos los documentos. Ordenarlos con indica en la primera parte. Nota: Pega todos tus voucher en una sola hoja y pega tu Carnet en una sola hoja. No olvides sacar 3 copias adicionales del juego original. Tiempo estimado de 2 a 3 meses.",
+          para20:"11. Recoger el Grado de bachiller: Espera que salga la resolución de la lista de bachilleres publicada en la página de la unap. (https://enlinea.unapiquitos.edu.pe). Acércate a la facultad de odontología, presenta tu dni y aguarda. Felicitaciones, ¡Ya eres bachiller! 🎓",
+        },
+        {
+          quote: "Nota del editor: ver si piden dni y su copia",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+    {
+      id: 5,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Duplicado de Diploma de Grado Y/O Título",
+      date: "19. February 2022",
+      comments: "Duración: 05 días",
+      costo: "Costo: 80 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud dirigida al rector",
+          formato11_1:formato11_1,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "Vamos a solicitar el duplicado de Diploma de Grado y/o Título"
+        },
+        {
+          para2: "Documentos necesarios (En el siguiente orden):",
+        },
+        {
+          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+        },
+        {
+          para4: "-Recibo de Ingreso",
+        },
+        {
+          para5: "-Solicitud dirigida al rector",
+        },
+                {
+          para6: "a)  Motivo de Pérdida.",
+        },
+                {
+          para7: "b)  Motivo de Deterioro.",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar el Duplicado de Grado Y/O Título"',
+        },
+        {
+          para1:"1. Ir al Banco de la nación y pagar por los siguiente concepto:",
+          para2:"-  Duplicado de Diploma de Grado Y/O Título",
+          para3:"2. Solicitud de constancias:  Acérquese a las oficinas de DIGRAA Y entre la constancia y asegurate de tener.",
+        },
+        {
+          quote: "(Nota del editor: ver si piden dni y su copia)",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+        {
+      id: 6,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "¿Cómo matricularse?",
+      date: "19. February 2022",
+      comments: "Duración: 05 días",
+      costo: "Costo: 80 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de matrícula y revisión curricular",
+          formato11_1:formato11_1,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "La matrícula muchas veces puede ser un proceso engorroso cuando somos cachimbos, para eso se elaboró esta guía para que puedas hacerlo de manera correcta y sin perderte de ningún detalle."
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+        },
+        {
+          para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para matricularse correctamente"',
+        },
+        {
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Matrícula y revisión curricular. Si perteneces al tercio superior la matrícula costará menos.",
+          para2:"2. Imprime la Solicitud de Revisión curricular y llénala con tus datos. Tiempo de respuesta estimada: 1 día hábil.",
+          para3:"3. Espera al menos 24h después del pago de matrícula para que se valide y se habilite el sistema de Automatrícula.",
+          para4:"4. Sigue los pasos de la automatrícula e imprime tu constancia de matrícula.",
+          para5:"5. Recoge tu revisión curricular.",
+          para6:"6. Adjunta tu constancia de matrícula, tu recibo de pago, revisión curricular. Recuerda tener una copia adicional para el cargo.",
+        },
+        {
+          quote: "(Nota del editor: ver si piden dni y su copia)",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+    {
+      id: 7,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Nivelación de Curso",
+      date: "19. February 2022",
+      comments: "Duración: 10 días (Aprox)",
+      costo: "Costo: 18 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Nivelación de curso",
+          formato11_1:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "La nivelación de curso es un trámite académico que permite regularizar asignaturas o contenidos pendientes para cumplir con los requisitos curriculares establecidos."
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Nivelación de curso",
+        },
+        {
+          para5: "-Recibo de pagos por: Nivelación de curso",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
+        },
+        {
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+          para2:"2. Imprime la constancia y rellénala con tus datos",
+          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+        },
+        {
+          quote: "Nota del editor: ver si piden dni y su copia",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+    {
+      id: 8,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Tercio Superior",
+      date: "19. February 2022",
+      comments: "Duración: 10 días (Aprox)",
+      costo: "Costo: 80 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Constancia de Tercio Superior",
+          formato11_1:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "Solicitar la constancia de Tercio Superior es muy importante cuando somos alumnos, ya que nos trae muchos beneficios y uno de ellos es poder postular a la beca permanencia añorado por muchos!"
+        },
+        {
+          para2: "Documentos necesarios:",
+        },
+        {
+          para3: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para4: "-Solicitud de Constancia de Tercio Superior",
+        },
+        {
+          para5: "-Recibo de pagos por: Constancia administrativa",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar Tercio Superior"',
+        },
+        {
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Constancia administrativa.",
+          para2:"2. Imprime la constancia y rellénala con tus datos.",
+          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de DIRGRAA. Tiempo estimado de 3 a 10 días hábiles.",
+          para4:"4. Acércate con tu cargo para recoger tu constancia.",
+        },
+        {
+          quote: "(Nota del editor: ver si piden dni y su copia)",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+    {
+      id: 9,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Grado de bachiller",
+      date: "19. February 2022",
+      comments: "Duración: 03 meses (Aprox)",
+      costo: "Costo: 270 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud de Grado académico dirigido al Decano",
+          formato11_1:formato11_2,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "Solicitar el grado de Bachiiller es uno de los procedimientos administrativos más complicados de realizar y de los que toma mucho tiempo, por eso es necesario realizarlo de manera correcta para evitar demoras y gastoso innecesarios."
+        },
+        {
+          para2: "Documentos necesarios (En el siguiente orden):",
+        },
+        {
+          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+        },
+        {
+          para4: "-Solicitud de Grado académico dirigido al Decano.",
+        },
+        {
+          para5: "-Constancia de Egresado, expedida por la DIGRAA.",
+        },
+                {
+          para5: "-Constancia de Matrícula, expedida por la DIGRAA.",
+        },
+                {
+          para6: "-Constancia de no adeudo de la biblioteca especializada.",
+        },
+                {
+          para7: "-Constancia de no adeudo de implementación de biblioteca (Asuntos económicos FISI).",
+        },
+                {
+          para8: "-Constancia administrativa de no tener deuda pendiente con la institucion.",
+        },
+                {
+          para9: "-Copia de recibo por pago de implementación de Biblioteca especialidad.",
+        },
+                {
+          para10: "-Recibos de pagos por: Constancia administrativa, Diploma de Grado académico,Certificado de estudios, Trámite administrativo, Constancia de matrícula, Constancia de egresado.",
+        },
+                {
+          para11: "-Certificado de estudios (original).",
+        },
+                {
+          para12: "-Coarnet universitario o constancia de no haber recibido, expedido por la FISI (S/.18.00), En caso de pérdida, presentar denuncia.",
+        },
+                {
+          para13: "-Tres (03) fotografías actuales a color en papel alisado, tamaño carnet (Estilo sastre).",
+        },
+                {
+          para14: "-Cinco (05) fotografías actuales a color en papel alisado, tamaño pasaporte (Estilo sastre).",
+        },
+                {
+          para15: "-Copia de DNI legalizado por el notario.",
+        },
+                {
+          para16: "-Revisión curricular con copia de pago adjunto.",
+        },
+                {
+          para17: "-Partida de nacimiento.",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar el Grado de Bachiller"',
+        },
+        {
+          para1:"1. Consultar si tienes deudas universitarias: Ir al DIGRAA y consultar si tienes deudas universitarias. En caso lo tengas. deberás acudir al Banco de la nación y realizar el pago.",
+          para2:"2. Pagos (Ir al Banco de la nación y pagar por los siguientes conceptos): ",
+          para3:"-Revisión curricular 		S/. 11.00",
+          para4:"-Certificado de estudios 	S/. 90.00",
+          para5:"-Constancia administrativa 	S/. 56.50",
+          para6:"-Diploma de Grado académico S/. 56.00",
+          para7:"-Trámite administrativo 	S/. 15.00",
+          para8:"-Constancia de matrícula 	S/. 17.00",
+          para9:"-Constancia de egresado	S/. 17.00",
+          para10:"-Pago de Deuda Universitaria (del paso 1)",
+          para11:"3.  En caso de tener deuda pendiente (Paso 1), diríjase a la Facultad de Odontología y muestre el voucher de deuda cancelada. Ahí mismo le anularán la deuda. En caso de no tener deuda pendiente pase al paso 4",
+          para12:"4.  Fotografías: Tómese Tres (04) fotografías tamaño carnet y Cinco (05) fotografías tamaño pasaporte. La foto tiene que ser actual, a color, en papel alisado y estilo sastre",
+          para13:"5.  Partida de nacimiento: Acerca a la Reniec o Municipalidad donde se haya registrado tu nacimiento y solicita un partida de nacimiento.Tiempo estimado 2 días hábiles. Costo S/20)",
+          para14:"6.  Legalización de DNI: Saca copia de tu DNI y acércate a una notaría. Para la legalización necesitarás entregar el dni físico y la copia. Tiempo estimado 15 min. Costo S/.5.00",
+          para15:"7.  Solicitud de constancias: Descargue el Archivo de “Constancia varias”. Rellénela y saque 1 copia adicional (cargo). Adjunta también el original de todos los recibos (Revisión curricular, Certificado de estudio, Diploma de Grado académico, Trámite administrativo, Constancia de matrícula, Constancia de egresado) y una copia de todos los recibos, puedes acomodarlos todos en una sola hoja. Entregue en la oficina de DIGRAA: La solicitud, los recibos y una foto tamaño carnet. Sacar una copia adicional que será tu cargo, para que puedas ir a recoger sus constancias después. Nota: Este paso tarda aproximadamente 6 días hábiles. El horario de atención del DIGRAA es de 8am a 2pm. ",
+          para16:"8.  Solicitud de constancia de no adeudo a Biblioteca: Enviar un correo a la dirección biblioteca@unapiquitos.edu.pe con los siguientes datos: nombre completo, dni, facultad y foto del voucher de Constancia administrativa (S/. 56.50). En aproximadamente 3 días te llegará la constancia en PDF",
+          para17:"9.  Recojo de constancias: Acércate a DIGRAA después de los 6 días hábiles luego de haber entregado tu solicitud. Dirígete a las oficinas administrativas de la FISI y deja tu certificado de estudios para que sea firmado por el decano de la facultad. Tiempo estimado (2 días hábiles)",
+          para18:"10. Entrega de documentos: Recoge tu certificado de estudios firmado por el decano y junta todos los documentos. Ordenarlos con indica en la primera parte. Nota: Pega todos tus voucher en una sola hoja y pega tu Carnet en una sola hoja. No olvides sacar 3 copias adicionales del juego original. Tiempo estimado de 2 a 3 meses.",
+          para20:"11. Recoger el Grado de bachiller: Espera que salga la resolución de la lista de bachilleres publicada en la página de la unap. (https://enlinea.unapiquitos.edu.pe). Acércate a la facultad de odontología, presenta tu dni y aguarda. Felicitaciones, ¡Ya eres bachiller! 🎓",
+        },
+        {
+          quote: "Nota del editor: ver si piden dni y su copia",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+    {
+      id: 10,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "Duplicado de Diploma de Grado Y/O Título",
+      date: "19. February 2022",
+      comments: "Duración: 05 días",
+      costo: "Costo: 80 soles (Aprox)",
+      cover: g1Image,
+      imagenes: [
+        {
+          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img2:g1Image,
+        }
+      ],
+      formatos: [
+        {
+          nombre:"Solicitud dirigida al rector",
+          formato11_1:formato11_1,
+        },
+
+      ],
+      desc: [
+        {
+          para1: "Vamos a solicitar el duplicado de Diploma de Grado y/o Título"
+        },
+        {
+          para2: "Documentos necesarios (En el siguiente orden):",
+        },
+        {
+          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+        },
+        {
+          para4: "-Recibo de Ingreso",
+        },
+        {
+          para5: "-Solicitud dirigida al rector",
+        },
+                {
+          para6: "a)  Motivo de Pérdida.",
+        },
+                {
+          para7: "b)  Motivo de Deterioro.",
+        },
+     
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para solicitar el Duplicado de Grado Y/O Título"',
+        },
+        {
+          para1:"1. Ir al Banco de la nación y pagar por los siguiente concepto:",
+          para2:"-  Duplicado de Diploma de Grado Y/O Título",
+          para3:"2. Solicitud de constancias:  Acérquese a las oficinas de DIGRAA Y entre la constancia y asegurate de tener.",
+        },
+        {
+          quote: "(Nota del editor: ver si piden dni y su copia)",
+        },
+        // {
+        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
+        // },
+        // {
+        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
+        // },
+      ],
+    },
+
+   
   ]
 export const docentesData = [
-  {
-    nombre: "Mg. Ana Torres",
-    foto: g1Image,
-    formacion: "Magíster en Educación - PUCP",
-    experiencia: "10 años en docencia universitaria",
-        logros: [
-      "Autora de 5 libros sobre didáctica innovadora.",
-      "Ponente en más de 30 congresos internacionales.",
-      "Ganadora del premio nacional de investigación educativa 2022.",
-    ],
-  },
+{
+  nombre: "Dr. Jimmy Max Ramirez Villacorta",
+  foto: Jimmyjpg,
+  formacion: "Bachiller e Ingeniero de Sistemas e Informática (UNAP), Maestro en Administración de la Educación (UCV), Doctor en Ingeniería de Sistemas (UNFV)",
+  experiencia: "Más de 14 años de experiencia en docencia universitaria e institutos superiores y más de 9 años en dirección de proyectos de Tecnologías de la Información y Comunicaciones.",
+  logros: [
+    "Especialista en elaboración de planes estratégicos y gestión de operación informática institucional.",
+    "Amplia experiencia en gestión de adquisición de tecnologías de la información, seguridad y auditoría de TIC.",
+    "Asesor en planes de contingencia, seguridad de la información, políticas y directivas de TI en instituciones públicas y privadas.",
+  ],
+},
   {
     nombre: "Dr. Luis Rojas",
     foto: g1Image,

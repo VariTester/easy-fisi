@@ -88,13 +88,28 @@ const Singlepages = () =>  {
                     {val.para3 && <p className='para3SP'>{val.para3}</p>}                
                     {val.para4 && <p className='para4SP'>{val.para4}</p>} 
                     {val.para5 && <p className='para5SP'>{val.para5}</p>} 
+                    {val.para6 && <p className='para6SP'>{val.para6}</p>} 
+                    {val.para7 && <p className='para7SP'>{val.para7}</p>} 
+                    {val.para8 && <p className='para8SP'>{val.para8}</p>} 
+                    {val.para9 && <p className='para9SP'>{val.para9}</p>} 
+                    {val.para10 && <p className='para10SP'>{val.para10}</p>} 
+                    {val.para11 && <p className='para11SP'>{val.para11}</p>} 
+                    {val.para12 && <p className='para12SP'>{val.para12}</p>} 
+                    {val.para13 && <p className='para13SP'>{val.para13}</p>} 
+                    {val.para14 && <p className='para14SP'>{val.para14}</p>} 
+                    {val.para15 && <p className='para15SP'>{val.para15}</p>} 
+                    {val.para16 && <p className='para16SP'>{val.para16}</p>} 
+                    {val.para17 && <p className='para17SP'>{val.para17}</p>} 
+                    {val.para18 && <p className='para18SP'>{val.para18}</p>} 
+                    {val.para19 && <p className='para19SP'>{val.para19}</p>} 
+                    {val.para20 && <p className='para20SP'>{val.para20}</p>} 
                   </div>
                 ))}
               </div>
               
-              {item.desc.map((val) => (
+              {/* {item.desc.map((val) => (
                 <p>{val.para3}</p>
-              ))}
+              ))} */}
 
               <div className='descbotSP'>
                 {item.details.map((data) => {
@@ -103,7 +118,24 @@ const Singlepages = () =>  {
 {/*Pasos*/}           <h1>{data.title}</h1>
                       <p>{data.para1}</p>
                       <p>{data.para2}</p>
-                      <p className='para3SP'>{data.para3}</p>
+                      <p>{data.para3}</p>
+                      <p>{data.para4}</p>
+                      <p>{data.para5}</p>
+                      <p>{data.para6}</p>
+                      <p>{data.para7}</p>
+                      <p>{data.para8}</p>
+                      <p>{data.para9}</p>
+                      <p>{data.para10}</p>
+                      <p>{data.para11}</p>
+                      <p>{data.para12}</p>
+                      <p>{data.para13}</p>
+                      <p>{data.para14}</p>
+                      <p>{data.para15}</p>
+                      <p>{data.para16}</p>
+                      <p>{data.para17}</p>
+                      <p>{data.para18}</p>
+                      <p>{data.para19}</p>
+                      <p>{data.para20}</p>
                     </>
                   )
                 })}

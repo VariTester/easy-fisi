@@ -92,3 +92,8 @@ app.listen(PORT, () => {
   console.log(`✅ Scraper corriendo en http://localhost:${PORT}/api/trabajos`);
   actualizarTrabajos(); // Ejecutar una vez al iniciar
 });
+
+//Para ejecutar el index.js debo entrar a la carpeta donde esta ubicado hacer un
+//gitbash y ejeccutar node index.js y luego refrescar la página
+
+

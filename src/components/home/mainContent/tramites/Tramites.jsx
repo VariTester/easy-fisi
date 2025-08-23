@@ -55,7 +55,7 @@ const Tramites = () => {
                   <h1 className='title'>{val.title}</h1>
 
                   <div className="info">
-                    <FaClock /> <span>{val.comments} días aprox.</span>
+                    <FaClock /> <span>{val.comments}</span>
                   </div>
 
                   <div className="info">
