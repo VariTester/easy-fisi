@@ -27,16 +27,20 @@
   font-weight: bold;
   margin-bottom: 8px;
   text-align: left;
+  color: #fff;   
 }
+
+
 
 .tramites .info {
   font-size: 14px;
-  color: #555;
+  color: #bbb;
   display: flex;
   align-items: center;
   gap: 6px;
   margin-bottom: 4px;
 }
+
 
 .tramites .box {
   min-height: 160px; /* ajusta según tu contenido */
