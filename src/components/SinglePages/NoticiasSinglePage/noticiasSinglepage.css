@@ -23,6 +23,11 @@
   .details .author p {
     text-transform: capitalize;
     margin-right: 10px;
+    
+  }
+  .details .info label{
+    font-weight: 600;
+    font-size: 14px;
   }
   .details .author img {
     
@@ -31,7 +36,6 @@
     object-fit:contain;
     border-radius: 50%;
     border:  1px solid rgb(156, 153, 153);
-
     margin: 0 10px;
   }
   .details .author label {
@@ -97,9 +101,9 @@
     margin-bottom: 15px; /* Espacio entre los bloques de texto */
   }
 
-  .para2{
+  /* .para2{
     font-weight: 600;
-  }
+  } */
 /*acortar los saltos de línea*/
 
   @media screen and (max-width: 815px) {

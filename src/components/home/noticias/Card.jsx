@@ -8,7 +8,7 @@ const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
         <img src={cover || "https://via.placeholder.com/300"} alt={title || "Imagen"} />
       </div>
       <div className="text">
-        <span className="category">{category || "Sin categoría"}</span>
+        {/* <span className="category">{category || "Sin categoría"}</span> */}
         <Link to={`/Noticia/${id}`}>
           <h1 className="titleBg">{title || "Título no disponible"}</h1>
         </Link>

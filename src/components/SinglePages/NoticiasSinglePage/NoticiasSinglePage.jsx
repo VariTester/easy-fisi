@@ -28,6 +28,7 @@ const NoticiasSinglepagess = () =>  {
             <div className='container'>
             <section className='mainContent details'>
               <h1 className='title'>{item.title}</h1>
+              
 
               <div className="info">
                 <div className="date">
@@ -36,7 +37,7 @@ const NoticiasSinglepagess = () =>  {
                 </div>
 
                 <div className="comment">
-                        <i className='fas fa-clock'></i>
+                        <i className='fas fa-user'></i>
                         <label>{item.comments}</label>
                 </div>
               </div>
@@ -57,6 +58,8 @@ const NoticiasSinglepagess = () =>  {
                   <i className='fa fa-envelope'></i>
                 </div>
               </div> */}
+
+              <img src={item.cover} alt='' />
               
               <div className='desctop'>
                 {item.desc.map((val, index) => (
@@ -64,11 +67,33 @@ const NoticiasSinglepagess = () =>  {
                     {val.para1 && <p className='para1'>{val.para1}</p>}
                      {/*El de abajo es para habilitar el parrafo en negrita*/}
                     {/* {val.para2 && <p className='para2'>{val.para2}</p>}  */}
+                    {val.para2 && <p className='para2'>{val.para2}</p>} 
+
+                    {/* {val.para6 && <p className='para6'>{val.para6}</p>} 
+                    {val.para7 && <p className='para7'>{val.para7}</p>}  */}
+                  </div>
+                ))}
+              </div>
+  
+              <div className='desctop'>
+                {item.desc.map((val, index) => (
+                  <div key={index} className='text-container'>
+
                     {val.para3 && <p className='para3'>{val.para3}</p>} 
                     {val.para4 && <p className='para4'>{val.para4}</p>} 
                     {val.para5 && <p className='para5'>{val.para5}</p>} 
-                    {/* {val.para6 && <p className='para6'>{val.para6}</p>} 
-                    {val.para7 && <p className='para7'>{val.para7}</p>}  */}
+                    {val.para6 && <p className='para6'>{val.para6}</p>} 
+                    {val.para7 && <p className='para7'>{val.para7}</p>} 
+                    {val.para8 && <p className='para8'>{val.para8}</p>} 
+                    {val.para9 && <p className='para9'>{val.para9}</p>} 
+                    {val.para10 && <p className='para10'>{val.para10}</p>} 
+                    {val.para11 && <p className='para11'>{val.para11}</p>} 
+                    {val.para12 && <p className='para12'>{val.para12}</p>} 
+                    {val.para13 && <p className='para13'>{val.para13}</p>} 
+                    {val.para14 && <p className='para14'>{val.para14}</p>} 
+                    {val.para15 && <p className='para15'>{val.para15}</p>} 
+                    {val.para16 && <p className='para16'>{val.para16}</p>} 
+
                   </div>
                 ))}
               </div>
@@ -80,24 +105,13 @@ const NoticiasSinglepagess = () =>  {
                 ))}
               </div>
 
-              {item.desc.map((val) => (
-                <p>{val.para6}</p>
-              ))}
-              
-              <img src={item.cover} alt='' />
+              <div className='desctop'>
+                {item.desc.map((val, index) => (
+                  <div key={index} className='text-container'> 
+                    {val.para17 && <p className='para17'>{val.para17}</p>} 
 
-
-              <div className='descbot'>
-                {item.details.map((data) => {
-                  return (
-                    <>
-                      {/* <h1>{data.title}</h1> */}
-                      <p>{data.para1}</p>
-                      <p>{data.para2}</p>
-                      {/* <p>{data.para3}</p> */}
-                    </>
-                  )
-                })}
+                  </div>
+                ))}
               </div>
 
 

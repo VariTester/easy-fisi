@@ -10,48 +10,79 @@ export const noticiasdata = [
     id: 1,
     masVisto: "1",
     category: "Cachimbos",
-    title: "Feria de Proyectos de Innovación Tecnológica en IA y Arquitectura de Computadoras",
-    date: "19. February 2022",
-    comments: "Duración: 5 días",
+    title: "Feria de Proyectos de Innovación Tecnológica en IA, BI y Desarrollo de Software",
+    date: "23. Junio 2025",
+    comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP (Facebook)",
     costo: "Costo: 80 soles",
-    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/535823466_1181492640664331_2509069142867596386_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeETZKkVFvN28VY9OU-kr_hEaxe-xTtHAt9rF77FO0cC3x8QxEobYEMJQ37lTSkDvbhWCRb7j_0JiIYzLgZhvimH&_nc_ohc=rwXME3zuzTUQ7kNvwGuTqRy&_nc_oc=Admpu6UsVQt_z3YgNmUtrZcajrZCfp9METL9MLdDbOtBIf_3mCZdJmNBHoSI1IoS8r79i4n34lM3-QsopbmI-C01&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=GCtZ7AoYVymNutwhsrDQTA&oh=00_AfUEphopWgK88XhEX74pQJlYMX6u4Myb6nHyUp_lCrZgWg&oe=68AEEBEC",
+    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/495167097_1132148885598707_6720973030272205218_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFErJfLMzx9lWlSQpChWqgGQaP_ls6urB9Bo_-Wzq6sHxEqnAhpYBn_L6kXs35-br-jJrMsu2uaisLPJt78Nhlp&_nc_ohc=XVefT-TGC08Q7kNvwH7EyAw&_nc_oc=Adn4Poa5mKblFjXS0lhtRXzUVvc312lL0WpAQ7yPpX6WEcelvjIQKfd-Z9iEPQqFH32WSHeU3aXKkk9JFIXYxq0y&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=CSiGlJnj4rKVwl3rGCM9Cw&oh=00_AfWy_8-qBYzJjVfrA8XNHQ8cs_H5k18bpWOa45OMCZgH2g&oe=68AF98D6",
     desc: [
       {
-        para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
+        para1: "En un evento lleno de creatividad, compromiso y visión de futuro, los estudiantes de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional de la Amazonía Peruana (UNAP) presentaron una impactante muestra de proyectos tecnológicos desarrollados íntegramente en la ciudad de Iquitos, orientados a resolver problemas reales de la región y del país."
       },
       {
-        para2: "Documentos necesarios:",
+        para2: "La actividad, que se llevó a cabo en el Aula Magna de la UNAP (Pevas 551), forma parte de las acciones de Responsabilidad Social Universitaria, y congregó a medios de comunicación, empresarios locales, padres de familia y público en general, quienes fueron testigos del enorme talento emergente en ingeniería y tecnología aplicada desde la Amazonía.",
       },
       {
-        para3: "Nota: Tener una copia adicional para el cargo",
+        para3: "Proyectos que marcan la diferencia. Los asistentes conocieron de cerca soluciones innovadoras en robótica, inteligencia artificial, inteligencia de negocios y desarrollo de software, entre las que destacan:",
       },
       {
-        para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+        para4: "-🦟 Detección automatizada de malaria vivax y falciparum mediante IA.",
       },
       {
-        para5: "-Solicitud de constancia de matrícula y revisión curricular",
+        para5: "-💰 App para la gestión de préstamos y cobranzas personales.",
       },
 
       {
-        para6: "(Nota del editor: ver si piden dni y su copia)",
+        para6: "-🎓 Aplicación móvil para el pago de matrícula universitaria con pasarela de pagos.",
+      },
+    
+            {
+        para7: "-🌐 Plataforma web Ecomuseo.net.",
+      },
+            {
+        para8: "-🚗 Vehículo robótico con brazo recuperador y cámara en tiempo real.",
+      },
+            {
+        para9: "-💻 Sistema online de alerta ante fuga de gas GLP en espacios cerrados.",
+      },
+            {
+        para10: "-💧 Sistema de riego automático con Arduino para el hogar.",
+      },
+            {
+        para11: "-🏥 Historia clínica electrónica con integración de IA.",
+      },
+            {
+        para12: "-🏫 Sistema de gestión de cursos vacacionales y de nivelación para FISI.",
+      },
+            {
+        para13: "🏥 Digitalización y automatización de procesos en la clínica Eva.",
+      },
+            {
+        para14: "Cada proyecto evidenció la capacidad de los estudiantes para transformar ideas en soluciones con impacto social, económico y ambiental, demostrando que la innovación tecnológica también puede florecer en el corazón de la Amazonía.",
+      },
+            {
+        para15: "Una oportunidad de conexión para el sector público y privado. La exhibición no solo sirvió como vitrina de talento, sino como punto de encuentro entre la academia y los sectores productivos, ofreciendo propuestas con potencial de implementación para instituciones públicas y privadas que buscan optimizar procesos, digitalizar servicios o fortalecer su eficiencia operativa.",
+      },
+            {
+        para16: "(Nota del editor: ver si piden dni y su copia)",
+      },
+            {
+        para17: "fue el lema que acompañó este encuentro que dejó clara la capacidad de la UNAP para formar profesionales que generan valor desde el conocimiento.",
       },
    
     ],
     details: [
+      // {
+      //   title: '"Pasos a seguir para matricularse en este semestre"',
+      // },
+      // {
+      //   para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+      // },
+      // {
+      //   para2: "-Imprime la constancia y rellénala con tus datos",
+      // },
       {
-        title: '"Pasos a seguir para matricularse en este semestre"',
-      },
-      {
-        para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
-      },
-      {
-        para2: "-Imprime la constancia y rellénala con tus datos",
-      },
-      {
-        quote: "Nota del editor: ver si piden dni y su copia)",
-      },
-      {
-        para3: "-Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+        quote: "Transformando ideas en soluciones, construyendo el mañana hoy",
       },
     ],
   },
@@ -1277,7 +1308,7 @@ export const docentesData = [
   ]
   export const gallery = [
     {
-      cover: g1Image,
+      cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/499598029_1132148535598742_7286111716821007316_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEAaoTgngjPABe4K5_AQXubGDm16PuZJUkYObXo-5klSQ7H5gKG-CGw2lwWHBe2syb37IqnwdXpirMjyxSSQudb&_nc_ohc=6Z7gRFWu8qYQ7kNvwECKCO5&_nc_oc=AdklZIdZvJ3mSdWtyK6wekwxJMydTXmeSiS80RUHFUmsBdqx9ACfCxZNDL26ml-4SZrY30E_9WEhj2Zz2gSQM9VL&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=x-oWof_RoNM4hyBKL2aGmQ&oh=00_AfUsnlKuvq9SJOWrKYcWDu-cD69uTmD9-T7WEbCy2Euwcw&oe=68AFA4C9",
     },
     {
       cover: g1Image,

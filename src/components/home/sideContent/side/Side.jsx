@@ -95,7 +95,7 @@ const Side = () => {
       </section> */}
 
       <section className='gallery'>
-        <Heading title='Gallery' />
+        <Heading title='Galería' />
         <Slider {...settings}>
           {gallery.map((val) => {
             return (
