@@ -25,7 +25,7 @@ app.use(cors());
 async function actualizarTrabajos() {
   try {
     const url =
-      "https://www.portaltrabajos.pe/search?q=ingeniería+de+sistemas&max-results=12&by-date=true";
+      "https://www.portaltrabajos.pe/search?q=Ingeniería+de+sistemas+e+informática&max-results=12&by-date=true";
 
     const { data } = await axios.get(url, {
       headers: {

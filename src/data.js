@@ -1289,39 +1289,17 @@ export const docentesData = [
       cover: "../images/life/life4.jpg",
     },
   ]
-  export const tpost = [
-    {
-      id: 1,
-      title: "US Promises to give Intel aid to locate the soldiers",
-      cover: g1Image,
-    },
-    {
-      id: 2,
-      title: "Renewable energy dead as industry waits for Policy",
-      cover: g1Image,
-    },
-    {
-      id: 3,
-      title: "Mount Etna erupts fashion in nice looking pictures",
-      cover: g1Image,
-    },
-  ]
   export const gallery = [
     {
       cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/499598029_1132148535598742_7286111716821007316_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEAaoTgngjPABe4K5_AQXubGDm16PuZJUkYObXo-5klSQ7H5gKG-CGw2lwWHBe2syb37IqnwdXpirMjyxSSQudb&_nc_ohc=6Z7gRFWu8qYQ7kNvwECKCO5&_nc_oc=AdklZIdZvJ3mSdWtyK6wekwxJMydTXmeSiS80RUHFUmsBdqx9ACfCxZNDL26ml-4SZrY30E_9WEhj2Zz2gSQM9VL&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=x-oWof_RoNM4hyBKL2aGmQ&oh=00_AfUsnlKuvq9SJOWrKYcWDu-cD69uTmD9-T7WEbCy2Euwcw&oe=68AFA4C9",
     },
     {
-      cover: g1Image,
+      cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/494181306_1091742966305966_1755641901697310709_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH8refFdONDRto_RCP9CSUwU2H3dtRvHJFTYfd21G8ckZmp2noxyBlVpAkU4UpDPY3MI1aFFErptYQYG2N_EmF5&_nc_ohc=RPzpzXga-dcQ7kNvwFKr8C-&_nc_oc=Adljq_WiAj0i6x0lgZsSUNoLaa72bl7--xWoeWijxhYGsOKGv5XO9G29vRoCNObNEUrO0m36wC3A6zFn6AXubWMZ&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=DTxCcOanQPMjjy0jopfF9g&oh=00_AfWDrreb_VUNTwELG-H5IJmm0D4OPUNDX16aSq92iIWfbA&oe=68AFB8BA",
     },
     {
-      cover: g1Image,
+      cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/494039040_1091743509639245_5255506629962342248_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF9XA_7JzYM_RFVLgUWUG5oaEGIsTrFxyVoQYixOsXHJZv0AzGkh_hzhzMGnxC3Hs9Zqk4E6CKerz0YfSFBClPC&_nc_ohc=_prFqtxy4MwQ7kNvwFAkeyh&_nc_oc=Adn3LTBXLAbCw_l1frtV_aMLHZaOUOhhmhUUdeltMWXZRo-YdkoHFpR50njP4slKDqb4sl4tOZAd5WiWLlXhk7Jj&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=ncudldbBnvQ2PAnkCJ1g6A&oh=00_AfXPBt34AqrYtTZIKmdbALAWtf9-Mq6kDVg6KLgA_v6p1Q&oe=68AFAB39",
     },
-    {
-      cover: g1Image,
-    },
-    {
-      cover: g1Image,
-    },
+
   ]
   export const discover = [
     {
@@ -1349,11 +1327,3 @@ export const docentesData = [
       cover: "../images/discover/d6.jpg",
     },
   ]
-  {
-    /*<p>Busan is an amazing magazine Blogger theme that is easy to customize for your needs</p>
-    <p>Google To Boost Android Security In Few Days</p>
-    <p>Cespedes play the winning Baseball Game</p>
-    <p>US Promises to give Intel aid to locate the soldiers</p>
-  
-  */
-  }
