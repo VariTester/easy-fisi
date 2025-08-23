@@ -1,11 +1,51 @@
 .masVistos .box {
-    margin: 15px 15px 15px 0;
-  }
-  .masVistos img {
-    width: 100%;
-    height: 100%;
-  }
-  .masVistos .text {
-    padding: 20px;
-  }
- 
+  display: flex;
+  align-items: flex-start;   /* alinear arriba icono + texto */
+  gap: 15px;                 /* espacio entre icono y texto */
+  padding: 16px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  background: #1d1c1c;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 140px;         /* altura consistente */
+}
+
+.masVistos .box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.masVistos .icono {
+  font-size: 36px;
+  color: #f39c12;   /* dorado/llamativo, puedes cambiar */
+  flex-shrink: 0;   /* que no se reduzca el icono */
+}
+
+.masVistos .text.row {
+  flex: 1;          /* ocupar todo el espacio sobrante */
+  display: flex;
+  flex-direction: column;
+}
+
+.masVistos .title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  text-align: left;
+  color: #fff;       /* blanco para contraste */
+}
+
+.masVistos .info {
+  font-size: 14px;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.masVistos .info svg {
+  color: #2ecc71;  /* íconos secundarios en verde, queda pro */
+  font-size: 14px;
+}

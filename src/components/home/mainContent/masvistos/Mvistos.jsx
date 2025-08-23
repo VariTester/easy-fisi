@@ -6,75 +6,69 @@ import Slider from 'react-slick';
 // import "slick-carousel/slick/slick-theme.css";
 import './mvistos.css'
 import { Link } from 'react-router-dom';
+import { FaUserGraduate, FaFileAlt, FaMedal, FaBookOpen, FaClock, FaDollarSign } from "react-icons/fa";
 // import "./tramites.css"
 const Mvistos = () => {
-    const settings = {
-        dots: false,
-         infinite: true,
-         speed: 500,
-         slidesToShow: 3,
-         slidesToScroll: 1,
-         responsive:[
-            {
-                breakpoint: 800,
-                settings:{
-                    slidesToShow:2,
-                    slidesToScroll:1,
-                }
-            }
-         ]
-        // className: "center",
-        // centerMode: true,
-        // infinite: true,
-        // centerPadding: "60px",
-        // slidesToShow: 2,
-        // speed: 500
-    }
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    rows: 1,
+    slidesPerRow: 3,
+    nextArrow: <div className="arrow next">›</div>,
+    prevArrow: <div className="arrow prev">‹</div>,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: { rows: 3,
+          slidesPerRow: 1,
+         },
+      },
+    ],
+  };
+
+      // 🔹 Diccionario de íconos según título
+      const iconMap = {
+        matricula: <FaUserGraduate />,
+        bachiller: <FaMedal />,
+        diploma: <FaFileAlt />,
+        nivelacion: <FaBookOpen />,
+      };
+    
+      const getIcon = (title) => {
+        const key = title.toLowerCase();
+        return Object.keys(iconMap).find(k => key.includes(k)) ? iconMap[Object.keys(iconMap).find(k => key.includes(k))] : <FaFileAlt />;
+      };
+
   return (
     <>
     <section className='masVistos'>
         <Heading title="Más Vistos"/>
         <div className='content'>
-        <Slider {...settings}>
-        {tramites
-        //aca es para poner los mas vistos
-        .filter((val)=> val.masVisto === "1")
-        .map((val)=>{
-          return (
-            <div className='items' key={val.id}>
-              {/* Enlace a la página individual de los mas vistos*/}
-              {/* <Link to={`/tramite/${val.id}`}> */}
-              <Link to={`/tramite/${val.id}`} style={{ all: "unset" }}>
+      <Slider {...settings}>
+        {tramites.map((val) => (
+          <div className='items' key={val.id}>
+            <Link to={`/tramite/${val.id}`} style={{ all: "unset" }}>
               <div className='box shadow'>
-                <div className='images'>
-                  <div className='img'>
-                    <img src={val.cover} alt="" />
-                  </div>
-                  <div className="category category1">
-                    <span>{val.catgeory}</span>
-                  </div>
+                <div className="icono">
+                  {getIcon(val.title)}
                 </div>
-                <div className="text ">
-                  <h1 className='title'>{val.title.slice(0, 40)}...</h1>
-                  {/* <div className="date">
-                    <i className='fas fa-calendar-days'></i>
-                    <label htmlFor=''> {val.date}</label>
+                <div className="text row">
+                  <h1 className='title'>{val.title}</h1>
+
+                  <div className="info">
+                    <FaClock /> <span>{val.comments}</span>
                   </div>
-                  <div className="comment">
-                    <i className='fas fa-clock'></i>
-                    <label htmlFor=''> {val.comments}</label>
+
+                  <div className="info">
+                    <FaDollarSign /> <span>{val.costo}</span>
                   </div>
-                  <div className="comment">
-                    <i className='fas fa-dollar'></i>
-                    <label htmlFor=''> {val.costo}</label>
-                  </div> */}
                 </div>
               </div>
-              </Link>
-            </div>
-          )
-        })}
-        </Slider>
+            </Link>
+          </div>
+        ))}
+      </Slider>
         </div>
     </section>
     </>

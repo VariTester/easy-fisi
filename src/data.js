@@ -14,7 +14,7 @@ export const noticiasdata = [
     date: "19. February 2022",
     comments: "Duración: 5 días",
     costo: "Costo: 80 soles",
-    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/470201958_513569741840446_3931316844901481434_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=l0Sx2-m5ThsQ7kNvgFOszTE&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AC_bVt09XAFfRoHf4xFkK2p&oh=00_AYBMzlzz5rKiO5oYnHhmQVXrT8BhXrpaRUF0nAqaczV2-Q&oe=6798A89F",
+    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/535823466_1181492640664331_2509069142867596386_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeETZKkVFvN28VY9OU-kr_hEaxe-xTtHAt9rF77FO0cC3x8QxEobYEMJQ37lTSkDvbhWCRb7j_0JiIYzLgZhvimH&_nc_ohc=rwXME3zuzTUQ7kNvwGuTqRy&_nc_oc=Admpu6UsVQt_z3YgNmUtrZcajrZCfp9METL9MLdDbOtBIf_3mCZdJmNBHoSI1IoS8r79i4n34lM3-QsopbmI-C01&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=GCtZ7AoYVymNutwhsrDQTA&oh=00_AfUEphopWgK88XhEX74pQJlYMX6u4Myb6nHyUp_lCrZgWg&oe=68AEEBEC",
     desc: [
       {
         para1: "La matrícula en cursos y la revisión curricular son procesos clave para asegurar tu inscripción y el correcto registro académico en la universidad. Este procedimiento incluye el pago correspondiente, la presentación de documentos requeridos y la validación en el sistema de automatrícula. A continuación, encontrarás los pasos detallados, los documentos necesarios y consejos importantes para completar este trámite de manera eficiente."
@@ -64,8 +64,8 @@ export const noticiasdata = [
     date: "19. February 2022",
     comments: "Duración: 2 días",
     costo: "Costo: 76 soles",
-    cover: "https://diariolaregion.com/wp-content/uploads/2018/04/RECTORADO-UNAP.jpg",
-    cover2: "https://diariolaregion.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-20-at-7.08.02-PM3.jpeg",
+    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/536276604_1181492590664336_4900888771413506046_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE2iNxWef0WP8tM-8gkjF9ofJ1gYOtRdvt8nWBg61F2-_8EMNPEBuyZwhp_S9x3uWtDwStkF-gcImoMzv5aAGRb&_nc_ohc=PveXHfSDpIcQ7kNvwFUiLN8&_nc_oc=AdmHexOQiLhQCNV8fArz4wcLXeDUynDUfcaRVMVMk0e5ubL8-nGBs3rmZGVjMsgo3l0ZnPTayM1nFVwiLHX70pPz&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=-DFuy_ZGRMOb1sZNid5_tA&oh=00_AfWe_l3x5KDwW79Bapkxy2Gtt5WyUoQ4TkO35a1lWZaXlg&oe=68AED015",
+    cover2: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/532233860_1181492647330997_7242152426690276184_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF55un0o0cWHbzBnFvj1y0fHe7qoG340v4d7uqgbfjS_hEaKyQyM97Dceyb5OfE4FxpqUimxLZvd-bHPDaH6XV_&_nc_ohc=gYKZApDrkyMQ7kNvwFnwout&_nc_oc=AdkM-DYDwFRc0Da73clYuM0Zoo9H2XputlcCI9TSMhT09xdrhpdR1GE8qvbZAYG6jV8pm6Me0fPQixN2fupsHCgp&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=HDgY6U9T1FWPSFQ-fXIsrg&oh=00_AfUIqVfik55Fahq6Xsx-4NYFwdazjbh1U0dx5essJZVcsQ&oe=68AEDA30",
     desc: [
       {
         para1: "La Universidad Nacional de la Amazonía Peruana (UNAP) informa a la comunidad universitaria y al público en general sobre el proceso de entrega de diplomas de:",
@@ -110,7 +110,7 @@ export const noticiasdata = [
     date: "09 de Enero 2025",
     comments: "22:43",
     costo: "Costo: 76 soles",
-    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/472991102_655963396951267_1113569913358849587_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u1K19ZhCIwYQ7kNvgHVgYNk&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AXgoraeCDCbONrBssCgA1qZ&oh=00_AYCGLAElM8X5RDTxJxlVHTu82P1uIFdUsNF5hKaIu2mBiQ&oe=67985255",
+    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/488316113_1068473651966231_6335150170636691690_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHP-yhw8aycqNKasIWMzTzQVbP1_4hD_NZVs_X_iEP81oPUobnAx1OiOBNWs21ujy8o-kZSSdkL4aEmst4g-VgP&_nc_ohc=QjHMIOr8vVQQ7kNvwGFVy94&_nc_oc=AdmoS0S10oijdku2AQzG1IXXrH0kotV-4VdIKQYFSlhsKXMYHSAgV4hrpi7YMfux9kNMixZUIQGvs1wxZS0q3o8u&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=qIquYXQCSeqJu_NsbUWJGw&oh=00_AfVi2tB_a8GOJvKtAhGfa47nqHNnKcns_gIVbhW0RsST9w&oe=68AEFCAC",
     // url1: "Como pustasasdassd",
     desc: [
       {
@@ -149,7 +149,7 @@ export const noticiasdata = [
     date: "20. Diciembre 2024",
     comments: "17:25",
     costo: "Costo: 80 soles",
-    cover: "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/471253080_514443141753106_9091723226567965557_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HSwcZIarRG0Q7kNvgHekG86&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AbThdCvT_-ed_f4brb5f-by&oh=00_AYCCu3TaoeFWgK6k_bdXB-eSeyTlmwWY3Jic6JfQhXMAaQ&oe=67988BFC",
+    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/537544367_1180493744097554_7857556566090151779_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFnsIf40FR9YWTN-T9BNuPZL9HQ8RNsCFcv0dDxE2wIVzAmGJEHAdd4Vnt-z-LHoUhhzHkpOomu5qd52dgpTH1l&_nc_ohc=Tgi9EPxXNqAQ7kNvwFdY8YH&_nc_oc=AdmVfn9_kYsq4pvMiJFK06h6w9w1T964VohpfvPCWcCTGpCOPzTEMuQCt1i64SsotlKu25phsBTITQXx71zRFEwK&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=TE7WhIjFFVF7hdsFhPhqCQ&oh=00_AfWPpZ80fJupSwQkyIVVXn8CU44yrfB6X8n3pec4hNpuzg&oe=68AEF824",
     desc: [
       {
         para1: "Hoy hemos sido testigos de un momento lleno de creatividad e innovación en la Facultad de Ingeniería de Sistemas e Informática. Nuestros talentosos estudiantes del curso de Interacción Hombre-Máquina (IHM) han presentado sus proyectos grupales, ¡y los resultados no podrían ser más impresionantes!"
