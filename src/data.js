@@ -1,4 +1,5 @@
-import g1Image from './assets/images/g1.jpg';
+import Noticia01 from './assets/images/NoticiasImagenes/Noticia01.jpg';
+import g1Image from './assets/images/Facultad-de-Sistemas.jpg';
 import fisiLocal from './assets/images/Facultad-de-Sistemas.jpg';
 import CasosRetiroDeSemestre from './assets/images/CasosRetiroDeSemestre.png';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
@@ -24,7 +25,7 @@ export const noticiasdata = [
     date: "23. Junio 2025",
     comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP (Facebook)",
     costo: "Costo: 80 soles",
-    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/495167097_1132148885598707_6720973030272205218_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFErJfLMzx9lWlSQpChWqgGQaP_ls6urB9Bo_-Wzq6sHxEqnAhpYBn_L6kXs35-br-jJrMsu2uaisLPJt78Nhlp&_nc_ohc=XVefT-TGC08Q7kNvwH7EyAw&_nc_oc=Adn4Poa5mKblFjXS0lhtRXzUVvc312lL0WpAQ7yPpX6WEcelvjIQKfd-Z9iEPQqFH32WSHeU3aXKkk9JFIXYxq0y&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=CSiGlJnj4rKVwl3rGCM9Cw&oh=00_AfWy_8-qBYzJjVfrA8XNHQ8cs_H5k18bpWOa45OMCZgH2g&oe=68AF98D6",
+    cover: Noticia01,
     desc: [
       {
         para1: "En un evento lleno de creatividad, compromiso y visión de futuro, los estudiantes de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional de la Amazonía Peruana (UNAP) presentaron una impactante muestra de proyectos tecnológicos desarrollados íntegramente en la ciudad de Iquitos, orientados a resolver problemas reales de la región y del país."
@@ -105,8 +106,8 @@ export const noticiasdata = [
     date: "19. February 2022",
     comments: "Duración: 2 días",
     costo: "Costo: 76 soles",
-    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/536276604_1181492590664336_4900888771413506046_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE2iNxWef0WP8tM-8gkjF9ofJ1gYOtRdvt8nWBg61F2-_8EMNPEBuyZwhp_S9x3uWtDwStkF-gcImoMzv5aAGRb&_nc_ohc=PveXHfSDpIcQ7kNvwFUiLN8&_nc_oc=AdmHexOQiLhQCNV8fArz4wcLXeDUynDUfcaRVMVMk0e5ubL8-nGBs3rmZGVjMsgo3l0ZnPTayM1nFVwiLHX70pPz&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=-DFuy_ZGRMOb1sZNid5_tA&oh=00_AfWe_l3x5KDwW79Bapkxy2Gtt5WyUoQ4TkO35a1lWZaXlg&oe=68AED015",
-    cover2: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/532233860_1181492647330997_7242152426690276184_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF55un0o0cWHbzBnFvj1y0fHe7qoG340v4d7uqgbfjS_hEaKyQyM97Dceyb5OfE4FxpqUimxLZvd-bHPDaH6XV_&_nc_ohc=gYKZApDrkyMQ7kNvwFnwout&_nc_oc=AdkM-DYDwFRc0Da73clYuM0Zoo9H2XputlcCI9TSMhT09xdrhpdR1GE8qvbZAYG6jV8pm6Me0fPQixN2fupsHCgp&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=HDgY6U9T1FWPSFQ-fXIsrg&oh=00_AfUIqVfik55Fahq6Xsx-4NYFwdazjbh1U0dx5essJZVcsQ&oe=68AEDA30",
+    cover: Noticia01,
+    cover2: Noticia01,
     desc: [
       {
         para1: "La Universidad Nacional de la Amazonía Peruana (UNAP) informa a la comunidad universitaria y al público en general sobre el proceso de entrega de diplomas de:",
@@ -151,7 +152,7 @@ export const noticiasdata = [
     date: "09 de Enero 2025",
     comments: "22:43",
     costo: "Costo: 76 soles",
-    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/488316113_1068473651966231_6335150170636691690_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHP-yhw8aycqNKasIWMzTzQVbP1_4hD_NZVs_X_iEP81oPUobnAx1OiOBNWs21ujy8o-kZSSdkL4aEmst4g-VgP&_nc_ohc=QjHMIOr8vVQQ7kNvwGFVy94&_nc_oc=AdmoS0S10oijdku2AQzG1IXXrH0kotV-4VdIKQYFSlhsKXMYHSAgV4hrpi7YMfux9kNMixZUIQGvs1wxZS0q3o8u&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=qIquYXQCSeqJu_NsbUWJGw&oh=00_AfVi2tB_a8GOJvKtAhGfa47nqHNnKcns_gIVbhW0RsST9w&oe=68AEFCAC",
+    cover: Noticia01,
     // url1: "Como pustasasdassd",
     desc: [
       {
@@ -190,7 +191,7 @@ export const noticiasdata = [
     date: "20. Diciembre 2024",
     comments: "17:25",
     costo: "Costo: 80 soles",
-    cover: "https://scontent.fiqt3-1.fna.fbcdn.net/v/t39.30808-6/537544367_1180493744097554_7857556566090151779_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFnsIf40FR9YWTN-T9BNuPZL9HQ8RNsCFcv0dDxE2wIVzAmGJEHAdd4Vnt-z-LHoUhhzHkpOomu5qd52dgpTH1l&_nc_ohc=Tgi9EPxXNqAQ7kNvwFdY8YH&_nc_oc=AdmVfn9_kYsq4pvMiJFK06h6w9w1T964VohpfvPCWcCTGpCOPzTEMuQCt1i64SsotlKu25phsBTITQXx71zRFEwK&_nc_zt=23&_nc_ht=scontent.fiqt3-1.fna&_nc_gid=TE7WhIjFFVF7hdsFhPhqCQ&oh=00_AfWPpZ80fJupSwQkyIVVXn8CU44yrfB6X8n3pec4hNpuzg&oe=68AEF824",
+    cover: Noticia01,
     desc: [
       {
         para1: "Hoy hemos sido testigos de un momento lleno de creatividad e innovación en la Facultad de Ingeniería de Sistemas e Informática. Nuestros talentosos estudiantes del curso de Interacción Hombre-Máquina (IHM) han presentado sus proyectos grupales, ¡y los resultados no podrían ser más impresionantes!"
