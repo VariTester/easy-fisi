@@ -1,9 +1,17 @@
 import g1Image from './assets/images/g1.jpg';
+import fisiLocal from './assets/images/Facultad-de-Sistemas.jpg';
+import CasosRetiroDeSemestre from './assets/images/CasosRetiroDeSemestre.png';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
 import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
 import formato11_1 from './Downloads/NivelacionDeCurso/3.1. Aumentativo e Diminutivo - I1.pdf'
 import formato11_2 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 10 (NH) Cadena de Valor Minería.pdf'
 import formato11_3 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 11 (MM) Cadena de Valor Minería.pdf'
+import mallaCurricular from './Downloads/MALLA CURRICULAR - PLAN DE ESTUDIOS - FISI.pdf'
+import planCurricular from './Downloads/PLAN CURRICULAR FISI 2024.pdf     TABLA DE CONVALIDACION.pdf'
+import planDeEstudiosC from './Downloads/PLAN DE ESTUDIOS._plan c_fisi_unap_2025.pdf actualizado.pdf'
+import planDeEstudiosB from './Downloads/Plan Estudios FISI 2021 PLAN B.pdf'
+import formato06_1 from './Downloads/RetirodeCurso/SOLICITO RETIRO DE CURSO.pdf'
+import formato07_1 from './Downloads/RetiroDeSemestre/SolicitudRetiroDeSemestre.pdf'
 
 export const noticiasdata = [
   {
@@ -322,7 +330,55 @@ export const noticiasdata = [
     },
 
   ]
-  
+  export const formatos_page = [{
+          formatos:[
+        {
+          nombre:"Malla Curricular",
+          formatoMallaCurriculalr:mallaCurricular,
+        },
+        {
+          nombre:"Plan Curricular",
+          formatoPlanCurricular:planCurricular,
+        },
+        {
+          nombre:'Plan de Estudios "B"',
+          formatoPplanDeEstudiosB:planDeEstudiosB,
+        },
+        {
+          nombre:'Plan de Estudios "C"',
+          formatoPplanDeEstudiosC:planDeEstudiosC,
+        },
+        {
+          nombre:"Solicitud de Retiro de Curso",
+          formato06_1:formato06_1,
+        },
+        {
+          nombre:"Solicitud de Retiro del Semestre",
+          formato07_1:formato07_1,
+        },
+                {
+          nombre:"Solicitud de Retiro del Semestre",
+          formato07_1:formato07_1,
+        },
+                {
+          nombre:"Solicitud de Retiro del Semestre",
+          formato07_1:formato07_1,
+        },
+                {
+          nombre:"Solicitud de Retiro del Semestre",
+          formato07_1:formato07_1,
+        },
+                {
+          nombre:"Solicitud de Retiro del Semestre",
+          formato07_1:formato07_1,
+        },
+
+        
+        
+    ]
+  }
+
+  ]
   export const tramites = [
     {
       id: 1,
@@ -407,6 +463,7 @@ export const noticiasdata = [
           nombre:"Solicitud de Constancia de Nivelación de curso",
           formato11_1:formato11_2,
         },
+        
 
       ],
       desc: [
@@ -689,44 +746,44 @@ export const noticiasdata = [
         // },
       ],
     },
-        {
+    {
       id: 6,
       masVisto: "1",
       catgeory: "Cachimbos",
-      title: "¿Cómo matricularse?",
+      title: "Retiro de Curso",
       date: "19. February 2022",
-      comments: "Duración: 05 días",
-      costo: "Costo: 80 soles (Aprox)",
+      comments: "Duración: 04 días",
+      costo: "Costo: S/. 10.00 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img2:g1Image,
+          // img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img1:fisiLocal,
         }
       ],
       formatos: [
         {
-          nombre:"Solicitud de Constancia de matrícula y revisión curricular",
-          formato11_1:formato11_1,
+          nombre:"Solicitud de Retiro de Curso",
+          formato06_1:formato06_1,
         },
 
       ],
       desc: [
         {
-          para1: "La matrícula muchas veces puede ser un proceso engorroso cuando somos cachimbos, para eso se elaboró esta guía para que puedas hacerlo de manera correcta y sin perderte de ningún detalle."
+          para1: "El retiro de cursos muchas veces puede generar dudas sobre cómo hacerlo correctamente. Por eso, aquí te dejamos algunos datos interesantes: Este proceso solo puede realizarse dentro de las fechas que aparecen en el calendario académico, por lo que es importante revisarlo con anticipación. Además, para que el retiro sea válido, es obligatorio realizar el pago de la tasa correspondiente. Si no se cumple con este requisito, se pierde automáticamente el derecho al retiro."
         },
         {
           para2: "Documentos necesarios:",
         },
         {
-          para3: "Nota: Tener una copia adicional para el cargo",
+          para3: "- Solicitud de Retiro de Curso dirigida al director de Escuela. (03 copias + original).",
         },
         {
-          para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
+          para4: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
         },
-        {
-          para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
-        },
+        // {
+        //   para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
+        // },
      
       ],
       details: [
@@ -734,15 +791,13 @@ export const noticiasdata = [
           title: '"Pasos a seguir para matricularse correctamente"',
         },
         {
-          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Matrícula y revisión curricular. Si perteneces al tercio superior la matrícula costará menos.",
-          para2:"2. Imprime la Solicitud de Revisión curricular y llénala con tus datos. Tiempo de respuesta estimada: 1 día hábil.",
-          para3:"3. Espera al menos 24h después del pago de matrícula para que se valide y se habilite el sistema de Automatrícula.",
-          para4:"4. Sigue los pasos de la automatrícula e imprime tu constancia de matrícula.",
-          para5:"5. Recoge tu revisión curricular.",
-          para6:"6. Adjunta tu constancia de matrícula, tu recibo de pago, revisión curricular. Recuerda tener una copia adicional para el cargo.",
+          para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Retiro de Cursos que tiene un costo de S/. 7.00 soles y código(644). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
+          para2:'2. Imprime la "Solicitud de Retiro de Curso" que se ecuentra en la parte superior de ésta página o en la sección de (Formatos), llénala con tus datos y saca 03 copias de esta. (Antes de sacar copia verifica que tus datos estén correctos).',
+          para3:"3. Presenta todos tus documentos a la dirección de escuela profesional que se encuentra en el segundo piso de la facultad (calle Moore N° 280)",
+          para4:"4. Guarda tu cargo y espera la respuesta en aproximadamente 03 días hábiles (Ésto dependerá de la demanda de trámies solicitados). La dirección de escuela se encargará de gestionar la resolución decanal necesaria, y finalmente la ORSA activará el retiro en el sistema SGA.",
         },
         {
-          quote: "(Nota del editor: ver si piden dni y su copia)",
+          quote: "No olvides que puedes retirarte de uno (01) o dos (02) cursos, en el que estés matriculado, y el pago es S/. 7.00 soles también por los 02 cursos",
         },
         // {
         //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
@@ -756,36 +811,36 @@ export const noticiasdata = [
       id: 7,
       masVisto: "1",
       catgeory: "Cachimbos",
-      title: "Nivelación de Curso",
+      title: "Retiro del Semestre",
       date: "19. February 2022",
-      comments: "Duración: 10 días (Aprox)",
+      comments: "Duración: 04 días (Aprox)",
       costo: "Costo: 18 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          img1:CasosRetiroDeSemestre,
           
         }
       ],
       formatos: [
         {
-          nombre:"Solicitud de Constancia de Nivelación de curso",
-          formato11_1:formato11_2,
+          nombre:"Solicitud de Retiro del Semestre",
+          formato07_1:formato07_1,
         },
 
       ],
       desc: [
         {
-          para1: "La nivelación de curso es un trámite académico que permite regularizar asignaturas o contenidos pendientes para cumplir con los requisitos curriculares establecidos."
+          para1: "El retiro del semestre puede sonar como una decisión complicada, pero en realidad es un derecho del estudiante en situaciones especiales. Para que no tengas dudas, aquí te explicamos en qué casos se puede aplicar:"
         },
         {
           para2: "Documentos necesarios:",
         },
         {
-          para3: "Nota: Tener una copia adicional para el cargo",
+          para3: "- Solicitud de Retiro de Curso dirigida al director de Escuela. (03 copias + original).",
         },
         {
-          para4: "-Solicitud de Constancia de Nivelación de curso",
+          para4: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
         },
         {
           para5: "-Recibo de pagos por: Nivelación de curso",
@@ -1054,8 +1109,6 @@ export const noticiasdata = [
         // },
       ],
     },
-
-   
   ]
 export const docentesData = [
 {

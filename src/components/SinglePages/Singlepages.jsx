@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { tramites } from "../../data"
-import './SinglePageSlider/singlepage.css'
+import '../SinglePages/singlepages.css'
 import Side from "../home/sideContent/side/Side"
 // import SinglePageSlider from './SinglePageSlider/SinglePageSlider'
 // import autor1 from "../common/images/autores/author.jpg";
@@ -116,26 +116,26 @@ const Singlepages = () =>  {
                   return (
                     <>
 {/*Pasos*/}           <h1>{data.title}</h1>
-                      <p>{data.para1}</p>
-                      <p>{data.para2}</p>
-                      <p>{data.para3}</p>
-                      <p>{data.para4}</p>
-                      <p>{data.para5}</p>
-                      <p>{data.para6}</p>
-                      <p>{data.para7}</p>
-                      <p>{data.para8}</p>
-                      <p>{data.para9}</p>
-                      <p>{data.para10}</p>
-                      <p>{data.para11}</p>
-                      <p>{data.para12}</p>
-                      <p>{data.para13}</p>
-                      <p>{data.para14}</p>
-                      <p>{data.para15}</p>
-                      <p>{data.para16}</p>
-                      <p>{data.para17}</p>
-                      <p>{data.para18}</p>
-                      <p>{data.para19}</p>
-                      <p>{data.para20}</p>
+                      <p className="parrafo">{data.para1}</p>
+                      <p className="parrafo">{data.para2}</p>
+                      <p className="parrafo">{data.para3}</p>
+                      <p className="parrafo">{data.para4}</p>
+                      <p className="parrafo">{data.para5}</p>
+                      <p className="parrafo">{data.para6}</p>
+                      <p className="parrafo">{data.para7}</p>
+                      <p className="parrafo">{data.para8}</p>
+                      <p className="parrafo">{data.para9}</p>
+                      <p className="parrafo">{data.para10}</p>
+                      <p className="parrafo">{data.para11}</p>
+                      <p className="parrafo">{data.para12}</p>
+                      <p className="parrafo">{data.para13}</p>
+                      <p className="parrafo">{data.para14}</p>
+                      <p className="parrafo">{data.para15}</p>
+                      <p className="parrafo">{data.para16}</p>
+                      <p className="parrafo">{data.para17}</p>
+                      <p className="parrafo">{data.para18}</p>
+                      <p className="parrafo">{data.para19}</p>
+                      <p className="parrafo">{data.para20}</p>
                     </>
                   )
                 })}

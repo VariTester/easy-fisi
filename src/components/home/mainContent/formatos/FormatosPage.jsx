@@ -1,4 +1,4 @@
-import { tramites } from "../../../../data";
+import { formatos_page } from "../../../../data";
 import { useState } from "react";
 import "./formatosPage.css";
 import Side from "../../sideContent/side/Side";
@@ -9,10 +9,15 @@ const FormatosPage = () => {
   const itemsPerPage = 6;
 
   // Filtrar formatos en base al texto de búsqueda
-  const formatosDisponibles = tramites.flatMap(item =>
+  const formatosDisponibles = formatos_page.flatMap(item =>
     item.formatos
       ? item.formatos.filter(val =>
-          Object.keys(val).some(key => key.startsWith("formato") && val[key] && val.nombre.toLowerCase().includes(search.toLowerCase()))
+          Object.keys(val).some(
+            key =>
+              key.startsWith("formato") &&
+              val[key] &&
+              val.nombre.toLowerCase().includes(search.toLowerCase())
+          )
         )
       : []
   );
@@ -36,7 +41,8 @@ const FormatosPage = () => {
   return (
     <>
       <main>
-        <div className="container">
+        <div className="containerfp">
+          {/* Contenido principal */}
           <section className="mainContent detailsfp">
             {/* Barra de búsqueda estilizada */}
             <div className="search-containerfp">
@@ -48,8 +54,9 @@ const FormatosPage = () => {
                 onChange={(e) => setSearch(e.target.value)}
               />
             </div>
-                        {/* Paginación */}
-                        <div className="pagination">
+
+            {/* Paginación */}
+            <div className="pagination">
               <button onClick={handlePrevPage} disabled={currentPage === 1}>
                 Anterior
               </button>
@@ -71,7 +78,9 @@ const FormatosPage = () => {
             <div className="formatsfp">
               {currentItems.length > 0 ? (
                 currentItems.map((val, index) => {
-                  const formatoKey = Object.keys(val).find(key => key.startsWith("formato"));
+                  const formatoKey = Object.keys(val).find((key) =>
+                    key.startsWith("formato")
+                  );
 
                   return (
                     <div key={index} className="text-containerLinksfp">
@@ -87,8 +96,11 @@ const FormatosPage = () => {
                 <p>No hay formatos disponibles</p>
               )}
             </div>
-
           </section>
+                    {/* Sidebar */}
+          {/* <section className="sideContent">
+            <Side />
+          </section> */}
         </div>
       </main>
     </>
