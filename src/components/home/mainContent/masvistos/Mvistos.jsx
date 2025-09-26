@@ -20,7 +20,7 @@ const Mvistos = () => {
     responsive: [
       {
         breakpoint: 768,
-        settings: { rows: 3,
+        settings: { rows: 1,
           slidesPerRow: 1,
          },
       },

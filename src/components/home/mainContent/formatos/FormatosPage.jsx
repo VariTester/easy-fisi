@@ -97,10 +97,7 @@ const FormatosPage = () => {
               )}
             </div>
           </section>
-                    {/* Sidebar */}
-          {/* <section className="sideContent">
-            <Side />
-          </section> */}
+
         </div>
       </main>
     </>

@@ -3,6 +3,8 @@ import fisiLocal from './assets/images/Facultad-de-Sistemas.jpg';
 import CasosRetiroDeSemestre from './assets/images/CasosRetiroDeSemestre.png';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
 import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
+import SaulNunta from './assets/images/Docentesjpg/SaulNunta.jpg';
+import AngelLopez from './assets/images/Docentesjpg/AngelLopez.jpg';
 import formato11_1 from './Downloads/NivelacionDeCurso/3.1. Aumentativo e Diminutivo - I1.pdf'
 import formato11_2 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 10 (NH) Cadena de Valor Minería.pdf'
 import formato11_3 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 11 (MM) Cadena de Valor Minería.pdf'
@@ -1123,15 +1125,27 @@ export const docentesData = [
   ],
 },
   {
-    nombre: "Dr. Luis Rojas",
-    foto: g1Image,
-    formacion: "Doctor en Ciencias - UNMSM",
-    experiencia: "15 años como investigador",
-        logros: [
-      "Consultor en el MINEDU y UNESCO.",
-      "Creador de programas de tutoría escolar.",
-      "Reconocido por buenas prácticas en inclusión educativa.",
-    ],
+    nombre: "Dr. Saúl Flores Nunta",
+    foto: SaulNunta,
+    formacion: "Bachiller en Ingeniería (tipo / universidad por confirmar), Maestro en Ingeniería de Sistemas (UNAP, confirmado que tiene Maestría) [detalle pendiente], Doctor en [especialidad por confirmar] (universidad por confirmar)",
+    experiencia: "Docente universitario en la Universidad Nacional de la Amazonía Peruana. Director de Investigación de la Facultad de Ingeniería de Sistemas e Informática. Responsable de proyectos de investigación y asesorías en tesis universitarias.",
+    logros: [
+      "Asesor en múltiples trabajos de investigación en UNAP como el de tesis en Enfermería, destacando en aporte estadístico.",
+      "Participación en maestría en Ingeniería de Sistemas con mención en UNAP.",
+      "Presencia en el directorio del Vicerrectorado de Investigación de la UNAP con funciones institucionales de coordinación investigativa."
+    ]
+
+  },
+    {
+      nombre: "Dr. Ángel Enrique López Rojas",
+      foto: AngelLopez,
+      formacion: "Bachiller en Ingeniería de Sistemas e Informática (UNAP), Maestro en [especialidad por confirmar] (universidad por confirmar), Doctor en [especialidad por confirmar] (universidad por confirmar)",
+      experiencia: "Decano de la Facultad de Ingeniería de Sistemas e Informática (FISI) en la Universidad Nacional de la Amazonía Peruana. Amplia trayectoria en docencia universitaria, gestión académica y liderazgo institucional.",
+      logros: [
+        "Conducción y representación de la Facultad de Ingeniería de Sistemas e Informática en eventos académicos y de innovación tecnológica.",
+        "Impulso de iniciativas estudiantiles en Inteligencia Artificial y transformación digital en la UNAP.",
+        "Presidencia en ceremonias de graduación y fortalecimiento de vínculos institucionales de la facultad."
+      ],
   },
 ];
 
