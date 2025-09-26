@@ -816,7 +816,7 @@ export const noticiasdata = [
       title: "Retiro del Semestre",
       date: "19. February 2022",
       comments: "Duración: 04 días (Aprox)",
-      costo: "Costo: 18 soles (Aprox)",
+      costo: "Costo: 26 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
@@ -839,14 +839,12 @@ export const noticiasdata = [
           para2: "Documentos necesarios:",
         },
         {
-          para3: "- Solicitud de Retiro de Curso dirigida al director de Escuela. (03 copias + original).",
+          para3: "- Solicitud de Retiro de Semestre dirigida al director de Escuela. (03 copias + original).",
         },
         {
           para4: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
         },
-        {
-          para5: "-Recibo de pagos por: Nivelación de curso",
-        },
+
      
       ],
       details: [
@@ -854,12 +852,13 @@ export const noticiasdata = [
           title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
         },
         {
-          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
-          para2:"2. Imprime la constancia y rellénala con tus datos",
-          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+          para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Retiro del Semestre que tiene un costo de S/. 23.00 soles y código(011). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
+          para2:'2. Imprime la "Solicitud de Retiro del Semestre" que se ecuentra en la parte superior de ésta página o en la sección de (Formatos), llénala con tus datos y saca 03 copias de esta. (Antes de sacar copia verifica que tus datos estén correctos).',
+          para3:"3. Presenta todos tus documentos a la dirección de escuela profesional que se encuentra en el segundo piso de la facultad (calle Moore N° 280)",
+          para4:"4. Guarda tu cargo y espera la respuesta en aproximadamente 03 días hábiles (Ésto dependerá de la demanda de trámies solicitados). La dirección de escuela se encargará de gestionar la resolución decanal necesaria, y finalmente la ORSA activará el retiro en el sistema SGA.",
         },
         {
-          quote: "Nota del editor: ver si piden dni y su copia",
+          quote: 'Te recomendamos ver el trámite de "Reingreso Regular" antes de iniciar el siguiente semestre para tu retorno',
         },
         // {
         //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
