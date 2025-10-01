@@ -12,16 +12,23 @@ const Mvistos = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     rows: 1,
     slidesPerRow: 3,
-    nextArrow: <div className="arrow next">›</div>,
-    prevArrow: <div className="arrow prev">‹</div>,
+    
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+
     responsive: [
       {
         breakpoint: 768,
-        settings: { rows: 1,
+        settings: { 
+          rows: 1,
           slidesPerRow: 1,
+          dots: true,
+          autoplay: false,
          },
       },
     ],

@@ -8,28 +8,40 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./cursos.css"
 
+
 const Cursos = () => {
     const settings = {
-        className: "center",
+      
+        className : "center",
         // centerMode: true,
         centerMode: false,
         infinite: true,
         centerPadding: "20px",
         slidesToShow: 2,
-        speed: 500,
+        speed: 700,
         rows: 3,
         slidesPerRow: 1,
+        dots: false,
+   
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+
         responsive: [
           {
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              rows:3,
+              rows:2,
+              dots: true,
+              autoplay: false,
               // infinite: true,
               
             }
           },
+          
         ]
         //esto es para pooner en vertical
         // dots: false,
@@ -40,6 +52,7 @@ const Cursos = () => {
         // verticalSwiping: true,
         
       };
+      
       return (
         <>
         <section className='cursos'>

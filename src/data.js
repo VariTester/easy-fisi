@@ -880,7 +880,7 @@ export const noticiasdata = [
       ],
       details: [
         {
-          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
+          title: "Pasos a seguir para solicitar la Nivelación de Cursos",
         },
         {
           para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Retiro del Semestre que tiene un costo de S/. 23.00 soles y código(011). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
