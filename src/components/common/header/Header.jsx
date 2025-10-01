@@ -30,7 +30,7 @@ const Header = ({ usuario, setUsuario }) => {
               <li><Link to='/formatos'>Formatos</Link></li>
               <li><Link to='/foro'>Foro</Link></li>
               <li><Link to='/docentes'>Docentes</Link></li>
-              <li><Link to='/administrativos'>Administrativos</Link></li>
+              <li><Link to='/quienesSomos'>Quiénes Somos</Link></li>
 
               {correoVerificado ? (
                 <>

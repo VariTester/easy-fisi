@@ -42,7 +42,7 @@ header li.iniciosesion {
 }
 
 header li a:hover{
-    color: #f2ff00;
+    color: #fcc21b;
     cursor: pointer;
 }
 
@@ -50,7 +50,7 @@ header li a:hover{
 .cerrarSesionBtn {
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid #bf1414;
+  border: 2px solid #fcc21b;
   border-radius: 12px;
   padding: 10px 20px;
   cursor: pointer;
@@ -59,8 +59,9 @@ header li a:hover{
 }
 
 .cerrarSesionBtn:hover {
-  background-color: #bf1414;
-  color: #fff;
+  background-color: #e3af18;
+  color: #000000;
+  
 }
 
 /* con display none evitamos que aparezca el menu */
@@ -103,7 +104,7 @@ header li a:hover{
     header .navbar {
         position: absolute;
         display: block;
-        background-color:  #f2ff00;
+        background-color:  #fcc21b;
         left: auto;
         top: 232px !important;
         width: 90%;

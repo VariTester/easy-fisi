@@ -17,6 +17,7 @@ import NoticiasSinglePage from "./components/SinglePages/NoticiasSinglePage/Noti
 
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
+import QuienesSomosroute from "./routes/QuienesSomosRoutes";
 
 
 export default function App() {
@@ -41,6 +42,7 @@ useEffect(() => {
             <Route path="/tramites" element={<Tramitesroute />} />
             <Route path="/docentes" element={<Docentesroute />} />
             <Route path="/formatos" element={<Formatosroute />} />
+            <Route path="/quienesSomos" element={<QuienesSomosroute />} />
             <Route path="/tramite/:id" element={<Singlepages />} />
             <Route path="/Noticia/:id" element={<NoticiasSinglePage />} />
             <Route path="/foro" element={<Fororoute usuario={usuario} />} />

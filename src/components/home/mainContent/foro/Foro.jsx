@@ -255,7 +255,7 @@ const darLike = async (temaId) => {
 
   return (
     <section className="foro">
-      <Heading title="Foro para charlar" />
+      <Heading title="Foro" />
       <Link to={`/foro/`} style={{ all: "unset" }}>
         <div className="content">
           <div className="new-topic">

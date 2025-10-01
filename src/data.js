@@ -2,6 +2,8 @@ import Noticia01 from './assets/images/NoticiasImagenes/Noticia01.jpg';
 import Noticia02 from './assets/images/NoticiasImagenes/Noticia02.jpg';
 import Noticia03 from './assets/images/NoticiasImagenes/Noticia03.jpg';
 import Noticia04 from './assets/images/NoticiasImagenes/Noticia04.jpg';
+import Bryan from './assets/images/QuienesSomosoImagenes/BryanYong.jpg';
+import Luisa from './assets/images/QuienesSomosoImagenes/Luisa.jpg';
 import Galeria01 from './assets/images/Galeria/Galeria01.jpg';
 import Galeria02 from './assets/images/Galeria/Galeria02.jpg';
 import Galeria03 from './assets/images/Galeria/Galeria03.jpg';
@@ -1175,6 +1177,33 @@ export const docentesData = [
         "Presidencia en ceremonias de graduación y fortalecimiento de vínculos institucionales de la facultad."
       ],
   },
+];
+
+export const quienesSomosData = [
+{
+  nombre: "Bryan César Yong Navarro",
+  foto: Bryan,
+  formacion: "Bachiller e Ingeniero de Sistemas e Informática (UNAP)",
+  experiencia: "01 año de experiencia trabajando en el sector energía en el área de calidad de datos",
+  logros: [
+    "Especialista en elaboración de planes estratégicos y gestión de operación informática institucional.",
+    "Amplia experiencia en gestión de adquisición de tecnologías de la información, seguridad y auditoría de TIC.",
+    "Asesor en planes de contingencia, seguridad de la información, políticas y directivas de TI en instituciones públicas y privadas.",
+  ],
+},
+  {
+    nombre: "Luisa Nair Villena Rivera",
+    foto: Luisa,
+    formacion: "Bachiller e Ingeniero de Sistemas e Informática (UNAP)",
+    experiencia: "Dos años de experiencia laboral en el análisis de datos para la toma de decisiones de estrategias comerciales",
+    logros: [
+      "Asesor en múltiples trabajos de investigación en UNAP como el de tesis en Enfermería, destacando en aporte estadístico.",
+      "Participación en maestría en Ingeniería de Sistemas con mención en UNAP.",
+      "Presencia en el directorio del Vicerrectorado de Investigación de la UNAP con funciones institucionales de coordinación investigativa."
+    ]
+
+  },
+
 ];
 
   export const ppost = [
