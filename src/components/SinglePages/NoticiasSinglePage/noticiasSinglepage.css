@@ -101,9 +101,9 @@
     margin-bottom: 15px; /* Espacio entre los bloques de texto */
   }
 
-  /* .para2{
+  .para2{
     font-weight: 600;
-  } */
+  }
 /*acortar los saltos de línea*/
 
   @media screen and (max-width: 815px) {

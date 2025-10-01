@@ -99,20 +99,48 @@ const NoticiasSinglepagess = () =>  {
               </div>
 
               <div className='quote'>
-                <i className='fa fa-quote-left'></i>
                 {item.details.map((data) => (
-                  <p>{data.quote}</p>
+                  <p>{data.title}</p>
                 ))}
               </div>
 
               <div className='desctop'>
                 {item.desc.map((val, index) => (
                   <div key={index} className='text-container'> 
-                    {val.para17 && <p className='para17'>{val.para17}</p>} 
+                    {val.para17 && <p className='para17'>{val.para17}</p>}
+                    {val.para18 && <p className='para18'>{val.para18}</p>} 
+                    {val.para19 && <p className='para19'>{val.para19}</p>} 
+                    {val.para20 && <p className='para20'>{val.para20}</p>}  
+                    {val.para21 && <p className='para21'>{val.para21}</p>} 
 
                   </div>
                 ))}
               </div>
+
+              <div className='quote'>
+                {item.details.some((data) => data.quote) && (
+                  <>
+                    <i className='fa fa-quote-left'></i>
+                    {item.details.map(
+                      (data, index) =>
+                        data.quote && <p key={index}>{data.quote}</p> // solo imprime si existe
+                      
+                    )}
+                  </>
+                )}
+              </div>
+
+                <div className='details'>
+                {item.details.map((val, index) => (
+                  <div key={index} className='text-container'>   
+                    {val.para22 && <p className='para22'>{val.para22}</p>} 
+
+                  </div>
+                ))}
+              </div>
+
+
+
 
 
               

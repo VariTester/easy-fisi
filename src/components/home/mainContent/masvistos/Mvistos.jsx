@@ -43,7 +43,7 @@ const Mvistos = () => {
   return (
     <>
     <section className='masVistos'>
-        <Heading title="Más Vistos"/>
+        <Heading title="Vista Rápida Trámites"/>
         <div className='content'>
       <Slider {...settings}>
         {tramites.map((val) => (
