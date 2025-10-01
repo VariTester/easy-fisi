@@ -66,9 +66,9 @@ main {
 
 /* Barra de búsqueda */
 .search-containerfp {
-    display: block;
+    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 20px;  /* Ajustamos para que no quede tan arriba */
     width: 100%;  /* Aseguramos que la barra ocupe todo el ancho disponible */
 }
@@ -124,7 +124,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .pagination button {
@@ -138,6 +138,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    
   }
   
   .pagination button:hover {
@@ -187,4 +188,9 @@ main {
     .search-container {
         margin-top: 20px;  /* Asegura que la barra de búsqueda tenga espacio */
     }
+
+    .search-containerfp {
+        margin-top: 10px;  /* Ajustamos para que no quede tan arriba */
+
+}
 } 

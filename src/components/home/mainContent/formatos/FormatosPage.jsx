@@ -1,12 +1,28 @@
 import { formatos_page } from "../../../../data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./formatosPage.css";
 import Side from "../../sideContent/side/Side";
 
 const FormatosPage = () => {
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const [itemsPerPage, setItemsPerPage] = useState(6);
+
+  // Detectar ancho de pantalla para ajustar itemsPerPage
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      if (window.innerWidth <= 815) {
+        setItemsPerPage(4); // 📱 en móvil
+      } else {
+        setItemsPerPage(6); // 💻 en desktop
+      }
+    };
+
+    updateItemsPerPage(); // primera vez
+    window.addEventListener("resize", updateItemsPerPage);
+
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   // Filtrar formatos en base al texto de búsqueda
   const formatosDisponibles = formatos_page.flatMap(item =>
@@ -39,68 +55,65 @@ const FormatosPage = () => {
   };
 
   return (
-    <>
-      <main>
-        <div className="containerfp">
-          {/* Contenido principal */}
-          <section className="mainContent detailsfp">
-            {/* Barra de búsqueda estilizada */}
-            <div className="search-containerfp">
-              <input
-                type="text"
-                placeholder="🔍 Buscar formato..."
-                className="search-bar"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
+    <main>
+      <div className="containerfp">
+        {/* Contenido principal */}
+        <section className="mainContent detailsfp">
+          {/* Barra de búsqueda estilizada */}
+          <div className="search-containerfp">
+            <input
+              type="text"
+              placeholder="🔍 Buscar formato..."
+              className="search-bar"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
 
-            {/* Paginación */}
-            <div className="pagination">
-              <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                Anterior
-              </button>
-              {Array.from({ length: totalPages }).map((_, index) => (
-                <span
-                  key={index}
-                  className={`page-number ${currentPage === index + 1 ? "active" : ""}`}
-                  onClick={() => setCurrentPage(index + 1)}
-                >
-                  {index + 1}
-                </span>
-              ))}
-              <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-                Siguiente
-              </button>
-            </div>
+          {/* Paginación */}
+          <div className="pagination">
+            <button onClick={handlePrevPage} disabled={currentPage === 1}>
+              Anterior
+            </button>
+            {Array.from({ length: totalPages }).map((_, index) => (
+              <span
+                key={index}
+                className={`page-number ${currentPage === index + 1 ? "active" : ""}`}
+                onClick={() => setCurrentPage(index + 1)}
+              >
+                {index + 1}
+              </span>
+            ))}
+            <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+              Siguiente
+            </button>
+          </div>
 
-            {/* Sección de formatos */}
-            <div className="formatsfp">
-              {currentItems.length > 0 ? (
-                currentItems.map((val, index) => {
-                  const formatoKey = Object.keys(val).find((key) =>
-                    key.startsWith("formato")
-                  );
+          {/* Sección de formatos */}
+          <div className="formatsfp">
+            {currentItems.length > 0 ? (
+              currentItems.map((val, index) => {
+                const formatoKey = Object.keys(val).find((key) =>
+                  key.startsWith("formato")
+                );
 
-                  return (
-                    <div key={index} className="text-containerLinksfp">
-                      {formatoKey && val[formatoKey] ? (
-                        <a href={val[formatoKey]} download className="formato-linkfp">
-                          {val.nombre}
-                        </a>
-                      ) : null}
-                    </div>
-                  );
-                })
-              ) : (
-                <p>No hay formatos disponibles</p>
-              )}
-            </div>
-          </section>
-
-        </div>
-      </main>
-    </>
+                return (
+                  <div key={index} className="text-containerLinksfp">
+                    {formatoKey && val[formatoKey] ? (
+                      <a href={val[formatoKey]} download className="formato-linkfp">
+                        {val.nombre}
+                      </a>
+                    ) : null}
+                  </div>
+                );
+              })
+            ) : (
+              <p>No hay formatos disponibles</p>
+            )}
+          </div>
+        </section>
+      </div>
+    </main>
   );
 };
 

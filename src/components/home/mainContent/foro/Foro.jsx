@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./foro.css";
 import Heading from "../../../common/Heading/Heading";
 import Slider from "react-slick";
 import { db } from "../../../../firebase/firebaseConfig";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
+
 import {
   collection,
   getDocs,
@@ -16,7 +17,9 @@ import {
   updateDoc,
   increment,
   setDoc,
-  getDoc
+  getDoc,
+  deleteDoc,
+  onSnapshot,
 } from "firebase/firestore";
 
 const Foro = ({ usuario }) => {
@@ -26,6 +29,8 @@ const Foro = ({ usuario }) => {
   const [mostrarComentarios, setMostrarComentarios] = useState({});
   const [likesUsuario, setLikesUsuario] = useState({});
   const [nuevoTema, setNuevoTema] = useState({ title: "", desc: "" });
+  const [menuAbierto, setMenuAbierto] = useState(null);
+
 
   const toggleComentarios = (temaId) => {
     setMostrarComentarios((prev) => ({
@@ -34,163 +39,190 @@ const Foro = ({ usuario }) => {
     }));
   };
 
-  const obtenerTemas = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(db, "temas"));
-      const temasFirebase = querySnapshot.docs.map((doc) => ({
+  const obtenerTemas = () => {
+  try {
+    // Escuchar temas en tiempo real
+    const unsubscribeTemas = onSnapshot(collection(db, "temas"), async (snapshot) => {
+      const temasFirebase = snapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
       setTemas(temasFirebase);
 
-      // Comentarios accesibles para todos
+      // Escuchar comentarios de cada tema
       for (const tema of temasFirebase) {
-        const comentariosSnapshot = await getDocs(
-          query(
-            collection(db, `temas/${tema.id}/comentarios`),
-            orderBy("fecha", "desc")
-          )
+        onSnapshot(
+          query(collection(db, `temas/${tema.id}/comentarios`), orderBy("fecha", "desc")),
+          (comentariosSnapshot) => {
+            const comentariosData = comentariosSnapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            setComentarios((prev) => ({ ...prev, [tema.id]: comentariosData }));
+          }
         );
-        const comentariosData = comentariosSnapshot.docs.map((doc) => doc.data());
-        setComentarios((prev) => ({ ...prev, [tema.id]: comentariosData }));
       }
 
-      // Likes solo para usuarios verificados
+      // Escuchar likes en tiempo real (solo si el usuario está logueado y verificado)
       if (usuario?.emailVerified) {
-        const nuevosLikes = {};
         for (const tema of temasFirebase) {
           const likeDocRef = doc(db, `temas/${tema.id}/likes/${usuario.email}`);
-          const likeSnap = await getDoc(likeDocRef);
-          nuevosLikes[tema.id] = likeSnap.exists();
+          onSnapshot(likeDocRef, (likeSnap) => {
+            setLikesUsuario((prev) => ({
+              ...prev,
+              [tema.id]: likeSnap.exists(),
+            }));
+          });
         }
-        setLikesUsuario(nuevosLikes);
-      } else {
-        setLikesUsuario({});
       }
+    });
 
+    return unsubscribeTemas;
+  } catch (error) {
+    console.error("Error al cargar temas:", error);
+  }
+};
+
+  const crearNuevoTema = async () => {
+    if (!usuario) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Inicia sesión",
+        text: "Debes iniciar sesión para publicar un tema.",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+    }
+
+    if (!usuario.emailVerified) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Correo no verificado",
+        text: "Verifica tu correo institucional antes de publicar.",
+        timer: 3000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+    }
+
+    if (!nuevoTema.title.trim() || !nuevoTema.desc.trim()) {
+      return Swal.fire({
+        icon: "info",
+        title: "Campos incompletos",
+        text: "Por favor, completa todos los campos para publicar un tema.",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+    }
+
+    try {
+      await addDoc(collection(db, "temas"), {
+        title: nuevoTema.title,
+        desc: nuevoTema.desc,
+        fecha: serverTimestamp(),
+        likes: 0,
+      });
+
+      Swal.fire({
+        icon: "success",
+        title: "¡Tema publicado!",
+        text: "Gracias por iniciar una nueva discusión.",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+
+      setNuevoTema({ title: "", desc: "" });
+      obtenerTemas();
     } catch (error) {
-      console.error("Error al cargar temas:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Error al publicar",
+        text: "Hubo un problema al crear el tema. Inténtalo de nuevo.",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
     }
   };
 
-const crearNuevoTema = async () => {
-  if (!usuario) {
-    return Swal.fire({
-      icon: 'warning',
-      title: 'Inicia sesión',
-      text: 'Debes iniciar sesión para publicar un tema.',
-    });
-  }
+  const enviarComentario = async (temaId, texto) => {
+    if (!usuario) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Inicia sesión",
+        text: "Debes iniciar sesión para comentar",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+    }
 
-  if (!usuario.emailVerified) {
-    return Swal.fire({
-      icon: 'warning',
-      title: 'Correo no verificado',
-      text: 'Verifica tu correo institucional antes de publicar.',
-    });
-  }
+    if (!usuario.emailVerified) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Correo no verificado",
+        text: "Debes verificar tu correo institucional para realizar esta acción.",
+        timer: 3000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+    }
 
-  if (!nuevoTema.title.trim() || !nuevoTema.desc.trim()) {
-    return Swal.fire({
-      icon: 'info',
-      title: 'Campos incompletos',
-      text: 'Por favor, completa todos los campos para publicar un tema.',
-    });
-  }
+    if (!texto || texto.trim() === "") {
+      return Swal.fire({
+        icon: "error",
+        title: "Comentario vacío",
+        text: "Por favor escribe algo antes de comentar.",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+    }
 
-  try {
-    await addDoc(collection(db, "temas"), {
-      title: nuevoTema.title,
-      desc: nuevoTema.desc,
+    await addDoc(collection(db, `temas/${temaId}/comentarios`), {
+      texto,
+      autor: usuario.email,
       fecha: serverTimestamp(),
-      likes: 0,
     });
 
     Swal.fire({
-      icon: 'success',
-      title: '¡Tema publicado!',
-      text: 'Gracias por iniciar una nueva discusión.',
+      icon: "success",
+      title: "¡Comentario enviado!",
+      text: "Tu mensaje ha sido publicado.",
+      showConfirmButton: false,
       timer: 2000,
       showConfirmButton: false,
       timerProgressBar: true,
     });
 
-    setNuevoTema({ title: "", desc: "" });
+    setNuevoComentario({ ...nuevoComentario, [temaId]: "" });
     obtenerTemas();
-  } catch (error) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Error al publicar',
-      text: 'Hubo un problema al crear el tema. Inténtalo de nuevo.',
-    });
-  }
-};
+  };
 
-const enviarComentario = async (temaId, texto) => {
-  if (!usuario) {
-    Swal.fire({
-      icon: 'warning',
-      title: 'Inicia sesión',
-      text: 'Debes iniciar sesión para comentar',
-    });
-    return;
-  }
-
-  if (!usuario.emailVerified) {
-    Swal.fire({
-      icon: 'warning',
-      title: 'Correo no verificado',
-      text: 'Debes verificar tu correo institucional para realizar esta acción.',
-    });
-    return;
-  }
-
-  if (!texto || texto.trim() === '') {
-    Swal.fire({
-      icon: 'error',
-      title: 'Comentario vacío',
-      text: 'Por favor escribe algo antes de comentar.',
-    });
-    return;
-  }
-
-  await addDoc(collection(db, `temas/${temaId}/comentarios`), {
-    texto,
-    autor: usuario.email,
-    fecha: serverTimestamp(),
-  });
-
-  // ✅ Alerta automática y sin botón
-  Swal.fire({
-    icon: 'success',
-    title: '¡Comentario enviado!',
-    text: 'Tu mensaje ha sido publicado.',
-    showConfirmButton: false,
-    timer: 2000,
-    timerProgressBar: true,
-  });
-
-  setNuevoComentario({ ...nuevoComentario, [temaId]: '' });
-  obtenerTemas();
-};
-
-
-const darLike = async (temaId) => {
+  // 🔹 Toggle Like (da y quita)
+const toggleLike = async (temaId) => {
   if (!usuario) {
     return Swal.fire({
-      icon: 'warning',
-      title: 'Inicia sesión',
+      icon: "warning",
+      title: "Inicia sesión",
+      text: "Debes iniciar sesión para dar like",
       timer: 2000,
-      text: 'Debes iniciar sesión para dar like',
+      showConfirmButton: false,
+      timerProgressBar: true,
     });
-    
   }
 
   if (!usuario.emailVerified) {
     return Swal.fire({
-      icon: 'warning',
-      title: 'Correo no verificado',
-      text: 'Verifica tu correo institucional para dar like',
+      icon: "warning",
+      title: "Correo no verificado",
+      text: "Verifica tu correo institucional para dar like",
+      timer: 3000,
+      showConfirmButton: false,
+      timerProgressBar: true,
     });
   }
 
@@ -198,39 +230,80 @@ const darLike = async (temaId) => {
   const docSnap = await getDoc(likeDocRef);
 
   if (docSnap.exists()) {
-    return Swal.fire({
-      icon: 'info',
-      title: 'Ya diste like 😉',
-      text: 'Solo puedes dar like una vez por tema.',
-      timer: 2000,
-      showConfirmButton: false,
-      timerProgressBar: true,
-    });
+    // 👎 Quitar like
+    await updateDoc(doc(db, "temas", temaId), { likes: increment(-1) });
+    await deleteDoc(likeDocRef);
+    setLikesUsuario((prev) => ({ ...prev, [temaId]: false }));
+    // También actualizo localmente el contador
+    // setTemas((prev) =>
+    //   prev.map((t) =>
+    //     t.id === temaId ? { ...t, likes: t.likes - 1 } : t
+    //   )
+    // );
+  } else {
+    // 👍 Dar like
+    await updateDoc(doc(db, "temas", temaId), { likes: increment(1) });
+    await setDoc(likeDocRef, { fecha: serverTimestamp() });
+    setLikesUsuario((prev) => ({ ...prev, [temaId]: true }));
+    // También actualizo localmente el contador
+    // setTemas((prev) =>
+    //   prev.map((t) =>
+    //     t.id === temaId ? { ...t, likes: t.likes + 1 } : t
+    //   )
+    // );
   }
-
-  await updateDoc(doc(db, "temas", temaId), {
-    likes: increment(1),
-  });
-
-  await setDoc(likeDocRef, {
-    fecha: serverTimestamp(),
-  });
-
-  Swal.fire({
-    icon: 'success',
-    title: '¡Gracias por tu like!',
-    text: 'Tu apoyo ayuda a mantener activo el foro.',
-    showConfirmButton: false,
-    timer: 2000,
-    timerProgressBar: true,
-  });
-
-  obtenerTemas();
 };
 
-  useEffect(() => {
-    obtenerTemas();
-  }, []);
+
+  // 🔹 Borrar comentario
+  const borrarComentario = async (temaId, comentarioId) => {
+    try {
+      await deleteDoc(doc(db, `temas/${temaId}/comentarios/${comentarioId}`));
+      Swal.fire("Eliminado", "Tu comentario fue borrado.", "success");
+      Swal.fire({
+        icon: "success",
+        title: "Eliminado",
+        text: "Tu comentario fue eliminado",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+      obtenerTemas();
+    } catch (err) {
+      Swal.fire("Error", "No se pudo borrar.", "error");
+    }
+  };
+
+  // 🔹 Editar comentario
+  const editarComentario = async (temaId, comentarioId, nuevoTexto) => {
+    if (!nuevoTexto.trim()) return;
+    try {
+      await updateDoc(doc(db, `temas/${temaId}/comentarios/${comentarioId}`), {
+        texto: nuevoTexto,
+        
+      });
+      Swal.fire({
+        icon: "success",
+        title: "Editado",
+        text: "Tu comentario fue actualizado",
+        timer: 2000,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
+      
+      obtenerTemas();
+    } catch (err) {
+      Swal.fire("Error", "No se pudo editar", "error");
+    }
+  };
+
+useEffect(() => {
+  const unsubscribe = obtenerTemas();
+  return () => {
+    if (unsubscribe) unsubscribe(); // cleanup
+  };
+}, [usuario]);
+
 
   const settings = {
     className: "center",
@@ -241,6 +314,8 @@ const darLike = async (temaId) => {
     speed: 500,
     rows: 2,
     slidesPerRow: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 768,
@@ -248,10 +323,56 @@ const darLike = async (temaId) => {
           rows: 1,
           slidesPerRow: 1,
           centerMode: false,
+          nextArrow: false,
+          prevArrow: false,
         },
       },
     ],
   };
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          background: "grey",
+          borderRadius: "50%",
+          width: "20px",
+          height: "20px",
+          zIndex: 2,
+          marginRight: "10px",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          background: "grey",
+          borderRadius: "50%",
+          width: "20px",
+          height: "20px",
+          zIndex: 2,
+          marginLeft: "10px",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
 
   return (
     <section className="foro">
@@ -267,14 +388,18 @@ const darLike = async (temaId) => {
                   type="text"
                   placeholder="Título del tema"
                   value={nuevoTema.title}
-                  onChange={(e) => setNuevoTema({ ...nuevoTema, title: e.target.value })}
+                  onChange={(e) =>
+                    setNuevoTema({ ...nuevoTema, title: e.target.value })
+                  }
                 />
                 <textarea
                   className="inputForo"
                   placeholder="Descripción del tema"
                   value={nuevoTema.desc}
                   rows={4}
-                  onChange={(e) => setNuevoTema({ ...nuevoTema, desc: e.target.value })}
+                  onChange={(e) =>
+                    setNuevoTema({ ...nuevoTema, desc: e.target.value })
+                  }
                   style={{ resize: "none" }}
                 />
                 <button className="btnSendForo" onClick={crearNuevoTema}>
@@ -300,15 +425,27 @@ const darLike = async (temaId) => {
               <div key={val.id} className="items">
                 <div className="box shadow flexSB">
                   <div className="text">
-                    <h1 className="title">{val.title?.slice(0, 40) || "Sin título"}...</h1>
+                    <h1 className="title">
+                      {val.title?.slice(0, 80) || "Sin título"}...
+                    </h1>
+
+                      <div className="date">
+                        <i className="fas fa-user"></i>
+                        <label>
+                          {val.autor || "Sin Autor"}
+                        </label>
+                      </div>
+
                     <div className="date">
                       <i className="fas fa-calendar-days"></i>
                       <label>
-                        {val.fecha ? val.fecha.toDate().toLocaleDateString() : "Sin fecha"}
+                        {val.fecha
+                          ? val.fecha.toDate().toLocaleDateString()
+                          : "Sin fecha"}
                       </label>
                     </div>
                     <p className="desc">
-                      {val.desc?.slice(0, 200) || "Sin descripción"}...
+                      {val.desc?.slice(0, 1000) || "Sin descripción"}...
                     </p>
 
                     <div className="comment">
@@ -316,19 +453,24 @@ const darLike = async (temaId) => {
                         className="fas fa-thumbs-up"
                         style={{
                           cursor: usuario?.emailVerified ? "pointer" : "default",
-                          color: likesUsuario[val.id] ? "green" : "gray",
+                          color: likesUsuario[val.id] ? "#1877F2" : "gray",
                         }}
-                        onClick={() => {
-                          if (!likesUsuario[val.id]) darLike(val.id);
-                        }}
+                        onClick={() => toggleLike(val.id)}
                       ></i>
+
                       <label>{val.likes || 0} Likes / </label>
                       <i
                         className="fas fa-comment"
-                        style={{ cursor: "pointer", color: mostrarComentarios[val.id] ? "blue" : "gray" }}
+                        style={{
+                          cursor: "pointer",
+                          color: mostrarComentarios[val.id] ? "#1877F2" : "gray",
+                        }}
                         onClick={() => toggleComentarios(val.id)}
                       ></i>
-                      <label onClick={() => toggleComentarios(val.id)} style={{ cursor: "pointer" }}>
+                      <label
+                        onClick={() => toggleComentarios(val.id)}
+                        style={{ cursor: "pointer" }}
+                      >
                         {comentarios[val.id]?.length || 0} Comentarios
                       </label>
                     </div>
@@ -337,10 +479,60 @@ const darLike = async (temaId) => {
                       comentarios[val.id] &&
                       comentarios[val.id].length > 0 && (
                         <div className="comentarios-lista">
-                          {comentarios[val.id].map((comentario, idx) => (
-                            <div key={idx} className="comentario-item">
-                              <strong>{comentario.autor}</strong>: {comentario.texto}
-                            </div>
+                          {comentarios[val.id].map((comentario) => (
+<div key={comentario.id} className="comentario-item">
+  <div className="comentario-contenido">
+    <strong>{comentario.autor}</strong>: {comentario.texto}
+  </div>
+
+  {usuario?.email === comentario.autor && (
+    <div className="comentario-menu">
+      {/* Botón de tres puntos */}
+      <button
+        className="menu-btn"
+        onClick={() =>
+          setMenuAbierto(menuAbierto === comentario.id ? null : comentario.id)
+        }
+      >
+        <i className="fas fa-ellipsis-h"></i>
+      </button>
+
+      {/* Menú desplegable */}
+      {menuAbierto === comentario.id && (
+        <div className="menu-opciones">
+          <button
+            onClick={() => {
+              Swal.fire({
+                title: "Editar comentario",
+                input: "text",
+                inputValue: comentario.texto,
+                showCancelButton: true,
+                confirmButtonText: "Guardar",
+              }).then((res) => {
+                if (res.isConfirmed) {
+                  editarComentario(val.id, comentario.id, res.value);
+                }
+              });
+              setMenuAbierto(null);
+            }}
+          >
+            ✏️ Editar
+          </button>
+          <button
+            onClick={() => {
+              borrarComentario(val.id, comentario.id);
+              setMenuAbierto(null);
+            }}
+          >
+            🗑️ Borrar
+          </button>
+        </div>
+      )}
+    </div>
+  )}
+</div>
+
+
                           ))}
                         </div>
                       )}

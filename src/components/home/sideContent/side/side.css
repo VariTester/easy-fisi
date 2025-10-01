@@ -20,26 +20,104 @@
   text-decoration: none;
 }
 
+/* Facebook */
 .social-icons .facebook {
-  background-color: #3b5998;
+  background: #1877f2; /* azul oficial */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.social-icons .pinterest {
-  background-color: #bd081c;
-}
-.social-icons .twitter {
-  background-color: #1da1f2;
-}
-.social-icons .instagram {
-  background-color: #c32aa3;
-}
+
+/* YouTube */
 .social-icons .youtube {
-  background-color: #ff0000;
+  background: #ff0000; /* rojo oficial */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Instagram */
+.social-icons .instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white; /* ícono en blanco */
+  border-radius: 50%; /* si quieres que se vea redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* X (antes Twitter) */
+.social-icons .x {
+  background: #000000; /* X es full negro */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TikTok */
+.social-icons .tiktok {
+  background: linear-gradient(
+    45deg,
+    #25f4ee 0%,
+    #000000 50%,
+    #fe2c55 100%
+  ); /* degrade estilo TikTok */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .social-icons .icon:hover {
   transform: scale(1.1);
   opacity: 0.9;
 }
+
+/* Estilo del contenedor igual a los otros */
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre ícono y texto */
+  justify-content: center;  /* centra horizontalmente */
+  text-align: center;
+
+}
+
+.icono-personal {
+  width: 40px;  /* ajusta el tamaño del logo */
+  height: 40px;
+  border-radius: 50%; /* opcional: si quieres que sea redondo */
+  object-fit:contain;
+}
+
+.social-icon-link a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #212020; /* un azul elegante */
+  transition: color 0.3s ease;
+}
+
+.social-icon-link a:hover {
+  color: #004a3d; /* efecto hover, tipo Instagram vibes */
+}
+
+
 
   /*------subscribe--------*/
   .subscribe {

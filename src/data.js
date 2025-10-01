@@ -1183,23 +1183,20 @@ export const quienesSomosData = [
 {
   nombre: "Bryan César Yong Navarro",
   foto: Bryan,
-  formacion: "Bachiller e Ingeniero de Sistemas e Informática (UNAP)",
-  experiencia: "01 año de experiencia trabajando en el sector energía en el área de calidad de datos",
+  formacion: "Bachiller en Ingeniería de Sistemas e Informática (UNAP)",
+  experiencia: "Más de 1 año de experiencia en el sector energía, especializado en calidad de datos y supervisión en distribución y comercialización eléctrica, con sólida trayectoria en automatización de procesos, aseguramiento de la calidad y confiabilidad de datos, así como en el uso de herramientas como web scraping, Python, React, Selenium y VBA en Excel.",
   logros: [
-    "Especialista en elaboración de planes estratégicos y gestión de operación informática institucional.",
-    "Amplia experiencia en gestión de adquisición de tecnologías de la información, seguridad y auditoría de TIC.",
-    "Asesor en planes de contingencia, seguridad de la información, políticas y directivas de TI en instituciones públicas y privadas.",
+    "Graduado de la Especialidad en Gestión Pública con enfoque en los sectores de Energía y Minería.",
   ],
+
 },
   {
     nombre: "Luisa Nair Villena Rivera",
     foto: Luisa,
-    formacion: "Bachiller e Ingeniero de Sistemas e Informática (UNAP)",
+    formacion: "Bachiller en Ingeniería de Sistemas e Informática (UNAP)",
     experiencia: "Dos años de experiencia laboral en el análisis de datos para la toma de decisiones de estrategias comerciales",
     logros: [
-      "Asesor en múltiples trabajos de investigación en UNAP como el de tesis en Enfermería, destacando en aporte estadístico.",
-      "Participación en maestría en Ingeniería de Sistemas con mención en UNAP.",
-      "Presencia en el directorio del Vicerrectorado de Investigación de la UNAP con funciones institucionales de coordinación investigativa."
+      "Asesora en ventas y análisis de datos, especializada en el diseño de dashboards para la gestión comercial y la toma de decisiones estratégicas. Experta en el desarrollo de reportes interactivos con Power BI",
     ]
 
   },

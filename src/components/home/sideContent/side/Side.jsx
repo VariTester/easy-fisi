@@ -7,6 +7,7 @@ import "./side.css"
 import { gallery } from '../../../../data'
 import Tpost from "../Tpost/Tpost"
 import SocialMedia from "../social/SocialMedia"
+import UnapPaginaIcono from '../social/UnapPaginaIcono'
 
 const Side = () => {
   const settings = {
@@ -26,11 +27,15 @@ const Side = () => {
     <>
       {/* <Heading title='Stay Connected' />
       <SocialMedia /> */}
-      
-      <Heading title='Redes Sociales UNAP'/>
+
+        <Heading title='Redes Sociales UNAP'/>
         <section className='SocialMedia'>
-        <SocialMedia />
-      </section>
+          <SocialMedia />
+        </section>
+
+        <section className='SocialMedia'>
+          <UnapPaginaIcono/>
+        </section>
 
 <Heading title='Whatsapp FISI' />
 

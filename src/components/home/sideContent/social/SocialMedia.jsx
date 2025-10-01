@@ -7,21 +7,21 @@ const SocialMedia = () => {
         <i className="fab fa-facebook-f"></i>
       </a>
 
-      <a href="https://twitter.com/unapiquitos" target="_blank" rel="noopener noreferrer" className="icon twitter">
-        <i className="fab fa-twitter"></i>
-      </a>
-
       <a href="https://youtube.com/user/unapiquitos" target="_blank" rel="noopener noreferrer" className="icon youtube">
         <i className="fab fa-youtube"></i>
       </a>
 
-      {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon instagram">
+      <a href="https://instagram.com/unapiquitos.oficial" target="_blank" rel="noopener noreferrer" className="icon instagram">
         <i className="fab fa-instagram"></i>
-      </a> */}
+      </a>
+      
+      <a href="https://x.com/unapiquitos" target="_blank" rel="noopener noreferrer" className="icon x">
+        <i className="fab fa-x"></i>
+      </a>
 
-      {/* <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="icon pinterest">
-        <i className="fab fa-pinterest-p"></i>
-      </a> */}
+      <a href="https://tiktok.com/@unapiquitos.oficial" target="_blank" rel="noopener noreferrer" className="icon tiktok">
+        <i className="fab fa-tiktok"></i>
+      </a>
     </div>
   );
 };

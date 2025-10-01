@@ -20,6 +20,25 @@
 .foro .text {
   flex: 1;
   min-width: 280px;
+  
+}
+
+/* Autor y fecha de tema */
+.date {
+  color: #282525;            /* Color del texto */
+  display: flex;          /* Para alinear ícono y texto en la misma línea */
+  align-items: center;    /* Centra verticalmente */
+  gap: 5px;               /* Espacio entre ícono y texto */
+}
+/* Para cambiar tamaño y color del texto del autor/fecha */
+.date label {
+  font-size: 12px;  /* Tamaño del texto */
+  color: #000000;      /* Color del texto */
+}
+
+.date i {
+  font-size: 10px;        /* Tamaño del ícono */
+  color: #474444;            /* Color del ícono */
 }
 
 /* =============================
@@ -40,9 +59,9 @@
 }
 
 .inputForo:focus {
-  border-color: #007bff;
+  border-color: #fcc21b;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 5px rgba(255, 217, 0, 0.3);
 }
 
 /* Inputs para crear nuevo tema */
@@ -51,7 +70,7 @@
   width: 100%;
   max-width: 600px;
   padding: 12px 16px;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 8px;
   border: 2px solid #ddd;
   margin-bottom: 15px;
@@ -60,7 +79,7 @@
 }
 
 .new-topic .inputForo:focus {
-  border-color: #fb4c35;
+  border-color: #fcc21b;
   outline: none;
   box-shadow: 0 0 5px rgba(255, 98, 0, 0.3);
 }
@@ -70,7 +89,7 @@
   width: 100%;
   max-width: 400px;
   padding: 10px 15px;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
   border: 2px solid #ddd;
@@ -86,28 +105,32 @@
 
 /* Botón para crear nuevo tema */
 .new-topic .btnSendForo {
-  background-color: #fb4c35;
+  background-color: #fcc21b;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   padding: 12px 28px;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .new-topic .btnSendForo:hover {
-  background-color: #d63e28;
-  transform: translateY(-2px);
+  background-color: #e3af18;
+  /* transform: translateY(-2px); */
+  Transform: scale(1.03);
+  color: #151414;
 }
 
 /* Botón para enviar comentario */
 .btnSendForo {
-  background-color: #007bff;
+  background-color: #fcc21b;
   color: white;
   border: none;
   padding: 12px 24px;
+  margin-top: 20px;
+  margin-left: 10px;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
@@ -115,8 +138,9 @@
 }
 
 .btnSendForo:hover {
-  background-color: #0056b3;
+  background-color: #e3af18;
   transform: scale(1.03);
+  color: #000000;
 }
 
 /* =============================
@@ -141,7 +165,7 @@
 .comentarios-lista {
   margin-top: 10px;
   padding-left: 10px;
-    max-height: 160px; /* Limita altura máxima visible */
+  max-height: 160px; /* Limita altura máxima visible */
   overflow-y: auto; /* Scroll si se excede */
   scrollbar-width: thin; /* Firefox */
 }
@@ -155,21 +179,92 @@
   background-color: #ccc;
   border-radius: 10px;
 }
+
+/* Cada comentario */
 .comentario-item {
-  background: #f0f0f0;
-  padding: 6px 10px;
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  justify-content: flex-start; /* texto y menú quedan alineados a la izquierda */
+  gap: 10px;
+  background: #f5f5f5;
   border-radius: 6px;
-  font-size: 12px;
+  padding: 6px 10px;
+  width: 100%; /* que ocupe ancho del contenedor */
+  box-sizing: border-box;
 }
 
-/* Contenedor de comentar */
-.comment-section {
+/* Caja gris SOLO para el texto */
+.comentario-contenido {
+  display:block;           /* bloque normal para evitar superposición */
+  flex: 1;                  /* ocupa el espacio disponible dentro de .comentario-item */
+  overflow-wrap: break-word;/* rompe palabras larguísimas */
+  word-break: break-word;   /* compatibilidad adicional */
+  white-space: normal;      /* evita pre-wrap que genera solapamiento */
+  background: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: left;
+  max-width:fit-content;
+  
+}
+
+
+/* Menú de los 3 puntos */
+.comentario-menu {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  gap: 10px;
 }
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: gray;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn:hover {
+  color: #1877f2;
+}
+
+/* Menú desplegable */
+.menu-opciones {
+  position: absolute;
+  top: 100%;  /* aparece justo debajo del botón */
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.menu-opciones button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-opciones button:hover {
+  background: #f0f2f5;
+  border-radius: 4px;
+}
+
 
 /* =============================
    MENSAJE SI NO INICIÓ SESIÓN
@@ -200,11 +295,20 @@
    TEXTO DESCRIPCIÓN DEL FORO
 ============================= */
 
+
 .desc {
-  font-size: 15px;
+  font-size: 14px;
   margin: 10px 0;
   text-align: start;
+
+  /* Previene desbordamiento */
+  word-wrap: break-word;       /* rompe palabras largas */
+  overflow-wrap: anywhere;     /* más agresivo que break-word */
+  word-break: break-word;      /* compatibilidad adicional */
+  max-width: 100%;             /* nunca excede el contenedor */
+  box-sizing: border-box;      /* importante si hay padding/margen */
 }
+
 
 /* =============================
    RESPONSIVE
@@ -218,17 +322,12 @@
   }
 
   .desc {
-  text-align: start;
-}
+    text-align: start;
+  }
 
-.comentarios-lista {
-  max-height: 200px; /* Limita altura máxima visible */
-
-}
-
-.comentario-item {
-  text-align: start;
-}
+  .comentarios-lista {
+    max-height: 200px; /* Limita altura máxima visible */
+  }
 
   .inputForo {
     width: 100%;
@@ -236,8 +335,9 @@
   }
 
   .btnSendForo {
-    width: 100%;
+    width: auto;
   }
+
 
   .foro-login-msg {
     font-size: 13px;
