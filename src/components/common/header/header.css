@@ -1,16 +1,10 @@
-
-/* .head .container{
-    height: 12vh;
-    /* background-color: black; 
-} */
-
+/* Logo y cabecera */
 .head .logo img{
     width: 450px;
 }
 
 .head .ad img{
     width: 350px;
-    
 }
 
 header{
@@ -22,20 +16,13 @@ header li{
     margin-right: 30px;
     transition: 0.5s;
 }
+
 header li a{
     color: #fff;
     transition: 0.5s;
-    
 }
 
-header li.iniciosesion a{
-    color: #ffffff;
-    border: 2px solid #bf1414; /* Borde del cuadrado */
-    border-radius: 12px; /* Bordes curvos del cuadrado */
-    padding: 10px 20px; /* Espaciado interno para el cuadrado */
-    transition: 0.5s;
-}
-
+/* 🔹 Ajuste: solo mantiene margen, ya no estilos distintos */
 header li.iniciosesion {
     margin-left: auto;
     transition: 0.5s;
@@ -46,7 +33,7 @@ header li a:hover{
     cursor: pointer;
 }
 
-/* Botón de cerrar sesión (modo escritorio) */
+/* 🔹 Estilo unificado para iniciar y cerrar sesión */
 .cerrarSesionBtn {
   background-color: transparent;
   color: #ffffff;
@@ -56,15 +43,22 @@ header li a:hover{
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s ease;
+  text-decoration: none; /* Para el <Link> */
+  display: inline-block;
+
+  /* Normalizamos diferencias entre <a> y <button> */
+  font-size: 14px;
+  line-height: 1;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 .cerrarSesionBtn:hover {
   background-color: #e3af18;
   color: #000000;
-  
 }
 
-/* con display none evitamos que aparezca el menu */
+/* Icono menú */
 .barIco{
     font-size: 25px;
     background: none;
@@ -73,6 +67,7 @@ header li a:hover{
     border: none;
 }
 
+/* Correo de usuario */
 .userCorreo {
   color: #007bff;
   font-weight: bold;
@@ -80,7 +75,7 @@ header li a:hover{
   text-transform: none;
 }
 
-
+/* 🔹 Responsive */
 @media screen and (max-width:968px){
     .head .logo img{
         width: 250px;
@@ -89,9 +84,7 @@ header li a:hover{
     .head .ad img{
         width: 220px;
     }
-    /* .head .ad{
-        display: none;
-    } */
+
     header .icon{
         display: none;
     }
@@ -111,9 +104,8 @@ header li a:hover{
         height: auto;
         z-index: 5;
         padding: 20px;
-        border-bottom-left-radius: 12px; /* Borde curvo en la esquina inferior izquierda */
-        border-bottom-right-radius: 12px; /* Borde curvo en la esquina inferior derecha */
-        
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
     }
     header ul li{
         margin-bottom: 30px;
@@ -122,40 +114,21 @@ header li a:hover{
     header li.iniciosesion {
         margin-left: auto;
     }
-    header li.iniciosesion a{
-        color: #ffffff;
-        border: none;
-        /* border: 2px solid #bf1414; Borde del cuadrado */
-        /* border-radius: 12px; Bordes curvos del cuadrado */
+
+    /* 🔹 Botón en responsive */
+    .cerrarSesionBtn {
+        width: 100%;
         background-color: black;
-        /* padding: 3px 5px; Espaciado interno para el cuadrado */
-        transition: 0.5s;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
     }
 
-    .head .ad img{
-        display: none;
-
+    .userCorreo {
+        color: #000;
+        margin-bottom: 10px;
+        display: block;
     }
-
-    header li a{
-        color: #000000;
-        font-weight: 600;
-        transition: 0.5s;
-        
-    }
-
-      .cerrarSesionBtn {
-    width: 100%;
-    background-color: black;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .userCorreo {
-    color: #000;
-    margin-bottom: 10px;
-    display: block;
-  }
 }

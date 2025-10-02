@@ -78,7 +78,9 @@ const Header = ({ usuario, setUsuario }) => {
                 </>
               ) : (
                 <li className='iniciosesion'>
-                  <Link to='/iniciarSesion'>Iniciar Sesión</Link>
+                  <Link to='/iniciarSesion' className='cerrarSesionBtn'>
+                    Iniciar Sesión
+                  </Link>
                 </li>
               )}
             </ul>
