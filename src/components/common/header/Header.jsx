@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Head from './Head';
 import './header.css';
 import { Link, useNavigate } from 'react-router-dom';
@@ -29,21 +29,8 @@ const Header = ({ usuario, setUsuario }) => {
     });
   };
 
-  // ⚡ Mostrar alerta si el correo NO está verificado
-  useEffect(() => {
-    if (usuario && !usuario.emailVerified) {
-      Swal.fire({
-        icon: "warning",
-        title: "Correo no verificado",
-        text: "Verifica tu correo institucional antes de publicar.",
-        timer: 3000,
-        showConfirmButton: false,
-        timerProgressBar: true,
-      });
-    }
-  }, [usuario]);
-
-  const correoVerificado = usuario?.emailVerified;
+  // 🔹 Solo considerar logueado si usuario existe y emailVerified === true
+  const estaLogueado = usuario && usuario.emailVerified;
 
   return (
     <>
@@ -62,7 +49,7 @@ const Header = ({ usuario, setUsuario }) => {
               <li><Link to='/docentes'>Docentes</Link></li>
               <li><Link to='/quienesSomos'>Quiénes Somos</Link></li>
 
-              {correoVerificado ? (
+              {estaLogueado ? (
                 <>
                   <li className='userCorreo'>
                     <span>{usuario.email}</span>

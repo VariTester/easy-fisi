@@ -8,6 +8,7 @@ import {
   signOut,
 } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import './Register.css';
 
 function Register() {
@@ -48,7 +49,20 @@ function Register() {
     try {
       const cred = await createUserWithEmailAndPassword(auth, email, password);
       await sendEmailVerification(cred.user);
-      alert('✅ Cuenta creada. Revisa tu correo institucional y verifica tu cuenta antes de iniciar sesión.');
+
+      // ✅ SweetAlert profesional
+      await Swal.fire({
+        icon: 'success',
+        title: 'Cuenta creada con éxito',
+        html: `
+          <p>Revisa tu <strong>correo institucional</strong> y verifica tu cuenta antes de iniciar sesión.</p>
+          <p><em>No olvides revisar la carpeta de spam si no llega el correo.</em></p>
+        `,
+        confirmButtonText: 'Entendido',
+        timer: 5000,
+        timerProgressBar: true,
+      });
+
       navigate('/iniciarSesion');
     } catch (err) {
       if (err.code === 'auth/email-already-in-use') {
@@ -78,7 +92,19 @@ function Register() {
     if (usuarioPendiente) {
       try {
         await sendEmailVerification(usuarioPendiente);
-        alert('📩 Correo de verificación reenviado. Revisa tu bandeja de entrada.');
+
+        // ✅ Swal para reenvío
+        Swal.fire({
+          icon: 'info',
+          title: 'Correo reenviado',
+          html: `
+            <p>Se ha reenviado el correo de verificación a <strong>${usuarioPendiente.email}</strong>.</p>
+            <p>Revisa tu bandeja de entrada y la carpeta de spam.</p>
+          `,
+          confirmButtonText: 'Ok',
+          timer: 5000,
+          timerProgressBar: true,
+        });
       } catch (e) {
         setError('No se pudo reenviar el correo. Intenta más tarde.');
       }
