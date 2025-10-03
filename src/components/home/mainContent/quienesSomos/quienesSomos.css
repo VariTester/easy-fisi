@@ -3,6 +3,7 @@
   background: #f5f7fa;
 }
 
+/* ---- GRID EN PC ---- */
 .quienesSomos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -74,8 +75,39 @@
   color: #2c3e50;
 }
 
+/* ---- BOTÓN CARRUSEL ---- */
+.quienesSomos-btn {
+  margin-top: 20px;
+  background: #fcc21b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.quienesSomos-btn:hover {
+  background: #f0b000;
+}
+
+/* ---- SOLO MÓVIL ---- */
+.quienesSomos-carousel {
+  display: none;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .quienesSomos-grid {
-    grid-template-columns: 1fr;
+    display: none; /* ocultamos grid en móvil */
+  }
+
+  .quienesSomos-carousel {
+    display: block; /* mostramos carrusel en móvil */
   }
 }
