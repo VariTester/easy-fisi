@@ -67,7 +67,7 @@ const Cursos = () => {
                         <img src={val.cover} alt="" />
                       </div>
                       <div className="category category1">
-                        <span>{val.nivel}</span>
+                        <span>{val.semestre}</span>
                       </div>
                     </div>
                     <div className="text row">
@@ -79,6 +79,10 @@ const Cursos = () => {
                       <div className="comment">
                         <i className='fas fa-users'></i>
                         <label htmlFor=''> {val.grupo}</label>
+                      </div>
+                      <div className="comment">
+                        <i className='fas fa-school'></i>
+                        <label htmlFor=''> {val.lugar}</label>
                       </div>
                       <div className="comment" key={val.id}>
                         <a href={val.link} target='_blank' rel='noopener noreferrer'>

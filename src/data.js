@@ -17,6 +17,11 @@ import g2Image from './assets/images/tramites/comedorUniversitario.png';
 import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
 import SaulNunta from './assets/images/Docentesjpg/SaulNunta.jpg';
 import AngelLopez from './assets/images/Docentesjpg/AngelLopez.jpg';
+import CarlosCortegano from './assets/images/Docentesjpg/CarlosCortegano.jpg';
+import CarlosAspajo from './assets/images/Docentesjpg/CarlosAspajo.jpg';
+import TonnyBardales from './assets/images/Docentesjpg/TonnyBardales.jpg';
+import ManuelVerme from './assets/images/Docentesjpg/ManuelVerme.jpg';
+import RafaelVilca from './assets/images/Docentesjpg/RafaelVilca.jpg';
 import formato11_1 from './Downloads/NivelacionDeCurso/3.1. Aumentativo e Diminutivo - I1.pdf'
 import formato11_2 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 10 (NH) Cadena de Valor Minería.pdf'
 import formato11_3 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 11 (MM) Cadena de Valor Minería.pdf'
@@ -274,90 +279,110 @@ export const noticiasdata = [
     {
       id: 1,
       cover: "https://i.ytimg.com/vi/w7HNnqetb4w/maxresdefault.jpg",
-      nivel: "vacacional",
+      semestre: "vacacional",
       title: "Electrónica Digital",
       grupo: "Grupo 1",
+      lugar: "Aula 02",
       authorName: "Tony Eduardo Bardales Lozano",
       link: "https://chat.whatsapp.com/GNxstlXlWqR6GFWcGadh5u",
     },
     {
       id: 2,
       cover: "https://www.yarquitectura.com/wp-content/uploads/2023/06/que-es-arquitectura-de-computadoras-1536x745.jpg",
-      nivel: "vacacional",
-      title: "EArquitectura de Computadoras",
+      semestre: "vacacional",
+      title: "Arquitectura de Computadoras",
       grupo: "Grupo 1",
+      lugar: "Aula 02",
       authorName: "Tony Eduardo Bardales Lozano",
       link: "https://chat.whatsapp.com/JhhmNcTxICeDmZ5Iutng5b",
     },
     {
       id: 3,
       cover: g1Image,
-      nivel: "primer",
+      semestre: "primer",
       title: "Matematica I",
       grupo: "Grupo 1",
+      lugar: "Aula 02",
       authorName: "Manuel Tuesta Moreno",
       link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
     },
     {
       id: 4,
       cover: g1Image,
-      nivel: "segundo",
-      title: "Lenguaje de programación II",
-      grupo: "Grupo 1",
-      authorName: "Nombre del profesor",
+      semestre: "Semestre: 03",
+      title: "Lenguaje de programación I",
+      grupo: "Grupo 01",
+      lugar: "Lab 01",
+      authorName: "Rony Torres",
+      link: "LINK DEL GRUPO",
+    },
+        {
+      id: 11,
+      cover: g1Image,
+      semestre: "Semestre: 03",
+      title: "Lenguaje de programación I",
+      grupo: "Grupo 02",
+      lugar: "Lab 01",
+      authorName: "Rony Torres",
       link: "LINK DEL GRUPO",
     },
     {
       id: 5,
       cover: g1Image,
-      nivel: "primer",
-      title: "Stepping back does make Sussex safer and at peace ",
+      semestre: "Semestre: 05",
+      title: "Sistemas Contables ",
       grupo: "Grupo 1",
-      authorName: "Nombre del profesor",
+      lugar: "Aula 02",
+      authorName: "Ángel Ildefonso Catashunga Torres",
       link: "LINK DEL GRUPO",
     },
     {
       id: 6,
       cover: g1Image,
-      nivel: "segundo",
+      semestre: "segundo",
       title: "Stepping back does make Sussex safer and at peace ",
       grupo: "Grupo 1",
+      lugar: "Aula 02",
       authorName: "Nombre del profesor",
       link: "LINK DEL GRUPO",
     },
     {
       id: 7,
       cover: g1Image,
-      nivel: "primer",
+      semestre: "primer",
       title: "Stepping back does make Sussex safer and at peace ",
       grupo: "Grupo 1",
+      lugar: "Aula 02",
       authorName: "Nombre del profesor",
       link: "LINK DEL GRUPO",
     },
     {
       id: 8,
       cover: g1Image,
-      nivel: "primer",
+      semestre: "primer",
       title: "Stepping back does make Sussex safer and at peace ",
       grupo: "Grupo 3",
+      lugar: "Aula 02",
       authorName: "Nombre del profesor",
       link: "LINK DEL GRUPO",
     },
     {
       id: 9,
       cover: g1Image,
-      nivel: "primer",
+      semestre: "primer",
       title: "Stepping back does make Sussex safer and at peace ",
       grupo: "Grupo 2",
+      lugar: "Aula 02",
       authorName: "Nombre del profesor",
       link: "LINK DEL GRUPO",
     },
     {
       id: 10,
       cover: g1Image,
-      nivel: "noveno",
+      semestre: "Tercer",
       title: "Robótoca",
       grupo: "Grupo 2",
+      lugar: "Aula 02",
       authorName: "Nombre del profesor",
       link: "LINK DEL GRUPO",
     },
@@ -1146,37 +1171,95 @@ export const docentesData = [
 {
   nombre: "Dr. Jimmy Max Ramirez Villacorta",
   foto: Jimmyjpg,
-  formacion: "Bachiller e Ingeniero de Sistemas e Informática (UNAP), Maestro en Administración de la Educación (UCV), Doctor en Ingeniería de Sistemas (UNFV)",
+  formacion: "Doctor en Ingeniería de Sistemas (UNFV)",
   experiencia: "Más de 14 años de experiencia en docencia universitaria e institutos superiores y más de 9 años en dirección de proyectos de Tecnologías de la Información y Comunicaciones.",
   logros: [
-    "Especialista en elaboración de planes estratégicos y gestión de operación informática institucional.",
-    "Amplia experiencia en gestión de adquisición de tecnologías de la información, seguridad y auditoría de TIC.",
-    "Asesor en planes de contingencia, seguridad de la información, políticas y directivas de TI en instituciones públicas y privadas.",
+    "Maestro en Administración de la Educación (UCV).",
+    "Calificado como Investigador RENACYT.",
+    "Egresado y Titulado de la Universidad Nacional de la Amazonia Peruana como bachiller e Ingeniero de Sistemas e Informática.",
   ],
 },
-  {
-    nombre: "Dr. Saúl Flores Nunta",
-    foto: SaulNunta,
-    formacion: "Bachiller en Ingeniería (tipo / universidad por confirmar), Maestro en Ingeniería de Sistemas (UNAP, confirmado que tiene Maestría) [detalle pendiente], Doctor en [especialidad por confirmar] (universidad por confirmar)",
-    experiencia: "Docente universitario en la Universidad Nacional de la Amazonía Peruana. Director de Investigación de la Facultad de Ingeniería de Sistemas e Informática. Responsable de proyectos de investigación y asesorías en tesis universitarias.",
-    logros: [
-      "Asesor en múltiples trabajos de investigación en UNAP como el de tesis en Enfermería, destacando en aporte estadístico.",
-      "Participación en maestría en Ingeniería de Sistemas con mención en UNAP.",
-      "Presencia en el directorio del Vicerrectorado de Investigación de la UNAP con funciones institucionales de coordinación investigativa."
-    ]
+{
+  nombre: "Dr. Saúl Flores Nunta",
+  foto: SaulNunta,
+  formacion: "Doctor en Ciencias Empresariales (UNAP)",
+  experiencia: "Más de 15 años de experiencia en docencia universitaria en ingeniería de sistemas e informática, desarrollada en la Universidad Nacional de la Amazonía Peruana y en la Universidad Privada de la Selva Peruana SAC.",
+  logros: [
 
+    "Magíster en Gestión Empresarial (UNAP).",
+    "Participación activa en procesos de acreditación y gestión académica en la UNAP.",
+    "Egresado y Titulado de la Universidad Nacional Mayor de San Marcos como bachiller e Ingeniero Industrial."
+  ],
+},
+
+{
+  nombre: "Dr. Ángel Enrique López Rojas",
+  foto: AngelLopez,
+  formacion: "Doctor en Educación (UNAP)",
+  experiencia: "Más de 15 años de experiencia en docencia universitaria en ingeniería de sistemas e informática, desarrollada en la Universidad Nacional de la Amazonía Peruana (Falta Investigar).",
+  logros: [
+
+    "Magíster en Docencia e Investigación Universitaria (UNAP).",
+    "Especialista en Educación de Lengua y Literatura.",
+    "Egresado y Titulado de la Universidad Nacional de la Amazonía Peruana como bachiller e Licenciado en Educación."
+    ],
   },
-    {
-      nombre: "Dr. Ángel Enrique López Rojas",
-      foto: AngelLopez,
-      formacion: "Bachiller en Ingeniería de Sistemas e Informática (UNAP), Maestro en [especialidad por confirmar] (universidad por confirmar), Doctor en [especialidad por confirmar] (universidad por confirmar)",
-      experiencia: "Decano de la Facultad de Ingeniería de Sistemas e Informática (FISI) en la Universidad Nacional de la Amazonía Peruana. Amplia trayectoria en docencia universitaria, gestión académica y liderazgo institucional.",
-      logros: [
-        "Conducción y representación de la Facultad de Ingeniería de Sistemas e Informática en eventos académicos y de innovación tecnológica.",
-        "Impulso de iniciativas estudiantiles en Inteligencia Artificial y transformación digital en la UNAP.",
-        "Presidencia en ceremonias de graduación y fortalecimiento de vínculos institucionales de la facultad."
-      ],
-  },
+
+{
+  nombre: "Dr. Carlos Alberto García Cortegano",
+  foto: CarlosCortegano,
+  formacion: "Doctor en Ingeniería de Sistemas (UNFV)",
+  experiencia: "Más de 14 años de experiencia en docencia universitaria...(Por Investigar).",
+  logros: [
+    "Maestro en Administración y Dirección de Empresas (UAP).",
+    "Calificado como Investigador RENACYT",
+    "Egresado y Titulado de la Universidad Nacional de la Amazonia Peruana como bachiller e Ingeniero de Industrias Alimentarias.",
+  ],
+},
+{
+  nombre: "Dr. Carlos Gonzalez Aspajo",
+  foto: CarlosAspajo,
+  formacion: "Doctor en Ingeniería de Sistemas (UNMS)",
+  experiencia: "Más de 13 años de experiencia en Gestión de Recursos Informáticos, gestión de seguridad, auditoría e Implementación de TIC'S, en empresas del sector público y privado.",
+  logros: [
+    "Master en Dirección Estratégica en Tecnologías de Información (UDEP).",
+    "Especialista en Proyectos Sociales y Productivos de Inversión Pública.",
+    "Egresado y Titulado de la Universidad Inca Garcilaso de la Vega como bachiller e Ingeniero de Sistemas y Cómputo.",
+  ],
+},
+{
+  nombre: "Ing. Tonny Eduardo Bardales Lozano",
+  foto: TonnyBardales,
+  formacion: "Ingeniero de Sistemas e Informática (UNAP)",
+  experiencia: "Más de 06 años de experiencia en gestión de recursos informáticos e Implementación de tecnologías de la información y comunicaciones en empresas del sector público y privado.",
+  logros: [
+    "Magíster en Ingeniería de Sistemas (UNAP).",
+    "Diplomado en Docencia Universitaria (UNSM)",
+    "Egresado y Titulado de la Universidad Nacional de la Amazonía Peruana como bachiller e Ingeniero de Sistemas e Informática.",
+  ],
+},
+{
+  nombre: "Ing. Juan Manuel Verme Insúa",
+  foto: ManuelVerme,
+  formacion: "Ingeniero Industrial (ULIMA)",
+  experiencia: "Más de 30 años de experiencia en docencia universitaria en ingeniería de sistemas e informática, con cargos de dirección y gestión académica en universidades y centros tecnológicos del sector público y privado.",
+  logros: [
+    "Magíster en Docencia e Investigación Universitaria (UNAP).",
+    "Diplomado en Gerencia de la Calidad, Autoevaluación y Acreditación Universitaria Superior.",
+    "Egresado y Titulado de la Universidad de Lima como bachiller e Ingeniero Industrial.",
+  ],
+},
+{
+  nombre: "Ing. Rafael Vilca Barbarán",
+  foto: RafaelVilca,
+  formacion: "Ingeniero de Sistemas e Informática (UNAP)",
+  experiencia: "Más de 25 años de experiencia en informática, desarrollo de software, soporte técnico y docencia universitaria, desempeñados en proyectos del sector público y privado.",
+  logros: [
+    "Maestro en Ingeniería de Sistemas con mención en Gerencia de Tecnología de la Información y Gestión de Software (UNAP).",
+    "Diplomado en Investigación y Publicación Científica. (UPO)",
+    "Egresado y Titulado de la Universidad Nacional de la Amazonía Peruana como bachiller e Ingeniero de Sistemas e informática.",
+  ],
+},
 ];
 
 export const quienesSomosData = [
