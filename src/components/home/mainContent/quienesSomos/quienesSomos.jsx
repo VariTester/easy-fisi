@@ -81,7 +81,7 @@ const QuienesSomos = () => {
           </motion.div>
         </AnimatePresence>
         <button className="quienesSomos-btn" onClick={handleNext}>
-          ➡️ Ver siguiente
+          ➡️ Ver siguiente.
         </button>
       </div>
     </section>
