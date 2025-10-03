@@ -1,37 +1,56 @@
 // src/components/Register.jsx
-import React, { useState } from 'react';
-import { auth } from '../../firebase/firebaseConfig';
+import React, { useState, useEffect } from "react";
+import { auth } from "../../firebase/firebaseConfig";
 import {
   createUserWithEmailAndPassword,
   sendEmailVerification,
   signInWithEmailAndPassword,
   signOut,
-} from 'firebase/auth';
-import { Link, useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2';
-import './Register.css';
+} from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import "./Register.css";
 
 function Register() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [mostrarReenviar, setMostrarReenviar] = useState(false);
   const [usuarioPendiente, setUsuarioPendiente] = useState(null);
+  const [reenviando, setReenviando] = useState(false);
+  const [contador, setContador] = useState(0);
 
   const navigate = useNavigate();
 
+  // Contador para reenvío de correo
+  useEffect(() => {
+    let timer;
+    if (contador > 0) {
+      timer = setTimeout(() => setContador(contador - 1), 1000);
+    } else if (contador === 0 && usuarioPendiente) {
+      setMostrarReenviar(true);
+    }
+    return () => clearTimeout(timer);
+  }, [contador, usuarioPendiente]);
+
+  const validarCorreo = (correo) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
+
   const validarCampos = () => {
     if (!email || !password) {
-      setError('Todos los campos son obligatorios');
+      setError("Todos los campos son obligatorios");
       return false;
     }
-    if (!email.endsWith('@unapiquitos.edu.pe')) {
-      setError('Solo se permiten correos institucionales @unapiquitos.edu.pe');
+    if (!validarCorreo(email)) {
+      setError("Formato de correo inválido.");
+      return false;
+    }
+    if (!email.endsWith("@unapiquitos.edu.pe")) {
+      setError("Solo se permiten correos institucionales @unapiquitos.edu.pe");
       return false;
     }
     if (password.length < 6) {
-      setError('La contraseña debe tener al menos 6 caracteres');
+      setError("La contraseña debe tener al menos 6 caracteres");
       return false;
     }
     return true;
@@ -39,49 +58,61 @@ function Register() {
 
   const registrarUsuario = async (e) => {
     e.preventDefault();
-    setError('');
+    setError("");
     setMostrarReenviar(false);
     setUsuarioPendiente(null);
 
     if (!validarCampos()) return;
+
     setLoading(true);
 
     try {
       const cred = await createUserWithEmailAndPassword(auth, email, password);
       await sendEmailVerification(cred.user);
 
-      // ✅ SweetAlert profesional
       await Swal.fire({
-        icon: 'success',
-        title: 'Cuenta creada con éxito',
+        icon: "success",
+        title: "Cuenta creada con éxito",
         html: `
           <p>Revisa tu <strong>correo institucional</strong> y verifica tu cuenta antes de iniciar sesión.</p>
           <p><em>No olvides revisar la carpeta de spam si no llega el correo.</em></p>
         `,
-        confirmButtonText: 'Entendido',
+        confirmButtonText: "Entendido",
         timer: 5000,
         timerProgressBar: true,
       });
 
-      navigate('/iniciarSesion');
+      navigate("/iniciarSesion");
     } catch (err) {
-      if (err.code === 'auth/email-already-in-use') {
+      console.error(err);
+
+      // Si ya existe la cuenta
+      if (err.code === "auth/email-already-in-use") {
         try {
-          const credExistente = await signInWithEmailAndPassword(auth, email, password);
+          const credExistente = await signInWithEmailAndPassword(
+            auth,
+            email,
+            password
+          );
+
           if (!credExistente.user.emailVerified) {
-            await sendEmailVerification(credExistente.user);
-            setError('Este correo ya fue registrado pero no está verificado. Te reenviamos el correo.');
-            setMostrarReenviar(true);
             setUsuarioPendiente(credExistente.user);
+            setMostrarReenviar(true);
+            setError(
+              "Este correo ya fue registrado pero no está verificado. Puedes reenviar el correo."
+            );
+            await signOut(auth);
           } else {
-            setError('Este correo ya está registrado y verificado. Inicia sesión.');
+            setError("Este correo ya está registrado y verificado. Inicia sesión.");
+            await signOut(auth);
           }
-          await signOut(auth); // 🔐 Seguridad: cerrar sesión del intento de login temporal
         } catch (loginErr) {
-          setError('Este correo ya está registrado. Si olvidaste la contraseña, intenta recuperarla.');
+          setError(
+            "Este correo ya está registrado. Si olvidaste la contraseña, intenta recuperarla."
+          );
         }
       } else {
-        setError('Error al registrar: ' + err.message);
+        setError("Error al registrar: intenta más tarde.");
       }
     } finally {
       setLoading(false);
@@ -89,25 +120,38 @@ function Register() {
   };
 
   const reenviarVerificacion = async () => {
-    if (usuarioPendiente) {
-      try {
-        await sendEmailVerification(usuarioPendiente);
+    if (!usuarioPendiente) return;
 
-        // ✅ Swal para reenvío
-        Swal.fire({
-          icon: 'info',
-          title: 'Correo reenviado',
-          html: `
-            <p>Se ha reenviado el correo de verificación a <strong>${usuarioPendiente.email}</strong>.</p>
-            <p>Revisa tu bandeja de entrada y la carpeta de spam.</p>
-          `,
-          confirmButtonText: 'Ok',
-          timer: 5000,
-          timerProgressBar: true,
-        });
-      } catch (e) {
-        setError('No se pudo reenviar el correo. Intenta más tarde.');
-      }
+    setReenviando(true);
+    setMostrarReenviar(false);
+
+    try {
+      await sendEmailVerification(usuarioPendiente);
+
+      await Swal.fire({
+        icon: "info",
+        title: "Correo reenviado",
+        html: `
+          <p>Se ha reenviado el correo de verificación a <strong>${usuarioPendiente.email}</strong>.</p>
+          <p>Revisa tu bandeja de entrada y la carpeta de spam.</p>
+        `,
+        confirmButtonText: "Ok",
+        timer: 5000,
+        timerProgressBar: true,
+      });
+
+      setContador(60); // Bloquear botón 60s
+    } catch (err) {
+      console.error(err);
+      Swal.fire({
+        icon: "warning",
+        title: "No se pudo reenviar",
+        html: "<p>Intenta de nuevo más tarde.</p>",
+        confirmButtonText: "Ok",
+      });
+      setContador(60);
+    } finally {
+      setReenviando(false);
     }
   };
 
@@ -119,7 +163,7 @@ function Register() {
           type="email"
           placeholder="Correo electrónico institucional"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.trim())}
           required
         />
         <input
@@ -130,15 +174,23 @@ function Register() {
           required
         />
         <button type="submit" disabled={loading}>
-          {loading ? 'Registrando...' : 'Registrarse'}
+          {loading ? "Registrando..." : "Registrarse"}
         </button>
       </form>
 
       {error && <p className="error">{error}</p>}
 
-      {mostrarReenviar && (
-        <button onClick={reenviarVerificacion} className="reenviar-btn">
-          Reenviar correo de verificación
+      {mostrarReenviar && usuarioPendiente && (
+        <button
+          onClick={reenviarVerificacion}
+          className="reenviar-btn"
+          disabled={reenviando || contador > 0}
+        >
+          {reenviando
+            ? "Reenviando..."
+            : contador > 0
+            ? `Espera ${contador}s`
+            : "Reenviar correo de verificación"}
         </button>
       )}
 

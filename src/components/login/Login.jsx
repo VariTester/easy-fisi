@@ -1,25 +1,26 @@
 // src/components/Login.jsx
-import React, { useState, useEffect } from 'react';
-import { auth } from '../../firebase/firebaseConfig';
+import React, { useState, useEffect } from "react";
+import { auth } from "../../firebase/firebaseConfig";
 import {
   signInWithEmailAndPassword,
   sendEmailVerification,
   sendPasswordResetEmail,
   signOut,
-} from 'firebase/auth';
-import { Link, useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2';
-import './Login.css';
+} from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import "./Login.css";
 
 function Login({ onLogin }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const [mostrarReenviar, setMostrarReenviar] = useState(false);
   const [recuperandoClave, setRecuperandoClave] = useState(false);
   const [usuarioPendiente, setUsuarioPendiente] = useState(null);
   const [reenviando, setReenviando] = useState(false);
   const [contador, setContador] = useState(0);
+  const [cargando, setCargando] = useState(false);
 
   const navigate = useNavigate();
 
@@ -32,17 +33,39 @@ function Login({ onLogin }) {
     return () => clearTimeout(timer);
   }, [contador]);
 
+  // Errores traducidos
+  const firebaseErrors = {
+    "auth/user-not-found": "Correo o contraseña incorrectos.",
+    "auth/wrong-password": "Correo o contraseña incorrectos.",
+    "auth/invalid-credential": "Credenciales inválidas.",
+    "auth/too-many-requests":
+      "Demasiados intentos. Intenta de nuevo más tarde.",
+  };
+
+  // Validación de correo
+  const validarCorreo = (correo) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(correo);
+  };
+
   // Función de login
   const iniciarSesion = async (e) => {
     e.preventDefault();
-    setError('');
+    setError("");
     setMostrarReenviar(false);
     setUsuarioPendiente(null);
 
-    if (!email.endsWith('@unapiquitos.edu.pe')) {
-      setError('Solo se permiten correos institucionales @unapiquitos.edu.pe');
+    if (!validarCorreo(email)) {
+      setError("Formato de correo inválido.");
       return;
     }
+
+    if (!email.endsWith("@unapiquitos.edu.pe")) {
+      setError("Solo se permiten correos institucionales @unapiquitos.edu.pe");
+      return;
+    }
+
+    setCargando(true);
 
     try {
       const cred = await signInWithEmailAndPassword(auth, email, password);
@@ -50,7 +73,7 @@ function Login({ onLogin }) {
       if (!cred.user.emailVerified) {
         setUsuarioPendiente(cred.user);
         setError(
-          'Este correo aún no está verificado. Revisa tu bandeja de entrada o spam.'
+          "Este correo aún no está verificado. Revisa tu bandeja de entrada o spam."
         );
         setMostrarReenviar(true);
         await signOut(auth); // cerrar sesión temporal
@@ -59,23 +82,12 @@ function Login({ onLogin }) {
 
       // Usuario verificado: login exitoso
       if (onLogin) onLogin(cred.user);
-      navigate('/');
+      navigate("/");
     } catch (err) {
-      console.error('🔥 Error:', err.code, err.message);
-      switch (err.code) {
-        case 'auth/user-not-found':
-          setError('No existe una cuenta con este correo.');
-          break;
-        case 'auth/wrong-password':
-        case 'auth/invalid-credential':
-          setError('Correo o contraseña incorrectos.');
-          break;
-        case 'auth/too-many-requests':
-          setError('Demasiados intentos. Intenta de nuevo más tarde.');
-          break;
-        default:
-          setError('Error al iniciar sesión: ' + err.message);
-      }
+      console.error("🔥 Error:", err.code, err.message);
+      setError(firebaseErrors[err.code] || "Error inesperado. Intenta más tarde.");
+    } finally {
+      setCargando(false);
     }
   };
 
@@ -89,13 +101,13 @@ function Login({ onLogin }) {
       await sendEmailVerification(usuarioPendiente);
 
       await Swal.fire({
-        icon: 'info',
-        title: 'Correo reenviado',
+        icon: "info",
+        title: "Correo reenviado",
         html: `
           <p>Se ha reenviado el correo de verificación a <strong>${usuarioPendiente.email}</strong>.</p>
           <p>Revisa tu bandeja de entrada y la carpeta de spam.</p>
         `,
-        confirmButtonText: 'Ok',
+        confirmButtonText: "Ok",
         timer: 5000,
         timerProgressBar: true,
       });
@@ -104,14 +116,13 @@ function Login({ onLogin }) {
       setContador(60);
     } catch (err) {
       console.error(err);
-      // Mostrar mensaje genérico, no bloqueante
       Swal.fire({
-        icon: 'warning',
-        title: 'Intenta de nuevo',
+        icon: "warning",
+        title: "Intenta de nuevo",
         html: `<p>No se pudo reenviar el correo ahora. Espera unos segundos y vuelve a intentarlo.</p>`,
-        confirmButtonText: 'Ok',
+        confirmButtonText: "Ok",
       });
-      setContador(60); // bloquear temporalmente
+      setContador(60); // bloquear temporalmente igual
     } finally {
       setReenviando(false);
     }
@@ -120,31 +131,37 @@ function Login({ onLogin }) {
   // Función para recuperar contraseña
   const recuperarContraseña = async () => {
     if (!email) {
-      setError('Ingresa tu correo institucional para recuperar la contraseña.');
+      setError("Ingresa tu correo institucional para recuperar la contraseña.");
       return;
     }
 
-    if (!email.endsWith('@unapiquitos.edu.pe')) {
-      setError('Solo se permiten correos institucionales @unapiquitos.edu.pe');
+    if (!validarCorreo(email)) {
+      setError("Formato de correo inválido.");
       return;
     }
 
-    setError('');
+    if (!email.endsWith("@unapiquitos.edu.pe")) {
+      setError("Solo se permiten correos institucionales @unapiquitos.edu.pe");
+      return;
+    }
+
+    setError("");
     setRecuperandoClave(true);
 
     try {
       await sendPasswordResetEmail(auth, email);
       Swal.fire({
-        icon: 'success',
-        title: 'Correo enviado',
+        icon: "success",
+        title: "Correo enviado",
         html: `<p>Se ha enviado un correo para restablecer tu contraseña a <strong>${email}</strong>.</p>
                <p>Revisa tu bandeja de entrada y spam.</p>`,
-        confirmButtonText: 'Ok',
+        confirmButtonText: "Ok",
         timer: 5000,
         timerProgressBar: true,
       });
     } catch (err) {
-      setError('Error al enviar el correo de recuperación: ' + err.message);
+      console.error(err);
+      setError("Error al enviar el correo de recuperación. Intenta más tarde.");
     } finally {
       setRecuperandoClave(false);
     }
@@ -158,7 +175,7 @@ function Login({ onLogin }) {
           type="email"
           placeholder="Correo institucional"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.trim())}
           required
         />
         <input
@@ -168,7 +185,9 @@ function Login({ onLogin }) {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Entrar</button>
+        <button type="submit" disabled={cargando}>
+          {cargando ? "Entrando..." : "Entrar"}
+        </button>
       </form>
 
       {error && <p className="error">{error}</p>}
@@ -181,10 +200,10 @@ function Login({ onLogin }) {
             disabled={reenviando || contador > 0}
           >
             {reenviando
-              ? 'Reenviando...'
+              ? "Reenviando..."
               : contador > 0
               ? `Espera ${contador}s`
-              : 'Reenviar correo de verificación'}
+              : "Reenviar correo de verificación"}
           </button>
         </div>
       )}
@@ -193,14 +212,14 @@ function Login({ onLogin }) {
         ¿No tienes cuenta? <Link to="/registro">Regístrate aquí</Link>
       </p>
 
-      <p style={{ marginTop: '10px' }}>
-        ¿Olvidaste tu contraseña?{' '}
+      <p style={{ marginTop: "10px" }}>
+        ¿Olvidaste tu contraseña?{" "}
         <button
           onClick={recuperarContraseña}
           disabled={recuperandoClave}
           className="link-button"
         >
-          {recuperandoClave ? 'Enviando...' : 'Recuperarla'}
+          {recuperandoClave ? "Enviando..." : "Recuperarla"}
         </button>
       </p>
     </div>
