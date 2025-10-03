@@ -1,33 +1,33 @@
-.quienesSomos {
-  padding: 40px 20px;
+.quienesSomoss {
+  padding: 10px 20px;
   background: #f5f7fa;
 }
 
-/* ---- GRID EN PC ---- */
-.quienesSomos-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
+.quienesSomos-card {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.quienesSomos-card {
+.quienesSomos-box {
+  display: flex;
   background: white;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  display: flex;
-  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+  gap: 30px;
   align-items: center;
   transition: transform 0.3s ease;
 }
 
-.quienesSomos-card:hover {
-  transform: translateY(-5px);
+.quienesSomos-box:hover {
+  transform: translateY(-4px);
 }
 
 .quienesSomos-img-wrap {
+  flex-shrink: 0;
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -35,22 +35,22 @@
   border: 5px solid transparent;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
   padding: 4px;
-  margin-bottom: 20px;
 }
 
 .quienesSomos-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:contain;
   border-radius: 50%;
+  display: block;
 }
 
 .quienesSomos-info {
-  text-align: center;
+  flex-grow: 1;
 }
 
 .quienesSomos-nombre {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #2c3e50;
@@ -58,7 +58,7 @@
 
 .quienesSomos-formacion,
 .quienesSomos-exp {
-  font-size: 15px;
+  font-size: 16px;
   color: #34495e;
   margin-bottom: 8px;
 }
@@ -66,48 +66,23 @@
 .quienesSomos-logros {
   list-style: none;
   padding: 0;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .quienesSomos-logros li {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 6px;
   color: #2c3e50;
 }
 
-/* ---- BOTÓN CARRUSEL ---- */
-.quienesSomos-btn {
-  margin-top: 20px;
-  background: #fcc21b;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  width: 100%;
-}
-
-.quienesSomos-btn:hover {
-  background: #f0b000;
-}
-
-/* ---- SOLO MÓVIL ---- */
-.quienesSomos-carousel {
-  display: none;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 @media screen and (max-width: 768px) {
-  .quienesSomos-grid {
-    display: none; /* ocultamos grid en móvil */
+  .quienesSomos-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .quienesSomos-carousel {
-    display: block; /* mostramos carrusel en móvil */
+  .quienesSomos-img-wrap {
+    margin-bottom: 20px;
   }
 }
