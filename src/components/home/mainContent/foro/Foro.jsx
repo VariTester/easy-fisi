@@ -123,6 +123,7 @@ const Foro = ({ usuario }) => {
         desc: nuevoTema.desc,
         fecha: serverTimestamp(),
         likes: 0,
+        autor: usuario.email,
       });
 
       Swal.fire({
