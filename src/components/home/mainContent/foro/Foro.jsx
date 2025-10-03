@@ -99,7 +99,7 @@ const Foro = ({ usuario }) => {
       return Swal.fire({
         icon: "warning",
         title: "Correo no verificado",
-        text: "Verifica tu correo institucional antes de publicar.",
+        text: "Verificaconeterr tu correo institucional antes de publicar.",
         timer: 3000,
         showConfirmButton: false,
         timerProgressBar: true,
