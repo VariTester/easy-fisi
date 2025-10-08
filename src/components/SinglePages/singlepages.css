@@ -1,101 +1,111 @@
-.parrafo {
-  margin-bottom: 20px; /* puedes ajustar el valor */
-}
-/* Ajuste de .details .title */
-.detailsSP .titleSP {
-  font-size: 40px;
-  line-height: 60px;
-  font-weight: 700;
-  margin-top: 0;  /* Eliminamos el margin-top negativo */
-  margin-bottom: 10px; /* Espacio debajo del título para evitar que se sobreponga */
-  padding: 10px 0; /* Asegura que haya suficiente espacio alrededor del título */
-  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
-  position: relative; /* Para el manejo del z-index si es necesario */
-  z-index: 1; /* Coloca el título en una capa superior si es necesariozzz */
+/* ============================
+   UNIFICAR ESTILOS DE PÁRRAFOS
+   ============================ */
+
+/* Base para párrafos dentro del detalle */
+.detailsSP p,
+.detailsSP .parrafo,
+.detailsSP .text-containerSP p,
+.detailsSP .desctopSP p,
+.detailsSP .descbotSP p,
+.detailsSP .quoteSP p,
+.detailsSP .formatsSP p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
 }
 
-.detailsSP .authorSP {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  margin: 20px 0;
+/* Normalizar las clases paraX (para1SP, para2SP, etc.) */
+.detailsSP [class^="para"] {
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+  font-weight: 400;
 }
-.detailsSP .authorSP p {
-  text-transform: capitalize;
-  margin-right: 10px;
+
+/* Mantener la clase .parrafo */
+.parrafo {
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
 }
-.detailsSP .authorSP img {
-  width: 70px;
-  height: 70px;
-  object-fit:contain;
-  border-radius: 50%;
-  border:  1px solid rgb(156, 153, 153);
-  margin: 0 10px;
-}
-.detailsSP .authorSP label {
-  color: grey;
-}
-.detailsSP .socialSP {
-  display: flex;
-  margin-bottom: 20px;
-}
-.detailsSP .socialSP .socBox {
-  margin-right: 20px;
-}
-.detailsSP img{
-  display: flex;
-  margin: 30px 0;
-  height: 300px;
-  width: auto;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
-}
-.desctopSP p {
-  padding-top: 0px;
-  line-height: 30px;
- 
-  
-}
-.descbotSP h1 {
-  font-weight: 600;
-  font-size: 30px;
-  margin-top: 30px;
-}
-.quoteSP {
-  padding-left: 50px;
-  border-left: 5px solid red;
-  padding-top: 10px;
-  padding-bottom: 40px;
-}
-.quoteSP i {
-  font-size: 40px;
-  color: red;
-  margin-bottom: 5px;  
-}
-.quoteSP p {
-  font-size: 20px;
-}
+
+/* ============================
+   INFO SECTION (UNIFICADO)
+   ============================ */
 
 .infoSP {
-  display: flex; /* Activa el diseño en línea */
-  gap: 30px; /* Espacio entre los divs (puedes ajustarlo) */
-  justify-content: start; /* Alinea los elementos al inicio (puedes usar center o space-between si lo prefieres) */
-  align-items: center; /* Alinea los elementos verticalmente */
-  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #fff6dc;  */
+  /* suave fondo con tono del color base */
+  /* border: 2px solid #fcc21b; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(252, 194, 27, 0.2);
 }
 
-/* LINK */
+/* Unificar todo el texto dentro de infoSP */
+.infoSP p,
+.infoSP span,
+.infoSP h1,
+.infoSP h2,
+.infoSP h3,
+.infoSP h4,
+.infoSP h5,
+.infoSP h6,
+.infoSP label,
+.infoSP a {
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Ajuste de íconos o imágenes dentro de infoSP */
+.infoSP i,
+.infoSP svg {
+  color: #fcc21b;
+  font-size: 22px;
+}
+
+/* Si hay enlaces dentro */
+.infoSP a {
+  text-decoration: none;
+  color: #fcc21b;
+  transition: all 0.3s ease-in-out;
+}
+
+.infoSP a:hover {
+  color: #e0ad17;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* ============================
+   FORMATS SECTION
+   ============================ */
+
 .formatsSP {
-  background-color: #f4f4f4;
+  background-color: #fff6dc;
   padding: 18px;
+  border: 2px solid #fcc21b;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(252, 194, 27, 0.3);
   text-align: center;
-  
+  margin-bottom: 20px;
 }
 
 .tittleFormatosSP {
   font-size: 22px;
-  color: #333;
+  color: #fcc21b;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -105,85 +115,153 @@
   margin: 10px auto;
   padding: 12px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fcc21b;
+  box-shadow: 0 2px 4px rgba(252, 194, 27, 0.2);
   transition: all 0.3s ease-in-out;
-  
 }
 
 .text-containerLinksSP:hover {
   transform: scale(1.05);
+  background-color: #fff9e6;
 }
 
 .formato-linkSP {
   display: block;
   text-decoration: none;
-  color: #007bff;
+  color: #fcc21b;
   font-size: 18px;
   font-weight: bold;
 }
 
 .formato-linkSP:hover {
   text-decoration: underline;
-  color: #0056b3;
+  color: #e0ad17;
 }
 
-/* LINK */
+/* ============================
+   RESTO DE ESTILOS
+   ============================ */
 
-/*acortar los saltos de línea*/
-.text-containerSP p {
-  margin: 4px 0; /* Reduce el espacio vertical entre los párrafos */
-  line-height: 1.4; /* Ajusta la altura de línea para mayor compacidad */
-
-}
-
-.text-containerSP {
-  margin-bottom: 5px; /* Espacio entre los bloques de texto */
-}
-
-.para2SP{
-  font-weight: 600;
-
-}
-
-.para1SP{
+  .detailsSP .titleSP {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px 0;
   position: relative;
-  top: 20px; /* Ajusta el valor según lo que necesites */
+  z-index: 1;
 }
 
-.descbotSP {
-  /* background-color: #007bff; */
+.detailsSP .titleSP {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px 0;
   position: relative;
-  bottom: 20px; /* Ajusta el valor según lo que necesites */
+  z-index: 1;
 }
 
+.detailsSP .authorSP {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin: 20px 0;
+}
 
+.detailsSP .authorSP p {
+  text-transform: capitalize;
+  margin-right: 10px;
+}
 
-/*acortar los saltos de línea*/
+.detailsSP .authorSP img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid rgb(156, 153, 153);
+  margin: 0 10px;
+}
 
+.detailsSP .authorSP label {
+  color: grey;
+}
+
+.detailsSP .socialSP {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.detailsSP .socialSP .socBox {
+  margin-right: 20px;
+}
+
+/* Imagen principal */
+.detailsSP img {
+  display: block;
+  margin: 30px 0;
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
+}
+
+/* Quote */
+.quoteSP {
+  padding-left: 50px;
+  border-left: 5px solid #fcc21b;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.quoteSP i {
+  font-size: 40px;
+  color: #fcc21b;
+  margin-bottom: 5px;
+}
+
+.quoteSP p {
+  font-size: 20px !important;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #333;
+}
+/* Para controlar el margen abajo de los H1 de los descbot class */
+.descbotSP h1{
+    margin-bottom: 10px;
+}
+/* Responsive */
 @media screen and (max-width: 815px) {
   .detailsSP {
     padding-right: 0;
   }
+
   .detailsSP img {
     height: auto;
     width: 100%;
+    margin: 20px 0;
   }
 
   .infoSP {
-    display: block; /* Activa el diseño en línea */
+    flex-direction:row;      /* ✅ los elementos se apilan */
+    align-items: center;         /* ✅ centrados horizontalmente */
+    justify-content: center;
+    text-align: center;
+    gap: 15px;                   /* ✅ menor separación entre ellos */
+    padding: 16px;
   }
 
-  /* Ajuste de .details .title */
-.detailsSP .titleSP {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-  margin-top: 0;  /* Eliminamos el margin-top negativo */
-  margin-bottom: 10px; /* Espacio debajo del título para evitar que se sobreponga */
-  padding: 10px 0; /* Asegura que haya suficiente espacio alrededor del título */
-  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
-  position: relative; /* Para el manejo del z-index si es necesario */
-  z-index: 1; /* Coloca el título en una capa superior si es necesario */
-  text-align: center;
-}
+  .detailsSP .titleSP {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .detailsSP p,
+  .detailsSP .parrafo {
+    margin-bottom: 16px;
+  }
 }

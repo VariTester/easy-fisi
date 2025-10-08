@@ -12,7 +12,6 @@ import Galeria05 from './assets/images/Galeria/Galeria05.jpg';
 import Galeria06 from './assets/images/Galeria/Galeria06.jpg';
 import g1Image from './assets/images/Facultad-de-Sistemas.jpg';
 import fisiLocal from './assets/images/Facultad-de-Sistemas.jpg';
-import CasosRetiroDeSemestre from './assets/images/CasosRetiroDeSemestre.png';
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
 import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
 import SaulNunta from './assets/images/Docentesjpg/SaulNunta.jpg';
@@ -22,15 +21,16 @@ import CarlosAspajo from './assets/images/Docentesjpg/CarlosAspajo.jpg';
 import TonnyBardales from './assets/images/Docentesjpg/TonnyBardales.jpg';
 import ManuelVerme from './assets/images/Docentesjpg/ManuelVerme.jpg';
 import RafaelVilca from './assets/images/Docentesjpg/RafaelVilca.jpg';
-import formato11_1 from './Downloads/NivelacionDeCurso/3.1. Aumentativo e Diminutivo - I1.pdf'
-import formato11_2 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 10 (NH) Cadena de Valor Minería.pdf'
-import formato11_3 from './Downloads/NivelacionDeCurso/Curso2 - Sesión 11 (MM) Cadena de Valor Minería.pdf'
 import mallaCurricular from './Downloads/MALLA CURRICULAR - PLAN DE ESTUDIOS - FISI.pdf'
 import planCurricular from './Downloads/PLAN CURRICULAR FISI 2024.pdf     TABLA DE CONVALIDACION.pdf'
 import planDeEstudiosC from './Downloads/PLAN DE ESTUDIOS._plan c_fisi_unap_2025.pdf actualizado.pdf'
 import planDeEstudiosB from './Downloads/Plan Estudios FISI 2021 PLAN B.pdf'
 import formato06_1 from './Downloads/RetirodeCurso/SOLICITO RETIRO DE CURSO.pdf'
 import formato07_1 from './Downloads/RetiroDeSemestre/SolicitudRetiroDeSemestre.pdf'
+import formato02_1 from './Downloads/NivelacionCurricular/SolicitudCursoNivelacion.pdf'
+import formato08_1 from './Downloads/ReservaDeMatricula/SolicitudReservaDeMatricula.pdf'
+import ListaDeEstudiantes from './Downloads/NivelacionCurricular/ListaDeEstudiantes.pdf'
+import Sismatricula from './assets/images/tramites/ComoMatricularse/SisMatricula.jpg'
 
 export const noticiasdata = [
   {
@@ -417,6 +417,14 @@ export const noticiasdata = [
           formatoPplanDeEstudiosC:planDeEstudiosC,
         },
         {
+          nombre:"Solicitud de Constancia de Nivelación Curricular",
+          formato02_1:formato02_1,
+        },
+        {
+          nombre:"Lista de Estudiantes",
+          formato02_2:ListaDeEstudiantes,
+        },
+        {
           nombre:"Solicitud de Retiro de Curso",
           formato06_1:formato06_1,
         },
@@ -424,14 +432,7 @@ export const noticiasdata = [
           nombre:"Solicitud de Retiro del Semestre",
           formato07_1:formato07_1,
         },
-                {
-          nombre:"Solicitud de Retiro del Semestre",
-          formato07_1:formato07_1,
-        },
-                {
-          nombre:"Solicitud de Retiro del Semestre",
-          formato07_1:formato07_1,
-        },
+
                 {
           nombre:"Solicitud de Retiro del Semestre",
           formato07_1:formato07_1,
@@ -459,14 +460,14 @@ export const noticiasdata = [
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img2:g1Image,
+          img1:Sismatricula,
+
         }
       ],
       formatos: [
         {
           nombre:"Solicitud de Constancia de matrícula y revisión curricular",
-          formato11_1:formato11_1,
+          formato11_1:formato02_1,
         },
 
       ],
@@ -474,19 +475,25 @@ export const noticiasdata = [
         {
           para1: "La matrícula muchas veces puede ser un proceso engorroso cuando somos cachimbos, para eso se elaboró esta guía para que puedas hacerlo de manera correcta y sin perderte de ningún detalle."
         },
-        {
-          para2: "Documentos necesarios:",
-        },
-        {
-          para3: "Nota: Tener una copia adicional para el cargo",
-        },
-        {
-          para4: "-Recibo de pagos por: Matrícula, Revisión curricular",
-        },
-        {
-          para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
-        },
+        // {
+        //   para2: "Documentos necesarios:",
+        // },
+        // {
+        //   para3: "Nota: Tener una copia adicional para el cargo",
+        // },
+
      
+      ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "-Recibo de pagos por: Matrícula, Revisión curricular",
+        },
+        {
+          para2: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
+        },
       ],
       details: [
         {
@@ -515,61 +522,57 @@ export const noticiasdata = [
       id: 2,
       masVisto: "1",
       catgeory: "Cachimbos",
-      title: "Nivelación de Curso",
+      title: "Nivelación Curricular",
       date: "19. February 2022",
       comments: "Duración: 10 días (Aprox)",
       costo: "Costo: 18 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          // img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
           
         }
       ],
       formatos: [
         {
-          nombre:"Solicitud de Constancia de Nivelación de curso",
-          formato11_1:formato11_2,
+          nombre:"Solicitud de Constancia de Nivelación Curricular",
+          formato02_1:formato02_1,
         },
-        
+                {
+          nombre:"Lista de Estudiantes",
+          formato02_2:ListaDeEstudiantes,
+        },
 
       ],
       desc: [
         {
-          para1: "La nivelación de curso es un trámite académico que permite regularizar asignaturas o contenidos pendientes para cumplir con los requisitos curriculares establecidos."
+          para1: "Faculta a los estudiantes a cursar de manera extraordinaria aquellos cursos que no se dictan en el semestre regular o que fueron desaprobados, permitiéndoles regularizar su avance académico, evitar retrasos en su plan de estudios y asegurar la continuidad de su formación profesional."
+        },
+      ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
         },
         {
-          para2: "Documentos necesarios:",
+          para1: "-Solicitud o memorial dirigida al director de Escuela (03 copias + original)",
         },
         {
-          para3: "Nota: Tener una copia adicional para el cargo",
+          para2: "-Recibo de pagos por: Nivelación Curricular (03 copias + original)",
         },
-        {
-          para4: "-Solicitud de Constancia de Nivelación de curso",
-        },
-        {
-          para5: "-Recibo de pagos por: Nivelación de curso",
-        },
-     
       ],
       details: [
         {
-          title: '"Pasos a seguir para solicitar la Nivelación de Cursos"',
+          title: "Pasos a seguir para solicitar la Nivelación Curricular:",
         },
         {
-          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
-          para2:"2. Imprime la constancia y rellénala con tus datos",
-          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de la FÍSI. Tiempo estimado de 3 a 10 días hábiles.",
+          para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Nivelación curricular que tiene un costo de S/. 12.00 soles y código(308). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
+          para2:'2. Imprime la "Solicitud de Nivelación Curricular" que se ecuentra en la parte superior de ésta página o en la sección de (Formatos), llénala con tus datos y saca 03 copias de esta. (Antes de sacar copia verifica que tus datos estén correctos).',
+          para3:"3. Presenta todos tus documentos a la dirección de escuela profesional que se encuentra en el segundo piso de la facultad (calle Moore N° 280)",
+          para4:"4. Guarda tu cargo y espera la respuesta en aproximadamente 10 días hábiles (Ésto dependerá de la demanda de trámies solicitados). La dirección de escuela se encargará de gestionar la resolución decanal necesaria, y finalmente la ORSA activará el retiro en el sistema SGA.",
         },
         {
-          quote: "Nota del editor: ver si piden dni y su copia",
+          quote: "Para la aprobación de un curso de Nivelación Curricular, se requiere una demanda mínima de 15 estudiantes en estudios generales y específicos, y de 5 en áreas de especialidad. Se recomienda designar a un representante para reunir los nombres, códigos y firmas de los interesados que hayan efectuado el pago, a fin de agilizar y unificar la solicitud. El formato de lista puede descargarse en la parte superior o en la sección de formatos.",
         },
-        // {
-        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        // },
-        // {
-        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        // },
       ],
     },
     {
@@ -583,14 +586,13 @@ export const noticiasdata = [
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img2:g1Image,
+          // img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
         }
       ],
       formatos: [
         {
           nombre:"Solicitud de Constancia de Tercio Superior",
-          formato11_1:formato11_2,
+          formato11_1:formato02_1,
         },
 
       ],
@@ -614,7 +616,7 @@ export const noticiasdata = [
       ],
       details: [
         {
-          title: '"Pasos a seguir para solicitar Tercio Superior"',
+          title: "Pasos a seguir para solicitar Tercio Superior:",
         },
         {
           para1:"1. Acércate al Banco de la Nación y paga por el concepto de Constancia administrativa.",
@@ -651,7 +653,7 @@ export const noticiasdata = [
       formatos: [
         {
           nombre:"Solicitud de Grado académico dirigido al Decano",
-          formato11_1:formato11_2,
+          formato11_1:formato02_1,
         },
 
       ],
@@ -714,7 +716,7 @@ export const noticiasdata = [
       ],
       details: [
         {
-          title: '"Pasos a seguir para solicitar el Grado de Bachiller"',
+          title: "Pasos a seguir para solicitar el Grado de Bachiller:",
         },
         {
           para1:"1. Consultar si tienes deudas universitarias: Ir al DIGRAA y consultar si tienes deudas universitarias. En caso lo tengas. deberás acudir al Banco de la nación y realizar el pago.",
@@ -766,7 +768,7 @@ export const noticiasdata = [
       formatos: [
         {
           nombre:"Solicitud dirigida al rector",
-          formato11_1:formato11_1,
+          formato11_1:formato02_1,
         },
 
       ],
@@ -796,7 +798,7 @@ export const noticiasdata = [
       ],
       details: [
         {
-          title: '"Pasos a seguir para solicitar el Duplicado de Grado Y/O Título"',
+          title: "Pasos a seguir para solicitar el Duplicado de Grado Y/O Título:",
         },
         {
           para1:"1. Ir al Banco de la nación y pagar por los siguiente concepto:",
@@ -825,8 +827,7 @@ export const noticiasdata = [
       cover: g1Image,
       imagenes: [
         {
-          // img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img1:fisiLocal,
+          // img1:fisiLocal,
         }
       ],
       formatos: [
@@ -838,25 +839,39 @@ export const noticiasdata = [
       ],
       desc: [
         {
-          para1: "El retiro de cursos muchas veces puede generar dudas sobre cómo hacerlo correctamente. Por eso, aquí te dejamos algunos datos interesantes: Este proceso solo puede realizarse dentro de las fechas que aparecen en el calendario académico, por lo que es importante revisarlo con anticipación. Además, para que el retiro sea válido, es obligatorio realizar el pago de la tasa correspondiente. Si no se cumple con este requisito, se pierde automáticamente el derecho al retiro."
+          para1: "El retiro de cursos es un proceso académico permitido por el reglamento de la universidad para que los estudiantes puedan anular su matrícula en una o dos asignaturas, sin que eso signifique la pérdida de todas las materias ni la interrupción del semestre en curso. "
         },
         {
-          para2: "Documentos necesarios:",
+          para2: "¿Por qué un estudiante puede solicitar un retiro?"
         },
         {
-          para3: "- Solicitud de Retiro de Curso dirigida al director de Escuela. (03 copias + original).",
+          para3: "- Para evitar el perjuicio de una desaprobación y la consecuente acumulación de puntos por bajo rendimiento académico. "
         },
         {
-          para4: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
+          para4: "- Para reducir la carga académica si considera que no podrá aprobar los cursos matriculados."
         },
+
         // {
         //   para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
         // },
      
       ],
+            docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "- Solicitud de Retiro de Curso dirigida al director de Escuela. (03 copias + original).",
+        },
+        {
+          para2: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
+        },
+
+     
+      ],
       details: [
         {
-          title: '"Pasos a seguir para matricularse correctamente"',
+          title: "Pasos a seguir para solicitar Retiro de Curso:",
         },
         {
           para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Retiro de Cursos que tiene un costo de S/. 7.00 soles y código(644). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
@@ -886,7 +901,7 @@ export const noticiasdata = [
       cover: g1Image,
       imagenes: [
         {
-          img1:CasosRetiroDeSemestre,
+          // img1:CasosRetiroDeSemestre,
           
         }
       ],
@@ -899,23 +914,39 @@ export const noticiasdata = [
       ],
       desc: [
         {
-          para1: "El retiro del semestre puede sonar como una decisión complicada, pero en realidad es un derecho del estudiante en situaciones especiales. Para que no tengas dudas, aquí te explicamos en qué casos se puede aplicar:"
+          para1: "El retiro de semestre en la UNAP es un procedimiento formal para que un estudiante anule la matrícula de todos los cursos en los que se ha inscrito para ese ciclo académico en particular. A diferencia del retiro de cursos, que es solo para algunas asignaturas, el retiro de semestre implica una interrupción completa de los estudios por el ciclo en curso. "
         },
         {
-          para2: "Documentos necesarios:",
+          para2: "¿Para qué sirve el retiro de semestre?",
         },
         {
-          para3: "- Solicitud de Retiro de Semestre dirigida al director de Escuela. (03 copias + original).",
+          para3: "Sirve principalmente para que el estudiante pueda:",
+        },
+          {
+          para4: "Afrontar problemas personales graves: Ocurre en situaciones de fuerza mayor, como enfermedades prolongadas, problemas familiares, motivos laborales o dificultades económicas severas que le impidan concentrarse en sus estudios.",
+        },
+          {
+          para5: "Evitar un bajo rendimiento académico: Permite al estudiante no continuar el semestre si anticipa que no podrá cumplir con las exigencias académicas de todos sus cursos. Así evita reprobar asignaturas, lo cual puede afectar su promedio ponderado y su historial académico.",
         },
         {
-          para4: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
+          para6: "Preservar su historial académico: Al ser un procedimiento formal, el estudiante evita las consecuencias negativas del abandono. En lugar de una nota desaprobatoria, en su registro aparece una indicación de retiro, que no es perjudicial para su expediente.",
         },
-
      
+      ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "- Solicitud de Retiro de Semestre dirigida al director de Escuela. (03 copias + original).",
+        },
+        {
+          para2: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
+        },
       ],
       details: [
         {
-          title: "Pasos a seguir para solicitar la Nivelación de Cursos",
+          title: "Pasos a seguir para solicitar el Retiro de Semestre:",
         },
         {
           para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Retiro del Semestre que tiene un costo de S/. 23.00 soles y código(011). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
@@ -926,66 +957,79 @@ export const noticiasdata = [
         {
           quote: 'Te recomendamos ver el trámite de "Reingreso Regular" antes de iniciar el siguiente semestre para tu retorno',
         },
-        // {
-        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        // },
-        // {
-        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        // },
+
       ],
     },
     {
       id: 8,
       masVisto: "1",
       catgeory: "Cachimbos",
-      title: "Tercio Superior",
-      date: "19. February 2022",
-      comments: "Duración: 10 días (Aprox)",
-      costo: "Costo: 80 soles (Aprox)",
+      title: "Reserva de Matrícula o  Licencia de Estudios",
+      date: "08. Octubre 2025",
+      comments: "Duración: 05 días (Aprox)",
+      costo: "Costo: 16 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img2:g1Image,
+          // img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          // img2:g1Image,
         }
       ],
       formatos: [
         {
-          nombre:"Solicitud de Constancia de Tercio Superior",
-          formato11_1:formato11_2,
+          nombre:"Solicitud de Reserva de Matrícula",
+          formato08_1:formato08_1,
         },
 
       ],
       desc: [
         {
-          para1: "Solicitar la constancia de Tercio Superior es muy importante cuando somos alumnos, ya que nos trae muchos beneficios y uno de ellos es poder postular a la beca permanencia añorado por muchos!"
+          para1: "La reserva de matrícula o licencia de estudios, es un procedimiento académico que permite al estudiante conservar su vacante sin cursar el semestre, por motivos debidamente justificados y verificados según la normativa universitaria vigente.",
         },
         {
-          para2: "Documentos necesarios:",
+          para2: "¿Quiénes pueden solicitar la reserva de matrícula?",
         },
         {
-          para3: "Nota: Tener una copia adicional para el cargo",
+          para3: "- Los ingresantes admitidos, estudiantes regulares y reingresantes que no puedan continuar sus estudios por razones de fuerza mayor o causas justificadas.",
         },
-        {
-          para4: "-Solicitud de Constancia de Tercio Superior",
-        },
-        {
-          para5: "-Recibo de pagos por: Constancia administrativa",
-        },
+        // {
+        //   para4: "¿Cuál es el procedimiento?",
+        // },
+        // {
+        //   para5: "- La solicitud se presenta ante la Dirección de Escuela Profesional en las fechas establecidas en el calendario académico y se aprueba mediante resolución decanal.",
+        // },
+        // {
+        //   para6: "¿Por cuánto tiempo se puede reservar la matrícula?",
+        // },
+        // {
+        //   para7: "- La reserva puede otorgarse por un periodo máximo de seis (06) semestres académicos consecutivos o alternos.",
+        // }
+
      
+      ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "- Solicitud de Reserva de Matrícula dirigida al director de Escuela. (03 copias + original).",
+        },
+        {
+          para2: "-Recibo de pago (Voucher) que te dan al realizar el pago en cualquier agencia del Banco de la Nación. (03 copias + original)",
+        },
       ],
       details: [
         {
-          title: '"Pasos a seguir para solicitar Tercio Superior"',
+          title: "Pasos a seguir para solicitar Reserva de Matrícula:",
         },
         {
-          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Constancia administrativa.",
-          para2:"2. Imprime la constancia y rellénala con tus datos.",
-          para3:"3. Entrega la constancia y el recibo de pago en las oficinas de DIRGRAA. Tiempo estimado de 3 a 10 días hábiles.",
-          para4:"4. Acércate con tu cargo para recoger tu constancia.",
+          para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Reserva de Matrícula que tiene un costo de S/. 12.00 soles y código(464). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
+          para2:'2. Imprime la "Solicitud de Reserva de Matrícula" que se ecuentra en la parte superior de ésta página o en la sección de (Formatos), llénala con tus datos y saca 03 copias de esta. (Antes de sacar copia verifica que tus datos estén correctos).',
+          para3:"3. Presenta todos tus documentos a la dirección de escuela profesional que se encuentra en el segundo piso de la facultad (calle Moore N° 280)",
+          para4:"4. Guarda tu cargo y espera la respuesta en aproximadamente 05 días hábiles (Ésto dependerá de la demanda de trámies solicitados). La dirección de escuela se encargará de gestionar la resolución decanal necesaria, y finalmente la ORSA activará el retiro en el sistema SGA.",
         },
         {
-          quote: "(Nota del editor: ver si piden dni y su copia)",
+          quote: "La reserva de matricula procede hasta por un periodo máximo de seis (06) semestres académicos consecutivos o alternos.",
         },
         // {
         //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
@@ -1013,7 +1057,7 @@ export const noticiasdata = [
       formatos: [
         {
           nombre:"Solicitud de Grado académico dirigido al Decano",
-          formato11_1:formato11_2,
+          formato11_1:formato02_1,
         },
 
       ],
@@ -1121,40 +1165,53 @@ export const noticiasdata = [
       cover: g1Image,
       imagenes: [
         {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
-          img2:g1Image,
+          // img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+          // img2:g1Image,
         }
       ],
       formatos: [
         {
           nombre:"Solicitud dirigida al rector",
-          formato11_1:formato11_1,
+          formato11_1:formato02_1,
         },
 
       ],
       desc: [
         {
-          para1: "Vamos a solicitar el duplicado de Diploma de Grado y/o Título"
+          para1: "Este trámite sirve para obtener una nueva copia oficial de un diploma universitario en caso de pérdida, robo, deterioro o mutilación del documento original."
         },
         {
-          para2: "Documentos necesarios (En el siguiente orden):",
+          para2: "Este procedimiento es fundamental para los egresados que necesitan acreditar su formación académica y profesional en diversas situaciones."
         },
         {
-          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+          para3: "Obtener el duplicado es indispensable para:"
         },
         {
-          para4: "-Recibo de Ingreso",
+          para4: "- Sustitución legal: Reemplazar el documento original en caso de pérdida, robo o deterioro."
         },
         {
-          para5: "-Solicitud dirigida al rector",
+          para5: "- Acceso profesional: Presentarlo en procesos de selección laboral o para colegiarse."
         },
-                {
-          para6: "a)  Motivo de Pérdida.",
+        {
+          para6: "- Gestión académica/legal: Usarlo en postulaciones a posgrados o en trámites legales y administrativos."
         },
-                {
-          para7: "b)  Motivo de Deterioro.",
-        },
+ 
+
      
+      ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios (En el siguiente orden):",
+        },
+        {
+          para1: "Nota: Necesitas el original y 3 copias adicionales.",
+        },
+        {
+          para2: "-Recibo de Ingreso",
+        },
+        {
+          para3: "-Solicitud dirigida al rector",
+        },
       ],
       details: [
         {

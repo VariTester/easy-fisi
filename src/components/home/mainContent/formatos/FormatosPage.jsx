@@ -100,7 +100,9 @@ const FormatosPage = () => {
                 return (
                   <div key={index} className="text-containerLinksfp">
                     {formatoKey && val[formatoKey] ? (
-                      <a href={val[formatoKey]} download className="formato-linkfp">
+                      <a href={val[formatoKey]} 
+                      download = {`${val.nombre}.pdf`}
+                      className="formato-linkfp">
                         {val.nombre}
                       </a>
                     ) : null}

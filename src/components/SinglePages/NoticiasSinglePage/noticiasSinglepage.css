@@ -28,6 +28,11 @@
   .details .info label{
     font-weight: 600;
     font-size: 14px;
+    color: rgb(109, 103, 103);
+
+  }
+    .details .info i{
+    color:#fcc21b;
   }
   .details .author img {
     
@@ -38,9 +43,9 @@
     border:  1px solid rgb(156, 153, 153);
     margin: 0 10px;
   }
-  .details .author label {
-    color: grey;
-  }
+  /* .comment label {
+    color: rgb(83, 9, 9);
+  } */
   .details .social {
     display: flex;
     margin-bottom: 20px;
@@ -84,6 +89,9 @@
     gap: 30px; /* Espacio entre los divs (puedes ajustarlo) */
     justify-content: start; /* Alinea los elementos al inicio (puedes usar center o space-between si lo prefieres) */
     align-items: center; /* Alinea los elementos verticalmente */
+  }
+  .info i{
+    font-size: 16px;
   }
   .desctop img {
     width: 470px; /* Ajusta la imagen al 100% del contenedor */
