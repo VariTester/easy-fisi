@@ -199,16 +199,39 @@
 }
 
 /* Imagen principal */
-.detailsSP img {
-  display: block;
-  margin: 30px 0;
-  height: 300px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
+
+/* Contenedor flexible de imágenes */
+.imagenes-contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Si no entran, bajan */
+  justify-content:center; /* Centra horizontalmente */
+  gap: 1.2rem; /* Espacio entre imágenes */
+  margin: 1.5rem 0; /* Separación con el texto */
 }
 
+/* Estilos individuales de cada imagen */
+.imagen-estilo {
+  width: auto;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.imagen-estilo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* .desctopSP img {
+  height: 220px;
+  width: 300px;
+  display:block;
+  object-fit: cover;
+  position:;
+} */
 /* Quote */
 .quoteSP {
   padding-left: 50px;

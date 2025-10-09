@@ -78,16 +78,21 @@ const Singlepages = () => {
                 {val.para1 && <p className="para1SP">{val.para1}</p>}
 
                 {/* Solo muestra imagen si existe */}
-                {index === 0 &&
-                  item.imagenes &&
-                  item.imagenes[0] &&
-                  item.imagenes[0].img1 && (
-                    <img
-                      src={item.imagenes[0].img1}
-                      alt="Imagen relacionada"
-                      className="imagen-estilo"
-                    />
-                  )}
+                {index === 0 && item.imagenes && item.imagenes.length > 0 && (
+                  <div className="imagenes-contenedor">
+                    {Object.values(item.imagenes[0])
+                      .filter(Boolean) // elimina valores null o undefined
+                      .map((imgSrc, i) => (
+                        <img
+                          key={i}
+                          src={imgSrc}
+                          alt={`Imagen relacionada ${i + 1}`}
+                          className="imagen-estilo"
+                        />
+                      ))}
+                  </div>
+                )}
+
 
                 {Array.from({ length: 20 }, (_, i) => i + 2).map((num) => {
                   const key = `para${num}`
