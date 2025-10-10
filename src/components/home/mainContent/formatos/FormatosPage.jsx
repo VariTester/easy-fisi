@@ -61,13 +61,17 @@ const FormatosPage = () => {
         <section className="mainContent detailsfp">
           {/* Barra de búsqueda estilizada */}
           <div className="search-containerfp">
-            <input
-              type="text"
-              placeholder="🔍 Buscar formato..."
-              className="search-bar"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
+          <input
+            type="text"
+            placeholder="🔍 Buscar formato..."
+            className="search-bar"
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setCurrentPage(1); // 🔥 Reinicia la página cuando se busca
+            }}
+          />
+
           </div>
 
           {/* Paginación */}

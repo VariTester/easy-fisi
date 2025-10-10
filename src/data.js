@@ -25,12 +25,14 @@ import mallaCurricular from './Downloads/MALLA CURRICULAR - PLAN DE ESTUDIOS - F
 import planCurricular from './Downloads/PLAN CURRICULAR FISI 2024.pdf     TABLA DE CONVALIDACION.pdf'
 import planDeEstudiosC from './Downloads/PLAN DE ESTUDIOS._plan c_fisi_unap_2025.pdf actualizado.pdf'
 import planDeEstudiosB from './Downloads/Plan Estudios FISI 2021 PLAN B.pdf'
+import repunap from './Downloads/RCU-060-2023-UNAP REPUNAP.pdf'
 import formato06_1 from './Downloads/RetirodeCurso/SOLICITO RETIRO DE CURSO.pdf'
 import formato07_1 from './Downloads/RetiroDeSemestre/SolicitudRetiroDeSemestre.pdf'
 import formato02_1 from './Downloads/NivelacionCurricular/SolicitudCursoNivelacion.pdf'
 import formato08_1 from './Downloads/ReservaDeMatricula/SolicitudReservaDeMatricula.pdf'
 import formato04_1 from './Downloads/GradoDeBachiller/SolicitudGradoBachiller.pdf'
 import formato04_2 from './Downloads/GradoDeBachiller/SolicitudConstanciasVarias.pdf'
+import formato09_1 from './Downloads/Reingresos/ReingresoRegular/SolicitudReingresoRegular.pdf'
 import Imagen04_1 from './assets/images/tramites/GradoDeBachiller/Imagen01.jpg'
 import Imagen04_2 from './assets/images/tramites/GradoDeBachiller/Imagen02.jpg'
 import ListaDeEstudiantes from './Downloads/NivelacionCurricular/ListaDeEstudiantes.pdf'
@@ -405,6 +407,10 @@ export const noticiasdata = [
   export const formatos_page = [{
           formatos:[
         {
+          nombre:"Reglamento de Estudios de Pregrado en la UNAP",
+          formatoMallaCurriculalr:repunap,
+        },
+        {
           nombre:"Malla Curricular",
           formatoMallaCurriculalr:mallaCurricular,
         },
@@ -425,6 +431,14 @@ export const noticiasdata = [
           formato02_1:formato02_1,
         },
         {
+          nombre:"Solicitud de Grado de Bachiller dirigido al Decano",
+          formato04_1:formato04_1,
+        },
+        {
+          nombre:"Solicitud de Constancias Varias - Grado de Bachiller",
+          formato04_2:formato04_2,
+        },
+        {
           nombre:"Lista de Estudiantes",
           formato02_2:ListaDeEstudiantes,
         },
@@ -440,9 +454,9 @@ export const noticiasdata = [
           nombre:"Solicitud de Reserva de Matrícula",
           formato08_1:formato08_1,
         },
-                {
-          nombre:"Solicitud de Retiro del Semestre",
-          formato07_1:formato07_1,
+        {
+          nombre:"Solicitud de Reingreso Regular",
+          formato09_1:formato09_1,
         },
 
         
@@ -601,9 +615,12 @@ export const noticiasdata = [
       ],
       desc: [
         {
-          para1: "Solicitar la constancia de Tercio Superior es muy importante cuando somos alumnos, ya que nos trae muchos beneficios y uno de ellos es poder postular a la beca permanencia añorado por muchos!"
+          para1: "El Tercio Superior es un reconocimiento académico que se otorga a los estudiantes universitarios (o de educación superior) con el mejor rendimiento en un periodo académico o en toda la carrera.",
+          para2: "La Constancia de Tercio Superior es el documento oficial emitido por la institución educativa que certifica que el estudiante (o egresado) pertenece a ese grupo de alto rendimiento en un periodo específico. Este documento sirve principalmente para:",
+          para3: "- Becas y Financiamiento: Permite acceder a becas académicas, tanto a nivel nacional (ej. becas socioeconómicas) como internacional (programas de intercambio y ayuda financiera).",
+          para4: "- Admisión a Posgrado: Suma puntos o es un requisito para postular a maestrías y doctorados, tanto en Perú como en el extranjero.",
+          para5: "- Descuentos y Beneficios: En la UNAP, ser de Tercio Superior otorga descuentos en la matrícula del semestre.",
         },
-
      
       ],
       docsNecesariosData: [
@@ -647,7 +664,7 @@ export const noticiasdata = [
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Grado de bachiller",
-      date: "19. February 2022",
+      date: "08. Octubre 2025",
       comments: "Duración: 03 meses (Aprox)",
       costo: "Costo: 270 soles (Aprox)",
       cover: g1Image,
@@ -660,11 +677,11 @@ export const noticiasdata = [
       ],
       formatos: [
         {
-          nombre:"Solicitud de Grado académico dirigido al Decano",
+          nombre:"Solicitud de Grado de Bachiller dirigido al Decano",
           formato04_1:formato04_1,
         },
         {
-          nombre:"Solicitud de Constancias Varias",
+          nombre:"Solicitud de Constancias Varias - Grado de Bachiller",
           formato04_2:formato04_2,
         },
 
@@ -728,7 +745,7 @@ export const noticiasdata = [
           para15: "-Constancia de Egresado, expedida por la DRAA.",
         },
         {
-          para16: "-Solicitud de Grado académico dirigido al Decano.",
+          para16: "-Solicitud de Grado de Bachiller dirigido al Decano",
         },
 
       ],
@@ -739,24 +756,26 @@ export const noticiasdata = [
         },
         {
           para1:"1. Consultar si tienes deudas universitarias: Ir a la DRAA y consultar si tienes deudas universitarias. En caso lo tengas. deberás acudir al Banco de la nación y realizar el pago correspondiente al monto que te digan (no tiene código).",
-          para2:"2. Pagos (Aprovecha para realizar los pagos correspondientes en el Banco de la nación por los siguientes conceptos): ",
-          para3:"-Pago de Deuda Universitaria del (Paso 1)",
-          para4:"-Revisión curricular		S/. 12.00 con código(670)",
-          para5:"-Certificado de estudios 	S/. 91.00 con código(145)",
-          para6:"-Constancia administrativa 	S/. 57.50 con código(242)",
-          para7:"-Diploma de Grado académico S/. 57.00 con código(339)",
-          para8:"-Trámite administrativo 	S/. 16.00 con código(726)",
-          para9:"-Constancia de matrícula 	S/. 18.00 con código(242)",
-          para10:"-Constancia de egresado	S/. 18.00 con código(190)",
-          para11:"3.  Una vez que realices todos los pagos correspondientes y tengas sus copias, deberás acercarte nuevamente a la la DRAA para solicitar tu revisión curricular y certificado de estudio. A cada solicitud (curricular y certificado) adjuntar copias de los recibos de pagos visados por la jefa de asuntos Económicos. Te estarán haciendo la entrega de tus documentos solicitados en aproximadamente diez (10) días.",
-          para12:"4.  En caso de tener deuda pendiente (Paso 1), diríjase a la Facultad de Odontología (Imagen 01) para que le anulen la deuda ya pagada en el banco, para eso debes mostrar tu voucher (01 copia + original) y luego con el pago de constancia administrativa, solicitar la constancia de no adeudar en la Biblioteca Central (Imagen 02) o solicitarla por mail al siguiente correo electrónico biblioteca@unapiquitos.edu.pe con los siguientes datos (nombre completo, DNI, facultad y foto del voucher de Constancia administrativa S/. 57.50). En aproximadamente 3 días te llegará la constancia en PDF. En el caso de Biblioteca Especializada no contamos con una así que no se solicita nada. Adjuntar a la solicitud: copia de recibo de pago y la constancia para luego presentar en mesa de partes de la DRAA. Si no cuenta con deuda pendiente realice el siguiente paso.",
-          para13:"5.  Fotografías: Tómese tres (03) fotografías tamaño carnet y cinco (05) fotografías tamaño pasaporte. La foto tiene que ser actual, a color, en papel alisado y estilo sastre.",
-          para14:"6.  Partida de nacimiento: Acércate a la Reniec o Municipalidad donde se haya registrado tu nacimiento y solicita un partida de nacimiento.Tiempo estimado 2 días hábiles. Costo S/20)",
-          para15:"7.  Legalización de DNI: Saca copia de tu DNI y acércate a una notaría para la legalización necesitarás entregar el dni físico y la copia. Tiempo estimado 15 min. Costo S/.5.00",
-          para16:'8.  Solicitud de constancias: Descargue el Archivo de "Constancia varias". Rellénela y saque una (01) copia adicional (cargo). Adjunta también el original de todos los recibos (Revisión curricular, Certificado de estudio, Diploma de Grado académico, Trámite administrativo, Constancia de matrícula, Constancia de egresado) y una copia de todos los recibos, puedes acomodarlos todos en una sola hoja. Entregue en la oficina de la DRAA: La solicitud, los recibos y una foto tamaño carnet. Sacar una copia adicional que será tu cargo, para que puedas ir a recoger sus constancias después. Nota: Este paso tarda aproximadamente seis (06) días hábiles. El horario de atención del DRAA es de 8am a 2pm. ',
-          para17:"9.  Dirígete a las oficinas administrativas de la FISI y deja tu certificado de estudios para que sea firmado por el decano de la facultad. Tiempo estimado dos (02) días hábiles",
-          para18:'10. Entrega de documentos: Recoge tu certificado de estudios firmado por el decano y junta todos los documentos. Ordénalos de abajo hacia arriba en un folder de color anaranjado como indica en la parte de "Documentos Necesarios". Consejo: Pega todos tus voucher en una sola hoja y pega tu Carnet en una sola hoja aparte. No olvides sacar 3 copias adicionales del juego original. Tiempo estimado de 2 a 3 meses.',
-          para19:"11. Recoger el Grado de bachiller: Espera que salga la resolución de la lista de bachilleres publicada en la página de la unap. (https://enlinea.unapiquitos.edu.pe). Acércate a la facultad de odontología, presenta tu dni y aguarda. Felicitaciones, ¡Ya eres bachiller! 🎓",
+          para2:'2. Imprime la "Solicitud de Grado de Bachiller dirigido al Decano" y la "Solicitud de Constancias Varias - Grado de Bachiller" que se ecuentra en la parte superior de ésta página o en la sección de (Formatos), llénala con tus datos y saca 03 copias de esta, por el momento guárdalas ya que más adelante los necesitaras. (Antes de sacar copia verifica que tus datos estén correctos).',
+          para3:"3. Acércate a cualquier agencia del Banco de la Nación y paga por los siguientes conceptos:",
+          para4:" (Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones).",
+          para5:"-Pago de Deuda Universitaria del (Paso 1)",
+          para6:"-Revisión curricular		S/. 12.00 con código(670)",
+          para7:"-Certificado de estudios 	S/. 91.00 con código(145)",
+          para8:"-Constancia administrativa 	S/. 57.50 con código(242)",
+          para9:"-Diploma de Grado académico S/. 57.00 con código(339)",
+          para10:"-Trámite administrativo 	S/. 16.00 con código(726)",
+          para11:"-Constancia de matrícula 	S/. 18.00 con código(242)",
+          para12:"-Constancia de egresado	S/. 18.00 con código(190)",
+          para13:"4.  Una vez que realices todos los pagos correspondientes y tengas sus copias, deberás acercarte nuevamente a la la DRAA para solicitar tu revisión curricular y certificado de estudio. A cada solicitud (curricular y certificado) adjuntar copias de los recibos de pagos visados por la jefa de asuntos Económicos. Te estarán haciendo la entrega de tus documentos solicitados en aproximadamente diez (10) días.",
+          para14:"5.  En caso de tener deuda pendiente (Paso 1), diríjase a la Facultad de Odontología (Imagen 01) para que le anulen la deuda ya pagada en el banco, para eso debes mostrar tu voucher (01 copia + original) y luego con el pago de constancia administrativa, solicitar la constancia de no adeudar en la Biblioteca Central (Imagen 02) o solicitarla por mail al siguiente correo electrónico biblioteca@unapiquitos.edu.pe con los siguientes datos (nombre completo, DNI, facultad y foto del voucher de Constancia administrativa S/. 57.50). En aproximadamente 3 días te llegará la constancia en PDF. En el caso de Biblioteca Especializada no contamos con una así que no se solicita nada. Adjuntar a la solicitud: copia de recibo de pago y la constancia para luego presentar en mesa de partes de la DRAA. Si no cuenta con deuda pendiente realice el siguiente paso.",
+          para15:"6.  Fotografías: Tómese tres (03) fotografías tamaño carnet y cinco (05) fotografías tamaño pasaporte. La foto tiene que ser actual, a color, en papel alisado y estilo sastre.",
+          para16:"7.  Partida de nacimiento: Acércate a la Reniec o Municipalidad donde se haya registrado tu nacimiento y solicita un partida de nacimiento.Tiempo estimado 2 días hábiles. Costo S/20).",
+          para17:"8.  Legalización de DNI: Saca copia de tu DNI y acércate a una notaría para la legalización necesitarás entregar el dni físico y la copia. Tiempo estimado 15 min. Costo S/.5.00.",
+          para18:'9.  Solicitud de constancias:  Ahora que tienes todos tus documentos, recibos y las solicitudes del (Paso 2). Revisión curricular, Certificado de estudio, Diploma de Grado académico, Trámite administrativo, Constancia de matrícula, Constancia de egresado y sus copias, puedes acomodarlos todos en una sola hoja. Entregue en la oficina de la DRAA: La solicitud, los recibos y una foto tamaño carnet. Sacar una copia adicional que será tu cargo, para que puedas ir a recoger sus constancias después. Nota: Este paso tarda aproximadamente seis (06) días hábiles. El horario de atención del DRAA es de 8am a 2pm. ',
+          para19:"10.  Dirígete a las oficinas administrativas de la FISI y deja tu certificado de estudios para que sea firmado por el decano de la facultad. Tiempo estimado dos (02) días hábiles.",
+          para20:'11. Entrega de documentos: Recoge tu certificado de estudios firmado por el decano y junta todos los documentos. Ordénalos de abajo hacia arriba en un folder de color anaranjado como indica en la parte de "Documentos Necesarios". Consejo: Pega todos tus voucher en una sola hoja y pega tu Carnet en una sola hoja aparte. No olvides sacar 3 copias adicionales del juego original. Tiempo estimado de 2 a 3 meses.',
+          para21:"12. Recoger el Grado de bachiller: Espera que salga la resolución de la lista de bachilleres publicada en la página de la unap. (https://enlinea.unapiquitos.edu.pe). Acércate a la facultad de odontología, presenta tu dni y aguarda. Felicitaciones, ¡Ya eres bachiller! 🎓",
         },
         {
           quote: "Presentar en la Facultad, su expediente. (04 copias + original)",
@@ -865,10 +884,6 @@ export const noticiasdata = [
         {
           para4: "- Para reducir la carga académica si considera que no podrá aprobar los cursos matriculados."
         },
-
-        // {
-        //   para5: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
-        // },
      
       ],
             docsNecesariosData: [
@@ -897,12 +912,7 @@ export const noticiasdata = [
         {
           quote: "No olvides que puedes retirarte de uno (01) o dos (02) cursos, en el que estés matriculado, y el pago es S/. 7.00 soles también por los 02 cursos",
         },
-        // {
-        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        // },
-        // {
-        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        // },
+
       ],
     },
     {
@@ -1059,115 +1069,60 @@ export const noticiasdata = [
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Reingreso Regular",
-      date: "19. February 2022",
-      comments: "Duración: 03 meses (Aprox)",
-      costo: "Costo: 270 soles (Aprox)",
+      date: "10. Octubre 2025",
+      comments: "Duración: 05 días (Aprox)",
+      costo: "Costo: 21 soles (Aprox)",
       cover: g1Image,
       imagenes: [
-        {
-          img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
+        // {
+        //   img1:"https://enlinea.unapiquitos.edu.pe/servicios/bienestar/descargas/comedor.jpg",
           
-        }
+        // }
       ],
       formatos: [
         {
-          nombre:"Solicitud de Grado académico dirigido al Decano",
-          formato04_2:formato04_2,
+          nombre:"Solicitud de Reingreso Regular",
+          formato09_1:formato09_1,
         },
-        
-
       ],
       desc: [
         {
-          para1: "Solicitar el grado de Bachiiller es uno de los procedimientos administrativos más complicados de realizar y de los que toma mucho tiempo, por eso es necesario realizarlo de manera correcta para evitar demoras y gastoso innecesarios."
+          para1: "El reingreso regular es el derecho que tienen los estudiantes de reincorporarse a la Universidad Nacional de la Amazonía Peruana (UNAP) después de haber interrumpido temporalmente sus estudios por motivos formales y debidamente justificados."
         },
         {
-          para2: "Documentos necesarios (En el siguiente orden):",
+          para2: "Este trámite permite retomar la continuidad académica dentro de las fechas establecidas en el calendario universitario, cuando la interrupción se produjo por situaciones como: retiro total del semestre, reserva de matrícula, suspensión temporal según la Ley Universitaria, o participación en programas de movilidad estudiantil.",
         },
         {
-          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+          para3: "En estos casos, el estudiante mantiene su condición académica y puede volver a matricularse una vez autorizado el reingreso mediante resolución correspondiente.",
         },
-        {
-          para4: "-Solicitud de Grado académico dirigido al Decano.",
-        },
-        {
-          para5: "-Constancia de Egresado, expedida por la DIGRAA.",
-        },
-                {
-          para5: "-Constancia de Matrícula, expedida por la DIGRAA.",
-        },
-                {
-          para6: "-Constancia de no adeudo de la biblioteca especializada.",
-        },
-                {
-          para7: "-Constancia de no adeudo de implementación de biblioteca (Asuntos económicos FISI).",
-        },
-                {
-          para8: "-Constancia administrativa de no tener deuda pendiente con la institucion.",
-        },
-                {
-          para9: "-Copia de recibo por pago de implementación de Biblioteca especialidad.",
-        },
-                {
-          para10: "-Recibos de pagos por: Constancia administrativa, Diploma de Grado académico,Certificado de estudios, Trámite administrativo, Constancia de matrícula, Constancia de egresado.",
-        },
-                {
-          para11: "-Certificado de estudios (original).",
-        },
-                {
-          para12: "-Coarnet universitario o constancia de no haber recibido, expedido por la FISI (S/.18.00), En caso de pérdida, presentar denuncia.",
-        },
-                {
-          para13: "-Tres (03) fotografías actuales a color en papel alisado, tamaño carnet (Estilo sastre).",
-        },
-                {
-          para14: "-Cinco (05) fotografías actuales a color en papel alisado, tamaño pasaporte (Estilo sastre).",
-        },
-                {
-          para15: "-Copia de DNI legalizado por el notario.",
-        },
-                {
-          para16: "-Revisión curricular con copia de pago adjunto.",
-        },
-                {
-          para17: "-Partida de nacimiento.",
-        },
-     
+
       ],
+            docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "-Solicitud dirigida al director de Escuela (03 copias + original)",
+        },
+        {
+          para2: "-Recibo de pagos por: Reingreso Regular (03 copias + original)",
+        },
+      ],
+
       details: [
         {
-          title: '"Pasos a seguir para solicitar el Grado de Bachiller"',
+          title: "Pasos a seguir para solicitar Retiro de Curso:",
         },
         {
-          para1:"1. Consultar si tienes deudas universitarias: Ir al DIGRAA y consultar si tienes deudas universitarias. En caso lo tengas. deberás acudir al Banco de la nación y realizar el pago.",
-          para2:"2. Pagos (Ir al Banco de la nación y pagar por los siguientes conceptos): ",
-          para3:"-Revisión curricular 		S/. 11.00",
-          para4:"-Certificado de estudios 	S/. 90.00",
-          para5:"-Constancia administrativa 	S/. 56.50",
-          para6:"-Diploma de Grado académico S/. 56.00",
-          para7:"-Trámite administrativo 	S/. 15.00",
-          para8:"-Constancia de matrícula 	S/. 17.00",
-          para9:"-Constancia de egresado	S/. 17.00",
-          para10:"-Pago de Deuda Universitaria (del paso 1)",
-          para11:"3.  En caso de tener deuda pendiente (Paso 1), diríjase a la Facultad de Odontología y muestre el voucher de deuda cancelada. Ahí mismo le anularán la deuda. En caso de no tener deuda pendiente pase al paso 4",
-          para12:"4.  Fotografías: Tómese Tres (04) fotografías tamaño carnet y Cinco (05) fotografías tamaño pasaporte. La foto tiene que ser actual, a color, en papel alisado y estilo sastre",
-          para13:"5.  Partida de nacimiento: Acerca a la Reniec o Municipalidad donde se haya registrado tu nacimiento y solicita un partida de nacimiento.Tiempo estimado 2 días hábiles. Costo S/20)",
-          para14:"6.  Legalización de DNI: Saca copia de tu DNI y acércate a una notaría. Para la legalización necesitarás entregar el dni físico y la copia. Tiempo estimado 15 min. Costo S/.5.00",
-          para15:"7.  Solicitud de constancias: Descargue el Archivo de “Constancia varias”. Rellénela y saque 1 copia adicional (cargo). Adjunta también el original de todos los recibos (Revisión curricular, Certificado de estudio, Diploma de Grado académico, Trámite administrativo, Constancia de matrícula, Constancia de egresado) y una copia de todos los recibos, puedes acomodarlos todos en una sola hoja. Entregue en la oficina de DIGRAA: La solicitud, los recibos y una foto tamaño carnet. Sacar una copia adicional que será tu cargo, para que puedas ir a recoger sus constancias después. Nota: Este paso tarda aproximadamente 6 días hábiles. El horario de atención del DIGRAA es de 8am a 2pm. ",
-          para16:"8.  Solicitud de constancia de no adeudo a Biblioteca: Enviar un correo a la dirección biblioteca@unapiquitos.edu.pe con los siguientes datos: nombre completo, dni, facultad y foto del voucher de Constancia administrativa (S/. 56.50). En aproximadamente 3 días te llegará la constancia en PDF",
-          para17:"9.  Recojo de constancias: Acércate a DIGRAA después de los 6 días hábiles luego de haber entregado tu solicitud. Dirígete a las oficinas administrativas de la FISI y deja tu certificado de estudios para que sea firmado por el decano de la facultad. Tiempo estimado (2 días hábiles)",
-          para18:"10. Entrega de documentos: Recoge tu certificado de estudios firmado por el decano y junta todos los documentos. Ordenarlos con indica en la primera parte. Nota: Pega todos tus voucher en una sola hoja y pega tu Carnet en una sola hoja. No olvides sacar 3 copias adicionales del juego original. Tiempo estimado de 2 a 3 meses.",
-          para20:"11. Recoger el Grado de bachiller: Espera que salga la resolución de la lista de bachilleres publicada en la página de la unap. (https://enlinea.unapiquitos.edu.pe). Acércate a la facultad de odontología, presenta tu dni y aguarda. Felicitaciones, ¡Ya eres bachiller! 🎓",
+          para1:"1. Acércate a cualquier agencia del Banco de la Nación y paga por el concepto de Reingreso Regular que tiene un costo de S/. 18.00 soles y código(630). Te recomendamos la agencia que está entrando por la puerta de la calle Yavari N° 365, ya que los trabajadores de esa agencia están más capacitados con respecto a pagos de trámites universitarios. Luego saca 03 copias al recibo o voucher que te dieron en el banco. (Puedes sacar copia al frente de la misma, ya que hay servicio de fotocopia e impresiones)",
+          para2:'2. Imprime la "Solicitud de Reingreso Regular" que se ecuentra en la parte superior de ésta página o en la sección de (Formatos), llénala con tus datos y saca 03 copias de esta. (Antes de sacar copia verifica que tus datos estén correctos).',
+          para3:"3. Presenta todos tus documentos a la dirección de escuela profesional que se encuentra en el segundo piso de la facultad (calle Moore N° 280)",
+          para4:"4. Guarda tu cargo y espera la respuesta en aproximadamente 05 días hábiles (Ésto dependerá de la demanda de trámies solicitados). La dirección de escuela se encargará de gestionar la resolución decanal necesaria, y finalmente la ORSA activará el retiro en el sistema SGA.",
         },
         {
-          quote: "Nota del editor: ver si piden dni y su copia",
+          quote: "El reingreso de los estudiantes procede en un plazo máximo de hasta seis (06) semestres académicos, luego de haber interrumpido sus estudios. No procede para los casos de retiro definitivo",
         },
-        // {
-        //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-        // },
-        // {
-        //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-        // },
+
       ],
     },
     {
