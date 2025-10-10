@@ -603,20 +603,24 @@ export const noticiasdata = [
         {
           para1: "Solicitar la constancia de Tercio Superior es muy importante cuando somos alumnos, ya que nos trae muchos beneficios y uno de ellos es poder postular a la beca permanencia añorado por muchos!"
         },
-        {
-          para2: "Documentos necesarios:",
-        },
-        {
-          para3: "Nota: Tener una copia adicional para el cargo",
-        },
-        {
-          para4: "-Solicitud de Constancia de Tercio Superior",
-        },
-        {
-          para5: "-Recibo de pagos por: Constancia administrativa",
-        },
+
      
       ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "Nota: Tener una copia adicional para el cargo",
+        },
+        {
+          para2: "-Solicitud de Constancia de Tercio Superior",
+        },
+        {
+          para3: "-Recibo de pagos por: Constancia administrativa",
+        },
+      ],
+      
       details: [
         {
           title: "Pasos a seguir para solicitar Tercio Superior:",
@@ -785,25 +789,27 @@ export const noticiasdata = [
         {
           para1: "Vamos a solicitar el duplicado de Diploma de Grado y/o Título"
         },
+
+      ],
+            docsNecesariosData: [
         {
-          para2: "Documentos necesarios (En el siguiente orden):",
+          title: "Documentos necesarios:",
         },
         {
-          para3: "Nota: Necesitas el original y 3 copias adicionales.",
+          para1: "Nota: Necesitas el original y 3 copias adicionales.",
         },
         {
-          para4: "-Recibo de Ingreso",
+          para2: "-Recibo de Ingreso",
         },
         {
-          para5: "-Solicitud dirigida al rector",
+          para3: "-Solicitud dirigida al rector",
         },
                 {
-          para6: "a)  Motivo de Pérdida.",
+          para4: "a)  Motivo de Pérdida.",
         },
                 {
-          para7: "b)  Motivo de Deterioro.",
+          para5: "b)  Motivo de Deterioro.",
         },
-     
       ],
       details: [
         {
