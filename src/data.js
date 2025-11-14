@@ -1,18 +1,29 @@
+//*****************************Noticias*****************************//
 import Noticia01 from './assets/images/NoticiasImagenes/Noticia01.jpg';
 import Noticia02 from './assets/images/NoticiasImagenes/Noticia02.jpg';
 import Noticia03 from './assets/images/NoticiasImagenes/Noticia03.jpg';
 import Noticia04 from './assets/images/NoticiasImagenes/Noticia04.jpg';
+//*****************************Quienes Somos*****************************//
 import Bryan from './assets/images/QuienesSomosoImagenes/BryanYong.jpg';
 import Luisa from './assets/images/QuienesSomosoImagenes/Luisa.jpg';
+//*****************************Galería*****************************//
 import Galeria01 from './assets/images/Galeria/Galeria01.jpg';
 import Galeria02 from './assets/images/Galeria/Galeria02.jpg';
 import Galeria03 from './assets/images/Galeria/Galeria03.jpg';
 import Galeria04 from './assets/images/Galeria/Galeria04.jpg';
 import Galeria05 from './assets/images/Galeria/Galeria05.jpg';
 import Galeria06 from './assets/images/Galeria/Galeria06.jpg';
+//*****************************Cursos*****************************//
 import g1Image from './assets/images/Facultad-de-Sistemas.jpg';
 import fisiLocal from './assets/images/Facultad-de-Sistemas.jpg';
+import RazLogMat from './assets/images/CursosWhatsapp/IMG_RazLogMat.png';
+import InformatII from './assets/images/CursosWhatsapp/IMG_InformaticaII.png';
+import Economia from './assets/images/CursosWhatsapp/IMG_Economia.png';
+import Intercult from './assets/images/CursosWhatsapp/IMG_Interculturalidad.png'
+import EcologGen from './assets/images/CursosWhatsapp/IMG_EcologiaGeneral.png'
+
 import g2Image from './assets/images/tramites/comedorUniversitario.png';
+//*****************************Docentes*****************************//
 import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
 import SaulNunta from './assets/images/Docentesjpg/SaulNunta.jpg';
 import AngelLopez from './assets/images/Docentesjpg/AngelLopez.jpg';
@@ -21,6 +32,7 @@ import CarlosAspajo from './assets/images/Docentesjpg/CarlosAspajo.jpg';
 import TonnyBardales from './assets/images/Docentesjpg/TonnyBardales.jpg';
 import ManuelVerme from './assets/images/Docentesjpg/ManuelVerme.jpg';
 import RafaelVilca from './assets/images/Docentesjpg/RafaelVilca.jpg';
+//*****************************Formatos*****************************//
 import mallaCurricular from './Downloads/MALLA CURRICULAR - PLAN DE ESTUDIOS - FISI.pdf'
 import planCurricular from './Downloads/PLAN CURRICULAR FISI 2024.pdf     TABLA DE CONVALIDACION.pdf'
 import planDeEstudiosC from './Downloads/PLAN DE ESTUDIOS._plan c_fisi_unap_2025.pdf actualizado.pdf'
@@ -280,129 +292,69 @@ export const noticiasdata = [
   
 
 ];
-
   export const cursos = [
+
     {
       id: 1,
-      cover: "https://i.ytimg.com/vi/w7HNnqetb4w/maxresdefault.jpg",
-      semestre: "vacacional",
-      title: "Electrónica Digital",
-      grupo: "Grupo 1",
-      lugar: "Aula 02",
-      authorName: "Tony Eduardo Bardales Lozano",
-      link: "https://chat.whatsapp.com/GNxstlXlWqR6GFWcGadh5u",
-    },
-    {
-      id: 2,
-      cover: "https://www.yarquitectura.com/wp-content/uploads/2023/06/que-es-arquitectura-de-computadoras-1536x745.jpg",
-      semestre: "vacacional",
-      title: "Arquitectura de Computadoras",
-      grupo: "Grupo 1",
-      lugar: "Aula 02",
-      authorName: "Tony Eduardo Bardales Lozano",
-      link: "https://chat.whatsapp.com/JhhmNcTxICeDmZ5Iutng5b",
-    },
-    {
-      id: 3,
-      cover: g1Image,
-      semestre: "primer",
-      title: "Matematica I",
-      grupo: "Grupo 1",
-      lugar: "Aula 02",
-      authorName: "Manuel Tuesta Moreno",
+      cover: RazLogMat,
+      semestre: "Semestre: 01",
+      title: "Razonamiento Lógico Matemático",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Rony Torres Monzon",
       link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
     },
-    {
-      id: 4,
-      cover: g1Image,
-      semestre: "Semestre: 03",
-      title: "Lenguaje de programación I",
+        {
+      id: 2,
+      cover: InformatII,
+      semestre: "Semestre: 02 A",
+      title: "Informática II",
       grupo: "Grupo 01",
-      lugar: "Lab 01",
-      authorName: "Rony Torres",
-      link: "LINK DEL GRUPO",
+      // lugar: "Aula 02",
+      authorName: "Luis Pita Astengo",
+      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
     },
         {
-      id: 5,
-      cover: g1Image,
-      semestre: "Semestre: 03",
-      title: "Lenguaje de programación I",
+      id: 3,
+      cover: Economia,
+      semestre: "Semestre: 02 A",
+      title: "Economía",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Angel Catashunga Torres",
+      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+    },
+        {
+      id: 4,
+      cover: Economia,
+      semestre: "Semestre: 02 A",
+      title: "Economía",
       grupo: "Grupo 02",
-      lugar: "Lab 01",
-      authorName: "Rony Torres",
-      link: "LINK DEL GRUPO",
-    },
-    {
-      id: 6,
-      cover: g1Image,
-      semestre: "Semestre: 05",
-      title: "Sistemas Contables ",
-      grupo: "Grupo 1",
-      lugar: "Aula 02",
-      authorName: "Ángel Ildefonso Catashunga Torres",
-      link: "LINK DEL GRUPO",
-    },
-    {
-      id: 7,
-      cover: g1Image,
-      semestre: "Tercer",
-      title: "Robótoca",
-      grupo: "Grupo 2",
-      lugar: "Aula 02",
-      authorName: "Nombre del profesor",
-      link: "LINK DEL GRUPO",
-    },
-        {
-      id: 8,
-      cover: g1Image,
-      semestre: "Tercer",
-      title: "Robótoca",
-      grupo: "Grupo 2",
-      lugar: "Aula 02",
-      authorName: "Nombre del profesor",
-      link: "LINK DEL GRUPO",
-    },
-        {
-      id: 9,
-      cover: g1Image,
-      semestre: "Tercer",
-      title: "Robótoca",
-      grupo: "Grupo 2",
-      lugar: "Aula 02",
-      authorName: "Nombre del profesor",
-      link: "LINK DEL GRUPO",
-    },
-        {
-      id: 10,
-      cover: g1Image,
-      semestre: "Tercer",
-      title: "Robótoca",
-      grupo: "Grupo 2",
-      lugar: "Aula 02",
-      authorName: "Nombre del profesor",
-      link: "LINK DEL GRUPO",
-    },
-        {
-      id: 11,
-      cover: g1Image,
-      semestre: "Tercer",
-      title: "Robótoca",
-      grupo: "Grupo 2",
-      lugar: "Aula 02",
-      authorName: "Nombre del profesor",
-      link: "LINK DEL GRUPO",
-    },
-        {
-      id: 12,
-      cover: g1Image,
-      semestre: "Tercer",
-      title: "Robótoca",
-      grupo: "Grupo 2",
-      lugar: "Aula 02",
-      authorName: "Nombre del profesor",
-      link: "LINK DEL GRUPO",
+      // lugar: "Aula 02",
+      authorName: "Angel Catashunga Torres",
+      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
     },
 
+    {
+      id: 5,
+      cover: Intercult,
+      semestre: "Semestre: 02 A",
+      title: "Interculturalidad",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Frederick Ugarte",
+      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+    },
+        {
+      id: 6,
+      cover: EcologGen,
+      semestre: "Semestre: 02 A",
+      title: "Ecología General",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Angel Enrique Lopez Rojas",
+      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+    },
   ]
   export const formatos_page = [{
           formatos:[
@@ -1299,7 +1251,6 @@ export const docentesData = [
   ],
 },
 ];
-
 export const quienesSomosData = [
 {
   nombre: "Bryan César Yong Navarro",
@@ -1323,214 +1274,6 @@ export const quienesSomosData = [
   },
 
 ];
-
-  export const ppost = [
-    {
-      id: 1,
-      catgeory: "world",
-      title: "We Went Deep Underground For This Amazing Cave Shot",
-      date: "19. February 2022",
-      cover: g1Image,
-    },
-    {
-      id: 2,
-      catgeory: "health",
-      title: "6 Reasons Why You Shouldn’t Skip Breakfast",
-      date: "19. February 2022",
-      cover: g1Image,
-    },
-    {
-      id: 3,
-      catgeory: "food",
-      title: "Our Top 5 Restaurants For A Complete Culinary Experience",
-      date: "19. February 2022",
-      cover: g1Image,
-    },
-    {
-      id: 4,
-      catgeory: "fashion",
-      title: "Hipster Chic Is In Again: Get Some Glasses",
-      date: "19. February 2022",
-      cover: g1Image,
-    },
-  ]
-  export const foro =[
-    {
-      id: 1,
-      catgeory: "world",
-      title: "Our Favorite Photos From All Around",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 2,
-      catgeory: "travel",
-      title: "Places To Visit For A Peaceful Holiday",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 3,
-      catgeory: "sport",
-      title: "Is This The New Boxing Champion?",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 4,
-      catgeory: "sport",
-      title: "A Detailed Retelling Of Our Trek Through The Dangerous Alps",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 5,
-      catgeory: "fun",
-      title: "Natural Sunlight Boosts Your Immunity",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 6,
-      catgeory: "health",
-      title: "Health Benefits From Asparagus",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    
-    {
-      id: 7,
-      catgeory: "fashion",
-      title: "The Valid Fashion Style For This Fall",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 8,
-      catgeory: "fun",
-      title: "Vote For The Top Tracks Of The Month",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 9,
-      catgeory: "fun",
-      title: "Unplugged Gigs To Remember",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 10,
-      catgeory: "fun",
-      title: "Picks For This Month’s Best Instagram Shots",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 11,
-      catgeory: "business",
-      title: "Why Rich People Don’t Invest Much",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 12,
-      catgeory: "technology",
-      title: "Welcoming The Digital Generation",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 13,
-      catgeory: "fun",
-      title: "These Teens Are Absolutely Crazy For Beach Soccer",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 14,
-      catgeory: "fun",
-      title: "How To Organize The Best Bridal Party Ever",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 15,
-      catgeory: "technology",
-      title: "Social Networks And Social Life",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    },
-    {
-      id: 16,
-      catgeory: "technology",
-      title: "Gaming Brings Couples Closer Together?",
-      date: "19. February 2022",
-      comments: 0,
-      cover: g1Image,
-      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    }, 
-  ]
-  export const lifestyle = [
-    {
-      id: 1,
-      catgeory: "world",
-      title: "Mustang Teases With A New Promo",
-      date: "19. February 2022",
-      cover: "../images/life/life1.jpg",
-    },
-    {
-      id: 2,
-      catgeory: "sport",
-      title: "Surfs Up – Places For Killer Waves",
-      date: "19. February 2022",
-      cover: "../images/life/life2.jpg",
-    },
-    {
-      id: 3,
-      catgeory: "fashion",
-      title: "Learn How To Nail Your Favorite Look",
-      date: "19. February 2022",
-      cover: "../images/life/life3.jpg",
-    },
-    {
-      id: 4,
-      catgeory: "world",
-      title: "Music Playing On R&B Stations",
-      date: "19. February 2022",
-      cover: "../images/life/life4.jpg",
-    },
-  ]
   export const gallery = [
     {
       cover: Galeria01,
@@ -1551,30 +1294,4 @@ export const quienesSomosData = [
       cover: Galeria06,
     },
 
-  ]
-  export const discover = [
-    {
-      title: "games",
-      cover: "../images/discover/d1.jpg",
-    },
-    {
-      title: "sports",
-      cover: "../images/discover/d2.jpg",
-    },
-    {
-      title: "humour",
-      cover: "../images/discover/d3.jpg",
-    },
-    {
-      title: "gadgets",
-      cover: "../images/discover/d4.jpg",
-    },
-    {
-      title: "movies",
-      cover: "../images/discover/d5.jpg",
-    },
-    {
-      title: "nitendo",
-      cover: "../images/discover/d6.jpg",
-    },
   ]

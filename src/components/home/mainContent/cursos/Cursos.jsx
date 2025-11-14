@@ -80,10 +80,10 @@ const Cursos = () => {
                         <i className='fas fa-users'></i>
                         <label htmlFor=''> {val.grupo}</label>
                       </div>
-                      <div className="comment">
+                      {/* <div className="comment">
                         <i className='fas fa-school'></i>
                         <label htmlFor=''> {val.lugar}</label>
-                      </div>
+                      </div> */}
                       <div className="comment" key={val.id}>
                         <a href={val.link} target='_blank' rel='noopener noreferrer'>
                           <i className='fab fa-whatsapp'></i>
