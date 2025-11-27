@@ -21,8 +21,28 @@ import InformatII from './assets/images/CursosWhatsapp/IMG_InformaticaII.png';
 import Economia from './assets/images/CursosWhatsapp/IMG_Economia.png';
 import Intercult from './assets/images/CursosWhatsapp/IMG_Interculturalidad.png'
 import EcologGen from './assets/images/CursosWhatsapp/IMG_EcologiaGeneral.png'
+import MatDisc from './assets/images/CursosWhatsapp/IMG_MatDisc.png'
+import InglesII from './assets/images/CursosWhatsapp/IMG_InglesII.png'
+import LengP1 from './assets/images/CursosWhatsapp/IMG_LengP1.png'
+import Fisica from './assets/images/CursosWhatsapp/IMG_Fisica.png'
+import FisicaElec from './assets/images/CursosWhatsapp/IMG_FisicaElec.png'
+import CalcInte from './assets/images/CursosWhatsapp/IMG_CalcInte.png'
+import EstProb from './assets/images/CursosWhatsapp/IMG_EstProb.png'
+import BaseD1 from './assets/images/CursosWhatsapp/IMG_BaseD1.png'
+import EcuDif from './assets/images/CursosWhatsapp/IMG_EcuDif.png'
+import InglesTec1 from './assets/images/CursosWhatsapp/IMG_InglesTec1.png'
+import BaseD2 from './assets/images/CursosWhatsapp/IMG_BaseD2.png'
+import EstInf from './assets/images/CursosWhatsapp/IMG_EstInf.png'
+import AdminGen from './assets/images/CursosWhatsapp/IMG_AdminGen.png'
+import LengP2 from './assets/images/CursosWhatsapp/IMG_LengP2.png'
+import SisInfGeo from './assets/images/CursosWhatsapp/IMG_SisInfGeo.png'
+import GesOpe from './assets/images/CursosWhatsapp/IMG_GesOpe.png'
+import AnaDisSisInfo from './assets/images/CursosWhatsapp/IMG_AnaDisSisInfo.png'
+import IntArt from './assets/images/CursosWhatsapp/IMG_IntArt.png'
+import RedCom from './assets/images/CursosWhatsapp/IMG_RedCom.png'
+import IntHomMaq from './assets/images/CursosWhatsapp/IMG_IntHomMaq.png'
 
-import g2Image from './assets/images/tramites/comedorUniversitario.png';
+
 //*****************************Docentes*****************************//
 import Jimmyjpg from './assets/images/Docentesjpg/Jimmy.jpg';
 import SaulNunta from './assets/images/Docentesjpg/SaulNunta.jpg';
@@ -302,7 +322,7 @@ export const noticiasdata = [
       grupo: "Grupo 01",
       // lugar: "Aula 02",
       authorName: "Rony Torres Monzon",
-      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
     },
         {
       id: 2,
@@ -312,7 +332,7 @@ export const noticiasdata = [
       grupo: "Grupo 01",
       // lugar: "Aula 02",
       authorName: "Luis Pita Astengo",
-      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
     },
         {
       id: 3,
@@ -322,7 +342,7 @@ export const noticiasdata = [
       grupo: "Grupo 01",
       // lugar: "Aula 02",
       authorName: "Angel Catashunga Torres",
-      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
     },
         {
       id: 4,
@@ -332,7 +352,7 @@ export const noticiasdata = [
       grupo: "Grupo 02",
       // lugar: "Aula 02",
       authorName: "Angel Catashunga Torres",
-      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
     },
 
     {
@@ -343,7 +363,7 @@ export const noticiasdata = [
       grupo: "Grupo 01",
       // lugar: "Aula 02",
       authorName: "Frederick Ugarte",
-      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
     },
         {
       id: 6,
@@ -353,8 +373,220 @@ export const noticiasdata = [
       grupo: "Grupo 01",
       // lugar: "Aula 02",
       authorName: "Angel Enrique Lopez Rojas",
-      link: "https://www.youtube.com/watch?v=GmSCKEWIbLA&themeRefresh=1",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
     },
+    {
+      id: 7,
+      cover: MatDisc,
+      semestre: "Semestre: 02 A",
+      title: "Matemática Discreta",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Manuel Verme Insua",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 8,
+      cover: InglesII,
+      semestre: "Semestre: 02 A",
+      title: "Inglés II",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Linda Burga",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 9,
+      cover: LengP1,
+      semestre: "Semestre: 03",
+      title: "LP1",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Rony Torres Monzon",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 10,
+      cover: Fisica,
+      semestre: "Semestre: 03",
+      title: "Física",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Richard Alex Lopez Albiño",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 11,
+      cover: Fisica,
+      semestre: "Semestre: 03",
+      title: "Física",
+      grupo: "Grupo 02",
+      // lugar: "Aula 02",
+      authorName: "Richard Alex Lopez Albiño",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 12,
+      cover: CalcInte,
+      semestre: "Semestre: 03",
+      title: "Calculo Integral",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Manuel Tuesta Moreno",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 13,
+      cover: EstProb,
+      semestre: "Semestre: 03",
+      title: "Estadística y Probabilidad",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Paul Escobar Cardeña",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 14,
+      cover: BaseD1,
+      semestre: "Semestre: 03",
+      title: "Base de Datos I",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "José Edgar García Díaz",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 15,
+      cover: EcuDif,
+      semestre: "Semestre: 04",
+      title: "Ecuaciones Diferenciales",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Manuel Tuesta Moreno",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 16,
+      cover: InglesTec1,
+      semestre: "Semestre: 04",
+      title: "Inglés Técnico 01",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Lourdes Ramirez",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 17,
+      cover: BaseD2,
+      semestre: "Semestre: 04",
+      title: "Base de Datos II",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "José Edgar García Díaz",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 18,
+      cover: FisicaElec,
+      semestre: "Semestre: 04",
+      title: "Física Electrónica",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Richard Alex Lopez Albiño",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 19,
+      cover: EstInf,
+      semestre: "Semestre: 04",
+      title: "Estadística Inferencial",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Saúl Flores Nunta",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id: 20,
+      cover: AdminGen,
+      semestre: "Semestre: 04",
+      title: "Administración General",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Luis Perez Ordoñez",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:21,
+      cover: LengP2,
+      semestre: "Semestre: 04",
+      title: "LP2",
+      grupo: "Grupo 02",
+      // lugar: "Aula 02",
+      authorName: "César Palacios Chavez",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:22,
+      cover: RedCom,
+      semestre: "Semestre: 06",
+      title: "Redes y Comunicaciones",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Jimmy Max Ramírez Villacorta",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:23,
+      cover: SisInfGeo,
+      semestre: "Semestre: 08",
+      title: "Sistema de Información Georeferencial",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Manuel Verme Insúa",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:24,
+      cover: GesOpe,
+      semestre: "Semestre: 08",
+      title: "Gestión de Operaciones",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Paul Escobar Cardeña",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:25,
+      cover: AnaDisSisInfo,
+      semestre: "Semestre: 08",
+      title: "Análisis y Diseño de los Sistemas de Información",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Tony Eduardo Bardales Lozano",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:26,
+      cover: IntArt,
+      semestre: "Semestre: 08",
+      title: "Inteligencia Artificial",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Carlos Alberto García Cortegano",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+    {
+      id:27,
+      cover: IntHomMaq,
+      semestre: "Semestre: 08",
+      title: "Interacción Hombre Máquina",
+      grupo: "Grupo 01",
+      // lugar: "Aula 02",
+      authorName: "Christian Alberto Arévalo Jesus",
+      link: "https://chat.whatsapp.com/Gh65uVJ6GWC9Tk4oKb5tkm",
+    },
+
+
   ]
   export const formatos_page = [{
           formatos:[
