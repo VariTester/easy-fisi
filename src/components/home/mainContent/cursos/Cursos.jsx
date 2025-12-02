@@ -35,7 +35,7 @@ const Cursos = () => {
               slidesToShow: 1,
               slidesToScroll: 1,
               rows:2,
-              dots: true,
+              dots: false,
               autoplay: false,
               // infinite: true,
               

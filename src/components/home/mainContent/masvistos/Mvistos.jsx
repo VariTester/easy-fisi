@@ -27,7 +27,7 @@ const Mvistos = () => {
         settings: { 
           rows: 1,
           slidesPerRow: 1,
-          dots: true,
+          dots: false,
           autoplay: false,
          },
       },
