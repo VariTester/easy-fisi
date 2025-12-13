@@ -144,7 +144,7 @@
 
   .masVistos .title {
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     -webkit-line-clamp: 3;    /* más líneas en móvil */
     line-clamp: 3;
