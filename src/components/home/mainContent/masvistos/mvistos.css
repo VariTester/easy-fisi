@@ -128,7 +128,7 @@
     height: auto;             /* 🔥 que crezca según contenido */
     min-height: 180px;
     text-align: center;
-    padding: 18px 14px;
+    padding: 18px 4px;
   }
 
   .masVistos .icono {
@@ -155,14 +155,14 @@
     display: flex;
     justify-content: flex-start; /* izquierda */
     align-items: center;
-
+    margin-left: 0px;
     white-space: normal;
     text-align: left;
     font-size: 15px;
   }
 
   .masVistos svg{
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
   }
 }
