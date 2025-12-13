@@ -74,6 +74,11 @@
 .infoSP svg {
   color: #fcc21b;
   font-size: 22px;
+  margin-right: 8px;
+}
+.infoSP input{
+  border-radius: 10px;
+  padding: 10px;
 }
 
 /* Si hay enlaces dentro */
@@ -256,35 +261,249 @@
 .descbotSP h1{
     margin-bottom: 10px;
 }
+
+.btn-edit {
+  background: #ffd44d;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-save {
+  background: #28c731;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+  
+}
+
+.input-edit,
+.input-edit-sm,
+.textarea-edit {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-edit-sm {
+  width: 150px;
+}
+
+.textarea-edit {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.editorTextarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 2px solid #fcc21b;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+/* 🔥 Evitar que todo se comprima cuando aparecen textareas */
+.text-containerSP,
+.text-containerLinksSP,
+.descbotSP,
+.desctopSP {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 🔥 Textarea con tamaño estable */
+.editor-input {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;  /* permite ampliar pero NO achica nada */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 🔥 Evitar que un textarea colapse dentro de un flex container */
+.editor-input:focus {
+  outline: 2px solid #007bff;
+}
+
+/* Mantener imágenes estables */
+.imagenes-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imagen-estilo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.stableTextarea {
+  min-height: 120px;
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+  font-size: 16px;
+}
+.editorInput.fullWidth {
+  padding: 18px;
+  width: 100%;
+  border-radius: 10px;
+}
+.editButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn-add {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 0;
+}
+.btn-add:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-cancel{
+  background: #ff0404;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.quoteSP i {
+  font-size: 28px;
+  color: #fcc21b;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
 /* Responsive */
 @media screen and (max-width: 815px) {
   .detailsSP {
-    padding-right: 0;
+    padding: 0 12px; /* mejor separación lateral */
   }
 
-  .detailsSP img {
-    height: auto;
+  .detailsSP img,
+  .imagen-estilo {
     width: 100%;
-    margin: 20px 0;
+    height: auto;
+    max-height: 300px;
+    margin: 16px 0;
+  }
+
+  .imagenes-contenedor {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
   }
 
   .infoSP {
-    flex-direction:row;      /* ✅ los elementos se apilan */
-    align-items: center;         /* ✅ centrados horizontalmente */
+    flex-direction: column; /* apilar elementos */
+    align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 15px;                   /* ✅ menor separación entre ellos */
-    padding: 16px;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .infoSP i,
+  .infoSP svg {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
   }
 
   .detailsSP .titleSP {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 32px;
     text-align: center;
+    margin-bottom: 14px;
   }
 
   .detailsSP p,
-  .detailsSP .parrafo {
-    margin-bottom: 16px;
+  .detailsSP .parrafo,
+  .detailsSP [class^="para"] {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    text-align: justify;
+  }
+
+  .quoteSP {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .formatsSP {
+    padding: 14px;
+  }
+
+  .tittleFormatosSP {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .text-containerLinksSP {
+    padding: 10px;
+    margin: 8px auto;
+  }
+
+  .editorTextarea,
+  .stableTextarea,
+  .editorInput.fullWidth {
+    font-size: 15px;
+    padding: 8px;
+    min-height: 50px;
+    border-radius: 10px;
+  }
+
+  .btn-edit,
+  .btn-save,
+  .btn-cancel,
+  .btn-add {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .desctopSP,
+  .descbotSP,
+  .text-containerSP,
+  .text-containerLinksSP {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
   }
 }
+

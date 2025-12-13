@@ -651,7 +651,13 @@ export const noticiasdata = [
   ]
   export const tramites = [
     {
-      id: "Pi756GRA1m2LmysMxRHJ", //¿Cómo matricularse?
+      id: 1,
+      masVisto: "1",
+      catgeory: "Cachimbos",
+      title: "¿Cómo matricularse?",
+      date: "19. February 2022",
+      comments: "Duración: 05 días",
+      costo: "Costo: 80 soles (Aprox)",
       cover: g1Image,
       imagenes: [
         {
@@ -666,9 +672,43 @@ export const noticiasdata = [
         },
 
       ],
+      desc: [
+        {
+          para1: "La matrícula muchas veces puede ser un proceso engorroso cuando somos cachimbos, para eso se elaboró esta guía para que puedas hacerlo de manera correcta y sin perderte de ningún detalle."
+        },
+     
+      ],
+      docsNecesariosData: [
+        {
+          title: "Documentos necesarios:",
+        },
+        {
+          para1: "-Recibo de pagos por: Matrícula, Revisión curricular",
+        },
+        {
+          para2: "-Solicitud de constancia de matrícula y revisión curricular (Descargar formato arriba o en la sección de formatos)",
+        },
+      ],
+      details: [
+        {
+          title: '"Pasos a seguir para matricularse correctamente"',
+        },
+        {
+          para1:"1. Acércate al Banco de la Nación y paga por el concepto de Matrícula y revisión curricular. Si perteneces al tercio superior la matrícula costará menos.",
+          para2:"2. Imprime la Solicitud de Revisión curricular y llénala con tus datos. Tiempo de respuesta estimada: 1 día hábil.",
+          para3:"3. Espera al menos 24h después del pago de matrícula para que se valide y se habilite el sistema de Automatrícula.",
+          para4:"4. Sigue los pasos de la automatrícula e imprime tu constancia de matrícula.",
+          para5:"5. Recoge tu revisión curricular.",
+          para6:"6. Adjunta tu constancia de matrícula, tu recibo de pago, revisión curricular. Recuerda tener una copia adicional para el cargo.",
+        },
+        {
+          quote: "(Nota del editor: ver si piden dni y su copia)",
+        },
+
+      ],
     },
     {
-      id: "JrevXm1n5uc58DXbRMxJ",
+      id: 2,
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Nivelación Curricular",
@@ -725,7 +765,7 @@ export const noticiasdata = [
       ],
     },
     {
-      id: "ENF4Fx94tHg2XamDd2JU",
+      id: 3,
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Tercio Superior",
@@ -792,7 +832,7 @@ export const noticiasdata = [
       ],
     },
     {
-      id: "T0Arvi94nzw0AswpFhbO",
+      id: 4,
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Grado de bachiller",
@@ -915,7 +955,7 @@ export const noticiasdata = [
       ],
     },
     {
-      id: "4CtxuqCd7KOMC7ApvpBj",
+      id: 5,
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Duplicado de Diploma de Grado Y/O Título",
@@ -983,7 +1023,7 @@ export const noticiasdata = [
       ],
     },
     {
-      id: "kWAe6HCOwOhEK94Ejq0Z",
+      id: 6,
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Retiro de Curso",
@@ -1048,7 +1088,7 @@ export const noticiasdata = [
       ],
     },
     {
-      id: "Rm8wuBxNNvksCho95fHL",
+      id: 7,
       masVisto: "1",
       catgeory: "Cachimbos",
       title: "Retiro del Semestre",
