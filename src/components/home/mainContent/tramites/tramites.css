@@ -16,8 +16,8 @@
 .tramites .icono {
   font-size: 32px;
   color: #2c3e50;
-  margin-right: 40px;
-  margin-left: 20px;
+  margin-right: 30px;
+  margin-left: 25px;
   color: #f39c12;
 }
 
@@ -131,5 +131,14 @@
     font-size: 14px;
     margin-bottom: 10px;
   }
+
+
+  .tramites .icono {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-right: 20px;
+  margin-left: 15px;
+  color: #f39c12;
+}
 
 }
