@@ -31,6 +31,10 @@ const Foro = ({ usuario }) => {
   const [nuevoTema, setNuevoTema] = useState({ title: "", desc: "" });
   const [menuAbierto, setMenuAbierto] = useState(null);
 
+  const ADMIN_EMAIL = "2175267@unapiquitos.edu.pe";
+  const esAdmin = usuario?.email === ADMIN_EMAIL;
+
+
   // ⚡ Verificar si el usuario está logueado y su correo verificado
   const estaLogueado = usuario && usuario.emailVerified;
 
@@ -40,6 +44,16 @@ const Foro = ({ usuario }) => {
       [temaId]: !prev[temaId],
     }));
   };
+
+  const borrarTema = async (temaId) => {
+  try {
+    await deleteDoc(doc(db, "temas", temaId));
+    Swal.fire("Eliminado", "El tema fue eliminado", "success");
+  } catch (err) {
+    Swal.fire("Error", "No se pudo borrar el tema", "error");
+  }
+};
+
 
   const obtenerTemas = () => {
     try {
@@ -388,7 +402,35 @@ const Foro = ({ usuario }) => {
                       </label>
                     </div>
                     <p className="desc">{val.desc?.slice(0, 1000) || "Sin descripción"}...</p>
-
+{/* 🔴 BOTÓN SOLO PARA ADMIN */}
+{esAdmin && (
+  <button
+    style={{
+      color: "red",
+      marginTop: "10px",
+      background: "transparent",
+      border: "none",
+      cursor: "pointer",
+      fontWeight: "bold",
+    }}
+    onClick={() => {
+      Swal.fire({
+        title: "¿Eliminar tema?",
+        text: "Esto eliminará el tema completo",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Sí, eliminar",
+        cancelButtonText: "Cancelar",
+      }).then((res) => {
+        if (res.isConfirmed) {
+          borrarTema(val.id);
+        }
+      });
+    }}
+  >
+    🚨 Eliminar tema
+  </button>
+)}
                     <div className="comment">
                       <i
                         className="fas fa-thumbs-up"
@@ -426,7 +468,7 @@ const Foro = ({ usuario }) => {
                                 <strong>{comentario.autor}</strong>: {comentario.texto}
                               </div>
 
-                              {estaLogueado && usuario.email === comentario.autor && (
+                              {estaLogueado && (usuario.email === comentario.autor || esAdmin) && (
                                 <div className="comentario-menu">
                                   <button
                                     className="menu-btn"
@@ -437,36 +479,46 @@ const Foro = ({ usuario }) => {
                                     <i className="fas fa-ellipsis-h"></i>
                                   </button>
 
-                                  {menuAbierto === comentario.id && (
-                                    <div className="menu-opciones">
-                                      <button
-                                        onClick={() => {
-                                          Swal.fire({
-                                            title: "Editar comentario",
-                                            input: "text",
-                                            inputValue: comentario.texto,
-                                            showCancelButton: true,
-                                            confirmButtonText: "Guardar",
-                                          }).then((res) => {
-                                            if (res.isConfirmed) {
-                                              editarComentario(val.id, comentario.id, res.value);
-                                            }
-                                          });
-                                          setMenuAbierto(null);
-                                        }}
-                                      >
-                                        ✏️ Editar
-                                      </button>
-                                      <button
-                                        onClick={() => {
-                                          borrarComentario(val.id, comentario.id);
-                                          setMenuAbierto(null);
-                                        }}
-                                      >
-                                        🗑️ Borrar
-                                      </button>
-                                    </div>
-                                  )}
+{menuAbierto === comentario.id && (
+  <div className="menu-opciones">
+
+    {/* Editar SOLO autor */}
+    {usuario.email === comentario.autor && (
+      <button
+        onClick={() => {
+          Swal.fire({
+            title: "Editar comentario",
+            input: "text",
+            inputValue: comentario.texto,
+            showCancelButton: true,
+            confirmButtonText: "Guardar",
+          }).then((res) => {
+            if (res.isConfirmed) {
+              editarComentario(val.id, comentario.id, res.value);
+            }
+          });
+          setMenuAbierto(null);
+        }}
+      >
+        ✏️ Editar
+      </button>
+    )}
+
+    {/* Borrar autor O admin */}
+    {(usuario.email === comentario.autor || esAdmin) && (
+      <button
+        onClick={() => {
+          borrarComentario(val.id, comentario.id);
+          setMenuAbierto(null);
+        }}
+      >
+        🗑️ Borrar
+      </button>
+    )}
+
+  </div>
+)}
+
                                 </div>
                               )}
                             </div>
