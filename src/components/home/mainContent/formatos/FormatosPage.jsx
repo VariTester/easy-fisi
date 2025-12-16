@@ -102,15 +102,32 @@ const FormatosPage = () => {
                 );
 
                 return (
+                  // <div key={index} className="text-containerLinksfp">
+                  //   {formatoKey && val[formatoKey] ? (
+                  //     <a href={val[formatoKey]} 
+                  //     download = {`${val.nombre}.pdf`}
+                  //     className="formato-linkfp">
+                  //       {val.nombre}
+                  //     </a>
+                  //   ) : null}
+                  // </div>
                   <div key={index} className="text-containerLinksfp">
-                    {formatoKey && val[formatoKey] ? (
-                      <a href={val[formatoKey]} 
-                      download = {`${val.nombre}.pdf`}
-                      className="formato-linkfp">
+                  {formatoKey && val[formatoKey] ? (() => {
+                    const url = val[formatoKey];
+                    const extension = url.split('.').pop().toLowerCase();
+
+                    return (
+                      <a
+                        href={url}
+                        download={`${val.nombre}.${extension}`}
+                        className="formato-linkfp"
+                      >
                         {val.nombre}
                       </a>
-                    ) : null}
-                  </div>
+                    );
+                  })() : null}
+                </div>
+
                 );
               })
             ) : (

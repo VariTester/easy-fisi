@@ -57,7 +57,8 @@ import mallaCurricular from './Downloads/MALLA CURRICULAR - PLAN DE ESTUDIOS - F
 import planCurricular from './Downloads/PLAN CURRICULAR FISI 2024.pdf     TABLA DE CONVALIDACION.pdf'
 import planDeEstudiosC from './Downloads/PLAN DE ESTUDIOS._plan c_fisi_unap_2025.pdf actualizado.pdf'
 import planDeEstudiosB from './Downloads/Plan Estudios FISI 2021 PLAN B.pdf'
-import repunap from './Downloads/RCU-060-2023-UNAP REPUNAP.pdf'
+import repunap from './Downloads/Reglamento de Estudios de Pregrado en la UNAP.pdf'
+import SolAmpliTesis from './Downloads/Solicitud de extension de tiempo para sustentacion de tesis.docx'
 import formato06_1 from './Downloads/RetirodeCurso/SOLICITO RETIRO DE CURSO.pdf'
 import formato07_1 from './Downloads/RetiroDeSemestre/SolicitudRetiroDeSemestre.pdf'
 import formato02_1 from './Downloads/NivelacionCurricular/SolicitudCursoNivelacion.pdf'
@@ -609,6 +610,10 @@ export const noticiasdata = [
         {
           nombre:'Plan de Estudios "C"',
           formatoPplanDeEstudiosC:planDeEstudiosC,
+        },
+                {
+          nombre:'Solicitud Ampliación de plazo para la entrega del informe final de Tesis',
+          formatoPplanDeEstudiosC:SolAmpliTesis,
         },
         {
           nombre:"Solicitud de Constancia de Nivelación Curricular",
