@@ -1406,7 +1406,7 @@ export const quienesSomosData = [
   nombre: "Bryan César Yong Navarro",
   foto: Bryan,
   formacion: "Bachiller en Ingeniería de Sistemas e Informática (UNAP)",
-  experiencia: "Más de 1 año de experiencia en el sector energía, especializado en calidad de datos y supervisión en distribución y comercialización eléctrica, con sólida trayectoria en automatización de procesos, aseguramiento de la calidad y confiabilidad de datos, así como en el uso de herramientas como web scraping, Python, React, Selenium y VBA en Excel.",
+  experiencia: "Más de 2 años de experiencia en el sector energía, especializado en calidad de datos y supervisión en distribución y comercialización eléctrica, con sólida trayectoria en automatización de procesos, aseguramiento de la calidad y confiabilidad de datos, así como en el uso de herramientas como web scraping, Python, React, Selenium y VBA en Excel.",
   logros: [
     "Graduado de la Especialidad en Gestión Pública con enfoque en los sectores de Energía y Minería.",
   ],
@@ -1416,9 +1416,9 @@ export const quienesSomosData = [
     nombre: "Luisa Nair Villena Rivera",
     foto: Luisa,
     formacion: "Bachiller en Ingeniería de Sistemas e Informática (UNAP)",
-    experiencia: "Dos años de experiencia laboral en el análisis de datos para la toma de decisiones de estrategias comerciales",
+    experiencia: "Tres años de experiencia laboral en el análisis de datos para la toma de decisiones de estrategias comerciales",
     logros: [
-      "Asesora en ventas y análisis de datos, especializada en el diseño de dashboards para la gestión comercial y la toma de decisiones estratégicas. Experta en el desarrollo de reportes interactivos con Power BI",
+      "Analista de datos especializada en el diseño y desarrollo de dashboards para la gestión comercial y la toma de decisiones estratégicas. Experiencia en la elaboración de reportes interactivos con Power BI, orientados al análisis de información y optimización de procesos empresariales.",
     ]
 
   },
