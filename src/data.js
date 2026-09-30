@@ -1,7 +1,7 @@
 //*****************************Noticias*****************************//
 import Noticia01 from './assets/images/NoticiasImagenes/Noticia01.jpg';
-import Noticia02 from './assets/images/NoticiasImagenes/Noticia02.jpg';
 import Noticia03 from './assets/images/NoticiasImagenes/Noticia03.jpg';
+import Noticia02 from './assets/images/NoticiasImagenes/Noticia02.jpg';
 import Noticia04 from './assets/images/NoticiasImagenes/Noticia04.jpg';
 //*****************************Quienes Somos*****************************//
 import Bryan from './assets/images/QuienesSomosoImagenes/BryanYong.jpg';
@@ -13,6 +13,12 @@ import Galeria03 from './assets/images/Galeria/Galeria03.jpg';
 import Galeria04 from './assets/images/Galeria/Galeria04.jpg';
 import Galeria05 from './assets/images/Galeria/Galeria05.jpg';
 import Galeria06 from './assets/images/Galeria/Galeria06.jpg';
+import Galeria07 from './assets/images/Galeria/Galeria07.jpg';
+import Galeria08 from './assets/images/Galeria/Galeria08.jpg';
+import Galeria09 from './assets/images/Galeria/Galeria09.jpg';
+import Galeria10 from './assets/images/Galeria/Galeria10.jpg';
+import Galeria11 from './assets/images/Galeria/Galeria11.jpg';
+
 //*****************************Cursos*****************************//
 import g1Image from './assets/images/Facultad-de-Sistemas.jpg';
 import fisiLocal from './assets/images/Facultad-de-Sistemas.jpg';
@@ -103,37 +109,10 @@ export const noticiasdata = [
       },
     
             {
-        para7: "-🌐 Plataforma web Ecomuseo.net.",
+        para7: "La visita forma parte de la agenda de acercamiento de la Dra. Ruth Vílchez Ramírez a las distintas facultades de la UNAP, reafirmando su compromiso de conocer sus realidades y construir, junto a la comunidad universitaria, una institución con mejores condiciones para la formación profesional, la investigación y la innovación.",
       },
             {
-        para8: "-🚗 Vehículo robótico con brazo recuperador y cámara en tiempo real.",
-      },
-            {
-        para9: "-💻 Sistema online de alerta ante fuga de gas GLP en espacios cerrados.",
-      },
-            {
-        para10: "-💧 Sistema de riego automático con Arduino para el hogar.",
-      },
-            {
-        para11: "-🏥 Historia clínica electrónica con integración de IA.",
-      },
-            {
-        para12: "-🏫 Sistema de gestión de cursos vacacionales y de nivelación para FISI.",
-      },
-            {
-        para13: "🏥 Digitalización y automatización de procesos en la clínica Eva.",
-      },
-            {
-        para14: "Cada proyecto evidenció la capacidad de los estudiantes para transformar ideas en soluciones con impacto social, económico y ambiental, demostrando que la innovación tecnológica también puede florecer en el corazón de la Amazonía.",
-      },
-            {
-        para15: "Una oportunidad de conexión para el sector público y privado. La exhibición no solo sirvió como vitrina de talento, sino como punto de encuentro entre la academia y los sectores productivos, ofreciendo propuestas con potencial de implementación para instituciones públicas y privadas que buscan optimizar procesos, digitalizar servicios o fortalecer su eficiencia operativa.",
-      },
-            {
-        para16: " ",
-      },
-            {
-        para17: "fue el lema que acompañó este encuentro que dejó clara la capacidad de la UNAP para formar profesionales que generan valor desde el conocimiento.",
+        para8: "FISI-UNAP: tecnología, innovación y conocimiento al servicio de la Amazonía.💚💛🙌🏻✨",
       },
    
     ],
@@ -148,72 +127,51 @@ export const noticiasdata = [
       //   para2: "-Imprime la constancia y rellénala con tus datos",
       // },
       {
-        quote: "Transformando ideas en soluciones, construyendo el mañana hoy",
+        quote: "“Nuestra universidad necesita una gestión cercana a sus facultades. Venimos a escuchar, conocer sus necesidades y establecer prioridades que nos permitan fortalecer la formación de nuestros estudiantes, la investigación y las capacidades de cada unidad académica. La FISI cumple un papel fundamental en el desarrollo tecnológico y la transformación digital, y asumimos el compromiso de acompañar su fortalecimiento”, expresó la futura rectora."
       },
     ],
   },
-  {
+      {
     id: 2,
     masVisto: "1",
     category: "Cachimbos",
-    title: "Feria de Proyectos de Innovación Tecnológica en IA, BI y Desarrollo de Software",
-    date: "23. Junio 2025",
+    title: "28° ANIVERSARIO DE LA FACULTAD DE INGENIERÍA DE SISTEMAS E INFORMÁTICA – FISI UNAP.",
+    date: "13. Mayo 2026",
     comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP (Facebook)",
     costo: "Costo: 80 soles",
-    cover: Noticia01,
+    cover: Noticia04,
     desc: [
       {
-        para1: "En un evento lleno de creatividad, compromiso y visión de futuro, los estudiantes de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional de la Amazonía Peruana (UNAP) presentaron una impactante muestra de proyectos tecnológicos desarrollados íntegramente en la ciudad de Iquitos, orientados a resolver problemas reales de la región y del país."
+        para1: "El miércoles 13 de mayo, a las 8 de la mañana en el Aula Magna de nuestra universidad, se realizó la paraliturgia y sesión solemne por el 28° aniversario de creación de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional de la Amazonía Peruana – UNAP."
       },
       {
-        para2: "La actividad, que se llevó a cabo en el Aula Magna de la UNAP (Pevas 551), forma parte de las acciones de Responsabilidad Social Universitaria, y congregó a medios de comunicación, empresarios locales, padres de familia y público en general, quienes fueron testigos del enorme talento emergente en ingeniería y tecnología aplicada desde la Amazonía.",
+        para2: "El momento de bendición, reflexión y oración estuvo a cargo del reverendo padre Raymundo Portelli, quien compartió emotivas palabras de fe, esperanza y motivación dirigidas a docentes, estudiantes y trabajadores administrativos, resaltando la importancia de la unidad y el compromiso en la formación profesional.",
       },
       {
-        para3: "Proyectos que marcan la diferencia. Los asistentes conocieron de cerca soluciones innovadoras en robótica, inteligencia artificial, inteligencia de negocios y desarrollo de software, entre las que destacan:",
+        para3: "Posteriormente, se desarrolló la sesión solemne de aniversario de esta importante facultad de nuestra casa superior de estudios. La mesa de honor estuvo presidida por el rector de la UNAP, Dr. Rodil Tello Espinoza, junto al decano anfitrión Dr. Ángel López Rojas y el Ing. Saúl Flores Nunta, director de investigación de la FISI – UNAP.",
       },
       {
-        para4: "-🦟 Detección automatizada de malaria vivax y falciparum mediante IA.",
+        para4: "Las palabras de bienvenida estuvieron a cargo del Ing. Saúl Flores Nunta, quien destacó el crecimiento académico e investigativo de la facultad y reafirmó el compromiso institucional con la excelencia universitaria.",
       },
       {
-        para5: "-💰 App para la gestión de préstamos y cobranzas personales.",
+        para5: "La reseña histórica fue presentada por el Lic. Adm. Ángel Ildefonso Catashunga Torres, quien recordó los inicios, logros y avances alcanzados por la FISI durante sus 28 años de vida institucional.",
       },
 
       {
-        para6: "-🎓 Aplicación móvil para el pago de matrícula universitaria con pasarela de pagos.",
+        para6: "El discurso de orden estuvo a cargo del decano de la FISI, Dr. Ángel López Rojas, quien resaltó el esfuerzo conjunto de docentes, estudiantes y egresados para consolidar a la facultad como referente académico y tecnológico en la región amazónica.",
       },
     
             {
-        para7: "-🌐 Plataforma web Ecomuseo.net.",
+        para7: "Durante la ceremonia también se reconoció a los estudiantes que vienen ocupando los primeros puestos en sus respectivos niveles académicos, destacando su dedicación y excelencia.",
       },
             {
-        para8: "-🚗 Vehículo robótico con brazo recuperador y cámara en tiempo real.",
+        para8: "El discurso central de aniversario fue pronunciado por el rector de la UNAP, Dr. Rodil Tello Espinoza, quien felicitó a la comunidad universitaria de la FISI por su importante aporte al desarrollo científico y tecnológico de la Amazonía y del país.",
       },
             {
-        para9: "-💻 Sistema online de alerta ante fuga de gas GLP en espacios cerrados.",
+        para9: "Finalmente, el brindis de honor por el 28° aniversario estuvo a cargo del Ing. Jimmy Max Ramírez Villacorta, docente de la facultad y decano del Colegio de Ingenieros del Perú – Consejo Departamental Loreto, quien expresó sus mejores deseos de éxito y crecimiento institucional para la FISI.",
       },
             {
-        para10: "-💧 Sistema de riego automático con Arduino para el hogar.",
-      },
-            {
-        para11: "-🏥 Historia clínica electrónica con integración de IA.",
-      },
-            {
-        para12: "-🏫 Sistema de gestión de cursos vacacionales y de nivelación para FISI.",
-      },
-            {
-        para13: "🏥 Digitalización y automatización de procesos en la clínica Eva.",
-      },
-            {
-        para14: "Cada proyecto evidenció la capacidad de los estudiantes para transformar ideas en soluciones con impacto social, económico y ambiental, demostrando que la innovación tecnológica también puede florecer en el corazón de la Amazonía.",
-      },
-            {
-        para15: "Una oportunidad de conexión para el sector público y privado. La exhibición no solo sirvió como vitrina de talento, sino como punto de encuentro entre la academia y los sectores productivos, ofreciendo propuestas con potencial de implementación para instituciones públicas y privadas que buscan optimizar procesos, digitalizar servicios o fortalecer su eficiencia operativa.",
-      },
-            {
-        para16: " ",
-      },
-            {
-        para17: "fue el lema que acompañó este encuentro que dejó clara la capacidad de la UNAP para formar profesionales que generan valor desde el conocimiento.",
+        para10: "Felicitamos a todos los docentes, estudiantes, egresados y trabajadores administrativos que conforman esta prestigiosa facultad de nuestra universidad, deseándoles muchos años más de éxitos y logros académicos al servicio de la sociedad.",
       },
    
     ],
@@ -228,16 +186,57 @@ export const noticiasdata = [
       //   para2: "-Imprime la constancia y rellénala con tus datos",
       // },
       {
-        quote: "Transformando ideas en soluciones, construyendo el mañana hoy",
+        quote: " ¡Feliz 28° aniversario, FISI – UNAP!",
+      },
+    ],
+  },
+  {
+    id: 3,
+    masVisto: "1",
+    category: "Cachimbos",
+    title: "🎉 ¡Felicitaciones, Ing. Saúl Flores Nunta!. Nuevo Decano Electo de la FISI 🎉",
+    date: "13. Julio 2026",
+    comments: "Fuente: Circulo de Estudios Neo Kernel (Facebook)",
+    costo: "Costo: 80 soles",
+    cover: Noticia03,
+    desc: [
+      {
+        para1: "Expresamos nuestras más sinceras felicitaciones al Ingeniero Saúl Flores Nunta por su reciente elección como nuevo Decano de la Facultad de Ingeniería de Sistemas e Informática de la Universidad Nacional de la Amazonía Peruana."
+      },
+      {
+        para2: "Este importante reconocimiento representa la confianza depositada en su trayectoria profesional, liderazgo y compromiso con la formación académica y el desarrollo de nuestra comunidad universitaria.",
+      },
+      {
+        para3: "Le deseamos muchos éxitos en esta nueva etapa de gestión, en la cual estamos seguros que, con su experiencia, visión y vocación de servicio, contribuirá al fortalecimiento de nuestra facultad, impulsando la innovación, la investigación y la excelencia académica.",
+      },
+      {
+        para4: "Que este nuevo desafío sea una oportunidad para seguir construyendo una facultad más sólida, integrada y preparada para afrontar los retos del futuro. Reciba nuestro reconocimiento y los mejores deseos de éxito en el cumplimiento de sus funciones como Decano.",
+      },
+      
+   
+    ],
+    details: [
+      // {
+      //   title: '"Pasos a seguir para matricularse en este semestre"',
+      // },
+      // {
+      //   para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+      // },
+      // {
+      //   para2: "-Imprime la constancia y rellénala con tus datos",
+      // },
+      {
+        quote: "¡Muchos éxitos en este nuevo reto y que su gestión contribuya al desarrollo de toda la comunidad FISI! 💙💛",
       },
     ],
   },
 
+
   {
-    id: 3,
+    id: 4,
     masVisto: "1",
     category: "travel",
-    title: "Comunidad universitaria participó en jornada electoral de la UNAP",
+    title: "¡La bienvenida a los nuevos cachimbos de la FISI - UNAP ya se vivió! 🎉💙",
     date: "05. Julio 2025",
     comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP (Facebook)",
     costo: "Costo: 76 soles",
@@ -245,26 +244,18 @@ export const noticiasdata = [
     cover2: Noticia02,
     desc: [
       {
-        para1: "El sábado 5 de julio, desde las 8:00 a.m. hasta las 2:00 p.m., se desarrollaron con total normalidad las elecciones universitarias en la Universidad Nacional de la Amazonía Peruana (UNAP), con el propósito de elegir a las autoridades y representantes ante los distintos órganos de gobierno universitario.",
+        para1: "Con gran satisfacción compartimos lo que fue la actividad de bienvenida a los nuevos cachimbos de la FISI - UNAP 🎉💙",
       },
       {
-        para2: "Locales de votación:",
+        para2: "En esta importante jornada se contó con la presencia de nuestras autoridades y representantes académicos: el Dr. Ángel Enrique López Rojas, decano de la FISI-UNAP; el Mgr. Juan Manuel Verme Insua, director de Escuela de Formación Profesional; el Dr. Saúl Flores Nunta, director de la Unidad de Investigación FISI-UNAP; el Lic. Adm. Ángel Ildefonso Catashunga Torres, secretario académico; y el Dr. Manuel Tuesta Moreno, director del Dpto. Académico de Ingeniería y Ciencias Básicas.",
       },
       {
-        para3: "-Para los docentes, la votación se realizó en el local de la Facultad de Ciencias Económicas y de Negocios (FACEN), ubicado en la quinta cuadra de la calle Pevas.",
+        para3: "Asimismo, Neo Kernel también estuvo presente, reafirmando su compromiso con la integración, el acompañamiento y la formación académica de los estudiantes en esta nueva etapa universitaria.",
       },
       {
-        para4: "-Para los estudiantes, el proceso se llevó a cabo en el local de la Facultad de Ingeniería de Sistemas e Informática (FISI), también en la quinta cuadra de la mencionada calle.",
+        para4: "Agradecemos a todos los que formaron parte de esta significativa actividad y damos la más cordial bienvenida a nuestros nuevos estudiantes.",
       },
-      {
-        para5: "La jornada se vivió en un ambiente de compromiso, responsabilidad y fraternidad universitaria. Cientos de estudiantes y docentes acudieron desde tempranas horas para participar activamente en este importante proceso democrático. Lo que en muchos casos fue una obligación cívica, se convirtió también en una verdadera fiesta electoral, marcada por la participación entusiasta y el respeto entre los miembros de la comunidad universitaria.",
-      },
-      {
-        para6: "En medio de un radiante sol amazónico, docentes, autoridades y estudiantes se organizaron con carpas y espacios improvisados para protegerse del calor, lo que permitió que la jornada transcurriera con comodidad y orden. Fue evidente el sentido de comunidad y cooperación, lo que reafirma el compromiso colectivo con el fortalecimiento institucional.",
-      },
-            {
-        para7: "Cabe destacar la participación del rector de la UNAP, Dr. Rodil Tello Espinoza, quien acudió puntualmente a ejercer su derecho al voto, brindando un valioso ejemplo de compromiso democrático y liderazgo institucional. Su presencia en el proceso electoral reafirma la importancia de la participación activa de todas las autoridades en el fortalecimiento de la gobernabilidad universitaria. Esto es un paso clave en la vida democrática de la UNAP, en el marco de un calendario electoral que ya se proyecta hacia el año 2026, cuando se celebrarán las elecciones generales universitarias para elegir a los decanos, así como al nuevo rector y vicerrectores que liderarán nuestra casa superior de estudios en los próximos años. Los resultados de las elecciones del sábado 5 de julio, lo podrá verlo a través del siguiente link: https://ceu.unapiquitos.edu.pe",
-      },
+     
     ],
     details: [
       // {
@@ -274,7 +265,7 @@ export const noticiasdata = [
       //   para1:"Días: De lunes a viernes.",
       // },
       {
-        quote: "¡Ejercer el voto fue un acto fundamental para fortalecer la democracia universitaria y garantizar una gestión representativa, transparente y participativa!",
+        quote: "¡Les deseamos muchos éxitos en su camino profesional! 🚀📚",
       },
       // {
       //   para2: "Lugar: Facultad de Odontología, puerta principal (Calle San Marcos Nº 185, distrito de San Juan Bautista.).",
@@ -282,64 +273,7 @@ export const noticiasdata = [
 
     ],
   },
-  {
-    id: 4,
-    masVisto: "1",
-    category: "world",
-    title: "UNAP celebró aniversario de Ingeniería de Sistemas con sesión solemne y reconocimientos",
-    date: "30 de Abril 2025",
-    comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP (Facebook)",
-    costo: "Costo: 76 soles",
-    cover: Noticia03,
-    // url1: "Como pustasasdassd",
-    desc: [
-      {
-        para1: "La Universidad Nacional de la Amazonía Peruana (UNAP) conmemoró este martes 29 de abril el aniversario institucional de la Facultad de Ingeniería de Sistemas e Informática (FISI) con una emotiva sesión solemne realizada en el aula magna. La jornada inició con una misa, presidida por el padre Raymond Portelli, como muestra de gratitud y reflexión espiritual por los logros alcanzados.",
-      },
-      {
-        para2: "La ceremonia fue presidida por el rector de la UNAP, Rodil Tello Espinoza, máxima autoridad universitaria, quien durante su intervención anunció avances significativos relacionados con el proyecto de construcción de la nueva infraestructura de la facultad, como parte del compromiso institucional con la calidad educativa.",
-      },
-      {
-        para3: "El decano de la FISI, Ángel Enrique López Rojas, dirigió un mensaje institucional donde resaltó la evolución de la facultad, el esfuerzo constante de sus estudiantes y docentes, y el impacto positivo que ha tenido la carrera en la formación de profesionales comprometidos con el desarrollo de la región. Además, destacó que los egresados están preparados para afrontar los retos del mundo actual, alineados con las tendencias internacionales en tecnología, sistemas e innovación.",
-      },
-      {
-        para4: "Durante la ceremonia también se realizó un reconocimiento especial a los estudiantes que ocuparon los primeros lugares en orden de mérito académico, distinguiendo su esfuerzo y excelencia a lo largo de sus ciclos de estudio.",
-      },
-      {
-        para17:"La Facultad de Ingeniería de Sistemas e Informática fue creada como parte de un proceso de descentralización educativa promovido por la UNAP. Su origen se remonta al 16 de abril de 1996, cuando se conformó una Comisión Especial para evaluar la factibilidad del proyecto en la ciudad de Nauta, en un terreno donado por la Municipalidad Provincial de Loreto, ubicado en la intersección de las calles Las Castañas y Los Cedros, a la altura del kilómetro 1.5 de la carretera Nauta-Iquitos.",
-      },
-            {
-        para18:"Esta comisión, presidida por el Ing. César Salazar Novoa e integrada por el Mag. Ausberto Alvarado Aguilar y el Eco. Carlos Zumaeta Vásquez, presentó su estudio al rectorado en agosto de ese mismo año. Tras ser aprobado por el Consejo Universitario y la Asamblea Universitaria, la creación oficial de la FISI se concretó el 27 de diciembre de 1997, siendo ratificada mediante la Resolución Rectoral 1814-97-UNAP.",
-      },
-            {
-        para19:"Las primeras actividades académicas iniciaron el 30 de abril de 1998, con el funcionamiento del Centro Preuniversitario y, posteriormente, la realización del primer examen de admisión, con el ingreso de cien estudiantes fundadores. La inauguración oficial de la facultad contó con la presencia del Dr. César Paredes Canto, presidente de la Asamblea Nacional de Rectores, y otras autoridades académicas y regionales.",
-      },
-            {
-        para20:"Con el paso de los años, la FISI ha crecido notablemente. En sus primeras décadas, desarrolló sus funciones en Nauta; actualmente se encuentra ubicada en la ciudad de Iquitos, en la calle Moore 280, y cuenta con una infraestructura moderna y equipada que continúa en proceso de mejora para responder a las exigencias académicas y tecnológicas actuales.",
-      },
-            {
-        para21:"Con esta celebración, la Facultad de Ingeniería de Sistemas e Informática reafirma su compromiso con una educación universitaria pública de calidad, orientada a la formación integral de profesionales capaces de contribuir con el desarrollo sostenible de la región amazónica y del país.",
-      },
-      
-    ],
-    details: [
-      {
-        title: 'Reseña histórica de la FISI',
-      },
-      // {
-      //   para1:"señaló la empresaria. Tras la reunión, los empresarios acordaron realizar la formalización de una asociación de empresarios piscicultores dedicados a la exportación, para consolidar de manera general sus pedidos. Los funcionarios de la DIREPRO, acordaron sostener una próxima reunión, en la que brindaran avances en la atención de su pliego de pedidos.",
-      // },
-      // {
-      //   quote: " ",
-      // },
-      // {
-      //   para2: "And, higher by agency; In from their in and we spirit, through merely and doctor's small him sounded a all now, with that put gift white highly geared that was left back as of or logged important. A over have the large try understanding the believe. Perfected been viewer. Shreds early willingly safely what passion the.",
-      // },
-      // {
-      //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
-      // },
-    ],
-  },
+
 
   
 
@@ -1509,5 +1443,22 @@ export const quienesSomosData = [
     {
       cover: Galeria06,
     },
+        {
+      cover: Galeria07,
+    },
+        {
+      cover: Galeria08,
+    },
+            {
+      cover: Galeria09,
+    },
+            {
+      cover: Galeria10,
+    },
+                {
+      cover: Galeria11,
+    },
+
+
 
   ]
