@@ -72,8 +72,88 @@ import ListaDeEstudiantes from './Downloads/NivelacionCurricular/ListaDeEstudian
 import Sismatricula from './assets/images/tramites/ComoMatricularse/SisMatricula.jpg'
 
 export const noticiasdata = [
-  {
+    {
     id: 1,
+    masVisto: "1",
+    category: "Cachimbos",
+    title: "NUESTRA RECTORA ELECTA DE LA UNAP Dra. Ruth Vílchez Ramírez continúa visitando las facultades de la UNAP",
+    date: "24. Septiembre 2026",
+    comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP TV (Facebook)",
+    costo: "Costo: 80 soles",
+    cover: Noticia01,
+    desc: [
+      {
+        para1: "A pocos días de asumir el cargo de rectora de la Universidad Nacional de la Amazonía Peruana (UNAP), la Dra. Ruth Vílchez Ramírez continúa recorriendo las diferentes facultades de nuestra universidad, con el propósito de conocer directamente sus necesidades, prioridades y expectativas. En esta oportunidad, visitó la Facultad de Ingeniería de Sistemas e Informática (FISI), donde sostuvo una importante reunión de trabajo con el decano, Dr. Saúl Flores Nunta, docentes e integrantes de la facultad."
+      },
+      {
+        para2: "Durante el encuentro, el decano expuso las principales necesidades de la FISI, entre ellas el fortalecimiento y modernización de los laboratorios de cómputo, renovación y actualización de equipos informáticos, mejora de la conectividad y acceso a internet, implementación de software y herramientas tecnológicas especializadas, mejora de la infraestructura física y fortalecimiento de las condiciones para la enseñanza, investigación e innovación tecnológica.",
+      },
+      {
+        para3: "Asimismo, se planteó la importancia de continuar impulsando la capacitación y actualización permanente de docentes y estudiantes, así como generar mejores condiciones para que la FISI pueda responder a las nuevas demandas de la tecnología y la transformación digital.",
+      },
+      {
+        para4: "El Dr. Saúl Flores Nunta expresó su especial agradecimiento a la Dra. Ruth Vílchez Ramírez por su visita y por la disposición de conocer de manera directa la realidad de la facultad.",
+      },
+      {
+        para5: "“Agradecemos a la Dra. Ruth Vílchez por acercarse a nuestra facultad, escucharnos y conocer nuestras principales necesidades. Para la FISI es importante contar con una gestión que valore el papel estratégico de la ingeniería de sistemas y la informática en el desarrollo de nuestra universidad y de nuestra región”, manifestó el decano.",
+      },
+
+      {
+        para6: "Por su parte, la Dra. Ruth Vílchez Ramírez reafirmó su compromiso de continuar escuchando a las facultades y trabajar de manera articulada para fortalecerlas.",
+      },
+    
+            {
+        para7: "-🌐 Plataforma web Ecomuseo.net.",
+      },
+            {
+        para8: "-🚗 Vehículo robótico con brazo recuperador y cámara en tiempo real.",
+      },
+            {
+        para9: "-💻 Sistema online de alerta ante fuga de gas GLP en espacios cerrados.",
+      },
+            {
+        para10: "-💧 Sistema de riego automático con Arduino para el hogar.",
+      },
+            {
+        para11: "-🏥 Historia clínica electrónica con integración de IA.",
+      },
+            {
+        para12: "-🏫 Sistema de gestión de cursos vacacionales y de nivelación para FISI.",
+      },
+            {
+        para13: "🏥 Digitalización y automatización de procesos en la clínica Eva.",
+      },
+            {
+        para14: "Cada proyecto evidenció la capacidad de los estudiantes para transformar ideas en soluciones con impacto social, económico y ambiental, demostrando que la innovación tecnológica también puede florecer en el corazón de la Amazonía.",
+      },
+            {
+        para15: "Una oportunidad de conexión para el sector público y privado. La exhibición no solo sirvió como vitrina de talento, sino como punto de encuentro entre la academia y los sectores productivos, ofreciendo propuestas con potencial de implementación para instituciones públicas y privadas que buscan optimizar procesos, digitalizar servicios o fortalecer su eficiencia operativa.",
+      },
+            {
+        para16: " ",
+      },
+            {
+        para17: "fue el lema que acompañó este encuentro que dejó clara la capacidad de la UNAP para formar profesionales que generan valor desde el conocimiento.",
+      },
+   
+    ],
+    details: [
+      // {
+      //   title: '"Pasos a seguir para matricularse en este semestre"',
+      // },
+      // {
+      //   para1:"-Acércate al Banco de la Nación y paga por el concepto de Nivelación de curso",
+      // },
+      // {
+      //   para2: "-Imprime la constancia y rellénala con tus datos",
+      // },
+      {
+        quote: "Transformando ideas en soluciones, construyendo el mañana hoy",
+      },
+    ],
+  },
+  {
+    id: 2,
     masVisto: "1",
     category: "Cachimbos",
     title: "Feria de Proyectos de Innovación Tecnológica en IA, BI y Desarrollo de Software",
@@ -154,7 +234,7 @@ export const noticiasdata = [
   },
 
   {
-    id: 2,
+    id: 3,
     masVisto: "1",
     category: "travel",
     title: "Comunidad universitaria participó en jornada electoral de la UNAP",
@@ -203,7 +283,7 @@ export const noticiasdata = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     masVisto: "1",
     category: "world",
     title: "UNAP celebró aniversario de Ingeniería de Sistemas con sesión solemne y reconocimientos",
@@ -258,55 +338,6 @@ export const noticiasdata = [
       // {
       //   para3: "In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that. However, back over in reality some project schedules and budgets don’t allow for web copy to be written before the design phase, this is sad but true.",
       // },
-    ],
-  },
-  {
-    id: 4,
-    masVisto: "1",
-    category: "Cachimbos",
-    title: "Promoviendo la Innovación Tecnológica desde nuestras aulas",
-    date: "20. Diciembre 2024",
-    comments: "Fuente: Universidad Nacional de la Amazonía Peruana - UNAP (Facebook)",
-    costo: "Costo: 80 soles",
-    cover: Noticia04,
-    desc: [
-      {
-        para1: "Hoy hemos sido testigos de un momento lleno de creatividad e innovación en la Facultad de Ingeniería de Sistemas e Informática. Nuestros talentosos estudiantes del curso de Interacción Hombre-Máquina (IHM) han presentado sus proyectos grupales, ¡y los resultados no podrían ser más impresionantes!"
-      },
-      {
-        para1: "Bajo la guía de sus docentes, los alumnos han desarrollado aplicaciones móviles utilitarias, aplicando las más recientes tecnologías y metodologías de diseño centrado en el usuario. Cada proyecto refleja su dedicación por mejorar la experiencia de interacción y accesibilidad, cumpliendo con los más altos estándares establecidos en el curso.",
-      },
-      {
-        para2: "Algunos puntos destacados de las exposiciones:",
-      },
-      {
-        para3: "-Diseños intuitivos y funcionales, pensados para las necesidades reales de los usuarios.",
-      },
-      {
-        para4: "-Innovación tecnológica con el uso de herramientas modernas como prototipos interactivos y tecnologías móviles avanzadas.",
-      },
-      {
-        para5: "-Compromiso social y educativo, al abordar problemáticas del entorno con soluciones prácticas.",
-      },
-
-   
-    ],
-    details: [
-      // {
-      //   title: '"Pasos a seguir para matricularse en este semestre"',
-      // },
-      {
-        para1:"En la Facultad de Ingeniería de Sistemas e Informática, reafirmamos nuestro compromiso de fomentar el desarrollo académico y profesional de nuestros estudiantes, ofreciéndoles las herramientas para ser líderes en el ámbito tecnológico.",
-      },
-      {
-        para2: "¡Felicitaciones a todos los estudiantes y docentes involucrados! Gracias por demostrar que con esfuerzo y creatividad, podemos alcanzar grandes logros.",
-      },
-      {
-        quote: "Estos proyectos son un claro ejemplo del potencial de nuestra comunidad universitaria para transformar ideas en soluciones reales que beneficien a la sociedad",
-      },
-      {
-        para22: "Expresó con orgullo la coordinación del curso.",
-      },
     ],
   },
 

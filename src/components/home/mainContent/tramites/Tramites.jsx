@@ -48,16 +48,6 @@ const Tramites = () => {
 );
 
 
-  // const [newTramite, setNewTramite] = useState({
-  //   title: "",
-  //   duracion: "",
-  //   costo: "",
-  //   date: "",
-  //   desc: [{ para1: "" }],
-  //   docsNecesariosData: [{ title: "Documentos necesarios: ", para1: "" }],
-  //   details: [{ title: "", para1: "", quote: "" }],
-  // });
-
   // ================================
   // 🔥 Obtener trámites de Firebase
   // ================================
@@ -136,55 +126,6 @@ const cleanArray = (arr) =>
         k === "title" || k.startsWith("para") || k === "quote"
       )
     );
-
-
-
-// const saveNewTramite = async () => {
-//   try {
-//     // Guardar en Firebase
-//     const docRef = await addDoc(collection(db, "tramites"), newTramite);
-
-//     // 🔥 Actualizar estado SIN refrescar
-//     setTramites(prev => [
-//       ...prev,
-//       { id: docRef.id, ...newTramite }
-//     ]);
-
-//     setShowForm(false);
-
-//     // Limpiar formulario
-//     setNewTramite({
-//       title: "",
-//       duracion: "",
-//       costo: "",
-//       date: "",
-//       desc: [{ para1: "" }],
-//       docsNecesariosData: [{ title: "", para1: "" }],
-//       details: [{ title: "", para1: "", quote: "" }],
-//     });
-
-//     // ✅ SweetAlert éxito (igual que Singlepages)
-//     Swal.fire({
-//       icon: 'success',
-//       title: 'Trámite agregado',
-//       showConfirmButton: false,
-//       timer: 2000,
-//       timerProgressBar: true,
-//       position: 'top-end',
-//       toast: true
-//     });
-
-//   } catch (error) {
-//     console.error("🔥 ERROR FIREBASE:", error);
-
-//     Swal.fire({
-//       icon: 'error',
-//       title: 'Error al guardar',
-//       text: error.message,
-//       showConfirmButton: true
-//     });
-//   }
-// };
 
   // ================================
   // Render principal
@@ -291,12 +232,6 @@ const saveNewTramite = async () => {
       {/* SOLO SE MUESTRA PARA EL CORREO ADMIN */}
       {canAdd && (
         <div className='addButtons'>
-          {/* <button 
-            className="btn-add-tramite" 
-            onClick={() => setShowForm(prev => !prev)}
-          >
-            {showForm ? "Cancelar" : "Agregar nuevo trámite"}
-          </button> */}
           <button 
             className="btn-add-tramite" 
             onClick={toggleForm}
@@ -374,12 +309,6 @@ const saveNewTramite = async () => {
           <h4>Documentos necesarios</h4>
           {newTramite.docsNecesariosData.map((val, idx) => (
             <div key={idx}>
-              {/* <input
-                type="text"
-                placeholder="Título del documento"
-                value={val.title}
-                onChange={(e) => updateNewTramiteField(["docsNecesariosData", idx, "title"], e.target.value)}
-              /> */}
               {Object.keys(val)
                 .filter(k => k.startsWith("para"))
                 .map((key) => (
